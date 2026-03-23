@@ -1,0 +1,21 @@
+{
+  "name": "230326_mastra_otf",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun --hot src/index.ts",
+    "start": "bun src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@mastra/core": "^1.15.0",
+    "@mastra/hono": "^1.2.6",
+    "hono": "^4.12.9"
+  }
+}
