@@ -27,6 +27,12 @@ From the search results, ALWAYS prioritize URLs containing .justice.fr or .gouv.
 
 IGNORE third-party sites like exjudis.fr, cncej.org — these are NOT official court pages.
 
+**Legacy site fallback:**
+If the modern site (cours-appel.justice.fr/[city]) redirects to a homepage or has no expert page:
+1. Search for "ca-[city].justice.fr experts judiciaires"
+2. Try HTTP (not HTTPS) for legacy sites — some don't support HTTPS
+3. Example: ca-besancon.justice.fr may work when cours-appel.justice.fr/besancon doesn't
+
 ### Step 2: Fetch the Page
 Use the **fetchPage** tool on the .justice.fr URL. This returns:
 - Expert-list PDFs with their anchor text and relevance hints

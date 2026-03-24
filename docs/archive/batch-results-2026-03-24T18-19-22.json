@@ -1,0 +1,228 @@
+[
+  {
+    "court": "Aix-en-Provence",
+    "success": true,
+    "result": {
+      "courtName": "Aix-en-Provence",
+      "pageUrl": "https://www.cours-appel.justice.fr/aix-en-provence/experts-judiciaires",
+      "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-12/Annuaire%20Experts%20D%C3%A9cembre%202025.pdf",
+      "documentTitle": "Annuaire Experts Décembre 2025",
+      "publicationDate": "2025-12-10",
+      "publicationDateSource": "pdf-content",
+      "searchExplanation": "La page officielle a été trouvée sur cours-appel.justice.fr/aix-en-provence/experts-judiciaires, contenant un lien vers le PDF Annuaire Experts Décembre 2025.pdf (chemin 2025-12/).",
+      "dateExtractionExplanation": "La date 'December 10, 2025' a été trouvée directement dans le contenu du PDF en première page.",
+      "errors": []
+    },
+    "timing": {
+      "agentMs": 48091,
+      "extractionMs": 4623,
+      "totalMs": 52714
+    },
+    "error": null,
+    "agentText": "La page officielle et plusieurs PDFs sont trouvés. Je vais maintenant récupérer la page officielle ET extraire la date du PDF le plus récent (2025) en parallèle.Excellent ! La page révèle un PDF encore plus récent : **Annuaire Experts Décembre 2025** (dans le chemin `2025-12/`). Je vais immédiatement l'analyser.La date officielle est clairement identifiée dans le PDF. Voici le résultat complet et structuré :\n\n---\n\n## ✅ Résultats — Liste des experts judiciaires de la Cour d'appel d'Aix-en-Provenc"
+  },
+  {
+    "court": "Amiens",
+    "success": true,
+    "result": {
+      "courtName": "Cour d'appel de Amiens",
+      "pageUrl": "https://www.cours-appel.justice.fr/amiens/les-experts-judiciaires-pres-la-cour-dappel-damiens",
+      "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/2026%20-%20Liste%20des%20experts%20judiciaires%20-ok.pdf",
+      "documentTitle": "2026 - Liste des experts judiciaires -ok.pdf",
+      "publicationDate": "2026-02-01",
+      "publicationDateSource": "filename",
+      "searchExplanation": "La page officielle a été trouvée via une recherche sur justice.fr. Elle liste deux PDFs, dont la liste 2026 des experts judiciaires.",
+      "dateExtractionExplanation": "Le chemin URL contient '/2026-02/' indiquant une publication en février 2026. Le PDF confirme l'année 2026 mais ne précise pas la date exacte dans les premières pages.",
+      "errors": []
+    },
+    "timing": {
+      "agentMs": 46763,
+      "extractionMs": 4614,
+      "totalMs": 51377
+    },
+    "error": null,
+    "agentText": "Je vais rechercher la liste officielle des experts judiciaires de la Cour d'appel d'Amiens. Commençons par une recherche web.Excellent ! J'ai trouvé la page officielle. Je vais maintenant récupérer la page pour voir tous les PDFs disponibles, en parallèle avec l'extraction du PDF le plus récent (2024).La page officielle révèle un PDF encore plus récent : **la liste 2026** ! Je vais immédiatement l'extraire pour trouver la date officielle.Le PDF confirme l'année 2026. La date précise n'est pas su"
+  },
+  {
+    "court": "Angers",
+    "success": true,
+    "result": {
+      "courtName": "Angers",
+      "pageUrl": "https://www.cours-appel.justice.fr/angers/experts-judiciaires",
+      "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/LISTE%20EXPERTS%202026.pdf",
+      "documentTitle": "Liste des Experts Judiciaires & Liste des Courtiers de Marchandises Assermentés — Pour l'année 2026",
+      "publicationDate": "2026-03-20",
+      "publicationDateSource": "page-text",
+      "searchExplanation": "La page officielle cours-appel.justice.fr/angers/experts-judiciaires a été trouvée via recherche web, puis le PDF le plus récent (2026-03) a été identifié via fetchPage.",
+      "dateExtractionExplanation": "La page officielle indique 'mise à jour : 20/03/2026'. Le PDF ne contient pas de date explicite de mise à jour dans son contenu.",
+      "errors": []
+    },
+    "timing": {
+      "agentMs": 56629,
+      "extractionMs": 8628,
+      "totalMs": 65257
+    },
+    "error": null,
+    "agentText": "Je vais rechercher la liste officielle des experts judiciaires de la Cour d'appel d'Angers. Commençons par une recherche web.Excellent ! J'ai trouvé la page officielle et plusieurs PDFs. Le plus récent semble être celui de 2026. Je vais maintenant **fetcher la page officielle** et **extraire la date du PDF 2026** en parallèle.🎯 Excellent ! La page officielle révèle un PDF **mis à jour** avec un chemin différent (`2026-03/` au lieu de `2026-01/`). C'est la version la plus récente ! Je vais maint"
+  },
+  {
+    "court": "Bastia",
+    "success": true,
+    "result": {
+      "courtName": "Bastia",
+      "pageUrl": "https://www.cours-appel.justice.fr/bastia/liste-des-experts-judiciaires-de-corse",
+      "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/Liste%20des%20experts%20judiciaires%202026-Ver.01.2026.pdf",
+      "documentTitle": "Liste des experts judiciaires 2026 — Cour d'appel de Bastia",
+      "publicationDate": "2026-01-28",
+      "publicationDateSource": "page-text",
+      "searchExplanation": "Found on the official cours-appel.justice.fr website for Bastia, page listing experts judiciaires de Corse.",
+      "dateExtractionExplanation": "The page text mentions 'mise à jour : 28/01/2026', converted to 2026-01-28. The PDF content did not contain a precise date on page 1.",
+      "errors": []
+    },
+    "timing": {
+      "agentMs": 46518,
+      "extractionMs": 4133,
+      "totalMs": 50652
+    },
+    "error": null,
+    "agentText": "Je vais rechercher la liste officielle des experts judiciaires de la Cour d'appel de Bastia. Commençons par une recherche web.Excellent ! J'ai trouvé plusieurs PDFs. Le plus récent semble être la liste 2026. Je vais maintenant **fetcher la page officielle** et **extraire la date du PDF 2026** en parallèle.Le PDF 2026 ne contient pas de date précise dans son texte de première page. La page web indique \"mise à jour : 28/01/2026\". Analysons le nom du fichier : `Liste des experts judiciaires 2026-Ve"
+  },
+  {
+    "court": "Besançon",
+    "success": true,
+    "result": {
+      "courtName": "Besançon (Cour d'appel de Besançon)",
+      "pageUrl": "http://www.ca-besancon.justice.fr",
+      "documentUrl": "https://cejca-besancon.fr/wp-content/uploads/2024/05/LISTE-EXPERTS-COUR-APPEL-20241.pdf",
+      "documentTitle": "LISTE-EXPERTS-COUR-APPEL-20241.pdf",
+      "publicationDate": "2024-01-01",
+      "publicationDateSource": "filename",
+      "searchExplanation": "The official court website ca-besancon.justice.fr was found but inaccessible. The CEJCA site (cejca-besancon.fr) hosts both the official 2024 court expert list PDF and a 2025 company directory. The 2024 official PDF was identified at the URL above.",
+      "dateExtractionExplanation": "The filename contains '2024' suggesting a 2024 publication. The agent could not read the PDF content directly. A 2025 official list was not confirmed accessible.",
+      "errors": [
+        "ca-besancon.justice.fr is completely inaccessible (HTTP and HTTPS)",
+        "Could not confirm a 2025 official court expert list URL",
+        "PDF content could not be read directly to extract exact date"
+      ]
+    },
+    "timing": {
+      "agentMs": 121587,
+      "extractionMs": 6599,
+      "totalMs": 128186
+    },
+    "error": null,
+    "agentText": "Je vais rechercher la liste officielle des experts judiciaires de la Cour d'appel de Besançon. Commençons par une recherche web.Excellent ! Le site legacy `ca-besancon.justice.fr` est bien actif. Je vois une page \"Annuaire 2025\" et une page \"experts judiciaires\". Je vais maintenant récupérer la page officielle des experts ET la page de l'annuaire 2025 en parallèle.Le site legacy est en HTTP uniquement. Essayons avec HTTP explicite et aussi la page de l'annuaire 2025 directement.Le site legacy es"
+  },
+  {
+    "court": "Bordeaux",
+    "success": true,
+    "result": {
+      "courtName": "Bordeaux",
+      "pageUrl": "https://www.cours-appel.justice.fr/bordeaux/experts",
+      "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf",
+      "documentTitle": "Liste des experts 2025",
+      "publicationDate": "2025-07-01",
+      "publicationDateSource": "filename",
+      "searchExplanation": "La page officielle https://www.cours-appel.justice.fr/bordeaux/experts a été trouvée via recherche Google et contient des liens vers le PDF des experts judiciaires 2025.",
+      "dateExtractionExplanation": "Le PDF indique uniquement 'POUR L'ANNEE 2025' sans date précise. La date 2025-07 est déduite du chemin du fichier (2025-07/) indiquant une mise en ligne en juillet 2025.",
+      "errors": []
+    },
+    "timing": {
+      "agentMs": 69086,
+      "extractionMs": 4527,
+      "totalMs": 73613
+    },
+    "error": null,
+    "agentText": "Je vais rechercher la liste officielle des experts judiciaires de la Cour d'appel de Bordeaux en suivant le processus étape par étape.\n\n## Étape 1 : Recherche de la page officielleExcellent ! J'ai trouvé la page officielle et un PDF 2025. Je vais maintenant **fetcher la page** et **extraire la date du PDF 2025** en parallèle.\n\n## Étapes 2 & 4 : Fetch de la page + Extraction du PDF 2025🎯 **Excellent !** La page officielle révèle un PDF **encore plus récent** : `2025-07/EXPERTS - 2025_0.pdf` (jui"
+  },
+  {
+    "court": "Chambéry",
+    "success": true,
+    "result": {
+      "courtName": "Cour d'appel de Chambéry",
+      "pageUrl": "https://www.cours-appel.justice.fr/chambery/experts-judiciaires",
+      "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-01/EXPERTS%202025%20-%20M%C3%A0J%2002-01-2025_0.pdf",
+      "documentTitle": "Liste des experts judiciaires – Année 2025",
+      "publicationDate": "2025-01-02",
+      "publicationDateSource": "pdf-content",
+      "searchExplanation": "Page officielle trouvée sur cours-appel.justice.fr/chambery/experts-judiciaires. Le PDF le plus récent (2025) a été identifié parmi 3 PDFs disponibles sur la page.",
+      "dateExtractionExplanation": "Date extraite directement du contenu du PDF : 'Liste mise à jour le 02/01/2025', convertie en 2025-01-02.",
+      "errors": []
+    },
+    "timing": {
+      "agentMs": 40103,
+      "extractionMs": 4185,
+      "totalMs": 44288
+    },
+    "error": null,
+    "agentText": "Je vais rechercher la liste officielle des experts judiciaires de la Cour d'appel de Chambéry. Commençons par une recherche web.Excellent ! J'ai trouvé des résultats très pertinents. Je vais maintenant récupérer la page officielle des experts judiciaires ET le PDF le plus récent (2025) en parallèle.J'ai toutes les informations nécessaires. Voici le résultat complet et structuré :\n\n---\n\n## ✅ Résultats — Liste officielle des experts judiciaires de la Cour d'appel de Chambéry\n\n---\n\n### 🏛️ Étape 1 "
+  },
+  {
+    "court": "Colmar",
+    "success": true,
+    "result": {
+      "courtName": "Cour d'appel de Colmar",
+      "pageUrl": "https://www.cours-appel.justice.fr/colmar/les-experts-judiciaires",
+      "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-05/liste%20des%20experts%20judiciaires%202025%20actualis%C3%A9e.pdf",
+      "documentTitle": "Liste des experts judiciaires 2025 actualisée",
+      "publicationDate": "2024-11-27",
+      "publicationDateSource": "pdf-content",
+      "searchExplanation": "Page officielle trouvée sur cours-appel.justice.fr/colmar/les-experts-judiciaires, contenant un PDF actualisé dans le dossier 2025-05.",
+      "dateExtractionExplanation": "Le PDF mentionne en première page : « dressée par l'Assemblée Générale de la Cour le 27 novembre 2024 ».",
+      "errors": []
+    },
+    "timing": {
+      "agentMs": 44551,
+      "extractionMs": 4044,
+      "totalMs": 48595
+    },
+    "error": null,
+    "agentText": "Je vais rechercher la liste officielle des experts judiciaires de la Cour d'appel de Colmar. Commençons par une recherche web.Excellent ! J'ai trouvé la page officielle et plusieurs PDFs. Je vois un PDF de 2025 qui semble le plus récent. Je vais simultanément récupérer la page officielle ET extraire la date du PDF 2025.Parfait ! La page officielle révèle un PDF **encore plus récent** (2025-05, actualisé), différent de celui de 2025-03. Je dois maintenant extraire la date officielle de ce nouveau"
+  },
+  {
+    "court": "Lyon",
+    "success": true,
+    "result": {
+      "courtName": "Lyon (Cour d'appel de Lyon)",
+      "pageUrl": "https://www.cours-appel.justice.fr/lyon/les-experts",
+      "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20judiciaires.pdf",
+      "documentTitle": "2026 - Liste des experts judiciaires",
+      "publicationDate": "2026-01-15",
+      "publicationDateSource": "pdf-content",
+      "searchExplanation": "La page officielle a été trouvée sur cours-appel.justice.fr/lyon/les-experts. Elle liste plusieurs PDFs dont le plus récent est la version mars 2026 de la liste des experts judiciaires 2026.",
+      "dateExtractionExplanation": "Le contenu du PDF de janvier 2026 indiquait 'Mise à jour le 15 janvier 2026'. La version mars 2026 est une mise à jour ultérieure mais la date précise dans ce PDF n'a pas pu être extraite (texte tronqué). La date 2026-01-15 provient du contenu PDF de la version initiale.",
+      "errors": [
+        "Le contenu de la première page du PDF mars 2026 était tronqué, empêchant l'extraction directe de la date de mise à jour de cette version"
+      ]
+    },
+    "timing": {
+      "agentMs": 66556,
+      "extractionMs": 6387,
+      "totalMs": 72943
+    },
+    "error": null,
+    "agentText": "Je vais rechercher la liste officielle des experts judiciaires de la Cour d'appel de Lyon en suivant le processus étape par étape.\n\n## Étape 1 : Recherche de la page officielleExcellent ! Je vois déjà plusieurs PDFs, dont un pour 2026. Passons à l'étape 2 : récupération de la page officielle et extraction du PDF le plus récent.\n\n## Étape 2 : Récupération de la page officielleParfait ! La page officielle liste un PDF 2026 mis à jour en mars 2026. C'est le plus récent. Passons à l'étape 4 : extrac"
+  },
+  {
+    "court": "Paris",
+    "success": true,
+    "result": {
+      "courtName": "Cour d'appel de Paris",
+      "pageUrl": "https://www.cours-appel.justice.fr/paris/experts-judiciaires",
+      "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf",
+      "documentTitle": "ANNUPARIS MAJ 10 MARS 26_2.pdf",
+      "publicationDate": "2026-03-10",
+      "publicationDateSource": "pdf-content",
+      "searchExplanation": "La page officielle a été trouvée via une recherche site:justice.fr sur le domaine cours-appel.justice.fr/paris/experts-judiciaires. Le PDF le plus récent identifié est ANNUPARIS MAJ 10 MARS 26_2.pdf hébergé dans le dossier /2026-03/.",
+      "dateExtractionExplanation": "Le PDF contient explicitement la mention 'MAJ LE 10/03/2026' sur sa première page, confirmant la date de mise à jour officielle du 10 mars 2026.",
+      "errors": []
+    },
+    "timing": {
+      "agentMs": 56223,
+      "extractionMs": 9040,
+      "totalMs": 65263
+    },
+    "error": null,
+    "agentText": "Je vais rechercher la liste officielle des experts judiciaires de la Cour d'appel de Paris en suivant le processus étape par étape.\n\n### Étape 1 : Recherche de la page officielleExcellente trouvaille ! La page officielle est identifiée et il y a même plusieurs PDFs. Je vois un PDF de 2025 (avril) qui semble le plus récent. Je vais maintenant **fetcher la page officielle** et **extraire la date du PDF le plus récent** en parallèle.\n\n### Étapes 2 & 4 : Fetch de la page + Extraction du PDF le plus "
+  }
+]
