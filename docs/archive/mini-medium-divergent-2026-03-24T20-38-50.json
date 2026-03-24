@@ -1,0 +1,152 @@
+{
+  "effort": "medium",
+  "results": [
+    {
+      "court": "Amiens",
+      "success": false,
+      "result": null,
+      "timing": {
+        "agentMs": 0,
+        "extractionMs": 0,
+        "totalMs": 4093
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        },
+        "extraction": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        },
+        "total": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        }
+      },
+      "error": "Item 'ws_0e5d0c92653ac47b0069c2f6548cb8819997b34bab56f80f72' of type 'web_search_call' was provided without its required 'reasoning' item: 'rs_0e5d0c92653ac47b0069c2f653f608819994b3d10beac06ecf'.",
+      "agentText": ""
+    },
+    {
+      "court": "Angers",
+      "success": false,
+      "result": null,
+      "timing": {
+        "agentMs": 0,
+        "extractionMs": 0,
+        "totalMs": 7063
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        },
+        "extraction": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        },
+        "total": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        }
+      },
+      "error": "Item 'ws_055dde36822ce8d50069c2f654cbac8198bc76745b95328d19' of type 'web_search_call' was provided without its required 'reasoning' item: 'rs_055dde36822ce8d50069c2f65444ac81988351afd0bc6ec4fe'.",
+      "agentText": ""
+    },
+    {
+      "court": "Besançon",
+      "success": false,
+      "result": null,
+      "timing": {
+        "agentMs": 0,
+        "extractionMs": 0,
+        "totalMs": 5530
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        },
+        "extraction": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        },
+        "total": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        }
+      },
+      "error": "Item 'ws_09450fac4c5fdb800069c2f6564eec8194a5eb5f4c4ddc08a2' of type 'web_search_call' was provided without its required 'reasoning' item: 'rs_09450fac4c5fdb800069c2f6540f008194b2fc8c3099d93651'.",
+      "agentText": ""
+    },
+    {
+      "court": "Bordeaux",
+      "success": false,
+      "result": null,
+      "timing": {
+        "agentMs": 0,
+        "extractionMs": 0,
+        "totalMs": 3731
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        },
+        "extraction": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        },
+        "total": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        }
+      },
+      "error": "Item 'ws_04feb728c84102f70069c2f654e2888199a8265d2fa97e2d9d' of type 'web_search_call' was provided without its required 'reasoning' item: 'rs_04feb728c84102f70069c2f65456bc8199bcbc24cd6608c2c7'.",
+      "agentText": ""
+    },
+    {
+      "court": "Lyon",
+      "success": false,
+      "result": null,
+      "timing": {
+        "agentMs": 0,
+        "extractionMs": 0,
+        "totalMs": 3684
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        },
+        "extraction": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        },
+        "total": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        }
+      },
+      "error": "Item 'ws_0ee6d503dcf0905d0069c2f654a23081968bfda0aa3409fe53' of type 'web_search_call' was provided without its required 'reasoning' item: 'rs_0ee6d503dcf0905d0069c2f6540f0081969437dc113d20d9d0'.",
+      "agentText": ""
+    }
+  ],
+  "batchTime": "7.1",
+  "totalCost": 0
+}

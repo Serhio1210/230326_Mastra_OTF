@@ -37,7 +37,9 @@ Legacy fallback: if cours-appel.justice.fr/[city] fails, try ca-[city].justice.f
   inputProcessors: [new TokenLimiter(100000)],
 });
 
-export async function runCourtSearchMini(court: string): Promise<CourtSearchResult> {
+export type MiniEffort = "none" | "low" | "medium" | "high";
+
+export async function runCourtSearchMini(court: string, effort: MiniEffort = "none"): Promise<CourtSearchResult> {
   const totalStart = Date.now();
 
   try {
@@ -45,7 +47,10 @@ export async function runCourtSearchMini(court: string): Promise<CourtSearchResu
 
     const agentResult = await miniAgent.generate(
       `Trouve la liste officielle des experts judiciaires de la Cour d'appel de ${court}. Utilise fetchPage puis extractPdfDate pour trouver la date officielle dans le PDF.`,
-      { maxSteps: 15 }
+      {
+        maxSteps: 15,
+        providerOptions: effort !== "none" ? { openai: { reasoningEffort: effort } } : undefined,
+      }
     );
 
     const agentMs = Date.now() - agentStart;
