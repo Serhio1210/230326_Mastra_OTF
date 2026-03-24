@@ -14,8 +14,11 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "@ai-sdk/anthropic": "^3.0.64",
+    "@anthropic-ai/sdk": "^0.80.0",
     "@mastra/core": "^1.15.0",
     "@mastra/hono": "^1.2.6",
+    "ai": "^6.0.137",
     "hono": "^4.12.9"
   }
 }
