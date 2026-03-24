@@ -1,0 +1,113 @@
+{
+  "batch": "2",
+  "courts": [
+    "Grenoble",
+    "Limoges",
+    "Metz",
+    "Montpellier",
+    "Nancy"
+  ],
+  "results": [
+    {
+      "court": "Grenoble",
+      "success": true,
+      "result": {
+        "courtName": "Grenoble (Cour d'appel de Grenoble)",
+        "pageUrl": "https://www.cours-appel.justice.fr/grenoble/experts-et-traducteurs-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/ANNUAIRE%20E.J%202026%20INTERNET_0.pdf",
+        "documentTitle": "Liste des experts judiciaires - màj le 26/02/2026",
+        "publicationDate": "2026-02-26",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official page was found at cours-appel.justice.fr/grenoble/experts-et-traducteurs-judiciaires, which contained two PDFs. The experts judiciaires annuaire (updated 26/02/2026) was selected.",
+        "dateExtractionExplanation": "The PDF's first page explicitly states 'Mise à jour le 26 février 2026', confirming the publication date as 2026-02-26.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 57829,
+        "extractionMs": 4879,
+        "totalMs": 62708
+      },
+      "error": null,
+      "agentText": "Je vais rechercher la liste officielle des experts judiciaires de la Cour d'appel de Grenoble en suivant le processus étape par étape.\n\n## Étape 1 : Recherche de la page officielleParfait ! La page officielle est trouvée. Je vais maintenant la récupérer pour extraire les liens PDF.\n\n## Étape 2 : Récupération de la page officielleLa page principale ne contient qu'un lien PDF externe (CNCEJ). Je vais essayer la deuxième URL trouvée dans les résultats de recherche.Excellent ! J'ai trouvé le PDF le "
+    },
+    {
+      "court": "Limoges",
+      "success": true,
+      "result": {
+        "courtName": "Limoges (Cour d'appel de Limoges)",
+        "pageUrl": "https://www.cours-appel.justice.fr/limoges/les-experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/ANNUEJ_2026.pdf",
+        "documentTitle": "Liste experts CA Limoges 2026",
+        "publicationDate": "2025-11-14",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "La page officielle a été trouvée sur cours-appel.justice.fr/limoges/les-experts-judiciaires, qui contient un seul PDF identifié comme liste des experts judiciaires 2026.",
+        "dateExtractionExplanation": "La date a été extraite du contenu du PDF, qui mentionne explicitement : 'dressée par l'Assemblée Générale de la Cour le 14 Novembre 2025'.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 36920,
+        "extractionMs": 4213,
+        "totalMs": 41134
+      },
+      "error": null,
+      "agentText": "Excellent ! La page officielle et le PDF 2026 sont déjà identifiés. Je lance simultanément le **fetchPage** sur la page officielle et **extractPdfDate** sur le PDF 2026 (le plus récent) !Toutes les informations sont réunies. Voici le résultat complet et structuré :\n\n---\n\n## ✅ Résultats — Liste officielle des experts judiciaires de la Cour d'appel de Limoges\n\n---\n\n### 📋 Étape 1 — Page officielle trouvée\n\nLes experts judiciaires sont des professionnels spécialement habilités, chargés de donner au"
+    },
+    {
+      "court": "Metz",
+      "success": false,
+      "result": null,
+      "timing": {
+        "agentMs": 0,
+        "extractionMs": 0,
+        "totalMs": 300532
+      },
+      "error": "The operation timed out.",
+      "agentText": ""
+    },
+    {
+      "court": "Montpellier",
+      "success": true,
+      "result": {
+        "courtName": "Montpellier",
+        "pageUrl": "https://www.cours-appel.justice.fr/montpellier/partenaires-de-justice",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/ANNUEJ_EXP_2026.pdf",
+        "documentTitle": "Accéder à la liste des experts judiciaires près la cour d'appel de Montpellier (mise à jour le 04 février 2026)",
+        "publicationDate": "2026-02-04",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "La page officielle des partenaires de justice de la Cour d'appel de Montpellier a été trouvée sur cours-appel.justice.fr. Elle liste plusieurs PDFs dont le plus récent est ANNUEJ_EXP_2026.pdf mis à jour le 04 février 2026.",
+        "dateExtractionExplanation": "La date MAJ 04/02/2026 a été trouvée directement dans le contenu du PDF, convertie en format YYYY-MM-DD : 2026-02-04.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 69549,
+        "extractionMs": 4259,
+        "totalMs": 73808
+      },
+      "error": null,
+      "agentText": "Je vais rechercher la liste officielle des experts judiciaires de la Cour d'appel de Montpellier en suivant le processus étape par étape.\n\n## Étape 1 : Recherche de la page officielleExcellente trouvaille ! J'ai déjà plusieurs résultats très pertinents. Je vois une page officielle et plusieurs PDFs. Maintenant je vais **simultanément** récupérer la page officielle ET le PDF le plus récent (juillet 2025).\n\n## Étapes 2 & 4 en parallèle : Fetch de la page + extraction du PDF le plus récentLa page p"
+    },
+    {
+      "court": "Nancy",
+      "success": true,
+      "result": {
+        "courtName": "Nancy (Cour d'appel de Nancy)",
+        "pageUrl": "https://www.cours-appel.justice.fr/nancy/les-experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/-%20Liste%20des%20experts%20judiciaires%20-%20ressort%20de%20la%20cour%20d%27appel%20de%20Nancy%20%28mise%20%C3%A0%20jour%20au%2012.03.2026%29.pdf",
+        "documentTitle": "Liste des experts judiciaires - ressort de la cour d'appel de Nancy (mise à jour au 12.03.2026)",
+        "publicationDate": "2026-03-12",
+        "publicationDateSource": "link-text",
+        "searchExplanation": "Page officielle trouvée sur cours-appel.justice.fr/nancy/les-experts-judiciaires, contenant plusieurs PDFs dont le plus récent est la liste mise à jour au 12.03.2026.",
+        "dateExtractionExplanation": "La date 12.03.2026 est explicitement indiquée dans le texte du lien et le nom du fichier. Le contenu PDF ne mentionnait pas la date précise en première page.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 52356,
+        "extractionMs": 5373,
+        "totalMs": 57729
+      },
+      "error": null,
+      "agentText": "Je vais rechercher la liste officielle des experts judiciaires de la Cour d'appel de Nancy en suivant le processus étape par étape.\n\n## Étape 1 : Recherche de la page officielleExcellent ! La page officielle et plusieurs PDFs sont trouvés. Je vais maintenant **simultanément** récupérer la page officielle ET extraire la date du PDF le plus récent (2026).🎯 **Excellent !** La page révèle un PDF encore plus récent : **mise à jour au 12.03.2026** ! Je vais immédiatement extraire la date officielle d"
+    }
+  ],
+  "batchTime": "300.5"
+}
