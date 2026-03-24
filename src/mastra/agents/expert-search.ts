@@ -85,6 +85,11 @@ export const expertSearchAgent = new Agent({
     extractPdfDate: extractPdfDateTool,
   },
   inputProcessors: [new TokenLimiter(100000)],
+  providerOptions: {
+    anthropic: {
+      effort: "low",
+    },
+  },
 });
 
 export { expertFinderResultSchema };
