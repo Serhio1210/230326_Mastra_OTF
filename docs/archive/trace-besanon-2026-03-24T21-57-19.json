@@ -1,0 +1,231 @@
+{
+  "court": "Besançon",
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "startedAt": "2026-03-24T21:53:27.392Z",
+  "finishedAt": "2026-03-24T21:53:40.371Z",
+  "totalMs": 12979,
+  "steps": [
+    {
+      "turn": 0,
+      "startedAt": "2026-03-24T21:53:27.392Z",
+      "durationMs": 1786,
+      "usage": {
+        "inputTokens": 5303,
+        "outputTokens": 117,
+        "totalTokens": 5420
+      },
+      "outputItemTypes": [
+        "function_call",
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.google.com/search?q=site%3Acours-appel.justice.fr+Besan%C3%A7on+experts+judiciaires+pdf"
+          },
+          "callId": "call_2RgPLdpK4hCHLE3i96vThp75"
+        },
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.google.com/search?q=site%3Aca-besancon.justice.fr+experts+judiciaires+Besan%C3%A7on+pdf"
+          },
+          "callId": "call_u6VBnpo1yKda5m2dl1PvBSRc"
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_2RgPLdpK4hCHLE3i96vThp75",
+          "compactOutput": "Title: Google Search\nPDF links (0):\nNo date patterns found in page text",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=2AfDafTPO9CckdUPseqOqAk\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=2AfDafTPO9CckdUPseqOqAk\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "dateHints": [],
+            "error": null
+          },
+          "durationMs": 105
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_u6VBnpo1yKda5m2dl1PvBSRc",
+          "compactOutput": "Title: Google Search\nPDF links (0):\nNo date patterns found in page text",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=2QfDacmKCZ6hkdUPvuOXiA4\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=2QfDacmKCZ6hkdUPvuOXiA4\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "dateHints": [],
+            "error": null
+          },
+          "durationMs": 171
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "startedAt": "2026-03-24T21:53:29.178Z",
+      "durationMs": 2491,
+      "usage": {
+        "inputTokens": 9300,
+        "outputTokens": 94,
+        "totalTokens": 9394
+      },
+      "outputItemTypes": [
+        "web_search_call",
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "web_search",
+          "id": "ws_05a5a44f288a56c20069c307d9d64881988c315858543a051e"
+        },
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.cours-appel.justice.fr/besancon/experts-judiciaires"
+          },
+          "callId": "call_PJKxeB9UGfj328MShMTaVO6S"
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_PJKxeB9UGfj328MShMTaVO6S",
+          "compactOutput": "Title: Experts judiciaires | Cour d'appel de Besançon\nPDF links (1):\n  - [likely-expert-list] \"Annuaire des experts - 2026\n                                                    Téléchargement (1.05 Mo)\" → https://www.cours-appel.justice.fr/sites/default/files/2026-02/Annuaire%20experts%202026.pdf\nDate hints from page: mise à jour : 24/02/2026",
+          "fullResult": {
+            "success": true,
+            "title": "Experts judiciaires | Cour d'appel de Besançon",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Besançon Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Experts judiciaires 26/02/2019 - mise à jour : 24/02/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer Les experts judiciaires sont des professionnels de toutes les spécialités qui mettent une part de leur activité au service de la Justice. Ces professionnels sont inscrits sur une liste établie par la cour d'appel, après un examen attentif de leur candidature. Ils sont désignés par la cour d'appel et les tribunaux de son ressort, à l'occasion de litiges. Le rôle de l'expert est d'apporter un avis technique sur certains points précis. L'expertise judiciaire apporte au justiciable une garantie quant à la rigueur avec laquelle ses demandes vont être étudiées. Etant les seuls à pouvoir éclairer les magistrats sur une question d’ordre technique, les experts ont un rôle déterminant au sein du système judiciaire. En matière civile, l’expertise ne peut être ordonnée que dans le cas où des constatations ou une consultation établies par un technicien ne suffisent pas à éclairer le juge. Elle constitue dès lors l’un des moyens d’administration judiciaire de la preuve. Les expertises psychiatriques ont un rôle essentiel dans de nombreux contentieux, notamment en ce qui concerne la mise en œuvre d’une mesure de protection judiciaire, la contestation d’un testament, ou encore les litiges relatifs à l’exercice de l’autorité parentale ou au droit de visite. En matière pénale, toute juridiction d’instruction ou de jugement peut, à la demande du ministère public, d’office, ou à la demande des parties, ordonner une expertise. Celle-ci apparaît comme un outil indispensable pour évaluer la responsabilité pénale, déterminer l’alt",
+            "pdfLinks": [
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Annuaire%20experts%202026.pdf",
+                "text": "Annuaire des experts - 2026\n                                                    Téléchargement (1.05 Mo)",
+                "relevanceHint": "likely-expert-list"
+              }
+            ],
+            "dateHints": [
+              "mise à jour : 24/02/2026"
+            ],
+            "error": null
+          },
+          "durationMs": 104
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "startedAt": "2026-03-24T21:53:31.669Z",
+      "durationMs": 2982,
+      "usage": {
+        "inputTokens": 5818,
+        "outputTokens": 47,
+        "totalTokens": 5865
+      },
+      "outputItemTypes": [
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "function_call",
+          "name": "extractPdfDate",
+          "arguments": {
+            "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Annuaire%20experts%202026.pdf"
+          },
+          "callId": "call_U5TVF0hYii6HlXBjSYlD2Qho"
+        },
+        {
+          "type": "function_result",
+          "name": "extractPdfDate",
+          "callId": "call_U5TVF0hYii6HlXBjSYlD2Qho",
+          "compactOutput": "PDF (137 pages). First page text:\nCOUR D’APPEL DE BESANÇON LISTE DES EXPERTS POUR 2026 1 TABLE DES MATIÈRES Pages SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES . . . . . . . . . . . . . . . . . . . . . . 3 LISTE ALPHABETIQUE DES EXPERTS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 LISTE ALPHABÉTIQUE DES EXPERTS EN PERIODE PROBATOIRE . . . . . . . . . . . . . . . . . . . . . . . . . . . 26 LISTE DES EXPERTS PAR RUBRIQUE . . . . . . . . . . . . . . . . . . . ",
+          "fullResult": {
+            "success": true,
+            "pdfText": "COUR D’APPEL DE BESANÇON LISTE DES EXPERTS POUR 2026 1 TABLE DES MATIÈRES Pages SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES . . . . . . . . . . . . . . . . . . . . . . 3 LISTE ALPHABETIQUE DES EXPERTS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 LISTE ALPHABÉTIQUE DES EXPERTS EN PERIODE PROBATOIRE . . . . . . . . . . . . . . . . . . . . . . . . . . . 26 LISTE DES EXPERTS PAR RUBRIQUE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 139 2 SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . . . 31 Pour être plus amplement informés, les magistrats peuvent se référer à l'annuaire national des experts développé par le CNCEJ qui répertorie des informations plus précises sur le profil l'expérience et les spécialités de l'expert. A-01 Agriculture . . . . . . . . . . . . . . . . . . 31 A-01.01 APPLICATIONS DE PRODUITS P H Y T O P H A R M A C E U T I Q U E S , MATIERES FERTILISANTES ET SUPPORTS DE CULTURE . . . . . . . 31 Application de produits phytopharmaceutiques par voie terrestre - Traitement des semences, des plants, des bulbes, des denrées stockées - Application des matières fertilisantes et des supports de cultur",
+            "pageCount": 137,
+            "error": null
+          },
+          "durationMs": 917
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "startedAt": "2026-03-24T21:53:34.651Z",
+      "durationMs": 2750,
+      "usage": {
+        "inputTokens": 6099,
+        "outputTokens": 364,
+        "totalTokens": 6463
+      },
+      "outputItemTypes": [
+        "message"
+      ],
+      "events": [
+        {
+          "type": "model_text",
+          "text": "Voici le résultat pour la **Cour d’appel de Besançon** :\n\n- **Page officielle trouvée** : *Experts বিচারiciaires | Cour d'appel de Besançon* sur le site officiel **cours-appel.justice.fr**.  \n- **PDF officiel de la liste** : *Annuaire des experts - 2026*  \n  URL : `https://www.cours-appel.justice.fr/sites/default/files/2026-02/Annuaire%20experts%202026.pdf`\n- **Date officielle la plus précise trouvée** : **2026-02-24**\n- **Source de la date retenue** : **page-text**  \n  La page indique clairement : **“mise à jour : 24/02/2026”**.\n- **Contrôle dans le PDF** : le document commence par **“LISTE DES EXPERTS POUR 2026”**, ce qui confirme qu’il s’agit bien de la liste 2026, mais sans date plus précise que celle de la page.\n\n### Pourquoi cette date ?\nJ’ai comparé les signaux de date disponibles :\n1. **Texte de la page** : *mise à jour : 24/02/2026* → c’est la plus précise.\n2. **Texte du PDF** : *pour 2026* → année seulement, donc moins précis.\n3. **URL du PDF** : `/2026-02/` → mois/année seulement, moins précis que la date complète.\n\n### Date finale à retenir\n- **publicationDate** : `2026-02-24`\n- **publicationDateSource** : `page-text`\n\nSi tu veux, je peux aussi te donner un petit résumé structuré au format JSON."
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "startedAt": "2026-03-24T21:53:37.401Z",
+    "durationMs": 2970,
+    "usage": {
+      "inputTokens": 1892,
+      "outputTokens": 442,
+      "totalTokens": 2334
+    },
+    "prompt": "You are analyzing date signals from a French court expert directory search.\n\n## Court: Besançon\n\n## Agent summary:\nVoici le résultat pour la **Cour d’appel de Besançon** :\n\n- **Page officielle trouvée** : *Experts বিচারiciaires | Cour d'appel de Besançon* sur le site officiel **cours-appel.justice.fr**.  \n- **PDF officiel de la liste** : *Annuaire des experts - 2026*  \n  URL : `https://www.cours-appel.justice.fr/sites/default/files/2026-02/Annuaire%20experts%202026.pdf`\n- **Date officielle la plus précise trouvée** : **2026-02-24**\n- **Source de la date retenue** : **page-text**  \n  La page indique clairement : **“mise à jour : 24/02/2026”**.\n- **Contrôle dans le PDF** : le document commence par **“LISTE DES EXPERTS POUR 2026”**, ce qui confirme qu’il s’agit bien de la liste 2026, mais sans date plus précise que celle de la page.\n\n### Pourquoi cette date ?\nJ’ai comparé les signaux de date disponibles :\n1. **Texte de la page** : *mise à jour : 24/02/2026* → c’est la plus précise.\n2. **Texte du PDF** : *pour 2026* → année seulement, donc moins précis.\n3. **URL du PDF** : `/2026-02/` → mois/année seulement, moins précis que la date complète.\n\n### Date finale à retenir\n- **publicationDate** : `2026-02-24`\n- **publicationDateSource** : `page-text`\n\nSi tu veux, je peux aussi te donner un petit résumé structuré au format JSON.\n\n## Page title:\nExperts judiciaires | Cour d'appel de Besançon\n\n## Page text (first 2000 chars):\nRechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Besançon Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Experts judiciaires 26/02/2019 - mise à jour : 24/02/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer Les experts judiciaires sont des professionnels de toutes les spécialités qui mettent une part de leur activité au service de la Justice. Ces professionnels sont inscrits sur une liste établie par la cour d'appel, après un examen attentif de leur candidature. Ils sont désignés par la cour d'appel et les tribunaux de son ressort, à l'occasion de litiges. Le rôle de l'expert est d'apporter un avis technique sur certains points précis. L'expertise judiciaire apporte au justiciable une garantie quant à la rigueur avec laquelle ses demandes vont être étudiées. Etant les seuls à pouvoir éclairer les magistrats sur une question d’ordre technique, les experts ont un rôle déterminant au sein du système judiciaire. En matière civile, l’expertise ne peut être ordonnée que dans le cas où des constatations ou une consultation établies par un technicien ne suffisent pas à éclairer le juge. Elle constitue dès lors l’un des moyens d’administration judiciaire de la preuve. Les expertises psychiatriques ont un rôle essentiel dans de nombreux contentieux, notamment en ce qui concerne la mise en œuvre d’une mesure de protection judiciaire, la contestation d’un testament, ou encore les litiges relatifs à l’exercice de l’autorité parentale ou au droit de visite. En matière pénale, toute juridiction d’instruction ou de jugement peut, à la demande du ministère public, d’office, ou à la demande des parties, ordonner une expertise. Celle-ci apparaît comme un outil indispensable pour évaluer la responsabilité pénale, déterminer l’alt\n\n## PDF links found on the page:\n- [likely-expert-list] \"Annuaire des experts - 2026\n                                                    Téléchargement (1.05 Mo)\" → https://www.cours-appel.justice.fr/sites/default/files/2026-02/Annuaire%20experts%202026.pdf\n\n## PDF content (first 1500 chars):\nCOUR D’APPEL DE BESANÇON LISTE DES EXPERTS POUR 2026 1 TABLE DES MATIÈRES Pages SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES . . . . . . . . . . . . . . . . . . . . . . 3 LISTE ALPHABETIQUE DES EXPERTS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 LISTE ALPHABÉTIQUE DES EXPERTS EN PERIODE PROBATOIRE . . . . . . . . . . . . . . . . . . . . . . . . . . . 26 LISTE DES EXPERTS PAR RUBRIQUE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 139 2 SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . . . 31 Pour être plus amplement informés, les magistrats peuvent se référer à l'annuaire national des experts développé par le CNCEJ qui répertorie des informations plus précises sur le profil l'expérience et les spécialités de l'expert. A-01 Agriculture . . . . . . . . . . . . . . . . . . 31 A-01.01 APPLICATIONS DE PRODUITS P H Y T O P H A R M A C E U T I Q U E S , MATIERES FERTILISANTES ET SUPPORTS DE CULTURE . . . . . . . 31 Application de produits phytopharmaceutiques par voie terrestre - Traitement des semences, des plants, des bulbes, des denrées stockées - Application des matières fertilisantes et des supports de cultur\n\nDetermine the publication date. Check ALL sources:\n1. Exact date in PDF text (e.g. \"MAJ LE 10/03/2026\", \"assemblée du 18 novembre 2025\")\n2. Exact date in page text (e.g. \"mise à jour : 24/02/2026\")\n3. Date in PDF link anchor text\n4. Date in the PDF URL path (e.g. \"/2025-07/\" means July 2025, \"/2026-03/\" means March 2026)\n5. Year only as last resort\n\nUse the most specific and most recent date. A year-only date must not override an exact date.\nDate format: YYYY-MM-DD.",
+    "result": {
+      "courtName": "Besançon",
+      "pageUrl": null,
+      "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Annuaire%20experts%202026.pdf",
+      "documentTitle": "Annuaire des experts - 2026",
+      "publicationDate": "2026-02-24",
+      "publicationDateSource": "page-text",
+      "searchExplanation": "I found the official Cour d'appel de Besançon page titled \"Experts judiciaires | Cour d'appel de Besançon\" on the official Justice site. The page lists a PDF link titled \"Annuaire des experts - 2026\" pointing to the official document URL provided in the page results.",
+      "dateExtractionExplanation": "I checked all available date signals. The page text contains an exact update date: \"mise à jour : 24/02/2026\", which is the most specific signal and therefore selected. The PDF text only confirms \"LISTE DES EXPERTS POUR 2026\" (year only), the PDF link text includes 2026, and the PDF URL path includes /2026-02/ (month/year only). None of those are more precise than the page text date.",
+      "errors": []
+    }
+  },
+  "result": {
+    "courtName": "Besançon",
+    "pageUrl": null,
+    "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Annuaire%20experts%202026.pdf",
+    "documentTitle": "Annuaire des experts - 2026",
+    "publicationDate": "2026-02-24",
+    "publicationDateSource": "page-text",
+    "searchExplanation": "I found the official Cour d'appel de Besançon page titled \"Experts judiciaires | Cour d'appel de Besançon\" on the official Justice site. The page lists a PDF link titled \"Annuaire des experts - 2026\" pointing to the official document URL provided in the page results.",
+    "dateExtractionExplanation": "I checked all available date signals. The page text contains an exact update date: \"mise à jour : 24/02/2026\", which is the most specific signal and therefore selected. The PDF text only confirms \"LISTE DES EXPERTS POUR 2026\" (year only), the PDF link text includes 2026, and the PDF URL path includes /2026-02/ (month/year only). None of those are more precise than the page text date.",
+    "errors": []
+  },
+  "totalUsage": {
+    "inputTokens": 28412,
+    "outputTokens": 1064,
+    "totalTokens": 29476
+  },
+  "rawToolData": {
+    "pageTitle": "Experts judiciaires | Cour d'appel de Besançon",
+    "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Besançon Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Experts judiciaires 26/02/2019 - mise à jour : 24/02/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer Les experts judiciaires sont des professionnels de toutes les spécialités qui mettent une part de leur activité au service de la Justice. Ces professionnels sont inscrits sur une liste établie par la cour d'appel, après un examen attentif de leur candidature. Ils sont désignés par la cour d'appel et les tribunaux de son ressort, à l'occasion de litiges. Le rôle de l'expert est d'apporter un avis technique sur certains points précis. L'expertise judiciaire apporte au justiciable une garantie quant à la rigueur avec laquelle ses demandes vont être étudiées. Etant les seuls à pouvoir éclairer les magistrats sur une question d’ordre technique, les experts ont un rôle déterminant au sein du système judiciaire. En matière civile, l’expertise ne peut être ordonnée que dans le cas où des constatations ou une consultation établies par un technicien ne suffisent pas à éclairer le juge. Elle constitue dès lors l’un des moyens d’administration judiciaire de la preuve. Les expertises psychiatriques ont un rôle essentiel dans de nombreux contentieux, notamment en ce qui concerne la mise en œuvre d’une mesure de protection judiciaire, la contestation d’un testament, ou encore les litiges relatifs à l’exercice de l’autorité parentale ou au droit de visite. En matière pénale, toute juridiction d’instruction ou de jugement peut, à la demande du ministère public, d’office, ou à la demande des parties, ordonner une expertise. Celle-ci apparaît comme un outil indispensable pour évaluer la responsabilité pénale, déterminer l’alt",
+    "pdfLinks": [
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Annuaire%20experts%202026.pdf",
+        "text": "Annuaire des experts - 2026\n                                                    Téléchargement (1.05 Mo)",
+        "relevanceHint": "likely-expert-list"
+      }
+    ],
+    "pdfText": "COUR D’APPEL DE BESANÇON LISTE DES EXPERTS POUR 2026 1 TABLE DES MATIÈRES Pages SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES . . . . . . . . . . . . . . . . . . . . . . 3 LISTE ALPHABETIQUE DES EXPERTS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 LISTE ALPHABÉTIQUE DES EXPERTS EN PERIODE PROBATOIRE . . . . . . . . . . . . . . . . . . . . . . . . . . . 26 LISTE DES EXPERTS PAR RUBRIQUE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 139 2 SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . . . 31 Pour être plus amplement informés, les magistrats peuvent se référer à l'annuaire national des experts développé par le CNCEJ qui répertorie des informations plus précises sur le profil l'expérience et les spécialités de l'expert. A-01 Agriculture . . . . . . . . . . . . . . . . . . 31 A-01.01 APPLICATIONS DE PRODUITS P H Y T O P H A R M A C E U T I Q U E S , MATIERES FERTILISANTES ET SUPPORTS DE CULTURE . . . . . . . 31 Application de produits phytopharmaceutiques par voie terrestre - Traitement des semences, des plants, des bulbes, des denrées stockées - Application des matières fertilisantes et des supports de cultur",
+    "dateHints": [
+      "mise à jour : 24/02/2026"
+    ]
+  },
+  "error": null
+}

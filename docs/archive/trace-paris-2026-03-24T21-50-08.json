@@ -1,0 +1,335 @@
+{
+  "court": "Paris",
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "startedAt": "2026-03-24T21:49:49.285Z",
+  "finishedAt": "2026-03-24T21:50:08.007Z",
+  "totalMs": 18722,
+  "steps": [
+    {
+      "turn": 0,
+      "startedAt": "2026-03-24T21:49:49.285Z",
+      "durationMs": 7938,
+      "usage": {
+        "inputTokens": 5301,
+        "outputTokens": 111,
+        "totalTokens": 5412
+      },
+      "outputItemTypes": [
+        "function_call",
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.google.com/search?q=Cour+d%27appel+de+Paris+experts+judiciaires+liste+officielle+PDF"
+          },
+          "callId": "call_RzVDCksu43TeiuNsWvbTA8rT"
+        },
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.bing.com/search?q=Cour+d%27appel+de+Paris+experts+judiciaires+liste+officielle+PDF"
+          },
+          "callId": "call_hJ52MCKLSirN3xoIsGOriIwF"
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_RzVDCksu43TeiuNsWvbTA8rT",
+          "compactOutput": "Title: Google Search\nPDF links (0):\nNo date patterns found in page text",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=BAfDac_wNP-ikdUPurySgAo\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=BAfDac_wNP-ikdUPurySgAo\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "dateHints": [],
+            "error": null
+          },
+          "durationMs": 280
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_hJ52MCKLSirN3xoIsGOriIwF",
+          "compactOutput": "Title: Cour d'appel de Paris experts judiciaires liste officielle PDF - Recherche\nPDF links (0):\nNo date patterns found in page text",
+          "fullResult": {
+            "success": true,
+            "title": "Cour d'appel de Paris experts judiciaires liste officielle PDF - Recherche",
+            "pageText": "Passer au contenuCommentaires sur l’accessibilité Environ 50 résultatsOuvrir les liens dans un nouvel ongletDate stackexchange.comhttps://anime.stackexchange.com › questionsWhat is a \"cour\"? - Anime & Manga Stack Exchange12 mars 2014 · A cour is not of precisely-defined duration, and can, in practice, last anywhere from 11 to 14 weeks (and hence, the same number of episodes), though 12-13 weeks is most common, since a … stackexchange.comhttps://anime.stackexchange.com › questionsWhat was the first anime that used a split-cour format?Split-cour airing format is a noticeable trend in the anime industry recently. Unlike most multi-season shows that are aired two or more seasons in succession, split-cour shows have a break in between …stackexchange.comhttps://anime.stackexchange.com › questionsHow often do multi-season anime break their previous cour count?31 mars 2017 · Second, how often do second or third seasons break from the cour-count of previous seasons? Does it happen at least once a year, or is it uncommon enough that the last time it …stackexchange.comhttps://anime.stackexchange.com › questionsWhat defines one \"season\" of anime? - Anime & Manga Stack ExchangeFrom what I've been able to follow, the seasons of anime shows have been tied to thirteen week blocks, directly correlating with the actual season in Japan (for instance, this is the Winter 2013 se...stackexchange.comhttps://anime.stackexchange.com › questionsHow long does producing a cour take? - Anime & Manga Stack ExchangeI've read through some questions about financing anime and so on, but don't know how long it takes to produce a complete cour of anime. I'm talking writing about 12 to 13 episodes, of a standard-le...stackexchange.comhttps://anime.stackexchange.com › questionsHow long does the producing of long run anime take?I know that this is already asked before in How long does producing a cour take? But I assume that it's only related to the seasonal anime that appear once per season (except when",
+            "pdfLinks": [],
+            "dateHints": [],
+            "error": null
+          },
+          "durationMs": 214
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "startedAt": "2026-03-24T21:49:57.223Z",
+      "durationMs": 2288,
+      "usage": {
+        "inputTokens": 9522,
+        "outputTokens": 107,
+        "totalTokens": 9629
+      },
+      "outputItemTypes": [
+        "web_search_call",
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "web_search",
+          "id": "ws_0e2dccb4388ca7110069c30705c124819580f3d1b5668d5668"
+        },
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.cours-appel.justice.fr/paris/experts-judiciaires"
+          },
+          "callId": "call_jgDF1rZoq48ca1q3uczUH8go"
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_jgDF1rZoq48ca1q3uczUH8go",
+          "compactOutput": "Title: EXPERTS JUDICIAIRES | Cour d'appel de Paris Paris\nPDF links (11):\n  - [likely-expert-list] \"ANNUAIRE DES EXPERTS\n        Téléchargement 2.24 Mo\" → https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf\n  - [unknown] \"voir lien ci-dessus\n        Téléchargement 184.26 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2026-01/voir%20lien.pdf\n  - [unknown] \"voir lien ci-dessus\n        Téléchargement 184.26 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2026-01/voir%20lien_0.pdf\n  - [unknown] \"voir lien ci-dessus\n        Téléchargement 184.26 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2026-01/voir%20lien_1.pdf\n  - [likely-expert-list] \"Discours 2017 président Experts\n        Téléchargement 67.36 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2018-06/discours%20pr%C3%A9sident.pdf\n  - [likely-expert-list] \"Discours PG Experts 2017\n        Téléchargement 256.7 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2018-06/Discours%20PG.pdf\n  - [likely-expert-list] \"DECLARATION D'INDEPENDANCE DES EXPERTS\n        Téléchargement 44.78 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2018-06/Declaration_dindependance_des_experts.pdf\n  - [unknown] \"CONVENTION 8 JUIN 2009\n        Téléchargement 368.52 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2018-06/Convention%20du%208%20juin%202009.pdf\n  - [unknown] \"CONVENTION 27 JUIN 2007\n        Téléchargement 61.53 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2018-06/Convention%20du%2027%20juin%202007.pdf\n  - [unknown] \"CONVENTION 4 MAI 2006\n        Téléchargement 36.49 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2018-06/Convention%20du%204%20mai%202006.pdf\n  - [unknown] \"REGLES D'ASSUJETTISSEMENT A LA TVA\n        Téléchargement 310.91 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2018-06/R%C3%A8gles%20d%27assujettissement%20%C3%A0%20la%20TVA%20applicables%20aux%20prestations%20r%C3%A9alis%C3%A9es%20par%20les%20collaborateurs%20du%20service%20de%20la%20justice.pdf\nDate hints from page: mise à jour : 10/03/2026",
+          "fullResult": {
+            "success": true,
+            "title": "EXPERTS JUDICIAIRES | Cour d'appel de Paris Paris",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Paris Paris Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) EXPERTS JUDICIAIRES 31/05/2018 - mise à jour : 10/03/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer Les experts judiciaires sont des professionnels de toutes les spécialités qui mettent une part de leur activité au service de la Justice. Ces professionnels sont inscrits sur une liste établie par la cour d'appel, après un examen attentif de leur candidature. Ils sont désignés par la cour d'appel et les tribunaux de son ressort, à l'occasion de litiges. Le rôle de l'expert est d'apporter un avis technique sur certains points précis. L'expertise judiciaire apporte au justiciable une garantie quant à la rigueur avec laquelle ses demandes vont être étudiées. Dans le cadre de la modernisation et de la simplification de la Justice, le ministère de la Justice a engagé, au cours de l’année 2024, des travaux visant à dématérialiser l’ensemble du processus d’inscription et de réinscription sur les listes d’experts judiciaires ainsi qu’à constituer un référentiel national unique. Après une phase d’expérimentation conduite dans plusieurs cours d’appel pilotes, ce dispositif sera généralisé à l’ensemble des juridictions dès le 1er janvier 2026. Ainsi, l’ensemble des demandes d’inscription initiale, de réinscription ou d’extension en vue de l’élaboration de la liste des experts judiciaires de l’année 2027, devront être déposées avant le 1er mars 2026 (décret n° 2004-1463 du 23 décembre 2004 relatif aux experts judiciaires – articles 6 et 10), exclusivement par voie dématérialisée, au moyen de la plateforme Démarches simplifiées. Les liens permettant d’accéder aux formulaires sont les suivants : Inscription initiale R",
+            "pdfLinks": [
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf",
+                "text": "ANNUAIRE DES EXPERTS\n        Téléchargement 2.24 Mo",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/voir%20lien.pdf",
+                "text": "voir lien ci-dessus\n        Téléchargement 184.26 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/voir%20lien_0.pdf",
+                "text": "voir lien ci-dessus\n        Téléchargement 184.26 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/voir%20lien_1.pdf",
+                "text": "voir lien ci-dessus\n        Téléchargement 184.26 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/discours%20pr%C3%A9sident.pdf",
+                "text": "Discours 2017 président Experts\n        Téléchargement 67.36 Ko",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/Discours%20PG.pdf",
+                "text": "Discours PG Experts 2017\n        Téléchargement 256.7 Ko",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/Declaration_dindependance_des_experts.pdf",
+                "text": "DECLARATION D'INDEPENDANCE DES EXPERTS\n        Téléchargement 44.78 Ko",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/Convention%20du%208%20juin%202009.pdf",
+                "text": "CONVENTION 8 JUIN 2009\n        Téléchargement 368.52 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/Convention%20du%2027%20juin%202007.pdf",
+                "text": "CONVENTION 27 JUIN 2007\n        Téléchargement 61.53 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/Convention%20du%204%20mai%202006.pdf",
+                "text": "CONVENTION 4 MAI 2006\n        Téléchargement 36.49 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/R%C3%A8gles%20d%27assujettissement%20%C3%A0%20la%20TVA%20applicables%20aux%20prestations%20r%C3%A9alis%C3%A9es%20par%20les%20collaborateurs%20du%20service%20de%20la%20justice.pdf",
+                "text": "REGLES D'ASSUJETTISSEMENT A LA TVA\n        Téléchargement 310.91 Ko",
+                "relevanceHint": "unknown"
+              }
+            ],
+            "dateHints": [
+              "mise à jour : 10/03/2026"
+            ],
+            "error": null
+          },
+          "durationMs": 120
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "startedAt": "2026-03-24T21:49:59.511Z",
+      "durationMs": 2630,
+      "usage": {
+        "inputTokens": 6526,
+        "outputTokens": 58,
+        "totalTokens": 6584
+      },
+      "outputItemTypes": [
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "function_call",
+          "name": "extractPdfDate",
+          "arguments": {
+            "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf"
+          },
+          "callId": "call_jMjyeLZ4StE5lez0KYl2xyce"
+        },
+        {
+          "type": "function_result",
+          "name": "extractPdfDate",
+          "callId": "call_jMjyeLZ4StE5lez0KYl2xyce",
+          "compactOutput": "PDF (411 pages). First page text:\nCOUR D’APPEL DE PARIS LISTE DES EXPERTS JUDICIAIRES ANNEE 2026 MAJ LE 10/03/2026 Service des Experts- 34 quai des Orfèvres -75055 Paris Cedex 01 TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêtés du 10 juin 2005 et du 12 mai 2006. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28 LI",
+          "fullResult": {
+            "success": true,
+            "pdfText": "COUR D’APPEL DE PARIS LISTE DES EXPERTS JUDICIAIRES ANNEE 2026 MAJ LE 10/03/2026 Service des Experts- 34 quai des Orfèvres -75055 Paris Cedex 01 TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêtés du 10 juin 2005 et du 12 mai 2006. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45 ANNEXES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 393 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 394 Service des Experts- 34 quai des Orfèvres -75055 Paris Cedex 01 experts.ca-paris@justice.fr Tél. 01.44.32.74.90 ou 01.44.32.69.52 Site Internet : www.ca-paris.justice.fr 1 Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêtés du 10 juin 2005 et du 12 mai 2006 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel...... conformément à la nomenclature suivante, qui se divise en branches : (ex. : A), rubriques (ex.: A.1.) et spécialités (ex. : A.1.1). A-AGRICULTURE - A",
+            "pageCount": 411,
+            "error": null
+          },
+          "durationMs": 1419
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "startedAt": "2026-03-24T21:50:02.141Z",
+      "durationMs": 2382,
+      "usage": {
+        "inputTokens": 6812,
+        "outputTokens": 323,
+        "totalTokens": 7135
+      },
+      "outputItemTypes": [
+        "message"
+      ],
+      "events": [
+        {
+          "type": "model_text",
+          "text": "J’ai trouvé la page officielle de la **Cour d’appel de Paris** sur `cours-appel.justice.fr`, puis le PDF de l’annuaire des experts judiciaires. La page indique une **mise à jour : 10/03/2026** et le PDF lui-même affiche en première page **“MAJ LE 10/03/2026”**. Comme la date du PDF est plus spécifique et provient du contenu du document officiel, c’est celle à retenir. \n\n**Résultat**\n- **Cour d’appel** : Paris\n- **Document officiel** : *Liste des experts judiciaires – Année 2026*\n- **Date officielle retenue** : **2026-03-10**\n- **Source de la date** : **pdf-content** \n\n**Détails des indices trouvés**\n- **Page web** : `mise à jour : 10/03/2026`\n- **Nom du PDF** : `ANNUPARIS MAJ 10 MARS 26_2.pdf`\n- **Contenu du PDF** : `MAJ LE 10/03/2026` \n\n**Erreurs rencontrées**\n- La recherche initiale via Google/Bing n’a pas donné directement le bon résultat exploitable.\n- La page officielle a ensuite permis d’identifier correctement le PDF et la date."
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "startedAt": "2026-03-24T21:50:04.523Z",
+    "durationMs": 3484,
+    "usage": {
+      "inputTokens": 2536,
+      "outputTokens": 614,
+      "totalTokens": 3150
+    },
+    "prompt": "You are analyzing date signals from a French court expert directory search.\n\n## Court: Paris\n\n## Agent summary:\nJ’ai trouvé la page officielle de la **Cour d’appel de Paris** sur `cours-appel.justice.fr`, puis le PDF de l’annuaire des experts judiciaires. La page indique une **mise à jour : 10/03/2026** et le PDF lui-même affiche en première page **“MAJ LE 10/03/2026”**. Comme la date du PDF est plus spécifique et provient du contenu du document officiel, c’est celle à retenir. \n\n**Résultat**\n- **Cour d’appel** : Paris\n- **Document officiel** : *Liste des experts judiciaires – Année 2026*\n- **Date officielle retenue** : **2026-03-10**\n- **Source de la date** : **pdf-content** \n\n**Détails des indices trouvés**\n- **Page web** : `mise à jour : 10/03/2026`\n- **Nom du PDF** : `ANNUPARIS MAJ 10 MARS 26_2.pdf`\n- **Contenu du PDF** : `MAJ LE 10/03/2026` \n\n**Erreurs rencontrées**\n- La recherche initiale via Google/Bing n’a pas donné directement le bon résultat exploitable.\n- La page officielle a ensuite permis d’identifier correctement le PDF et la date.\n\n## Page title:\nEXPERTS JUDICIAIRES | Cour d'appel de Paris Paris\n\n## Page text (first 2000 chars):\nRechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Paris Paris Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) EXPERTS JUDICIAIRES 31/05/2018 - mise à jour : 10/03/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer Les experts judiciaires sont des professionnels de toutes les spécialités qui mettent une part de leur activité au service de la Justice. Ces professionnels sont inscrits sur une liste établie par la cour d'appel, après un examen attentif de leur candidature. Ils sont désignés par la cour d'appel et les tribunaux de son ressort, à l'occasion de litiges. Le rôle de l'expert est d'apporter un avis technique sur certains points précis. L'expertise judiciaire apporte au justiciable une garantie quant à la rigueur avec laquelle ses demandes vont être étudiées. Dans le cadre de la modernisation et de la simplification de la Justice, le ministère de la Justice a engagé, au cours de l’année 2024, des travaux visant à dématérialiser l’ensemble du processus d’inscription et de réinscription sur les listes d’experts judiciaires ainsi qu’à constituer un référentiel national unique. Après une phase d’expérimentation conduite dans plusieurs cours d’appel pilotes, ce dispositif sera généralisé à l’ensemble des juridictions dès le 1er janvier 2026. Ainsi, l’ensemble des demandes d’inscription initiale, de réinscription ou d’extension en vue de l’élaboration de la liste des experts judiciaires de l’année 2027, devront être déposées avant le 1er mars 2026 (décret n° 2004-1463 du 23 décembre 2004 relatif aux experts judiciaires – articles 6 et 10), exclusivement par voie dématérialisée, au moyen de la plateforme Démarches simplifiées. Les liens permettant d’accéder aux formulaires sont les suivants : Inscription initiale R\n\n## PDF links found on the page:\n- [likely-expert-list] \"ANNUAIRE DES EXPERTS\n        Téléchargement 2.24 Mo\" → https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf\n- [unknown] \"voir lien ci-dessus\n        Téléchargement 184.26 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2026-01/voir%20lien.pdf\n- [unknown] \"voir lien ci-dessus\n        Téléchargement 184.26 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2026-01/voir%20lien_0.pdf\n- [unknown] \"voir lien ci-dessus\n        Téléchargement 184.26 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2026-01/voir%20lien_1.pdf\n- [likely-expert-list] \"Discours 2017 président Experts\n        Téléchargement 67.36 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2018-06/discours%20pr%C3%A9sident.pdf\n- [likely-expert-list] \"Discours PG Experts 2017\n        Téléchargement 256.7 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2018-06/Discours%20PG.pdf\n- [likely-expert-list] \"DECLARATION D'INDEPENDANCE DES EXPERTS\n        Téléchargement 44.78 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2018-06/Declaration_dindependance_des_experts.pdf\n- [unknown] \"CONVENTION 8 JUIN 2009\n        Téléchargement 368.52 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2018-06/Convention%20du%208%20juin%202009.pdf\n- [unknown] \"CONVENTION 27 JUIN 2007\n        Téléchargement 61.53 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2018-06/Convention%20du%2027%20juin%202007.pdf\n- [unknown] \"CONVENTION 4 MAI 2006\n        Téléchargement 36.49 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2018-06/Convention%20du%204%20mai%202006.pdf\n- [unknown] \"REGLES D'ASSUJETTISSEMENT A LA TVA\n        Téléchargement 310.91 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2018-06/R%C3%A8gles%20d%27assujettissement%20%C3%A0%20la%20TVA%20applicables%20aux%20prestations%20r%C3%A9alis%C3%A9es%20par%20les%20collaborateurs%20du%20service%20de%20la%20justice.pdf\n\n## PDF content (first 1500 chars):\nCOUR D’APPEL DE PARIS LISTE DES EXPERTS JUDICIAIRES ANNEE 2026 MAJ LE 10/03/2026 Service des Experts- 34 quai des Orfèvres -75055 Paris Cedex 01 TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêtés du 10 juin 2005 et du 12 mai 2006. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45 ANNEXES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 393 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 394 Service des Experts- 34 quai des Orfèvres -75055 Paris Cedex 01 experts.ca-paris@justice.fr Tél. 01.44.32.74.90 ou 01.44.32.69.52 Site Internet : www.ca-paris.justice.fr 1 Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêtés du 10 juin 2005 et du 12 mai 2006 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel...... conformément à la nomenclature suivante, qui se divise en branches : (ex. : A), rubriques (ex.: A.1.) et spécialités (ex. : A.1.1). A-AGRICULTURE - A\n\nDetermine the publication date. Check ALL sources:\n1. Exact date in PDF text (e.g. \"MAJ LE 10/03/2026\", \"assemblée du 18 novembre 2025\")\n2. Exact date in page text (e.g. \"mise à jour : 24/02/2026\")\n3. Date in PDF link anchor text\n4. Date in the PDF URL path (e.g. \"/2025-07/\" means July 2025, \"/2026-03/\" means March 2026)\n5. Year only as last resort\n\nUse the most specific and most recent date. A year-only date must not override an exact date.\nDate format: YYYY-MM-DD.",
+    "result": {
+      "courtName": "Paris",
+      "pageUrl": "https://www.cours-appel.justice.fr/paris/experts-judiciaires",
+      "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf",
+      "documentTitle": "ANNUAIRE DES EXPERTS",
+      "publicationDate": "2026-03-10",
+      "publicationDateSource": "pdf-content",
+      "searchExplanation": "I found the official Cour d’appel de Paris experts-judiciaries page on cours-appel.justice.fr, then identified the PDF link labeled \"ANNUAIRE DES EXPERTS\" pointing to the expert directory document.",
+      "dateExtractionExplanation": "The PDF content contains the exact date string \"MAJ LE 10/03/2026\" on the first page. The page text also shows \"mise à jour : 10/03/2026\", and the PDF URL path includes \"/2026-03/\", but the PDF text is the most specific and authoritative source, so the publication date is 2026-03-10.",
+      "errors": [
+        "Initial Google/Bing search did not directly yield the usable official result."
+      ]
+    }
+  },
+  "result": {
+    "courtName": "Paris",
+    "pageUrl": "https://www.cours-appel.justice.fr/paris/experts-judiciaires",
+    "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf",
+    "documentTitle": "ANNUAIRE DES EXPERTS",
+    "publicationDate": "2026-03-10",
+    "publicationDateSource": "pdf-content",
+    "searchExplanation": "I found the official Cour d’appel de Paris experts-judiciaries page on cours-appel.justice.fr, then identified the PDF link labeled \"ANNUAIRE DES EXPERTS\" pointing to the expert directory document.",
+    "dateExtractionExplanation": "The PDF content contains the exact date string \"MAJ LE 10/03/2026\" on the first page. The page text also shows \"mise à jour : 10/03/2026\", and the PDF URL path includes \"/2026-03/\", but the PDF text is the most specific and authoritative source, so the publication date is 2026-03-10.",
+    "errors": [
+      "Initial Google/Bing search did not directly yield the usable official result."
+    ]
+  },
+  "totalUsage": {
+    "inputTokens": 30697,
+    "outputTokens": 1213,
+    "totalTokens": 31910
+  },
+  "rawToolData": {
+    "pageTitle": "EXPERTS JUDICIAIRES | Cour d'appel de Paris Paris",
+    "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Paris Paris Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) EXPERTS JUDICIAIRES 31/05/2018 - mise à jour : 10/03/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer Les experts judiciaires sont des professionnels de toutes les spécialités qui mettent une part de leur activité au service de la Justice. Ces professionnels sont inscrits sur une liste établie par la cour d'appel, après un examen attentif de leur candidature. Ils sont désignés par la cour d'appel et les tribunaux de son ressort, à l'occasion de litiges. Le rôle de l'expert est d'apporter un avis technique sur certains points précis. L'expertise judiciaire apporte au justiciable une garantie quant à la rigueur avec laquelle ses demandes vont être étudiées. Dans le cadre de la modernisation et de la simplification de la Justice, le ministère de la Justice a engagé, au cours de l’année 2024, des travaux visant à dématérialiser l’ensemble du processus d’inscription et de réinscription sur les listes d’experts judiciaires ainsi qu’à constituer un référentiel national unique. Après une phase d’expérimentation conduite dans plusieurs cours d’appel pilotes, ce dispositif sera généralisé à l’ensemble des juridictions dès le 1er janvier 2026. Ainsi, l’ensemble des demandes d’inscription initiale, de réinscription ou d’extension en vue de l’élaboration de la liste des experts judiciaires de l’année 2027, devront être déposées avant le 1er mars 2026 (décret n° 2004-1463 du 23 décembre 2004 relatif aux experts judiciaires – articles 6 et 10), exclusivement par voie dématérialisée, au moyen de la plateforme Démarches simplifiées. Les liens permettant d’accéder aux formulaires sont les suivants : Inscription initiale R",
+    "pdfLinks": [
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf",
+        "text": "ANNUAIRE DES EXPERTS\n        Téléchargement 2.24 Mo",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/voir%20lien.pdf",
+        "text": "voir lien ci-dessus\n        Téléchargement 184.26 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/voir%20lien_0.pdf",
+        "text": "voir lien ci-dessus\n        Téléchargement 184.26 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/voir%20lien_1.pdf",
+        "text": "voir lien ci-dessus\n        Téléchargement 184.26 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/discours%20pr%C3%A9sident.pdf",
+        "text": "Discours 2017 président Experts\n        Téléchargement 67.36 Ko",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/Discours%20PG.pdf",
+        "text": "Discours PG Experts 2017\n        Téléchargement 256.7 Ko",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/Declaration_dindependance_des_experts.pdf",
+        "text": "DECLARATION D'INDEPENDANCE DES EXPERTS\n        Téléchargement 44.78 Ko",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/Convention%20du%208%20juin%202009.pdf",
+        "text": "CONVENTION 8 JUIN 2009\n        Téléchargement 368.52 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/Convention%20du%2027%20juin%202007.pdf",
+        "text": "CONVENTION 27 JUIN 2007\n        Téléchargement 61.53 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/Convention%20du%204%20mai%202006.pdf",
+        "text": "CONVENTION 4 MAI 2006\n        Téléchargement 36.49 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/R%C3%A8gles%20d%27assujettissement%20%C3%A0%20la%20TVA%20applicables%20aux%20prestations%20r%C3%A9alis%C3%A9es%20par%20les%20collaborateurs%20du%20service%20de%20la%20justice.pdf",
+        "text": "REGLES D'ASSUJETTISSEMENT A LA TVA\n        Téléchargement 310.91 Ko",
+        "relevanceHint": "unknown"
+      }
+    ],
+    "pdfText": "COUR D’APPEL DE PARIS LISTE DES EXPERTS JUDICIAIRES ANNEE 2026 MAJ LE 10/03/2026 Service des Experts- 34 quai des Orfèvres -75055 Paris Cedex 01 TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêtés du 10 juin 2005 et du 12 mai 2006. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45 ANNEXES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 393 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 394 Service des Experts- 34 quai des Orfèvres -75055 Paris Cedex 01 experts.ca-paris@justice.fr Tél. 01.44.32.74.90 ou 01.44.32.69.52 Site Internet : www.ca-paris.justice.fr 1 Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêtés du 10 juin 2005 et du 12 mai 2006 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel...... conformément à la nomenclature suivante, qui se divise en branches : (ex. : A), rubriques (ex.: A.1.) et spécialités (ex. : A.1.1). A-AGRICULTURE - A",
+    "dateHints": [
+      "mise à jour : 10/03/2026"
+    ]
+  },
+  "error": null
+}

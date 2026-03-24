@@ -1,0 +1,268 @@
+{
+  "court": "Grenoble",
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "startedAt": "2026-03-24T21:57:03.380Z",
+  "finishedAt": "2026-03-24T21:57:19.321Z",
+  "totalMs": 15942,
+  "steps": [
+    {
+      "turn": 0,
+      "startedAt": "2026-03-24T21:57:03.380Z",
+      "durationMs": 1959,
+      "usage": {
+        "inputTokens": 9301,
+        "outputTokens": 98,
+        "totalTokens": 9399
+      },
+      "outputItemTypes": [
+        "web_search_call",
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "web_search",
+          "id": "ws_0fea97b12d7dcc210069c308afcf808195af97ff7742cc6b73"
+        },
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.cours-appel.justice.fr/grenoble/experts-judiciaires"
+          },
+          "callId": "call_GawV1ZmfRguTTlSsODoTy1Tc"
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_GawV1ZmfRguTTlSsODoTy1Tc",
+          "compactOutput": "Title: Experts Judiciaires | Cour d'appel de Grenoble\nPDF links (1):\n  - [likely-expert-list] \"de l’expert de justice\" → https://www.cncej.org/uploads/document/file/3/712_REGLES_DEONTOLOGIE_092017.pdf\nDate hints from page: mise à jour : 02/01/2026",
+          "fullResult": {
+            "success": true,
+            "title": "Experts Judiciaires | Cour d'appel de Grenoble",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Grenoble Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Experts Judiciaires 27/01/2022 - mise à jour : 02/01/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer L’expert judiciaire est un professionnel, personne physique ou morale, qui apporte son concours au juge dans des affaires pour lesquelles il est désigné. Il est chargé de donner au juge un avis technique sur des faits pour apporter des éclaircissements dans une affaire. Après avoir consulté un expert, les juges restent libres de leur décision et ne sont pas tenus par les conclusions de l’expert. L'expert est inscrit sur une liste établie à la cour d’appel dans le ressort de laquelle il exerce son activité professionnelle principale. Il peut s’agir d’une personne physique ou morale. Quelles sont les conditions pour devenir expert judiciaire ? Etre confirmé dans son domaine de compétences, Remplir les conditions de moralité (honneur, probité, indépendance), qui seront contrôlées par une enquête administrative, Etre âgé de moins de 70 ans. Quelle est la rémunération d’un expert judiciaire ? Pour chaque mission d’expertise, les honoraires sont fixés par le juge qui a désigné l’expert judiciaire, sauf en matière pénale où la rémunération est réglementée. Ils sont très variables d’une spécialité à l’autre. Les besoins d’expertise étant variables, il s’agit souvent d’une activité accessoire, confiée à des professionnels en activité au sommet de leur compétence. Quels sont les domaines d’expertise recherchés ? Les spécialités des professionnels pouvant exercer des missions d’expertise judiciaire peuvent être très variées : architecture, gemmologie, traduction et interprétariat, comptabilité… Néanmoins, il existe de",
+            "pdfLinks": [
+              {
+                "url": "https://www.cncej.org/uploads/document/file/3/712_REGLES_DEONTOLOGIE_092017.pdf",
+                "text": "de l’expert de justice",
+                "relevanceHint": "likely-expert-list"
+              }
+            ],
+            "dateHints": [
+              "mise à jour : 02/01/2026"
+            ],
+            "error": null
+          },
+          "durationMs": 191
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "startedAt": "2026-03-24T21:57:05.339Z",
+      "durationMs": 1391,
+      "usage": {
+        "inputTokens": 5668,
+        "outputTokens": 46,
+        "totalTokens": 5714
+      },
+      "outputItemTypes": [
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.cours-appel.justice.fr/grenoble/experts-judiciaires/liste-des-experts-judiciaires"
+          },
+          "callId": "call_m0zmut5HrTYOa2IiAtexleJO"
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_m0zmut5HrTYOa2IiAtexleJO",
+          "compactOutput": "Error fetching page: HTTP 404: Not Found",
+          "fullResult": {
+            "success": false,
+            "title": null,
+            "pageText": "",
+            "pdfLinks": [],
+            "dateHints": [],
+            "error": "HTTP 404: Not Found"
+          },
+          "durationMs": 199
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "startedAt": "2026-03-24T21:57:06.730Z",
+      "durationMs": 2045,
+      "usage": {
+        "inputTokens": 9747,
+        "outputTokens": 104,
+        "totalTokens": 9851
+      },
+      "outputItemTypes": [
+        "web_search_call",
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "web_search",
+          "id": "ws_0fea97b12d7dcc210069c308b3589481958050f93d3eb59c73"
+        },
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.cours-appel.justice.fr/grenoble/experts-et-traducteurs-judiciaires"
+          },
+          "callId": "call_RYaUdXrMcUhPHVxWre1BVok8"
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_RYaUdXrMcUhPHVxWre1BVok8",
+          "compactOutput": "Title: Experts et traducteurs judiciaires | Cour d'appel de Grenoble\nPDF links (2):\n  - [likely-expert-list] \"Liste des experts judiciaires - màj le 26/02/2026\n        Téléchargement 1.23 Mo\" → https://www.cours-appel.justice.fr/sites/default/files/2026-02/ANNUAIRE%20E.J%202026%20INTERNET_0.pdf\n  - [likely-expert-list] \"Liste des experts honoraires - màj le 07/01/2026\n        Téléchargement 369.6 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2026-01/ANNUAIRE%20E.H%202026_0.pdf\nDate hints from page: mise à jour : 27/02/2026",
+          "fullResult": {
+            "success": true,
+            "title": "Experts et traducteurs judiciaires | Cour d'appel de Grenoble",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Grenoble Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Experts et traducteurs judiciaires 07/02/2019 - mise à jour : 27/02/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer Les experts judiciaires sont des professionnels spécialement habilités, dans des domaines techniques autres que le droit, chargés de donner aux juges un avis sur des faits afin d’apporter des éclaircissements sur une affaire. Ce sont des spécialistes de disciplines très variées (médecine, architecture, économie et finance, etc.). Praticiens reconnus dans leurs domaines de spécialités, les experts sont inscrits sur une liste nationale dressée par la Cour de cassation, ainsi que sur des listes propres à chaque cour d'appel, au civil comme en matière pénale. Les experts sont appelés à la demande du juge ; ils peuvent également être contactés par les parties au procès. Ces dernières peuvent aussi choisir un expert qui n'est pas inscrit sur les listes (par exemple, leur médecin personnel). Dans ce cas, l'expert devra prêter serment devant le juge au moment de son audition. Les avis des experts ne s'imposent pas aux juges, qui restent libres de leur appréciation. Les conditions de pour devenir expert se trouvent dans la rubrique \"recrutement\" du site. Pièces jointes Liste des experts judiciaires - màj le 26/02/2026 Téléchargement 1.23 Mo Liste des experts honoraires - màj le 07/01/2026 Téléchargement 369.6 Ko Dans l'article",
+            "pdfLinks": [
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/ANNUAIRE%20E.J%202026%20INTERNET_0.pdf",
+                "text": "Liste des experts judiciaires - màj le 26/02/2026\n        Téléchargement 1.23 Mo",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/ANNUAIRE%20E.H%202026_0.pdf",
+                "text": "Liste des experts honoraires - màj le 07/01/2026\n        Téléchargement 369.6 Ko",
+                "relevanceHint": "likely-expert-list"
+              }
+            ],
+            "dateHints": [
+              "mise à jour : 27/02/2026"
+            ],
+            "error": null
+          },
+          "durationMs": 39
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "startedAt": "2026-03-24T21:57:08.775Z",
+      "durationMs": 2777,
+      "usage": {
+        "inputTokens": 6234,
+        "outputTokens": 56,
+        "totalTokens": 6290
+      },
+      "outputItemTypes": [
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "function_call",
+          "name": "extractPdfDate",
+          "arguments": {
+            "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/ANNUAIRE%20E.J%202026%20INTERNET_0.pdf"
+          },
+          "callId": "call_l1SJEMkenqUh6GV8orakd5fi"
+        },
+        {
+          "type": "function_result",
+          "name": "extractPdfDate",
+          "callId": "call_l1SJEMkenqUh6GV8orakd5fi",
+          "compactOutput": "PDF (298 pages). First page text:\nCOUR D’APPEL DE GRENOBLE Place Firmin Gautier 38000 GRENOBLE TEL : 04.38.21.20.41 LISTE DES EXPERTS JUDICIAIRES ETABLIE POUR LE RESSORT DE LA COUR D’APPEL DE GRENOBLE POUR L’ANNEE 2026 Mise à jour le 26 février 2026 TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêtés du 10 juin 2005 et du 12 mai 2006 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE. . . . . . . . . . . . . . ",
+          "fullResult": {
+            "success": true,
+            "pdfText": "COUR D’APPEL DE GRENOBLE Place Firmin Gautier 38000 GRENOBLE TEL : 04.38.21.20.41 LISTE DES EXPERTS JUDICIAIRES ETABLIE POUR LE RESSORT DE LA COUR D’APPEL DE GRENOBLE POUR L’ANNEE 2026 Mise à jour le 26 février 2026 TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêtés du 10 juin 2005 et du 12 mai 2006 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . 290 1 Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêtés du 10 juin 2005 et du 12 mai 2006 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel...... conformément à la nomenclature suivante, qui se divise en branches : (ex. : A), rubriques (ex.: A.1.) et spécialités (ex. : A.1.1). A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . 21 A-01 Agriculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21 A-01.01 APPLICATIONS DE PRODUITS PHYTOPHARMACEUTIQUES, MATIERES FERTILISANTES ET SUPPORTS DE CULTURE . . . . . . . . . . . . . . . . . . . . 21 A-01.02 FONCIER RURAL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ",
+            "pageCount": 298,
+            "error": null
+          },
+          "durationMs": 1492
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "startedAt": "2026-03-24T21:57:11.552Z",
+      "durationMs": 3245,
+      "usage": {
+        "inputTokens": 6512,
+        "outputTokens": 491,
+        "totalTokens": 7003
+      },
+      "outputItemTypes": [
+        "message"
+      ],
+      "events": [
+        {
+          "type": "model_text",
+          "text": "J’ai trouvé la page officielle de la Cour d’appel de Grenoble et le PDF de la liste des experts judiciaires. La page “Experts et traducteurs judiciaires” affiche deux PDF, dont le bon document est **“Liste des experts judiciaires - màj le 26/02/2026”** pointant vers **ANNUAIRE E.J 2026 INTERNET_0.pdf**. La page elle-même indique une **mise à jour : 27/02/2026**. \n\nEn lisant le PDF, la première page indique clairement : **“Mise à jour le 26 février 2026”** et précise qu’il s’agit de la **liste des experts judiciaires établie pour le ressort de la Cour d’appel de Grenoble pour l’année 2026**. C’est la date la plus précise et la plus officielle trouvée dans le document, donc c’est celle à retenir. \n\n```json\n{\n  \"court\": \"Cour d'appel de Grenoble\",\n  \"officialPageUrl\": \"https://www.cours-appel.justice.fr/grenoble/experts-et-traducteurs-judiciaires\",\n  \"pdfUrl\": \"https://www.cours-appel.justice.fr/sites/default/files/2026-02/ANNUAIRE%20E.J%202026%20INTERNET_0.pdf\",\n  \"publicationDate\": \"2026-02-26\",\n  \"publicationDateSource\": \"pdf-content\",\n  \"reasoning\": [\n    \"La page officielle liste un PDF explicitement intitulé 'Liste des experts judiciaires - màj le 26/02/2026'.\",\n    \"Le PDF contient en première page la mention 'Mise à jour le 26 février 2026'.\",\n    \"La date du PDF est plus précise et plus fiable que la date de mise à jour de la page (27/02/2026), donc elle est retenue.\"\n  ],\n  \"errors\": [\n    \"Une première URL devinée pour une sous-page spécifique a renvoyé HTTP 404.\",\n    \"Un premier page fetch a amené un mauvais lien PDF avant que la bonne page officielle soit identifiée.\"\n  ]\n}\n```"
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "startedAt": "2026-03-24T21:57:14.797Z",
+    "durationMs": 4524,
+    "usage": {
+      "inputTokens": 2084,
+      "outputTokens": 852,
+      "totalTokens": 2936
+    },
+    "prompt": "You are analyzing date signals from a French court expert directory search.\n\n## Court: Grenoble\n\n## Agent summary:\nJ’ai trouvé la page officielle de la Cour d’appel de Grenoble et le PDF de la liste des experts judiciaires. La page “Experts et traducteurs judiciaires” affiche deux PDF, dont le bon document est **“Liste des experts judiciaires - màj le 26/02/2026”** pointant vers **ANNUAIRE E.J 2026 INTERNET_0.pdf**. La page elle-même indique une **mise à jour : 27/02/2026**. \n\nEn lisant le PDF, la première page indique clairement : **“Mise à jour le 26 février 2026”** et précise qu’il s’agit de la **liste des experts judiciaires établie pour le ressort de la Cour d’appel de Grenoble pour l’année 2026**. C’est la date la plus précise et la plus officielle trouvée dans le document, donc c’est celle à retenir. \n\n```json\n{\n  \"court\": \"Cour d'appel de Grenoble\",\n  \"officialPageUrl\": \"https://www.cours-appel.justice.fr/grenoble/experts-et-traducteurs-judiciaires\",\n  \"pdfUrl\": \"https://www.cours-appel.justice.fr/sites/default/files/2026-02/ANNUAIRE%20E.J%202026%20INTERNET_0.pdf\",\n  \"publicationDate\": \"2026-02-26\",\n  \"publicationDateSource\": \"pdf-content\",\n  \"reasoning\": [\n    \"La page officielle liste un PDF explicitement intitulé 'Liste des experts judiciaires - màj le 26/02/2026'.\",\n    \"Le PDF contient en première page la mention 'Mise à jour le 26 février 2026'.\",\n    \"La date du PDF est plus précise et plus fiable que la date de mise à jour de la page (27/02/2026), donc elle est retenue.\"\n  ],\n  \"errors\": [\n    \"Une première URL devinée pour une sous-page spécifique a renvoyé HTTP 404.\",\n    \"Un premier page fetch a amené un mauvais lien PDF avant que la bonne page officielle soit identifiée.\"\n  ]\n}\n```\n\n## Page title:\nExperts et traducteurs judiciaires | Cour d'appel de Grenoble\n\n## Page text (first 2000 chars):\nRechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Grenoble Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Experts et traducteurs judiciaires 07/02/2019 - mise à jour : 27/02/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer Les experts judiciaires sont des professionnels spécialement habilités, dans des domaines techniques autres que le droit, chargés de donner aux juges un avis sur des faits afin d’apporter des éclaircissements sur une affaire. Ce sont des spécialistes de disciplines très variées (médecine, architecture, économie et finance, etc.). Praticiens reconnus dans leurs domaines de spécialités, les experts sont inscrits sur une liste nationale dressée par la Cour de cassation, ainsi que sur des listes propres à chaque cour d'appel, au civil comme en matière pénale. Les experts sont appelés à la demande du juge ; ils peuvent également être contactés par les parties au procès. Ces dernières peuvent aussi choisir un expert qui n'est pas inscrit sur les listes (par exemple, leur médecin personnel). Dans ce cas, l'expert devra prêter serment devant le juge au moment de son audition. Les avis des experts ne s'imposent pas aux juges, qui restent libres de leur appréciation. Les conditions de pour devenir expert se trouvent dans la rubrique \"recrutement\" du site. Pièces jointes Liste des experts judiciaires - màj le 26/02/2026 Téléchargement 1.23 Mo Liste des experts honoraires - màj le 07/01/2026 Téléchargement 369.6 Ko Dans l'article\n\n## PDF links found on the page:\n- [likely-expert-list] \"Liste des experts judiciaires - màj le 26/02/2026\n        Téléchargement 1.23 Mo\" → https://www.cours-appel.justice.fr/sites/default/files/2026-02/ANNUAIRE%20E.J%202026%20INTERNET_0.pdf\n- [likely-expert-list] \"Liste des experts honoraires - màj le 07/01/2026\n        Téléchargement 369.6 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2026-01/ANNUAIRE%20E.H%202026_0.pdf\n\n## PDF content (first 1500 chars):\nCOUR D’APPEL DE GRENOBLE Place Firmin Gautier 38000 GRENOBLE TEL : 04.38.21.20.41 LISTE DES EXPERTS JUDICIAIRES ETABLIE POUR LE RESSORT DE LA COUR D’APPEL DE GRENOBLE POUR L’ANNEE 2026 Mise à jour le 26 février 2026 TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêtés du 10 juin 2005 et du 12 mai 2006 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . 290 1 Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêtés du 10 juin 2005 et du 12 mai 2006 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel...... conformément à la nomenclature suivante, qui se divise en branches : (ex. : A), rubriques (ex.: A.1.) et spécialités (ex. : A.1.1). A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . 21 A-01 Agriculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21 A-01.01 APPLICATIONS DE PRODUITS PHYTOPHARMACEUTIQUES, MATIERES FERTILISANTES ET SUPPORTS DE CULTURE . . . . . . . . . . . . . . . . . . . . 21 A-01.02 FONCIER RURAL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . \n\nDetermine the publication date. Check ALL sources:\n1. Exact date in PDF text (e.g. \"MAJ LE 10/03/2026\", \"assemblée du 18 novembre 2025\")\n2. Exact date in page text (e.g. \"mise à jour : 24/02/2026\")\n3. Date in PDF link anchor text\n4. Date in the PDF URL path (e.g. \"/2025-07/\" means July 2025, \"/2026-03/\" means March 2026)\n5. Year only as last resort\n\nUse the most specific and most recent date. A year-only date must not override an exact date.\nDate format: YYYY-MM-DD.",
+    "result": {
+      "courtName": "Cour d'appel de Grenoble",
+      "pageUrl": "https://www.cours-appel.justice.fr/grenoble/experts-et-traducteurs-judiciaires",
+      "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/ANNUAIRE%20E.J%202026%20INTERNET_0.pdf",
+      "documentTitle": "Liste des experts judiciaires - màj le 26/02/2026",
+      "publicationDate": "2026-02-26",
+      "publicationDateSource": "pdf-content",
+      "searchExplanation": "I found the official Cour d'appel de Grenoble page titled \"Experts et traducteurs judiciaires\". That page lists two PDF attachments, and the relevant one is the expert directory PDF titled \"Liste des experts judiciaires - màj le 26/02/2026\", which links to the 2026 annual directory PDF.",
+      "dateExtractionExplanation": "I checked all available date signals. The PDF itself states on its first page: \"Mise à jour le 26 février 2026\", which is the most direct and document-specific date. The link text also says \"màj le 26/02/2026\", and the PDF URL path includes \"/2026-02/\", both corroborating February 2026. The page text shows \"mise à jour : 27/02/2026\", but that appears to be the web page update date rather than the document's publication/update date, so the document date 2026-02-26 was retained.",
+      "errors": []
+    }
+  },
+  "result": {
+    "courtName": "Cour d'appel de Grenoble",
+    "pageUrl": "https://www.cours-appel.justice.fr/grenoble/experts-et-traducteurs-judiciaires",
+    "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/ANNUAIRE%20E.J%202026%20INTERNET_0.pdf",
+    "documentTitle": "Liste des experts judiciaires - màj le 26/02/2026",
+    "publicationDate": "2026-02-26",
+    "publicationDateSource": "pdf-content",
+    "searchExplanation": "I found the official Cour d'appel de Grenoble page titled \"Experts et traducteurs judiciaires\". That page lists two PDF attachments, and the relevant one is the expert directory PDF titled \"Liste des experts judiciaires - màj le 26/02/2026\", which links to the 2026 annual directory PDF.",
+    "dateExtractionExplanation": "I checked all available date signals. The PDF itself states on its first page: \"Mise à jour le 26 février 2026\", which is the most direct and document-specific date. The link text also says \"màj le 26/02/2026\", and the PDF URL path includes \"/2026-02/\", both corroborating February 2026. The page text shows \"mise à jour : 27/02/2026\", but that appears to be the web page update date rather than the document's publication/update date, so the document date 2026-02-26 was retained.",
+    "errors": []
+  },
+  "totalUsage": {
+    "inputTokens": 39546,
+    "outputTokens": 1647,
+    "totalTokens": 41193
+  },
+  "rawToolData": {
+    "pageTitle": "Experts et traducteurs judiciaires | Cour d'appel de Grenoble",
+    "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Grenoble Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Experts et traducteurs judiciaires 07/02/2019 - mise à jour : 27/02/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer Les experts judiciaires sont des professionnels spécialement habilités, dans des domaines techniques autres que le droit, chargés de donner aux juges un avis sur des faits afin d’apporter des éclaircissements sur une affaire. Ce sont des spécialistes de disciplines très variées (médecine, architecture, économie et finance, etc.). Praticiens reconnus dans leurs domaines de spécialités, les experts sont inscrits sur une liste nationale dressée par la Cour de cassation, ainsi que sur des listes propres à chaque cour d'appel, au civil comme en matière pénale. Les experts sont appelés à la demande du juge ; ils peuvent également être contactés par les parties au procès. Ces dernières peuvent aussi choisir un expert qui n'est pas inscrit sur les listes (par exemple, leur médecin personnel). Dans ce cas, l'expert devra prêter serment devant le juge au moment de son audition. Les avis des experts ne s'imposent pas aux juges, qui restent libres de leur appréciation. Les conditions de pour devenir expert se trouvent dans la rubrique \"recrutement\" du site. Pièces jointes Liste des experts judiciaires - màj le 26/02/2026 Téléchargement 1.23 Mo Liste des experts honoraires - màj le 07/01/2026 Téléchargement 369.6 Ko Dans l'article",
+    "pdfLinks": [
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/ANNUAIRE%20E.J%202026%20INTERNET_0.pdf",
+        "text": "Liste des experts judiciaires - màj le 26/02/2026\n        Téléchargement 1.23 Mo",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/ANNUAIRE%20E.H%202026_0.pdf",
+        "text": "Liste des experts honoraires - màj le 07/01/2026\n        Téléchargement 369.6 Ko",
+        "relevanceHint": "likely-expert-list"
+      }
+    ],
+    "pdfText": "COUR D’APPEL DE GRENOBLE Place Firmin Gautier 38000 GRENOBLE TEL : 04.38.21.20.41 LISTE DES EXPERTS JUDICIAIRES ETABLIE POUR LE RESSORT DE LA COUR D’APPEL DE GRENOBLE POUR L’ANNEE 2026 Mise à jour le 26 février 2026 TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêtés du 10 juin 2005 et du 12 mai 2006 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . 290 1 Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêtés du 10 juin 2005 et du 12 mai 2006 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel...... conformément à la nomenclature suivante, qui se divise en branches : (ex. : A), rubriques (ex.: A.1.) et spécialités (ex. : A.1.1). A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . 21 A-01 Agriculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21 A-01.01 APPLICATIONS DE PRODUITS PHYTOPHARMACEUTIQUES, MATIERES FERTILISANTES ET SUPPORTS DE CULTURE . . . . . . . . . . . . . . . . . . . . 21 A-01.02 FONCIER RURAL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ",
+    "dateHints": [
+      "mise à jour : 27/02/2026"
+    ]
+  },
+  "error": null
+}

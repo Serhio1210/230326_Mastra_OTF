@@ -1,0 +1,237 @@
+{
+  "court": "Amiens",
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "startedAt": "2026-03-24T21:54:40.892Z",
+  "finishedAt": "2026-03-24T21:54:57.111Z",
+  "totalMs": 16219,
+  "steps": [
+    {
+      "turn": 0,
+      "startedAt": "2026-03-24T21:54:40.892Z",
+      "durationMs": 1535,
+      "usage": {
+        "inputTokens": 5302,
+        "outputTokens": 116,
+        "totalTokens": 5418
+      },
+      "outputItemTypes": [
+        "function_call",
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.google.com/search?q=site%3Acours-appel.justice.fr+Cour+d%27appel+d%27Amiens+experts+judiciaires+pdf"
+          },
+          "callId": "call_kkPLnZc2z1DDuuzYP2k0Yu3Y"
+        },
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.google.com/search?q=site%3Aca-amiens.justice.fr+experts+judiciaires+Amiens+pdf"
+          },
+          "callId": "call_iJz72HKrxyvuvCogM4upqgLj"
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_kkPLnZc2z1DDuuzYP2k0Yu3Y",
+          "compactOutput": "Title: Google Search\nPDF links (0):\nNo date patterns found in page text",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=IgjDabqxEb-ikdUP8feW0Qc\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=IgjDabqxEb-ikdUP8feW0Qc\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "dateHints": [],
+            "error": null
+          },
+          "durationMs": 110
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_iJz72HKrxyvuvCogM4upqgLj",
+          "compactOutput": "Title: Google Search\nPDF links (0):\nNo date patterns found in page text",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=IgjDabCiGP7s7M8P1PuboQc\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=IgjDabCiGP7s7M8P1PuboQc\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "dateHints": [],
+            "error": null
+          },
+          "durationMs": 106
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "startedAt": "2026-03-24T21:54:42.427Z",
+      "durationMs": 3071,
+      "usage": {
+        "inputTokens": 9451,
+        "outputTokens": 107,
+        "totalTokens": 9558
+      },
+      "outputItemTypes": [
+        "web_search_call",
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "web_search",
+          "id": "ws_0fc0fbdb884a572d0069c30822f6d88197962340e41d06be48"
+        },
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.cours-appel.justice.fr/amiens/les-experts-judiciaires-pres-la-cour-dappel-damiens"
+          },
+          "callId": "call_ymYUcshbJtpKNkldD5bP1BB1"
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_ymYUcshbJtpKNkldD5bP1BB1",
+          "compactOutput": "Title: Les experts judiciaires près la cour d'appel d'Amiens | Cour d'appel Amiens\nPDF links (2):\n  - [likely-expert-list] \"Liste des experts judiciaires 2026\n        Téléchargement 2.85 Mo\" → https://www.cours-appel.justice.fr/sites/default/files/2026-02/2026%20-%20Liste%20des%20experts%20judiciaires%20-ok.pdf\n  - [likely-expert-list] \"Tableau de rapport expertal \n        Téléchargement 93.41 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2025-02/TABLEAU%20DE%20RAPPORT%20EXPERTAL%20%2B%20FORMATIONS.pdf\nNo date patterns found in page text",
+          "fullResult": {
+            "success": true,
+            "title": "Les experts judiciaires près la cour d'appel d'Amiens | Cour d'appel Amiens",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel Amiens Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Les experts judiciaires près la cour d'appel d'Amiens ➤ Vous trouverez ci-dessous la liste des experts 2025 : Liste des experts judiciaires 2026 Téléchargement 2.85 Mo (MAJ 02/2026) Conseil d'utilisation : Si vous souhaitez accéder directement à une catégorie d'expert, vous pouvez utiliser les liens qui se situent au niveau du sommaire Si vous souhaitez accéder directement à un nom ou à une page, vous pouvez utiliser la fonction recherche de votre logiciel de lecture de PDF. Dans la majorité des cas, il suffira d'appuyer simultanément sur les touches Ctrl + F de votre clavier (ou Cmd + F pour un Mac) puis de taper le nom ou le numéro de page dans la barre de recherche et de valider par la touche entrée. Il est possible de télécharger sur votre ordinateur la liste. Pour cela, il faut faire un clic droit sur le lien ci-dessous puis choisir \"Enregistrer le lien sous\". ➤ Vous trouverez ci-dessous le tableau permettant de rendre compte de vos missions d'expertises : Tableau de rapport expertal Téléchargement 93.41 Ko Comment devenir expert judiciaire ? 09.04.18 Si vous désirez être inscrit en tant qu'expert judiciaire sur la liste de la cour d'appel d'Amiens, vous devez déposer un dossier complet avant le 1er mars de l'année en cours pour une éventuelle inscription l'année suivante Lire l'article > Solliciter l'honorariat en tant qu'expert 31.10.24 Dans cet article découvrez la démarche pour solliciter l'honorariat en tant qu'expert. Lire l'article > Informations relatives à la nouvelle nomenclature 31.10.24 Vous trouverez dans cet article les informations relatives à la nouvelle nomenclature applicable à compter du 01 janvier 2024. Lire l'article > Liste des médecins spécialistes 31.10.24 Dans",
+            "pdfLinks": [
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/2026%20-%20Liste%20des%20experts%20judiciaires%20-ok.pdf",
+                "text": "Liste des experts judiciaires 2026\n        Téléchargement 2.85 Mo",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-02/TABLEAU%20DE%20RAPPORT%20EXPERTAL%20%2B%20FORMATIONS.pdf",
+                "text": "Tableau de rapport expertal \n        Téléchargement 93.41 Ko",
+                "relevanceHint": "likely-expert-list"
+              }
+            ],
+            "dateHints": [],
+            "error": null
+          },
+          "durationMs": 103
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "startedAt": "2026-03-24T21:54:45.498Z",
+      "durationMs": 3841,
+      "usage": {
+        "inputTokens": 5997,
+        "outputTokens": 60,
+        "totalTokens": 6057
+      },
+      "outputItemTypes": [
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "function_call",
+          "name": "extractPdfDate",
+          "arguments": {
+            "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/2026%20-%20Liste%20des%20experts%20judiciaires%20-ok.pdf"
+          },
+          "callId": "call_otsdPP1jpEg73ChuG6JOkvjb"
+        },
+        {
+          "type": "function_result",
+          "name": "extractPdfDate",
+          "callId": "call_otsdPP1jpEg73ChuG6JOkvjb",
+          "compactOutput": "PDF (270 pages). First page text:\n1 LISTE DES EXPERTS JUDICIAIRES E TABLIE POUR LE RESSORT DE LA COUR D’APPEL D’AMIENS POUR L’ANNEE 202 6 2 TABLE DES MATIÈRES Pages : NOMENCLATURE PRÉVUE À L’ARTICLE 1ER DU DÉCRET DU 23 DÉCEMBRE 2004 A RRÊTÉ DU 05 DÉCEMBRE 2022 ................................ ................................ ........................ 3 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE ................................ .......................... 20 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE ............................",
+          "fullResult": {
+            "success": true,
+            "pdfText": "1 LISTE DES EXPERTS JUDICIAIRES E TABLIE POUR LE RESSORT DE LA COUR D’APPEL D’AMIENS POUR L’ANNEE 202 6 2 TABLE DES MATIÈRES Pages : NOMENCLATURE PRÉVUE À L’ARTICLE 1ER DU DÉCRET DU 23 DÉCEMBRE 2004 A RRÊTÉ DU 05 DÉCEMBRE 2022 ................................ ................................ ........................ 3 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE ................................ .......................... 20 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE ................................ .......................... 262 EXPERTS HONORAIRES ................................ ................................ ................................ . 268 3 Nomenclature prévue à l’article 1er du décret du 23 décembre 2004 Arrêté du 05 décembre 2022 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel … conformément à la nomenclature suiva nte, qui se divise en branches ( e x. : A . ), rubriques (ex.: A.1.) et spécialités (ex. : A.1.1). A - AGRICULTURE - AGRO - ALIMENTAIRE - ANIMAUX - FORETS A - 01 - AGRICULTURE ................................ ................................ ................................ ................................ . 20 A - 01.01 – Applications de produits phytopharmaceutiques, matières fertilisantes et supports de cultures ................................ ................................ ................................ ................................ ..........................",
+            "pageCount": 270,
+            "error": null
+          },
+          "durationMs": 2510
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "startedAt": "2026-03-24T21:54:49.339Z",
+      "durationMs": 2973,
+      "usage": {
+        "inputTokens": 6225,
+        "outputTokens": 475,
+        "totalTokens": 6700
+      },
+      "outputItemTypes": [
+        "message"
+      ],
+      "events": [
+        {
+          "type": "model_text",
+          "text": "J’ai trouvé la page officielle de la Cour d’appel d’Amiens, puis le PDF de la liste des experts judiciaires, et enfin j’ai extrait la date depuis le PDF. \n\n**Résultat :**\n- **Cour d’appel** : Amiens\n- **Page officielle** : “Les experts judiciaires près la cour d'appel d'Amiens” \n- **PDF trouvé** : `2026 - Liste des experts judiciaires -ok.pdf` dans le répertoire `2026-02` sur le site officiel de la Cour d’appel d’Amiens. \n- **Date officielle retenue** : **2026-01-01**\n- **Source de la date** : **pdf-content**\n\n**Pourquoi cette date ?**\n- Dans le PDF, la première page indique clairement qu’il s’agit de la liste pour **l’année 2026** et mentionne aussi un **arrêté du 05 décembre 2022**. \n- Le document ne donne pas, dans les premières pages extraites, une date de publication plus précise que l’année 2026.\n- Selon la règle demandée, quand il n’y a qu’une année, je la convertis en **YYYY-01-01**. Donc **2026** devient **2026-01-01**.\n\n**Dates repérées ailleurs**\n- **URL du PDF** : dossier `2026-02`, ce qui suggère février 2026, mais c’est moins spécifique qu’une date exacte et je n’ai pas de jour/mois explicite dans le texte extrait. \n- **Page web** : aucune date explicite repérée dans le texte de la page. \n\n**Erreur / limite rencontrée**\n- J’ai d’abord tenté des recherches via Google avant de passer à la page officielle. La page officielle a bien été trouvée ensuite, et le PDF a été identifié correctement."
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "startedAt": "2026-03-24T21:54:52.312Z",
+    "durationMs": 4799,
+    "usage": {
+      "inputTokens": 1818,
+      "outputTokens": 722,
+      "totalTokens": 2540
+    },
+    "prompt": "You are analyzing date signals from a French court expert directory search.\n\n## Court: Amiens\n\n## Agent summary:\nJ’ai trouvé la page officielle de la Cour d’appel d’Amiens, puis le PDF de la liste des experts judiciaires, et enfin j’ai extrait la date depuis le PDF. \n\n**Résultat :**\n- **Cour d’appel** : Amiens\n- **Page officielle** : “Les experts judiciaires près la cour d'appel d'Amiens” \n- **PDF trouvé** : `2026 - Liste des experts judiciaires -ok.pdf` dans le répertoire `2026-02` sur le site officiel de la Cour d’appel d’Amiens. \n- **Date officielle retenue** : **2026-01-01**\n- **Source de la date** : **pdf-content**\n\n**Pourquoi cette date ?**\n- Dans le PDF, la première page indique clairement qu’il s’agit de la liste pour **l’année 2026** et mentionne aussi un **arrêté du 05 décembre 2022**. \n- Le document ne donne pas, dans les premières pages extraites, une date de publication plus précise que l’année 2026.\n- Selon la règle demandée, quand il n’y a qu’une année, je la convertis en **YYYY-01-01**. Donc **2026** devient **2026-01-01**.\n\n**Dates repérées ailleurs**\n- **URL du PDF** : dossier `2026-02`, ce qui suggère février 2026, mais c’est moins spécifique qu’une date exacte et je n’ai pas de jour/mois explicite dans le texte extrait. \n- **Page web** : aucune date explicite repérée dans le texte de la page. \n\n**Erreur / limite rencontrée**\n- J’ai d’abord tenté des recherches via Google avant de passer à la page officielle. La page officielle a bien été trouvée ensuite, et le PDF a été identifié correctement.\n\n## Page title:\nLes experts judiciaires près la cour d'appel d'Amiens | Cour d'appel Amiens\n\n## Page text (first 2000 chars):\nRechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel Amiens Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Les experts judiciaires près la cour d'appel d'Amiens ➤ Vous trouverez ci-dessous la liste des experts 2025 : Liste des experts judiciaires 2026 Téléchargement 2.85 Mo (MAJ 02/2026) Conseil d'utilisation : Si vous souhaitez accéder directement à une catégorie d'expert, vous pouvez utiliser les liens qui se situent au niveau du sommaire Si vous souhaitez accéder directement à un nom ou à une page, vous pouvez utiliser la fonction recherche de votre logiciel de lecture de PDF. Dans la majorité des cas, il suffira d'appuyer simultanément sur les touches Ctrl + F de votre clavier (ou Cmd + F pour un Mac) puis de taper le nom ou le numéro de page dans la barre de recherche et de valider par la touche entrée. Il est possible de télécharger sur votre ordinateur la liste. Pour cela, il faut faire un clic droit sur le lien ci-dessous puis choisir \"Enregistrer le lien sous\". ➤ Vous trouverez ci-dessous le tableau permettant de rendre compte de vos missions d'expertises : Tableau de rapport expertal Téléchargement 93.41 Ko Comment devenir expert judiciaire ? 09.04.18 Si vous désirez être inscrit en tant qu'expert judiciaire sur la liste de la cour d'appel d'Amiens, vous devez déposer un dossier complet avant le 1er mars de l'année en cours pour une éventuelle inscription l'année suivante Lire l'article > Solliciter l'honorariat en tant qu'expert 31.10.24 Dans cet article découvrez la démarche pour solliciter l'honorariat en tant qu'expert. Lire l'article > Informations relatives à la nouvelle nomenclature 31.10.24 Vous trouverez dans cet article les informations relatives à la nouvelle nomenclature applicable à compter du 01 janvier 2024. Lire l'article > Liste des médecins spécialistes 31.10.24 Dans\n\n## PDF links found on the page:\n- [likely-expert-list] \"Liste des experts judiciaires 2026\n        Téléchargement 2.85 Mo\" → https://www.cours-appel.justice.fr/sites/default/files/2026-02/2026%20-%20Liste%20des%20experts%20judiciaires%20-ok.pdf\n- [likely-expert-list] \"Tableau de rapport expertal \n        Téléchargement 93.41 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2025-02/TABLEAU%20DE%20RAPPORT%20EXPERTAL%20%2B%20FORMATIONS.pdf\n\n## PDF content (first 1500 chars):\n1 LISTE DES EXPERTS JUDICIAIRES E TABLIE POUR LE RESSORT DE LA COUR D’APPEL D’AMIENS POUR L’ANNEE 202 6 2 TABLE DES MATIÈRES Pages : NOMENCLATURE PRÉVUE À L’ARTICLE 1ER DU DÉCRET DU 23 DÉCEMBRE 2004 A RRÊTÉ DU 05 DÉCEMBRE 2022 ................................ ................................ ........................ 3 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE ................................ .......................... 20 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE ................................ .......................... 262 EXPERTS HONORAIRES ................................ ................................ ................................ . 268 3 Nomenclature prévue à l’article 1er du décret du 23 décembre 2004 Arrêté du 05 décembre 2022 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel … conformément à la nomenclature suiva nte, qui se divise en branches ( e x. : A . ), rubriques (ex.: A.1.) et spécialités (ex. : A.1.1). A - AGRICULTURE - AGRO - ALIMENTAIRE - ANIMAUX - FORETS A - 01 - AGRICULTURE ................................ ................................ ................................ ................................ . 20 A - 01.01 – Applications de produits phytopharmaceutiques, matières fertilisantes et supports de cultures ................................ ................................ ................................ ................................ ..........................\n\nDetermine the publication date. Check ALL sources:\n1. Exact date in PDF text (e.g. \"MAJ LE 10/03/2026\", \"assemblée du 18 novembre 2025\")\n2. Exact date in page text (e.g. \"mise à jour : 24/02/2026\")\n3. Date in PDF link anchor text\n4. Date in the PDF URL path (e.g. \"/2025-07/\" means July 2025, \"/2026-03/\" means March 2026)\n5. Year only as last resort\n\nUse the most specific and most recent date. A year-only date must not override an exact date.\nDate format: YYYY-MM-DD.",
+    "result": {
+      "courtName": "Amiens",
+      "pageUrl": "https://www.cours-appel.justice.fr/amiens/les-experts-judiciaires-pres-la-cour-dappel-damiens",
+      "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/2026%20-%20Liste%20des%20experts%20judiciaires%20-ok.pdf",
+      "documentTitle": "Liste des experts judiciaires 2026 Téléchargement 2.85 Mo",
+      "publicationDate": "2026-02-01",
+      "publicationDateSource": "page-text",
+      "searchExplanation": "I found the official Cour d'appel d'Amiens page titled 'Les experts judiciaires près la cour d'appel d'Amiens'. On that page, the expert directory PDF link 'Liste des experts judiciaires 2026' points to the official PDF hosted on cours-appel.justice.fr.",
+      "dateExtractionExplanation": "No exact day was visible in the page text, PDF anchor text, or PDF content. The page text contains 'MAJ 02/2026', and the PDF URL path also contains '/2026-02/', both indicating February 2026. The PDF content itself only confirms the year 2026. Using the most specific available date signal, I normalized the month/year to 2026-02-01.",
+      "errors": []
+    }
+  },
+  "result": {
+    "courtName": "Amiens",
+    "pageUrl": "https://www.cours-appel.justice.fr/amiens/les-experts-judiciaires-pres-la-cour-dappel-damiens",
+    "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/2026%20-%20Liste%20des%20experts%20judiciaires%20-ok.pdf",
+    "documentTitle": "Liste des experts judiciaires 2026 Téléchargement 2.85 Mo",
+    "publicationDate": "2026-02-01",
+    "publicationDateSource": "page-text",
+    "searchExplanation": "I found the official Cour d'appel d'Amiens page titled 'Les experts judiciaires près la cour d'appel d'Amiens'. On that page, the expert directory PDF link 'Liste des experts judiciaires 2026' points to the official PDF hosted on cours-appel.justice.fr.",
+    "dateExtractionExplanation": "No exact day was visible in the page text, PDF anchor text, or PDF content. The page text contains 'MAJ 02/2026', and the PDF URL path also contains '/2026-02/', both indicating February 2026. The PDF content itself only confirms the year 2026. Using the most specific available date signal, I normalized the month/year to 2026-02-01.",
+    "errors": []
+  },
+  "totalUsage": {
+    "inputTokens": 28793,
+    "outputTokens": 1480,
+    "totalTokens": 30273
+  },
+  "rawToolData": {
+    "pageTitle": "Les experts judiciaires près la cour d'appel d'Amiens | Cour d'appel Amiens",
+    "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel Amiens Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Les experts judiciaires près la cour d'appel d'Amiens ➤ Vous trouverez ci-dessous la liste des experts 2025 : Liste des experts judiciaires 2026 Téléchargement 2.85 Mo (MAJ 02/2026) Conseil d'utilisation : Si vous souhaitez accéder directement à une catégorie d'expert, vous pouvez utiliser les liens qui se situent au niveau du sommaire Si vous souhaitez accéder directement à un nom ou à une page, vous pouvez utiliser la fonction recherche de votre logiciel de lecture de PDF. Dans la majorité des cas, il suffira d'appuyer simultanément sur les touches Ctrl + F de votre clavier (ou Cmd + F pour un Mac) puis de taper le nom ou le numéro de page dans la barre de recherche et de valider par la touche entrée. Il est possible de télécharger sur votre ordinateur la liste. Pour cela, il faut faire un clic droit sur le lien ci-dessous puis choisir \"Enregistrer le lien sous\". ➤ Vous trouverez ci-dessous le tableau permettant de rendre compte de vos missions d'expertises : Tableau de rapport expertal Téléchargement 93.41 Ko Comment devenir expert judiciaire ? 09.04.18 Si vous désirez être inscrit en tant qu'expert judiciaire sur la liste de la cour d'appel d'Amiens, vous devez déposer un dossier complet avant le 1er mars de l'année en cours pour une éventuelle inscription l'année suivante Lire l'article > Solliciter l'honorariat en tant qu'expert 31.10.24 Dans cet article découvrez la démarche pour solliciter l'honorariat en tant qu'expert. Lire l'article > Informations relatives à la nouvelle nomenclature 31.10.24 Vous trouverez dans cet article les informations relatives à la nouvelle nomenclature applicable à compter du 01 janvier 2024. Lire l'article > Liste des médecins spécialistes 31.10.24 Dans",
+    "pdfLinks": [
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/2026%20-%20Liste%20des%20experts%20judiciaires%20-ok.pdf",
+        "text": "Liste des experts judiciaires 2026\n        Téléchargement 2.85 Mo",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-02/TABLEAU%20DE%20RAPPORT%20EXPERTAL%20%2B%20FORMATIONS.pdf",
+        "text": "Tableau de rapport expertal \n        Téléchargement 93.41 Ko",
+        "relevanceHint": "likely-expert-list"
+      }
+    ],
+    "pdfText": "1 LISTE DES EXPERTS JUDICIAIRES E TABLIE POUR LE RESSORT DE LA COUR D’APPEL D’AMIENS POUR L’ANNEE 202 6 2 TABLE DES MATIÈRES Pages : NOMENCLATURE PRÉVUE À L’ARTICLE 1ER DU DÉCRET DU 23 DÉCEMBRE 2004 A RRÊTÉ DU 05 DÉCEMBRE 2022 ................................ ................................ ........................ 3 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE ................................ .......................... 20 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE ................................ .......................... 262 EXPERTS HONORAIRES ................................ ................................ ................................ . 268 3 Nomenclature prévue à l’article 1er du décret du 23 décembre 2004 Arrêté du 05 décembre 2022 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel … conformément à la nomenclature suiva nte, qui se divise en branches ( e x. : A . ), rubriques (ex.: A.1.) et spécialités (ex. : A.1.1). A - AGRICULTURE - AGRO - ALIMENTAIRE - ANIMAUX - FORETS A - 01 - AGRICULTURE ................................ ................................ ................................ ................................ . 20 A - 01.01 – Applications de produits phytopharmaceutiques, matières fertilisantes et supports de cultures ................................ ................................ ................................ ................................ ..........................",
+    "dateHints": []
+  },
+  "error": null
+}

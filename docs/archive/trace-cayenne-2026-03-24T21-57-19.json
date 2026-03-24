@@ -1,0 +1,309 @@
+{
+  "court": "Cayenne",
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "startedAt": "2026-03-24T21:56:33.525Z",
+  "finishedAt": "2026-03-24T21:56:49.091Z",
+  "totalMs": 15566,
+  "steps": [
+    {
+      "turn": 0,
+      "startedAt": "2026-03-24T21:56:33.525Z",
+      "durationMs": 1599,
+      "usage": {
+        "inputTokens": 5302,
+        "outputTokens": 103,
+        "totalTokens": 5405
+      },
+      "outputItemTypes": [
+        "function_call",
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.google.com/search?q=site%3Acours-appel.justice.fr+Cayenne+experts+judiciaires"
+          },
+          "callId": "call_EEfrvpDswgFnA5G9wcKXInmk"
+        },
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.google.com/search?q=site%3Aca-cayenne.justice.fr+experts+judiciaires+Cayenne"
+          },
+          "callId": "call_GX6DJh8Fv4GwS08SHcT5UB6m"
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_EEfrvpDswgFnA5G9wcKXInmk",
+          "compactOutput": "Title: Google Search\nPDF links (0):\nNo date patterns found in page text",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=kgjDacm2Ov7U7M8PvZe3sA0\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=kgjDacm2Ov7U7M8PvZe3sA0\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "dateHints": [],
+            "error": null
+          },
+          "durationMs": 217
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_GX6DJh8Fv4GwS08SHcT5UB6m",
+          "compactOutput": "Title: Google Search\nPDF links (0):\nNo date patterns found in page text",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=kwjDabzEBfiYkdUPm7vXyQU\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=kwjDabzEBfiYkdUPm7vXyQU\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "dateHints": [],
+            "error": null
+          },
+          "durationMs": 115
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "startedAt": "2026-03-24T21:56:35.124Z",
+      "durationMs": 4110,
+      "usage": {
+        "inputTokens": 17469,
+        "outputTokens": 223,
+        "totalTokens": 17692
+      },
+      "outputItemTypes": [
+        "web_search_call",
+        "web_search_call",
+        "web_search_call",
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "web_search",
+          "id": "ws_0d7540f9ad82e9f10069c30893ba54819ab075d1689868d63d"
+        },
+        {
+          "type": "web_search",
+          "id": "ws_0d7540f9ad82e9f10069c308948b98819a98adf5133373fbf4"
+        },
+        {
+          "type": "web_search",
+          "id": "ws_0d7540f9ad82e9f10069c308957f74819abd626aded173834f"
+        },
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.cours-appel.justice.fr/fort-de-france/experts-judiciaires"
+          },
+          "callId": "call_Phc2LvAxK3awozCeiHktQpG8"
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_Phc2LvAxK3awozCeiHktQpG8",
+          "compactOutput": "Title: Experts judiciaires | Cour d'appel de Fort-de-France\nPDF links (1):\n  - [likely-expert-list] \"Liste des experts 2025\n        Téléchargement 728.37 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2026-01/Liste%20des%20experts%20judiciaires%20-%20ann%C3%A9e%202024.pdf\nDate hints from page: mise à jour : 15/01/2026",
+          "fullResult": {
+            "success": true,
+            "title": "Experts judiciaires | Cour d'appel de Fort-de-France",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Fort-de-France Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Experts judiciaires 15/01/2026 - mise à jour : 15/01/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer Depuis la loi n°2004-130 du 11 février 2004 il n’y a plus de différenciation entre la matière civile et la matière pénale, ainsi il existe des listes d’experts dressées pour l’information des juges, mais ces derniers peuvent, le cas échéant, désigner toute autre personne de leur choix, au pénal comme au civil. Le contrôle des experts est exercé, selon les cas, soit par le procureur général de la cour d’appel, soit par le premier président et le procureur général près de la Cour de cassation. L’expert judiciaire est assermenté. Pour une personne morale, le serment est prêté par son représentant, désigné à cet effet. Ils peuvent, dans certains cas, se voir confier des missions de conciliation, médiation et d’arbitrage. Ils interviennent non plus comme experts judiciaires mais comme conciliateur, médiateur ou arbitre. Devenir expert judiciaire : Justice / Métiers et concours / Expert judiciaire Vous souhaitez présenter votre candidature pour être inscrit(e) sur la liste des experts judiciaires de la cour d'appel de Fort-de-France, trouvez ci-dessous les liens pour accéder aux formulaires dématérialisés de candidatures : Inscription initiale : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-inscription-initiale-campagne- Réinscription : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-reinscription-campagne-nationa Extension : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-extension-d-inscription-campag La liste des experts judiciaires de Martinique : Piè",
+            "pdfLinks": [
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/Liste%20des%20experts%20judiciaires%20-%20ann%C3%A9e%202024.pdf",
+                "text": "Liste des experts 2025\n        Téléchargement 728.37 Ko",
+                "relevanceHint": "likely-expert-list"
+              }
+            ],
+            "dateHints": [
+              "mise à jour : 15/01/2026"
+            ],
+            "error": null
+          },
+          "durationMs": 107
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "startedAt": "2026-03-24T21:56:39.234Z",
+      "durationMs": 2207,
+      "usage": {
+        "inputTokens": 10337,
+        "outputTokens": 141,
+        "totalTokens": 10478
+      },
+      "outputItemTypes": [
+        "web_search_call",
+        "web_search_call",
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "web_search",
+          "id": "ws_0d7540f9ad82e9f10069c30897baa8819a9c0af3befdebab9f"
+        },
+        {
+          "type": "web_search",
+          "id": "ws_0d7540f9ad82e9f10069c308984f80819a97167e5d36e73287"
+        },
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.cours-appel.justice.fr/cayenne"
+          },
+          "callId": "call_VnYaARdMOzLwbHljSetJHSiD"
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_VnYaARdMOzLwbHljSetJHSiD",
+          "compactOutput": "Title: Accueil | Portail des cours d'appel\nPDF links (1):\n  - [unknown] \"Je suis victime et je souhaite être aidé(e)\" → http://www.justice.gouv.fr/publication/guide_victimes.pdf\nNo date patterns found in page text",
+          "fullResult": {
+            "success": true,
+            "title": "Accueil | Portail des cours d'appel",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Portail des cours d'appel Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Je voudrais Trouver un tribunal près de chez moi Obtenir un formulaire Demande au juge aux affaires familiales (autorité parentale, droit de visite, pension alimentaire...) Demande d'aide juridictionnelle Demande de copie d'une décision de justice pénale Demande de rectification d'un acte d'état civil Vos droits et démarches Des réponses à des questions Je suis victime et je souhaite être aidé(e) Je souhaite porter plainte Je souhaite estimer le montant de mes droits à l'aide juridictionnelle Je souhaite trouver un conciliateur Je souhaite trouver un avocat TGI Angoulême Informations pratiques Tribunal de Grande Instance d'Angoulême place Francis Louvel 16000 Angoulême France TGI Bordeaux Informations pratiques Tribunal de Grande Instance de Bordeaux 30 rue des Frères Bonie 33000 Bordeaux France CA Bordeaux Informations pratiques Cour d'appel de Bordeaux place de la République 33000 Bordeaux France TGI Vesoul Informations pratiques Tribunal de Grande Instance de Vesoul 14 place du 11ème chasseurs 70000 Vesoul France TGI Montbéliard Informations pratiques Tribunal de Grande Instance de Montbéliard rue Wolfgang Amadeus Mozart 25200 Montbéliard France TGI Lons-le-Saunier Informations pratiques Tribunal de Grande Instance de Lons-le-Saunier 11 rue Pasteur 39000 Lons-le-Saunier France TGI Belfort Informations pratiques Tribunal de Grande Instance de Belfort 9 place de la République 90000 Belfort France Palais de justice de Besançon Informations pratiques Cour d'appel de Besançon 1 rue Mégevand 25000 Besançon France TGI Ajaccio Informations pratiques Tribunal de Grande Instance d'Ajaccio 4 boulevard Masseria 20000 Ajaccio France Palais de justice de Bastia Informations pratiques Cour d'app",
+            "pdfLinks": [
+              {
+                "url": "http://www.justice.gouv.fr/publication/guide_victimes.pdf",
+                "text": "Je suis victime et je souhaite être aidé(e)",
+                "relevanceHint": "unknown"
+              }
+            ],
+            "dateHints": [],
+            "error": null
+          },
+          "durationMs": 104
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "startedAt": "2026-03-24T21:56:41.441Z",
+      "durationMs": 1452,
+      "usage": {
+        "inputTokens": 7240,
+        "outputTokens": 37,
+        "totalTokens": 7277
+      },
+      "outputItemTypes": [
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.cours-appel.justice.fr/cayenne/experts-judiciaires"
+          },
+          "callId": "call_urxwnwWWrnqFDLv16OEp6Gv5"
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_urxwnwWWrnqFDLv16OEp6Gv5",
+          "compactOutput": "Title: Accueil | Portail des cours d'appel\nPDF links (1):\n  - [unknown] \"Je suis victime et je souhaite être aidé(e)\" → http://www.justice.gouv.fr/publication/guide_victimes.pdf\nNo date patterns found in page text",
+          "fullResult": {
+            "success": true,
+            "title": "Accueil | Portail des cours d'appel",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Portail des cours d'appel Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Je voudrais Trouver un tribunal près de chez moi Obtenir un formulaire Demande au juge aux affaires familiales (autorité parentale, droit de visite, pension alimentaire...) Demande d'aide juridictionnelle Demande de copie d'une décision de justice pénale Demande de rectification d'un acte d'état civil Vos droits et démarches Des réponses à des questions Je suis victime et je souhaite être aidé(e) Je souhaite porter plainte Je souhaite estimer le montant de mes droits à l'aide juridictionnelle Je souhaite trouver un conciliateur Je souhaite trouver un avocat TGI Angoulême Informations pratiques Tribunal de Grande Instance d'Angoulême place Francis Louvel 16000 Angoulême France TGI Bordeaux Informations pratiques Tribunal de Grande Instance de Bordeaux 30 rue des Frères Bonie 33000 Bordeaux France CA Bordeaux Informations pratiques Cour d'appel de Bordeaux place de la République 33000 Bordeaux France TGI Vesoul Informations pratiques Tribunal de Grande Instance de Vesoul 14 place du 11ème chasseurs 70000 Vesoul France TGI Montbéliard Informations pratiques Tribunal de Grande Instance de Montbéliard rue Wolfgang Amadeus Mozart 25200 Montbéliard France TGI Lons-le-Saunier Informations pratiques Tribunal de Grande Instance de Lons-le-Saunier 11 rue Pasteur 39000 Lons-le-Saunier France TGI Belfort Informations pratiques Tribunal de Grande Instance de Belfort 9 place de la République 90000 Belfort France Palais de justice de Besançon Informations pratiques Cour d'appel de Besançon 1 rue Mégevand 25000 Besançon France TGI Ajaccio Informations pratiques Tribunal de Grande Instance d'Ajaccio 4 boulevard Masseria 20000 Ajaccio France Palais de justice de Bastia Informations pratiques Cour d'app",
+            "pdfLinks": [
+              {
+                "url": "http://www.justice.gouv.fr/publication/guide_victimes.pdf",
+                "text": "Je suis victime et je souhaite être aidé(e)",
+                "relevanceHint": "unknown"
+              }
+            ],
+            "dateHints": [],
+            "error": null
+          },
+          "durationMs": 189
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "startedAt": "2026-03-24T21:56:42.893Z",
+      "durationMs": 2834,
+      "usage": {
+        "inputTokens": 7347,
+        "outputTokens": 386,
+        "totalTokens": 7733
+      },
+      "outputItemTypes": [
+        "message"
+      ],
+      "events": [
+        {
+          "type": "model_text",
+          "text": "J’ai cherché la page officielle de la Cour d’appel de Cayenne sur le portail `cours-appel.justice.fr`, mais je n’ai pas trouvé de page “experts judiciaires” dédiée pour Cayenne via les recherches disponibles. Les tentatives sur `https://www.cours-appel.justice.fr/cayenne` et `https://www.cours-appel.justice.fr/cayenne/experts-judiciaires` ne renvoient pas de liste d’experts ; la page affichée est seulement l’accueil du portail.  \n\nJ’ai aussi vérifié la page `fort-de-france/experts-judiciaires` sur le même portail pour confirmer le format habituel du site : cette page contient bien un lien PDF d’experts, avec une mention “mise à jour : 15/01/2026”, mais elle concerne Fort-de-France, pas Cayenne. \n\n**Résultat pour Cayenne :**\n- **Page officielle trouvée :** non confirmée\n- **PDF de la liste officielle des experts :** non trouvé\n- **Date officielle du PDF :** non trouvée\n- **publicationDateSource :** `not-found`\n\n**Erreurs / limites rencontrées :**\n- La recherche web n’a pas retourné de résultat pertinent pour Cayenne.\n- Les URLs supposées de la page experts à Cayenne ne pointent pas vers une liste officielle exploitable.\n- Je n’ai donc pas pu appliquer correctement `fetchPage` puis `extractPdfDate` sur un PDF de Cayenne, faute de PDF officiel identifié.\n\nSi vous voulez, je peux continuer en cherchant la liste via une autre entrée officielle du portail des cours d’appel, ou tenter une recherche plus large à partir du site du ministère pour retrouver la page exacte de Cayenne."
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "startedAt": "2026-03-24T21:56:45.727Z",
+    "durationMs": 3364,
+    "usage": {
+      "inputTokens": 1319,
+      "outputTokens": 511,
+      "totalTokens": 1830
+    },
+    "prompt": "You are analyzing date signals from a French court expert directory search.\n\n## Court: Cayenne\n\n## Agent summary:\nJ’ai cherché la page officielle de la Cour d’appel de Cayenne sur le portail `cours-appel.justice.fr`, mais je n’ai pas trouvé de page “experts judiciaires” dédiée pour Cayenne via les recherches disponibles. Les tentatives sur `https://www.cours-appel.justice.fr/cayenne` et `https://www.cours-appel.justice.fr/cayenne/experts-judiciaires` ne renvoient pas de liste d’experts ; la page affichée est seulement l’accueil du portail.  \n\nJ’ai aussi vérifié la page `fort-de-france/experts-judiciaires` sur le même portail pour confirmer le format habituel du site : cette page contient bien un lien PDF d’experts, avec une mention “mise à jour : 15/01/2026”, mais elle concerne Fort-de-France, pas Cayenne. \n\n**Résultat pour Cayenne :**\n- **Page officielle trouvée :** non confirmée\n- **PDF de la liste officielle des experts :** non trouvé\n- **Date officielle du PDF :** non trouvée\n- **publicationDateSource :** `not-found`\n\n**Erreurs / limites rencontrées :**\n- La recherche web n’a pas retourné de résultat pertinent pour Cayenne.\n- Les URLs supposées de la page experts à Cayenne ne pointent pas vers une liste officielle exploitable.\n- Je n’ai donc pas pu appliquer correctement `fetchPage` puis `extractPdfDate` sur un PDF de Cayenne, faute de PDF officiel identifié.\n\nSi vous voulez, je peux continuer en cherchant la liste via une autre entrée officielle du portail des cours d’appel, ou tenter une recherche plus large à partir du site du ministère pour retrouver la page exacte de Cayenne.\n\n## Page title:\nAccueil | Portail des cours d'appel\n\n## Page text (first 2000 chars):\nRechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Portail des cours d'appel Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Je voudrais Trouver un tribunal près de chez moi Obtenir un formulaire Demande au juge aux affaires familiales (autorité parentale, droit de visite, pension alimentaire...) Demande d'aide juridictionnelle Demande de copie d'une décision de justice pénale Demande de rectification d'un acte d'état civil Vos droits et démarches Des réponses à des questions Je suis victime et je souhaite être aidé(e) Je souhaite porter plainte Je souhaite estimer le montant de mes droits à l'aide juridictionnelle Je souhaite trouver un conciliateur Je souhaite trouver un avocat TGI Angoulême Informations pratiques Tribunal de Grande Instance d'Angoulême place Francis Louvel 16000 Angoulême France TGI Bordeaux Informations pratiques Tribunal de Grande Instance de Bordeaux 30 rue des Frères Bonie 33000 Bordeaux France CA Bordeaux Informations pratiques Cour d'appel de Bordeaux place de la République 33000 Bordeaux France TGI Vesoul Informations pratiques Tribunal de Grande Instance de Vesoul 14 place du 11ème chasseurs 70000 Vesoul France TGI Montbéliard Informations pratiques Tribunal de Grande Instance de Montbéliard rue Wolfgang Amadeus Mozart 25200 Montbéliard France TGI Lons-le-Saunier Informations pratiques Tribunal de Grande Instance de Lons-le-Saunier 11 rue Pasteur 39000 Lons-le-Saunier France TGI Belfort Informations pratiques Tribunal de Grande Instance de Belfort 9 place de la République 90000 Belfort France Palais de justice de Besançon Informations pratiques Cour d'appel de Besançon 1 rue Mégevand 25000 Besançon France TGI Ajaccio Informations pratiques Tribunal de Grande Instance d'Ajaccio 4 boulevard Masseria 20000 Ajaccio France Palais de justice de Bastia Informations pratiques Cour d'app\n\n## PDF links found on the page:\n- [unknown] \"Je suis victime et je souhaite être aidé(e)\" → http://www.justice.gouv.fr/publication/guide_victimes.pdf\n\n## PDF content (first 1500 chars):\nnot available\n\nDetermine the publication date. Check ALL sources:\n1. Exact date in PDF text (e.g. \"MAJ LE 10/03/2026\", \"assemblée du 18 novembre 2025\")\n2. Exact date in page text (e.g. \"mise à jour : 24/02/2026\")\n3. Date in PDF link anchor text\n4. Date in the PDF URL path (e.g. \"/2025-07/\" means July 2025, \"/2026-03/\" means March 2026)\n5. Year only as last resort\n\nUse the most specific and most recent date. A year-only date must not override an exact date.\nDate format: YYYY-MM-DD.",
+    "result": {
+      "courtName": "Cayenne",
+      "pageUrl": null,
+      "documentUrl": null,
+      "documentTitle": null,
+      "publicationDate": null,
+      "publicationDateSource": "not-found",
+      "searchExplanation": "I checked the official Portail des cours d'appel for Cayenne, including the expected URLs for a court page and an experts-judiciaires subpage. The accessible result was only the portal homepage (Accueil | Portail des cours d'appel), which does not provide a Cayenne experts directory. No official Cayenne experts page or PDF list could be confirmed from the available sources.",
+      "dateExtractionExplanation": "No publication date could be extracted because no Cayenne experts page or PDF was identified. The homepage text contained no relevant update date for an experts directory, and the only PDF link present on the page was an unrelated victim guide. Since there was no Cayenne expert-list document, there was no page-text, link-text, filename, or PDF-content date to use.",
+      "errors": [
+        "No official Cour d'appel de Cayenne experts-judiciaires page found.",
+        "No expert list PDF for Cayenne identified.",
+        "No publication date available from the provided sources."
+      ]
+    }
+  },
+  "result": {
+    "courtName": "Cayenne",
+    "pageUrl": null,
+    "documentUrl": null,
+    "documentTitle": null,
+    "publicationDate": null,
+    "publicationDateSource": "not-found",
+    "searchExplanation": "I checked the official Portail des cours d'appel for Cayenne, including the expected URLs for a court page and an experts-judiciaires subpage. The accessible result was only the portal homepage (Accueil | Portail des cours d'appel), which does not provide a Cayenne experts directory. No official Cayenne experts page or PDF list could be confirmed from the available sources.",
+    "dateExtractionExplanation": "No publication date could be extracted because no Cayenne experts page or PDF was identified. The homepage text contained no relevant update date for an experts directory, and the only PDF link present on the page was an unrelated victim guide. Since there was no Cayenne expert-list document, there was no page-text, link-text, filename, or PDF-content date to use.",
+    "errors": [
+      "No official Cour d'appel de Cayenne experts-judiciaires page found.",
+      "No expert list PDF for Cayenne identified.",
+      "No publication date available from the provided sources."
+    ]
+  },
+  "totalUsage": {
+    "inputTokens": 49014,
+    "outputTokens": 1401,
+    "totalTokens": 50415
+  },
+  "rawToolData": {
+    "pageTitle": "Accueil | Portail des cours d'appel",
+    "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Portail des cours d'appel Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Je voudrais Trouver un tribunal près de chez moi Obtenir un formulaire Demande au juge aux affaires familiales (autorité parentale, droit de visite, pension alimentaire...) Demande d'aide juridictionnelle Demande de copie d'une décision de justice pénale Demande de rectification d'un acte d'état civil Vos droits et démarches Des réponses à des questions Je suis victime et je souhaite être aidé(e) Je souhaite porter plainte Je souhaite estimer le montant de mes droits à l'aide juridictionnelle Je souhaite trouver un conciliateur Je souhaite trouver un avocat TGI Angoulême Informations pratiques Tribunal de Grande Instance d'Angoulême place Francis Louvel 16000 Angoulême France TGI Bordeaux Informations pratiques Tribunal de Grande Instance de Bordeaux 30 rue des Frères Bonie 33000 Bordeaux France CA Bordeaux Informations pratiques Cour d'appel de Bordeaux place de la République 33000 Bordeaux France TGI Vesoul Informations pratiques Tribunal de Grande Instance de Vesoul 14 place du 11ème chasseurs 70000 Vesoul France TGI Montbéliard Informations pratiques Tribunal de Grande Instance de Montbéliard rue Wolfgang Amadeus Mozart 25200 Montbéliard France TGI Lons-le-Saunier Informations pratiques Tribunal de Grande Instance de Lons-le-Saunier 11 rue Pasteur 39000 Lons-le-Saunier France TGI Belfort Informations pratiques Tribunal de Grande Instance de Belfort 9 place de la République 90000 Belfort France Palais de justice de Besançon Informations pratiques Cour d'appel de Besançon 1 rue Mégevand 25000 Besançon France TGI Ajaccio Informations pratiques Tribunal de Grande Instance d'Ajaccio 4 boulevard Masseria 20000 Ajaccio France Palais de justice de Bastia Informations pratiques Cour d'app",
+    "pdfLinks": [
+      {
+        "url": "http://www.justice.gouv.fr/publication/guide_victimes.pdf",
+        "text": "Je suis victime et je souhaite être aidé(e)",
+        "relevanceHint": "unknown"
+      }
+    ],
+    "pdfText": "",
+    "dateHints": []
+  },
+  "error": null
+}

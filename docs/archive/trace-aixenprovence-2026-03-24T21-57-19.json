@@ -1,0 +1,191 @@
+{
+  "court": "Aix-en-Provence",
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "startedAt": "2026-03-24T21:55:12.350Z",
+  "finishedAt": "2026-03-24T21:55:28.506Z",
+  "totalMs": 16156,
+  "steps": [
+    {
+      "turn": 0,
+      "startedAt": "2026-03-24T21:55:12.350Z",
+      "durationMs": 1634,
+      "usage": {
+        "inputTokens": 5304,
+        "outputTokens": 113,
+        "totalTokens": 5417
+      },
+      "outputItemTypes": [
+        "function_call",
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.google.com/search?q=site%3Acours-appel.justice.fr+Aix-en-Provence+experts+judiciaires+pdf"
+          },
+          "callId": "call_HjzeXJxgbaD8SluTb2TGtYHy"
+        },
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.google.com/search?q=site%3Aca-aix-en-provence.justice.fr+experts+judiciaires+pdf+Aix-en-Provence"
+          },
+          "callId": "call_Q81SIyeJkNcRCHWUsdERYWKY"
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_HjzeXJxgbaD8SluTb2TGtYHy",
+          "compactOutput": "Title: Google Search\nPDF links (0):\nNo date patterns found in page text",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=QQjDad3gMqbo7M8Pq56h2Qk\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=QQjDad3gMqbo7M8Pq56h2Qk\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "dateHints": [],
+            "error": null
+          },
+          "durationMs": 103
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_Q81SIyeJkNcRCHWUsdERYWKY",
+          "compactOutput": "Title: Google Search\nPDF links (0):\nNo date patterns found in page text",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=QQjDadbjOZLNkdUPsveboAo\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=QQjDadbjOZLNkdUPsveboAo\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "dateHints": [],
+            "error": null
+          },
+          "durationMs": 119
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "startedAt": "2026-03-24T21:55:13.984Z",
+      "durationMs": 5725,
+      "usage": {
+        "inputTokens": 13576,
+        "outputTokens": 143,
+        "totalTokens": 13719
+      },
+      "outputItemTypes": [
+        "web_search_call",
+        "web_search_call",
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "web_search",
+          "id": "ws_0f557ba0922c37380069c308428a308199afc09c2454ac71e5"
+        },
+        {
+          "type": "web_search",
+          "id": "ws_0f557ba0922c37380069c3084361748199b1b1659e2156d278"
+        },
+        {
+          "type": "function_call",
+          "name": "extractPdfDate",
+          "arguments": {
+            "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-12/Annuaire%20Experts%20D%C3%A9cembre%202025.pdf"
+          },
+          "callId": "call_Tv8S1caTFOhFTOlQW1qBsobp"
+        },
+        {
+          "type": "function_result",
+          "name": "extractPdfDate",
+          "callId": "call_Tv8S1caTFOhFTOlQW1qBsobp",
+          "compactOutput": "PDF (641 pages). First page text:\nANNUAIRE DES EXPERTS JUDICIAIRES INSCRITS AUPRÈS DE LA COUR D’APPEL D’AIX-EN-PROVENCE 2025 December 10, 2025 COUR D’APPEL D’AIX EN PROVENCE Service des professions règlementées Place de Verdun 13616 Aix-en-Provence Cedex 1 Tel. 04 42 33 81 62 Courriel : experts.ca-aix-en-provence@justice.fr Site internet : www.ca-aixenprovence.justice.fr 1 TABLE DES MATIÈRES Pages SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES . . . . . . . . . . . . . . . . . . . . . . 3 LISTE PAR SPÉCIALITÉ DES EXPER",
+          "fullResult": {
+            "success": true,
+            "pdfText": "ANNUAIRE DES EXPERTS JUDICIAIRES INSCRITS AUPRÈS DE LA COUR D’APPEL D’AIX-EN-PROVENCE 2025 December 10, 2025 COUR D’APPEL D’AIX EN PROVENCE Service des professions règlementées Place de Verdun 13616 Aix-en-Provence Cedex 1 Tel. 04 42 33 81 62 Courriel : experts.ca-aix-en-provence@justice.fr Site internet : www.ca-aixenprovence.justice.fr 1 TABLE DES MATIÈRES Pages SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES . . . . . . . . . . . . . . . . . . . . . . 3 LISTE PAR SPÉCIALITÉ DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 581 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 602 2 SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . . . . . . . . . . 18 A-01 Agriculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 A-01.01 APPLICATIONS DE PRODUITS PHYTOPHARMACEUTIQUES, MATIERES FERTILISANTES ET SUPPORTS DE CULTURE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 A-01.02 FONCIER RURAL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19 A-01.03 CONSTRUCTIONS ET AMENAGEMENTS RURA",
+            "pageCount": 641,
+            "error": null
+          },
+          "durationMs": 2824
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "startedAt": "2026-03-24T21:55:19.709Z",
+      "durationMs": 3471,
+      "usage": {
+        "inputTokens": 14153,
+        "outputTokens": 458,
+        "totalTokens": 14611
+      },
+      "outputItemTypes": [
+        "web_search_call",
+        "message"
+      ],
+      "events": [
+        {
+          "type": "web_search",
+          "id": "ws_0f557ba0922c37380069c3084840048199b04303838bed1b40"
+        },
+        {
+          "type": "model_text",
+          "text": "J’ai trouvé la page officielle de la Cour d’appel d’Aix-en-Provence sur le site **cours-appel.justice.fr** : la page **“Experts judiciaires”** indique une **mise à jour du 19/02/2026** et contient la pièce jointe **“Annuaire des experts”**. ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/aix-en-provence/experts-judiciaires?utm_source=openai))\n\nJ’ai ensuite utilisé `extractPdfDate` sur le PDF de l’annuaire. Le texte extrait de la première page donne explicitement : **“ANNUAIRE DES EXPERTS JUDICIAIRES INSCRITS AUPRÈS DE LA COUR D’APPEL D’AIX-EN-PROVENCE 2025”** avec une date **“December 10, 2025”**. C’est la date la plus spécifique trouvée dans le PDF, donc je la retiens comme date officielle du document. ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/aix-en-provence/experts-judiciaires?utm_source=openai))\n\n### Résultat\n- **Cour d’appel** : Aix-en-Provence  \n- **Liste officielle** : Annuaire des experts judiciaires  \n- **Date officielle retenue** : **2025-12-10**  \n- **Source de la date** : **pdf-content**  \n\n### Détail des dates trouvées\n- **Page web** : 19/02/2026 (mise à jour de la page, pas du PDF) ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/aix-en-provence/experts-judiciaires?utm_source=openai))\n- **PDF** : December 10, 2025, soit **10/12/2025** converti au format demandé ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/aix-en-provence/experts-judiciaires?utm_source=openai))\n\nSi tu veux, je peux aussi te donner le lien exact de la page officielle ou t’extraire le nom du PDF utilisé."
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "startedAt": "2026-03-24T21:55:23.180Z",
+    "durationMs": 5326,
+    "usage": {
+      "inputTokens": 1704,
+      "outputTokens": 818,
+      "totalTokens": 2522
+    },
+    "prompt": "You are analyzing date signals from a French court expert directory search.\n\n## Court: Aix-en-Provence\n\n## Agent summary:\nJ’ai trouvé la page officielle de la Cour d’appel d’Aix-en-Provence sur le site **cours-appel.justice.fr** : la page **“Experts judiciaires”** indique une **mise à jour du 19/02/2026** et contient la pièce jointe **“Annuaire des experts”**. ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/aix-en-provence/experts-judiciaires?utm_source=openai))\n\nJ’ai ensuite utilisé `extractPdfDate` sur le PDF de l’annuaire. Le texte extrait de la première page donne explicitement : **“ANNUAIRE DES EXPERTS JUDICIAIRES INSCRITS AUPRÈS DE LA COUR D’APPEL D’AIX-EN-PROVENCE 2025”** avec une date **“December 10, 2025”**. C’est la date la plus spécifique trouvée dans le PDF, donc je la retiens comme date officielle du document. ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/aix-en-provence/experts-judiciaires?utm_source=openai))\n\n### Résultat\n- **Cour d’appel** : Aix-en-Provence  \n- **Liste officielle** : Annuaire des experts judiciaires  \n- **Date officielle retenue** : **2025-12-10**  \n- **Source de la date** : **pdf-content**  \n\n### Détail des dates trouvées\n- **Page web** : 19/02/2026 (mise à jour de la page, pas du PDF) ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/aix-en-provence/experts-judiciaires?utm_source=openai))\n- **PDF** : December 10, 2025, soit **10/12/2025** converti au format demandé ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/aix-en-provence/experts-judiciaires?utm_source=openai))\n\nSi tu veux, je peux aussi te donner le lien exact de la page officielle ou t’extraire le nom du PDF utilisé.\n\n## Page title:\nGoogle Search\n\n## Page text (first 2000 chars):\n<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=QQjDadbjOZLNkdUPsveboAo\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=QQjDadbjOZLNkdUPsveboAo\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.\n\n## PDF links found on the page:\nnone\n\n## PDF content (first 1500 chars):\nANNUAIRE DES EXPERTS JUDICIAIRES INSCRITS AUPRÈS DE LA COUR D’APPEL D’AIX-EN-PROVENCE 2025 December 10, 2025 COUR D’APPEL D’AIX EN PROVENCE Service des professions règlementées Place de Verdun 13616 Aix-en-Provence Cedex 1 Tel. 04 42 33 81 62 Courriel : experts.ca-aix-en-provence@justice.fr Site internet : www.ca-aixenprovence.justice.fr 1 TABLE DES MATIÈRES Pages SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES . . . . . . . . . . . . . . . . . . . . . . 3 LISTE PAR SPÉCIALITÉ DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 581 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 602 2 SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . . . . . . . . . . 18 A-01 Agriculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 A-01.01 APPLICATIONS DE PRODUITS PHYTOPHARMACEUTIQUES, MATIERES FERTILISANTES ET SUPPORTS DE CULTURE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 A-01.02 FONCIER RURAL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19 A-01.03 CONSTRUCTIONS ET AMENAGEMENTS RURA\n\nDetermine the publication date. Check ALL sources:\n1. Exact date in PDF text (e.g. \"MAJ LE 10/03/2026\", \"assemblée du 18 novembre 2025\")\n2. Exact date in page text (e.g. \"mise à jour : 24/02/2026\")\n3. Date in PDF link anchor text\n4. Date in the PDF URL path (e.g. \"/2025-07/\" means July 2025, \"/2026-03/\" means March 2026)\n5. Year only as last resort\n\nUse the most specific and most recent date. A year-only date must not override an exact date.\nDate format: YYYY-MM-DD.",
+    "result": {
+      "courtName": "Aix-en-Provence",
+      "pageUrl": "https://www.cours-appel.justice.fr/aix-en-provence/experts-judiciaires",
+      "documentUrl": null,
+      "documentTitle": "Annuaire des experts",
+      "publicationDate": "2025-12-10",
+      "publicationDateSource": "pdf-content",
+      "searchExplanation": "La page officielle de la Cour d’appel d’Aix-en-Provence a été identifiée sur le site cours-appel.justice.fr via la page « Experts judiciaires ». L’agent signale qu’elle contient l’attachement « Annuaire des experts » et une mise à jour de page au 19/02/2026. Le texte PDF fourni contient le titre de l’annuaire et une date explicite en première page.",
+      "dateExtractionExplanation": "J’ai retenu la date la plus spécifique trouvée dans le document lui-même : le texte PDF affiche explicitement « December 10, 2025 » sur la première page de l’« Annuaire des experts judiciaires ». La date de mise à jour de la page web (19/02/2026) concerne la page d’accueil et non la publication du PDF, donc elle ne remplace pas la date du document.",
+      "errors": [
+        "La page de recherche Google fournie était une interstitielle de redirection et ne permettait pas d’extraire directement la page ou le lien PDF depuis le HTML visible."
+      ]
+    }
+  },
+  "result": {
+    "courtName": "Aix-en-Provence",
+    "pageUrl": "https://www.cours-appel.justice.fr/aix-en-provence/experts-judiciaires",
+    "documentUrl": null,
+    "documentTitle": "Annuaire des experts",
+    "publicationDate": "2025-12-10",
+    "publicationDateSource": "pdf-content",
+    "searchExplanation": "La page officielle de la Cour d’appel d’Aix-en-Provence a été identifiée sur le site cours-appel.justice.fr via la page « Experts judiciaires ». L’agent signale qu’elle contient l’attachement « Annuaire des experts » et une mise à jour de page au 19/02/2026. Le texte PDF fourni contient le titre de l’annuaire et une date explicite en première page.",
+    "dateExtractionExplanation": "J’ai retenu la date la plus spécifique trouvée dans le document lui-même : le texte PDF affiche explicitement « December 10, 2025 » sur la première page de l’« Annuaire des experts judiciaires ». La date de mise à jour de la page web (19/02/2026) concerne la page d’accueil et non la publication du PDF, donc elle ne remplace pas la date du document.",
+    "errors": [
+      "La page de recherche Google fournie était une interstitielle de redirection et ne permettait pas d’extraire directement la page ou le lien PDF depuis le HTML visible."
+    ]
+  },
+  "totalUsage": {
+    "inputTokens": 34737,
+    "outputTokens": 1532,
+    "totalTokens": 36269
+  },
+  "rawToolData": {
+    "pageTitle": "Google Search",
+    "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=QQjDadbjOZLNkdUPsveboAo\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=QQjDadbjOZLNkdUPsveboAo\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+    "pdfLinks": [],
+    "pdfText": "ANNUAIRE DES EXPERTS JUDICIAIRES INSCRITS AUPRÈS DE LA COUR D’APPEL D’AIX-EN-PROVENCE 2025 December 10, 2025 COUR D’APPEL D’AIX EN PROVENCE Service des professions règlementées Place de Verdun 13616 Aix-en-Provence Cedex 1 Tel. 04 42 33 81 62 Courriel : experts.ca-aix-en-provence@justice.fr Site internet : www.ca-aixenprovence.justice.fr 1 TABLE DES MATIÈRES Pages SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES . . . . . . . . . . . . . . . . . . . . . . 3 LISTE PAR SPÉCIALITÉ DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 581 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 602 2 SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . . . . . . . . . . 18 A-01 Agriculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 A-01.01 APPLICATIONS DE PRODUITS PHYTOPHARMACEUTIQUES, MATIERES FERTILISANTES ET SUPPORTS DE CULTURE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 A-01.02 FONCIER RURAL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19 A-01.03 CONSTRUCTIONS ET AMENAGEMENTS RURA",
+    "dateHints": []
+  },
+  "error": null
+}

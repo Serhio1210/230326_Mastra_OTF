@@ -1,0 +1,271 @@
+{
+  "court": "Angers",
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "startedAt": "2026-03-24T21:53:00.642Z",
+  "finishedAt": "2026-03-24T21:53:17.013Z",
+  "totalMs": 16371,
+  "steps": [
+    {
+      "turn": 0,
+      "startedAt": "2026-03-24T21:53:00.642Z",
+      "durationMs": 1605,
+      "usage": {
+        "inputTokens": 5302,
+        "outputTokens": 105,
+        "totalTokens": 5407
+      },
+      "outputItemTypes": [
+        "function_call",
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.google.com/search?q=Cour+d%27appel+Angers+experts+judiciaires+liste+officielle"
+          },
+          "callId": "call_KdIFD7k70l7ijdMToq8ig80i"
+        },
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.bing.com/search?q=Cour+d%27appel+Angers+experts+judiciaires+liste+officielle"
+          },
+          "callId": "call_7Ho2XiC9UJKgYx5Y7tvmvchG"
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_KdIFD7k70l7ijdMToq8ig80i",
+          "compactOutput": "Title: Google Search\nPDF links (0):\nNo date patterns found in page text",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=vgfDaabTBu2ZkdUP9IXcwQI\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=vgfDaabTBu2ZkdUP9IXcwQI\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "dateHints": [],
+            "error": null
+          },
+          "durationMs": 175
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_7Ho2XiC9UJKgYx5Y7tvmvchG",
+          "compactOutput": "Title: Cour d'appel Angers experts judiciaires liste officielle - Recherche\nPDF links (0):\nNo date patterns found in page text",
+          "fullResult": {
+            "success": true,
+            "title": "Cour d'appel Angers experts judiciaires liste officielle - Recherche",
+            "pageText": "Passer au contenuCommentaires sur l’accessibilité Environ 50 résultatsOuvrir les liens dans un nouvel ongletDate stackexchange.comhttps://anime.stackexchange.com › questionsWhat is a \"cour\"? - Anime & Manga Stack Exchange12 mars 2014 · A cour is not of precisely-defined duration, and can, in practice, last anywhere from 11 to 14 weeks (and hence, the same number of episodes), though 12-13 weeks is most common, since a … stackexchange.comhttps://anime.stackexchange.com › questionsWhat was the first anime that used a split-cour format?Split-cour airing format is a noticeable trend in the anime industry recently. Unlike most multi-season shows that are aired two or more seasons in succession, split-cour shows have a break in between …stackexchange.comhttps://anime.stackexchange.com › questionsHow often do multi-season anime break their previous cour count?31 mars 2017 · Second, how often do second or third seasons break from the cour-count of previous seasons? Does it happen at least once a year, or is it uncommon enough that the last time it …stackexchange.comhttps://anime.stackexchange.com › questionsWhat defines one \"season\" of anime? - Anime & Manga Stack ExchangeFrom what I've been able to follow, the seasons of anime shows have been tied to thirteen week blocks, directly correlating with the actual season in Japan (for instance, this is the Winter 2013 se...stackexchange.comhttps://anime.stackexchange.com › questionsHow long does producing a cour take? - Anime & Manga Stack ExchangeI've read through some questions about financing anime and so on, but don't know how long it takes to produce a complete cour of anime. I'm talking writing about 12 to 13 episodes, of a standard-le...stackexchange.comhttps://anime.stackexchange.com › questionsHow long does the producing of long run anime take?I know that this is already asked before in How long does producing a cour take? But I assume that it's only related to the seasonal anime that appear once per season (except when",
+            "pdfLinks": [],
+            "dateHints": [],
+            "error": null
+          },
+          "durationMs": 102
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "startedAt": "2026-03-24T21:53:02.247Z",
+      "durationMs": 3502,
+      "usage": {
+        "inputTokens": 17622,
+        "outputTokens": 163,
+        "totalTokens": 17785
+      },
+      "outputItemTypes": [
+        "web_search_call",
+        "web_search_call",
+        "web_search_call",
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "web_search",
+          "id": "ws_0281a532b1ba3b710069c307bea5f08198a1576372da360090"
+        },
+        {
+          "type": "web_search",
+          "id": "ws_0281a532b1ba3b710069c307bf956c81988f4758bf24f6feb1"
+        },
+        {
+          "type": "web_search",
+          "id": "ws_0281a532b1ba3b710069c307c028a08198996253e7974dc897"
+        },
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.cours-appel.justice.fr/angers/experts-judiciaires"
+          },
+          "callId": "call_VGRpS1STWRYH34zy15xEYtPm"
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_VGRpS1STWRYH34zy15xEYtPm",
+          "compactOutput": "Title: Experts judiciaires | Cour d'appel d'Angers\nPDF links (4):\n  - [likely-expert-list] \"Liste des experts 2026\n        Téléchargement 1.23 Mo\" → https://www.cours-appel.justice.fr/sites/default/files/2026-03/LISTE%20EXPERTS%202026.pdf\n  - [likely-expert-list] \"Annexe 1 - Nomenclature détaillée liste experts judiciaires décembre 2022\n        Téléchargement 385.06 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2023-01/ANNEXE%201%20-%20NOMENCLATURE%20DETAILLEE%20LISTE%20EXPERTS%20JUDICIAIRES%202022.12_0.pdf\n  - [likely-expert-list] \"Décret du 23 décembre 2004 relatif aux experts judiciaires\n        Téléchargement 684.55 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2023-09/D%C3%A9cret%20du%2023%20d%C3%A9cembre%202004%20relatif%20aux%20experts%20judiciaires.pdf\n  - [likely-expert-list] \"Formation postulants Expertise judiciaire Bulletin d'inscription\n        Téléchargement 442.11 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2025-12/Formation%20postulants%20%20Expertise%20judiciaire%20Bulletin%20inscription_0.pdf\nDate hints from page: mise à jour : 20/03/2026",
+          "fullResult": {
+            "success": true,
+            "title": "Experts judiciaires | Cour d'appel d'Angers",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel d'Angers Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Experts judiciaires 16/04/2018 - mise à jour : 20/03/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer Les experts judiciaires sont des professionnels reconnus pour leur compétence et leur expérience dans leur domaine d'activité qui sont chargés par le juge d'apporter des éclaircissements et de donner un avis technique sur des éléments d'une affaire. Ils prêtent serment et exercent leur mission en toute indépendance sous le contrôle du juge. Les experts sont inscrits sur une liste établie auprès de chaque cour d'appel. Ils perçoivent des honoraires dont le montant, selon les domaines, est réglementé ou fixé par le juge. 1. Liste des experts judiciaires du ressort de la cour d'appel d'Angers Vous trouverez ci-dessous la liste des experts judiciaires du ressort de la Cour d'appel d'Angers : Liste des experts 2026 Téléchargement 1.23 Mo 2. Inscription - Extension d'inscription - Réinscription Les experts qui souhaitent s'inscrire ou se réinscrire sur la liste de la cour d'appel d'Angers doivent désormais déposer leurs candidatures de manière dématérialisée via la site démarche.numerique.gouv.fr depuis les liens que vous trouverez ci-après : Inscription initiale : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-inscription-initiale-campagne- Réinscription : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-reinscription-campagne-nationa Extension : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-extension-d-inscription-campag Les candidatures adressées au format papier ne pourront en conséquence être prises en compte. Annexe 1 - Nomenclature détaillée liste experts j",
+            "pdfLinks": [
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/LISTE%20EXPERTS%202026.pdf",
+                "text": "Liste des experts 2026\n        Téléchargement 1.23 Mo",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-01/ANNEXE%201%20-%20NOMENCLATURE%20DETAILLEE%20LISTE%20EXPERTS%20JUDICIAIRES%202022.12_0.pdf",
+                "text": "Annexe 1 - Nomenclature détaillée liste experts judiciaires décembre 2022\n        Téléchargement 385.06 Ko",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-09/D%C3%A9cret%20du%2023%20d%C3%A9cembre%202004%20relatif%20aux%20experts%20judiciaires.pdf",
+                "text": "Décret du 23 décembre 2004 relatif aux experts judiciaires\n        Téléchargement 684.55 Ko",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-12/Formation%20postulants%20%20Expertise%20judiciaire%20Bulletin%20inscription_0.pdf",
+                "text": "Formation postulants Expertise judiciaire Bulletin d'inscription\n        Téléchargement 442.11 Ko",
+                "relevanceHint": "likely-expert-list"
+              }
+            ],
+            "dateHints": [
+              "mise à jour : 20/03/2026"
+            ],
+            "error": null
+          },
+          "durationMs": 194
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "startedAt": "2026-03-24T21:53:05.749Z",
+      "durationMs": 2122,
+      "usage": {
+        "inputTokens": 14300,
+        "outputTokens": 48,
+        "totalTokens": 14348
+      },
+      "outputItemTypes": [
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "function_call",
+          "name": "extractPdfDate",
+          "arguments": {
+            "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/LISTE%20EXPERTS%202026.pdf"
+          },
+          "callId": "call_7wyB29jFTUfNwq22cNiaPOto"
+        },
+        {
+          "type": "function_result",
+          "name": "extractPdfDate",
+          "callId": "call_7wyB29jFTUfNwq22cNiaPOto",
+          "compactOutput": "PDF (165 pages). First page text:\nLISTE DES EXPERTS JUDICIAIRES & LISTE DES COURTIERS DE MARCHANDISES ASSERMENTÉS ETABLIES POUR LE RESSORT DE LA COUR D’APPEL D’ANGERS POUR L’ANNÉE 2026 Assemblée générale des magistrats du siège de la cour d’appel du 18 novembre 2025 COUR D’APPEL Palais de Justice 49043 ANGERS Cedex 01 www.ca-angers.justice.fr experts.ca-angers@justice.fr TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêté du 5 décembre2022 . . . . . . . . . . . . . . . . . . . . . .",
+          "fullResult": {
+            "success": true,
+            "pdfText": "LISTE DES EXPERTS JUDICIAIRES & LISTE DES COURTIERS DE MARCHANDISES ASSERMENTÉS ETABLIES POUR LE RESSORT DE LA COUR D’APPEL D’ANGERS POUR L’ANNÉE 2026 Assemblée générale des magistrats du siège de la cour d’appel du 18 novembre 2025 COUR D’APPEL Palais de Justice 49043 ANGERS Cedex 01 www.ca-angers.justice.fr experts.ca-angers@justice.fr TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêté du 5 décembre2022 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 158 COURTIERS ASSERMENTÉS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 162 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 163 1 Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêté du 5 décembre2022 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel...... conformément à la nomenclature suiva",
+            "pageCount": 165,
+            "error": null
+          },
+          "durationMs": 1071
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "startedAt": "2026-03-24T21:53:07.871Z",
+      "durationMs": 2704,
+      "usage": {
+        "inputTokens": 14534,
+        "outputTokens": 356,
+        "totalTokens": 14890
+      },
+      "outputItemTypes": [
+        "message"
+      ],
+      "events": [
+        {
+          "type": "model_text",
+          "text": "Voici le résultat pour la **Cour d’appel d’Angers** :\n\n- **Page officielle trouvée** : *Experts judiciaires | Cour d'appel d'Angers* sur `cours-appel.justice.fr`.  \n- **PDF officiel identifié** : **“Liste des experts 2026”**.  \n- **Date officielle la plus précise trouvée dans le PDF** : **Assemblée générale des magistrats du siège de la cour d’appel du 18 novembre 2025**.  \n- **Date de publication retenue** : **2025-11-18**.  \n- **Source de la date** : **pdf-content**.\n\n### Pourquoi cette date ?\nJ’ai relevé plusieurs indices :\n1. **Dans la page web** : `mise à jour : 20/03/2026` — c’est la date de mise à jour de la page, pas de la liste elle-même.\n2. **Dans le titre du PDF** : “Liste des experts 2026” — cela donne seulement l’année, donc moins précis.\n3. **Dans le contenu du PDF** : “Assemblée générale des magistrats du siège de la cour d’appel du 18 novembre 2025” — c’est l’indication la plus précise et la plus utile pour dater la liste.\n\n### Conclusion\nLa **liste officielle des experts judiciaires de la Cour d’appel d’Angers** est le PDF **“Liste des experts 2026”**, et la date officielle la plus précise disponible dans le document est **2025-11-18**.\n\nSi vous voulez, je peux aussi vous donner le **lien exact du PDF** ou extraire un **résumé des catégories d’experts**."
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "startedAt": "2026-03-24T21:53:10.575Z",
+    "durationMs": 6438,
+    "usage": {
+      "inputTokens": 2230,
+      "outputTokens": 1160,
+      "totalTokens": 3390
+    },
+    "prompt": "You are analyzing date signals from a French court expert directory search.\n\n## Court: Angers\n\n## Agent summary:\nVoici le résultat pour la **Cour d’appel d’Angers** :\n\n- **Page officielle trouvée** : *Experts judiciaires | Cour d'appel d'Angers* sur `cours-appel.justice.fr`.  \n- **PDF officiel identifié** : **“Liste des experts 2026”**.  \n- **Date officielle la plus précise trouvée dans le PDF** : **Assemblée générale des magistrats du siège de la cour d’appel du 18 novembre 2025**.  \n- **Date de publication retenue** : **2025-11-18**.  \n- **Source de la date** : **pdf-content**.\n\n### Pourquoi cette date ?\nJ’ai relevé plusieurs indices :\n1. **Dans la page web** : `mise à jour : 20/03/2026` — c’est la date de mise à jour de la page, pas de la liste elle-même.\n2. **Dans le titre du PDF** : “Liste des experts 2026” — cela donne seulement l’année, donc moins précis.\n3. **Dans le contenu du PDF** : “Assemblée générale des magistrats du siège de la cour d’appel du 18 novembre 2025” — c’est l’indication la plus précise et la plus utile pour dater la liste.\n\n### Conclusion\nLa **liste officielle des experts judiciaires de la Cour d’appel d’Angers** est le PDF **“Liste des experts 2026”**, et la date officielle la plus précise disponible dans le document est **2025-11-18**.\n\nSi vous voulez, je peux aussi vous donner le **lien exact du PDF** ou extraire un **résumé des catégories d’experts**.\n\n## Page title:\nExperts judiciaires | Cour d'appel d'Angers\n\n## Page text (first 2000 chars):\nRechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel d'Angers Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Experts judiciaires 16/04/2018 - mise à jour : 20/03/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer Les experts judiciaires sont des professionnels reconnus pour leur compétence et leur expérience dans leur domaine d'activité qui sont chargés par le juge d'apporter des éclaircissements et de donner un avis technique sur des éléments d'une affaire. Ils prêtent serment et exercent leur mission en toute indépendance sous le contrôle du juge. Les experts sont inscrits sur une liste établie auprès de chaque cour d'appel. Ils perçoivent des honoraires dont le montant, selon les domaines, est réglementé ou fixé par le juge. 1. Liste des experts judiciaires du ressort de la cour d'appel d'Angers Vous trouverez ci-dessous la liste des experts judiciaires du ressort de la Cour d'appel d'Angers : Liste des experts 2026 Téléchargement 1.23 Mo 2. Inscription - Extension d'inscription - Réinscription Les experts qui souhaitent s'inscrire ou se réinscrire sur la liste de la cour d'appel d'Angers doivent désormais déposer leurs candidatures de manière dématérialisée via la site démarche.numerique.gouv.fr depuis les liens que vous trouverez ci-après : Inscription initiale : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-inscription-initiale-campagne- Réinscription : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-reinscription-campagne-nationa Extension : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-extension-d-inscription-campag Les candidatures adressées au format papier ne pourront en conséquence être prises en compte. Annexe 1 - Nomenclature détaillée liste experts j\n\n## PDF links found on the page:\n- [likely-expert-list] \"Liste des experts 2026\n        Téléchargement 1.23 Mo\" → https://www.cours-appel.justice.fr/sites/default/files/2026-03/LISTE%20EXPERTS%202026.pdf\n- [likely-expert-list] \"Annexe 1 - Nomenclature détaillée liste experts judiciaires décembre 2022\n        Téléchargement 385.06 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2023-01/ANNEXE%201%20-%20NOMENCLATURE%20DETAILLEE%20LISTE%20EXPERTS%20JUDICIAIRES%202022.12_0.pdf\n- [likely-expert-list] \"Décret du 23 décembre 2004 relatif aux experts judiciaires\n        Téléchargement 684.55 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2023-09/D%C3%A9cret%20du%2023%20d%C3%A9cembre%202004%20relatif%20aux%20experts%20judiciaires.pdf\n- [likely-expert-list] \"Formation postulants Expertise judiciaire Bulletin d'inscription\n        Téléchargement 442.11 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2025-12/Formation%20postulants%20%20Expertise%20judiciaire%20Bulletin%20inscription_0.pdf\n\n## PDF content (first 1500 chars):\nLISTE DES EXPERTS JUDICIAIRES & LISTE DES COURTIERS DE MARCHANDISES ASSERMENTÉS ETABLIES POUR LE RESSORT DE LA COUR D’APPEL D’ANGERS POUR L’ANNÉE 2026 Assemblée générale des magistrats du siège de la cour d’appel du 18 novembre 2025 COUR D’APPEL Palais de Justice 49043 ANGERS Cedex 01 www.ca-angers.justice.fr experts.ca-angers@justice.fr TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêté du 5 décembre2022 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 158 COURTIERS ASSERMENTÉS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 162 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 163 1 Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêté du 5 décembre2022 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel...... conformément à la nomenclature suiva\n\nDetermine the publication date. Check ALL sources:\n1. Exact date in PDF text (e.g. \"MAJ LE 10/03/2026\", \"assemblée du 18 novembre 2025\")\n2. Exact date in page text (e.g. \"mise à jour : 24/02/2026\")\n3. Date in PDF link anchor text\n4. Date in the PDF URL path (e.g. \"/2025-07/\" means July 2025, \"/2026-03/\" means March 2026)\n5. Year only as last resort\n\nUse the most specific and most recent date. A year-only date must not override an exact date.\nDate format: YYYY-MM-DD.",
+    "result": {
+      "courtName": "Angers",
+      "pageUrl": "https://www.cours-appel.justice.fr/angers/experts-judiciaires",
+      "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/LISTE%20EXPERTS%202026.pdf",
+      "documentTitle": "Liste des experts 2026",
+      "publicationDate": "2025-11-18",
+      "publicationDateSource": "pdf-content",
+      "searchExplanation": "I located the official page on the Cour d'appel d'Angers website (cours-appel.justice.fr) titled \"Experts judiciaires | Cour d'appel d'Angers\". On that page, the likely directory PDF is linked as \"Liste des experts 2026\", which points to the PDF URL under /sites/default/files/2026-03/.",
+      "dateExtractionExplanation": "I checked all available date signals. The page text contains a general page update date (\"mise à jour : 20/03/2026\"), and the PDF URL path indicates /2026-03/, but these refer to the webpage/file hosting rather than the document's own date. The PDF content itself contains the exact statement \"Assemblée générale des magistrats du siège de la cour d’appel du 18 novembre 2025\", which is the most specific date tied directly to the expert list. I therefore used 2025-11-18 as the publication date.",
+      "errors": []
+    }
+  },
+  "result": {
+    "courtName": "Angers",
+    "pageUrl": "https://www.cours-appel.justice.fr/angers/experts-judiciaires",
+    "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/LISTE%20EXPERTS%202026.pdf",
+    "documentTitle": "Liste des experts 2026",
+    "publicationDate": "2025-11-18",
+    "publicationDateSource": "pdf-content",
+    "searchExplanation": "I located the official page on the Cour d'appel d'Angers website (cours-appel.justice.fr) titled \"Experts judiciaires | Cour d'appel d'Angers\". On that page, the likely directory PDF is linked as \"Liste des experts 2026\", which points to the PDF URL under /sites/default/files/2026-03/.",
+    "dateExtractionExplanation": "I checked all available date signals. The page text contains a general page update date (\"mise à jour : 20/03/2026\"), and the PDF URL path indicates /2026-03/, but these refer to the webpage/file hosting rather than the document's own date. The PDF content itself contains the exact statement \"Assemblée générale des magistrats du siège de la cour d’appel du 18 novembre 2025\", which is the most specific date tied directly to the expert list. I therefore used 2025-11-18 as the publication date.",
+    "errors": []
+  },
+  "totalUsage": {
+    "inputTokens": 53988,
+    "outputTokens": 1832,
+    "totalTokens": 55820
+  },
+  "rawToolData": {
+    "pageTitle": "Experts judiciaires | Cour d'appel d'Angers",
+    "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel d'Angers Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Experts judiciaires 16/04/2018 - mise à jour : 20/03/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer Les experts judiciaires sont des professionnels reconnus pour leur compétence et leur expérience dans leur domaine d'activité qui sont chargés par le juge d'apporter des éclaircissements et de donner un avis technique sur des éléments d'une affaire. Ils prêtent serment et exercent leur mission en toute indépendance sous le contrôle du juge. Les experts sont inscrits sur une liste établie auprès de chaque cour d'appel. Ils perçoivent des honoraires dont le montant, selon les domaines, est réglementé ou fixé par le juge. 1. Liste des experts judiciaires du ressort de la cour d'appel d'Angers Vous trouverez ci-dessous la liste des experts judiciaires du ressort de la Cour d'appel d'Angers : Liste des experts 2026 Téléchargement 1.23 Mo 2. Inscription - Extension d'inscription - Réinscription Les experts qui souhaitent s'inscrire ou se réinscrire sur la liste de la cour d'appel d'Angers doivent désormais déposer leurs candidatures de manière dématérialisée via la site démarche.numerique.gouv.fr depuis les liens que vous trouverez ci-après : Inscription initiale : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-inscription-initiale-campagne- Réinscription : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-reinscription-campagne-nationa Extension : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-extension-d-inscription-campag Les candidatures adressées au format papier ne pourront en conséquence être prises en compte. Annexe 1 - Nomenclature détaillée liste experts j",
+    "pdfLinks": [
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/LISTE%20EXPERTS%202026.pdf",
+        "text": "Liste des experts 2026\n        Téléchargement 1.23 Mo",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-01/ANNEXE%201%20-%20NOMENCLATURE%20DETAILLEE%20LISTE%20EXPERTS%20JUDICIAIRES%202022.12_0.pdf",
+        "text": "Annexe 1 - Nomenclature détaillée liste experts judiciaires décembre 2022\n        Téléchargement 385.06 Ko",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-09/D%C3%A9cret%20du%2023%20d%C3%A9cembre%202004%20relatif%20aux%20experts%20judiciaires.pdf",
+        "text": "Décret du 23 décembre 2004 relatif aux experts judiciaires\n        Téléchargement 684.55 Ko",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-12/Formation%20postulants%20%20Expertise%20judiciaire%20Bulletin%20inscription_0.pdf",
+        "text": "Formation postulants Expertise judiciaire Bulletin d'inscription\n        Téléchargement 442.11 Ko",
+        "relevanceHint": "likely-expert-list"
+      }
+    ],
+    "pdfText": "LISTE DES EXPERTS JUDICIAIRES & LISTE DES COURTIERS DE MARCHANDISES ASSERMENTÉS ETABLIES POUR LE RESSORT DE LA COUR D’APPEL D’ANGERS POUR L’ANNÉE 2026 Assemblée générale des magistrats du siège de la cour d’appel du 18 novembre 2025 COUR D’APPEL Palais de Justice 49043 ANGERS Cedex 01 www.ca-angers.justice.fr experts.ca-angers@justice.fr TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêté du 5 décembre2022 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 158 COURTIERS ASSERMENTÉS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 162 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 163 1 Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêté du 5 décembre2022 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel...... conformément à la nomenclature suiva",
+    "dateHints": [
+      "mise à jour : 20/03/2026"
+    ]
+  },
+  "error": null
+}

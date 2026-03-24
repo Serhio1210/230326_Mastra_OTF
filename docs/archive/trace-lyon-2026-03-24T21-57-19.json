@@ -1,0 +1,263 @@
+{
+  "court": "Lyon",
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "startedAt": "2026-03-24T21:52:29.157Z",
+  "finishedAt": "2026-03-24T21:52:46.185Z",
+  "totalMs": 17028,
+  "steps": [
+    {
+      "turn": 0,
+      "startedAt": "2026-03-24T21:52:29.157Z",
+      "durationMs": 1275,
+      "usage": {
+        "inputTokens": 5301,
+        "outputTokens": 60,
+        "totalTokens": 5361
+      },
+      "outputItemTypes": [
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.google.com/search?q=Cour+d%27appel+de+Lyon+experts+judiciaires+PDF"
+          },
+          "callId": "call_2yrBT1c3R8tkiR61B3n7XbgY"
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_2yrBT1c3R8tkiR61B3n7XbgY",
+          "compactOutput": "Title: Google Search\nPDF links (0):\nNo date patterns found in page text",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=ngfDaaHmGJGakdUP_N394AU\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=ngfDaaHmGJGakdUP_N394AU\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "dateHints": [],
+            "error": null
+          },
+          "durationMs": 104
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "startedAt": "2026-03-24T21:52:30.432Z",
+      "durationMs": 3141,
+      "usage": {
+        "inputTokens": 9299,
+        "outputTokens": 109,
+        "totalTokens": 9408
+      },
+      "outputItemTypes": [
+        "web_search_call",
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "web_search",
+          "id": "ws_05ca318a487ffc200069c3079eeec4819b8b48f14255bceb27"
+        },
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.cours-appel.justice.fr/lyon/les-experts"
+          },
+          "callId": "call_gfkN5nFWAGe2XIOBueAFjBo8"
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_gfkN5nFWAGe2XIOBueAFjBo8",
+          "compactOutput": "Title: Les experts | Cour d'appel de LYON\nPDF links (7):\n  - [likely-expert-list] \"Livret RPJ\n        Téléchargement 1.07 Mo\" → https://www.cours-appel.justice.fr/sites/default/files/2026-03/Livret%20RPJ%20expert_internet%20CA%20.pdf\n  - [unknown] \"Arrêté 5 décembre 2022\n        Téléchargement 290.75 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2023-01/Arr%C3%AAt%C3%A9%20du%205%20d%C3%A9cembre%202022%20relatif%20%C3%A0%20la%20...-1463%20du%2023%20d%C3%A9cembre%202004%20-%20L%C3%A9gifrance.pdf\n  - [likely-expert-list] \"Liste des experts judiciaires\n        Téléchargement 1.84 Mo\" → https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20judiciaires.pdf\n  - [likely-expert-list] \"Liste des experts honoraires\n        Téléchargement 496.96 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20honoraires.pdf\n  - [unknown] \"Attestation de fin de mission\n        Téléchargement 1.82 Mo\" → https://www.cours-appel.justice.fr/sites/default/files/2024-12/Annexe1-AFM.pdf\n  - [unknown] \"rapport annuel d'activité interprètes- traducteurs\n        Téléchargement 537.87 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2022-02/rapport%20annuel%20activit%C3%A9%20interpr%C3%A8tes-traducteurs.pdf\n  - [unknown] \"Rapport annuel d'activité\n        Téléchargement 10.12 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2019-04/rapport%20annuel%20activit%C3%A9.pdf\nNo date patterns found in page text",
+          "fullResult": {
+            "success": true,
+            "title": "Les experts | Cour d'appel de LYON",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de LYON Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Les experts Depuis le 2 janvier 2026, les dossiers de candidatures sur la liste des experts judiciaires sont entièrement dématérialisés et la procédure d'inscription s'effectue depuis la plateforme \"Démarches Numériques\". Les liens vers les formulaires de candidatures (inscription, réinscription, extensions) sont ci-dessous : Inscription initiale : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-inscription-initiale-campagne- Réinscription : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-reinscription-campagne-nationa Extension : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-extension-d-inscription-campag La notification des décisions concernant les candidatures sera effectuée dans le courant du mois de décembre suivant le dépôt de la demande. -> Référentiel des Partenaires de la Justice : Livret RPJ Téléchargement 1.07 Mo Lorsqu'ils ordonnent des expertises, les tribunaux choisissent les experts sur la liste établie par la cour d'appel. La cour d’appel procède chaque année à la révision de la liste des experts assermentés. Elle inscrit de nouveaux experts et procède à la radiation de ceux qui n’exercent plus. Si vous désirez faire acte de candidature, vous devez adresser votre demande à partir du mois de novembre et avant le 1er mars de chaque année (soit au plus tard le 28 ou 29 février). Votre attention est attirée sur la nouvelle condition pour les candidats de justifier d’une formation à l’expertise pour pouvoir être inscrits sur une liste d’experts judiciaires (définie par le décret n° 2023-468 du 16 juin 2023) Chaque année et avant le 1er mars, les experts judiciaires doivent déposer leur rapport d'activité de l'année précédente",
+            "pdfLinks": [
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/Livret%20RPJ%20expert_internet%20CA%20.pdf",
+                "text": "Livret RPJ\n        Téléchargement 1.07 Mo",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-01/Arr%C3%AAt%C3%A9%20du%205%20d%C3%A9cembre%202022%20relatif%20%C3%A0%20la%20...-1463%20du%2023%20d%C3%A9cembre%202004%20-%20L%C3%A9gifrance.pdf",
+                "text": "Arrêté 5 décembre 2022\n        Téléchargement 290.75 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20judiciaires.pdf",
+                "text": "Liste des experts judiciaires\n        Téléchargement 1.84 Mo",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20honoraires.pdf",
+                "text": "Liste des experts honoraires\n        Téléchargement 496.96 Ko",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2024-12/Annexe1-AFM.pdf",
+                "text": "Attestation de fin de mission\n        Téléchargement 1.82 Mo",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2022-02/rapport%20annuel%20activit%C3%A9%20interpr%C3%A8tes-traducteurs.pdf",
+                "text": "rapport annuel d'activité interprètes- traducteurs\n        Téléchargement 537.87 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2019-04/rapport%20annuel%20activit%C3%A9.pdf",
+                "text": "Rapport annuel d'activité\n        Téléchargement 10.12 Ko",
+                "relevanceHint": "unknown"
+              }
+            ],
+            "dateHints": [],
+            "error": null
+          },
+          "durationMs": 124
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "startedAt": "2026-03-24T21:52:33.573Z",
+      "durationMs": 2840,
+      "usage": {
+        "inputTokens": 6134,
+        "outputTokens": 57,
+        "totalTokens": 6191
+      },
+      "outputItemTypes": [
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "function_call",
+          "name": "extractPdfDate",
+          "arguments": {
+            "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20judiciaires.pdf"
+          },
+          "callId": "call_JujHPN4pgZxaF3qChmscvpbn"
+        },
+        {
+          "type": "function_result",
+          "name": "extractPdfDate",
+          "callId": "call_JujHPN4pgZxaF3qChmscvpbn",
+          "compactOutput": "PDF (355 pages). First page text:\nCOUR D’APPEL DE LYON LISTE DES EXPERTS POUR 2026 dressée par l’assemblée générale restreinte des magistrats des 14 et 21 novembre 2025 Conformément à l’article R312-43 du code de l’organisation judiciaire à la loi du 29 juin 1970 et celle du 11 février 2004 au décret du 23 décembre 2004 et à l’arrêté du 05 décembre 2022 Les années mentionnées en marge à gauche précisent, pour la première, l’année d’inscription initiale de l’expert, pour la seconde, l’année de sa dernière réinscription quinquenna",
+          "fullResult": {
+            "success": true,
+            "pdfText": "COUR D’APPEL DE LYON LISTE DES EXPERTS POUR 2026 dressée par l’assemblée générale restreinte des magistrats des 14 et 21 novembre 2025 Conformément à l’article R312-43 du code de l’organisation judiciaire à la loi du 29 juin 1970 et celle du 11 février 2004 au décret du 23 décembre 2004 et à l’arrêté du 05 décembre 2022 Les années mentionnées en marge à gauche précisent, pour la première, l’année d’inscription initiale de l’expert, pour la seconde, l’année de sa dernière réinscription quinquennale (ou l’année d’inscription initiale pour les experts en période probatoire). Mise à jour le 13 février 2026 1 TABLE DES MATIÈRES Pages SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES . . . . . . . . . . . . . . . . . . . . . . 3 LISTE PAR SPÉCIALITÉ DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 343 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 350 2 SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . . . . . . . . . . 14 A-01 Agriculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 A-01.01 APPLICATIONS DE PRODUITS PHYTOPHARMACEUTIQUES, MATIERES FERTILISA",
+            "pageCount": 355,
+            "error": null
+          },
+          "durationMs": 1579
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "startedAt": "2026-03-24T21:52:36.413Z",
+      "durationMs": 3311,
+      "usage": {
+        "inputTokens": 6352,
+        "outputTokens": 326,
+        "totalTokens": 6678
+      },
+      "outputItemTypes": [
+        "message"
+      ],
+      "events": [
+        {
+          "type": "model_text",
+          "text": "J’ai trouvé la page officielle de la **Cour d’appel de Lyon** et le PDF de la liste des experts judiciaires.  \n\n### Résultat\n- **Page officielle** : “Les experts | Cour d'appel de LYON” sur `cours-appel.justice.fr`\n- **PDF retenu** : **“2026 - Liste des experts judiciaires.pdf”**\n- **Date officielle la plus précise trouvée dans le PDF** : **14/11/2025** et **21/11/2025** (assemblée générale restreinte des magistrats)\n- **Date de publication retenue** : **2025-11-21**\n- **publicationDateSource** : `pdf-content`\n\n### Pourquoi cette date ?\nDans le PDF, la première page indique :\n- la liste est **“pour 2026”**\n- elle est **dressée par l’assemblée générale restreinte des magistrats des 14 et 21 novembre 2025**\n\nEntre les deux dates, la plus récente et la plus spécifique est **le 21 novembre 2025**, donc c’est celle que j’ai retenue.\n\n### Remarques\n- La page web ne donnait pas de date de mise à jour exploitable.\n- Le nom du fichier contenait aussi **2026**, mais c’est moins précis qu’une date exacte dans le contenu du PDF.\n- Je n’ai pas rencontré d’erreur bloquante.\n\nSi tu veux, je peux aussi te donner le **lien exact du PDF** ou extraire la structure de la liste."
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "startedAt": "2026-03-24T21:52:39.724Z",
+    "durationMs": 6461,
+    "usage": {
+      "inputTokens": 2330,
+      "outputTokens": 1045,
+      "totalTokens": 3375
+    },
+    "prompt": "You are analyzing date signals from a French court expert directory search.\n\n## Court: Lyon\n\n## Agent summary:\nJ’ai trouvé la page officielle de la **Cour d’appel de Lyon** et le PDF de la liste des experts judiciaires.  \n\n### Résultat\n- **Page officielle** : “Les experts | Cour d'appel de LYON” sur `cours-appel.justice.fr`\n- **PDF retenu** : **“2026 - Liste des experts judiciaires.pdf”**\n- **Date officielle la plus précise trouvée dans le PDF** : **14/11/2025** et **21/11/2025** (assemblée générale restreinte des magistrats)\n- **Date de publication retenue** : **2025-11-21**\n- **publicationDateSource** : `pdf-content`\n\n### Pourquoi cette date ?\nDans le PDF, la première page indique :\n- la liste est **“pour 2026”**\n- elle est **dressée par l’assemblée générale restreinte des magistrats des 14 et 21 novembre 2025**\n\nEntre les deux dates, la plus récente et la plus spécifique est **le 21 novembre 2025**, donc c’est celle que j’ai retenue.\n\n### Remarques\n- La page web ne donnait pas de date de mise à jour exploitable.\n- Le nom du fichier contenait aussi **2026**, mais c’est moins précis qu’une date exacte dans le contenu du PDF.\n- Je n’ai pas rencontré d’erreur bloquante.\n\nSi tu veux, je peux aussi te donner le **lien exact du PDF** ou extraire la structure de la liste.\n\n## Page title:\nLes experts | Cour d'appel de LYON\n\n## Page text (first 2000 chars):\nRechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de LYON Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Les experts Depuis le 2 janvier 2026, les dossiers de candidatures sur la liste des experts judiciaires sont entièrement dématérialisés et la procédure d'inscription s'effectue depuis la plateforme \"Démarches Numériques\". Les liens vers les formulaires de candidatures (inscription, réinscription, extensions) sont ci-dessous : Inscription initiale : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-inscription-initiale-campagne- Réinscription : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-reinscription-campagne-nationa Extension : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-extension-d-inscription-campag La notification des décisions concernant les candidatures sera effectuée dans le courant du mois de décembre suivant le dépôt de la demande. -> Référentiel des Partenaires de la Justice : Livret RPJ Téléchargement 1.07 Mo Lorsqu'ils ordonnent des expertises, les tribunaux choisissent les experts sur la liste établie par la cour d'appel. La cour d’appel procède chaque année à la révision de la liste des experts assermentés. Elle inscrit de nouveaux experts et procède à la radiation de ceux qui n’exercent plus. Si vous désirez faire acte de candidature, vous devez adresser votre demande à partir du mois de novembre et avant le 1er mars de chaque année (soit au plus tard le 28 ou 29 février). Votre attention est attirée sur la nouvelle condition pour les candidats de justifier d’une formation à l’expertise pour pouvoir être inscrits sur une liste d’experts judiciaires (définie par le décret n° 2023-468 du 16 juin 2023) Chaque année et avant le 1er mars, les experts judiciaires doivent déposer leur rapport d'activité de l'année précédente\n\n## PDF links found on the page:\n- [likely-expert-list] \"Livret RPJ\n        Téléchargement 1.07 Mo\" → https://www.cours-appel.justice.fr/sites/default/files/2026-03/Livret%20RPJ%20expert_internet%20CA%20.pdf\n- [unknown] \"Arrêté 5 décembre 2022\n        Téléchargement 290.75 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2023-01/Arr%C3%AAt%C3%A9%20du%205%20d%C3%A9cembre%202022%20relatif%20%C3%A0%20la%20...-1463%20du%2023%20d%C3%A9cembre%202004%20-%20L%C3%A9gifrance.pdf\n- [likely-expert-list] \"Liste des experts judiciaires\n        Téléchargement 1.84 Mo\" → https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20judiciaires.pdf\n- [likely-expert-list] \"Liste des experts honoraires\n        Téléchargement 496.96 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20honoraires.pdf\n- [unknown] \"Attestation de fin de mission\n        Téléchargement 1.82 Mo\" → https://www.cours-appel.justice.fr/sites/default/files/2024-12/Annexe1-AFM.pdf\n- [unknown] \"rapport annuel d'activité interprètes- traducteurs\n        Téléchargement 537.87 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2022-02/rapport%20annuel%20activit%C3%A9%20interpr%C3%A8tes-traducteurs.pdf\n- [unknown] \"Rapport annuel d'activité\n        Téléchargement 10.12 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2019-04/rapport%20annuel%20activit%C3%A9.pdf\n\n## PDF content (first 1500 chars):\nCOUR D’APPEL DE LYON LISTE DES EXPERTS POUR 2026 dressée par l’assemblée générale restreinte des magistrats des 14 et 21 novembre 2025 Conformément à l’article R312-43 du code de l’organisation judiciaire à la loi du 29 juin 1970 et celle du 11 février 2004 au décret du 23 décembre 2004 et à l’arrêté du 05 décembre 2022 Les années mentionnées en marge à gauche précisent, pour la première, l’année d’inscription initiale de l’expert, pour la seconde, l’année de sa dernière réinscription quinquennale (ou l’année d’inscription initiale pour les experts en période probatoire). Mise à jour le 13 février 2026 1 TABLE DES MATIÈRES Pages SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES . . . . . . . . . . . . . . . . . . . . . . 3 LISTE PAR SPÉCIALITÉ DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 343 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 350 2 SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . . . . . . . . . . 14 A-01 Agriculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 A-01.01 APPLICATIONS DE PRODUITS PHYTOPHARMACEUTIQUES, MATIERES FERTILISA\n\nDetermine the publication date. Check ALL sources:\n1. Exact date in PDF text (e.g. \"MAJ LE 10/03/2026\", \"assemblée du 18 novembre 2025\")\n2. Exact date in page text (e.g. \"mise à jour : 24/02/2026\")\n3. Date in PDF link anchor text\n4. Date in the PDF URL path (e.g. \"/2025-07/\" means July 2025, \"/2026-03/\" means March 2026)\n5. Year only as last resort\n\nUse the most specific and most recent date. A year-only date must not override an exact date.\nDate format: YYYY-MM-DD.",
+    "result": {
+      "courtName": "Lyon",
+      "pageUrl": null,
+      "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20judiciaires.pdf",
+      "documentTitle": "Liste des experts judiciaires",
+      "publicationDate": "2026-02-13",
+      "publicationDateSource": "pdf-content",
+      "searchExplanation": "I found the official Cour d'appel de Lyon page titled \"Les experts | Cour d'appel de LYON\" on cours-appel.justice.fr. The page text listed several PDFs, including the expert directory PDF \"2026 - Liste des experts judiciaires.pdf\". The direct PDF URL was taken from the page's link list.",
+      "dateExtractionExplanation": "The PDF text contains multiple exact dates: the list is drawn up by the restricted assembly of magistrates on 14 and 21 November 2025, and it also states \"Mise à jour le 13 février 2026\". Following the instruction to use the most specific and most recent exact date, I selected 2026-02-13. The year-only signal in the filename/path was not used because an exact date was available in the PDF content.",
+      "errors": []
+    }
+  },
+  "result": {
+    "courtName": "Lyon",
+    "pageUrl": null,
+    "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20judiciaires.pdf",
+    "documentTitle": "Liste des experts judiciaires",
+    "publicationDate": "2026-02-13",
+    "publicationDateSource": "pdf-content",
+    "searchExplanation": "I found the official Cour d'appel de Lyon page titled \"Les experts | Cour d'appel de LYON\" on cours-appel.justice.fr. The page text listed several PDFs, including the expert directory PDF \"2026 - Liste des experts judiciaires.pdf\". The direct PDF URL was taken from the page's link list.",
+    "dateExtractionExplanation": "The PDF text contains multiple exact dates: the list is drawn up by the restricted assembly of magistrates on 14 and 21 November 2025, and it also states \"Mise à jour le 13 février 2026\". Following the instruction to use the most specific and most recent exact date, I selected 2026-02-13. The year-only signal in the filename/path was not used because an exact date was available in the PDF content.",
+    "errors": []
+  },
+  "totalUsage": {
+    "inputTokens": 29416,
+    "outputTokens": 1597,
+    "totalTokens": 31013
+  },
+  "rawToolData": {
+    "pageTitle": "Les experts | Cour d'appel de LYON",
+    "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de LYON Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Les experts Depuis le 2 janvier 2026, les dossiers de candidatures sur la liste des experts judiciaires sont entièrement dématérialisés et la procédure d'inscription s'effectue depuis la plateforme \"Démarches Numériques\". Les liens vers les formulaires de candidatures (inscription, réinscription, extensions) sont ci-dessous : Inscription initiale : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-inscription-initiale-campagne- Réinscription : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-reinscription-campagne-nationa Extension : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-extension-d-inscription-campag La notification des décisions concernant les candidatures sera effectuée dans le courant du mois de décembre suivant le dépôt de la demande. -> Référentiel des Partenaires de la Justice : Livret RPJ Téléchargement 1.07 Mo Lorsqu'ils ordonnent des expertises, les tribunaux choisissent les experts sur la liste établie par la cour d'appel. La cour d’appel procède chaque année à la révision de la liste des experts assermentés. Elle inscrit de nouveaux experts et procède à la radiation de ceux qui n’exercent plus. Si vous désirez faire acte de candidature, vous devez adresser votre demande à partir du mois de novembre et avant le 1er mars de chaque année (soit au plus tard le 28 ou 29 février). Votre attention est attirée sur la nouvelle condition pour les candidats de justifier d’une formation à l’expertise pour pouvoir être inscrits sur une liste d’experts judiciaires (définie par le décret n° 2023-468 du 16 juin 2023) Chaque année et avant le 1er mars, les experts judiciaires doivent déposer leur rapport d'activité de l'année précédente",
+    "pdfLinks": [
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/Livret%20RPJ%20expert_internet%20CA%20.pdf",
+        "text": "Livret RPJ\n        Téléchargement 1.07 Mo",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-01/Arr%C3%AAt%C3%A9%20du%205%20d%C3%A9cembre%202022%20relatif%20%C3%A0%20la%20...-1463%20du%2023%20d%C3%A9cembre%202004%20-%20L%C3%A9gifrance.pdf",
+        "text": "Arrêté 5 décembre 2022\n        Téléchargement 290.75 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20judiciaires.pdf",
+        "text": "Liste des experts judiciaires\n        Téléchargement 1.84 Mo",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20honoraires.pdf",
+        "text": "Liste des experts honoraires\n        Téléchargement 496.96 Ko",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2024-12/Annexe1-AFM.pdf",
+        "text": "Attestation de fin de mission\n        Téléchargement 1.82 Mo",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2022-02/rapport%20annuel%20activit%C3%A9%20interpr%C3%A8tes-traducteurs.pdf",
+        "text": "rapport annuel d'activité interprètes- traducteurs\n        Téléchargement 537.87 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2019-04/rapport%20annuel%20activit%C3%A9.pdf",
+        "text": "Rapport annuel d'activité\n        Téléchargement 10.12 Ko",
+        "relevanceHint": "unknown"
+      }
+    ],
+    "pdfText": "COUR D’APPEL DE LYON LISTE DES EXPERTS POUR 2026 dressée par l’assemblée générale restreinte des magistrats des 14 et 21 novembre 2025 Conformément à l’article R312-43 du code de l’organisation judiciaire à la loi du 29 juin 1970 et celle du 11 février 2004 au décret du 23 décembre 2004 et à l’arrêté du 05 décembre 2022 Les années mentionnées en marge à gauche précisent, pour la première, l’année d’inscription initiale de l’expert, pour la seconde, l’année de sa dernière réinscription quinquennale (ou l’année d’inscription initiale pour les experts en période probatoire). Mise à jour le 13 février 2026 1 TABLE DES MATIÈRES Pages SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES . . . . . . . . . . . . . . . . . . . . . . 3 LISTE PAR SPÉCIALITÉ DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 343 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 350 2 SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . . . . . . . . . . 14 A-01 Agriculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 A-01.01 APPLICATIONS DE PRODUITS PHYTOPHARMACEUTIQUES, MATIERES FERTILISA",
+    "dateHints": []
+  },
+  "error": null
+}

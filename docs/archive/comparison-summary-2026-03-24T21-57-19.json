@@ -1,0 +1,452 @@
+[
+  {
+    "court": "Paris",
+    "datesMatch": false,
+    "mastra": {
+      "date": "2026-01-28",
+      "source": "pdf-content",
+      "pageUrl": null,
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/ANNUPARIS%20MAJ%2028%20janv%2026_0.pdf?utm_source=openai",
+      "timing": {
+        "agentMs": 7579,
+        "extractionMs": 3803,
+        "totalMs": 11383
+      },
+      "tokens": {
+        "inputTokens": 24768,
+        "outputTokens": 1001,
+        "totalTokens": 25769
+      },
+      "cost": 0.006362100000000001,
+      "error": null,
+      "dateExplanation": "The PDF text explicitly states 'MAJ LE 28/01/2026', which is an exact publication/update date. This is the most specific and most recent date available, and it takes precedence over the month-only signal from the PDF URL path (/2026-01/).",
+      "searchExplanation": "The official Paris Court of Appeal experts directory was identified on the cours-appel.justice.fr domain. The most recent expert list PDF referenced in the agent summary is ANNUPARIS MAJ 28 janv 26_0.pdf on the official court site."
+    },
+    "native": {
+      "date": "2026-03-10",
+      "source": "page-text",
+      "pageUrl": null,
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf",
+      "timing": {
+        "agentMs": 9532,
+        "extractionMs": 4772,
+        "totalMs": 14304
+      },
+      "tokens": {
+        "inputTokens": 24279,
+        "outputTokens": 1319,
+        "totalTokens": 25598
+      },
+      "cost": 0.007756425,
+      "turns": 3,
+      "error": null,
+      "dateExplanation": "The page text contains an exact update date: 'mise à jour : 10/03/2026'. The PDF content also contains an exact date, 'MAJ LE 28/01/2026', but it is older. The PDF URL path includes '/2026-03/', which is consistent with March 2026. Following the rule to use the most specific and most recent date, I selected the page-text date: 2026-03-10.",
+      "searchExplanation": "I identified the official Cour d'appel de Paris experts page and the linked expert directory PDF from the page's PDF links. The PDF link title was 'ANNUAIRE DES EXPERTS' and its URL points to a March 2026 file in the official justice domain."
+    }
+  },
+  {
+    "court": "Lyon",
+    "datesMatch": true,
+    "mastra": {
+      "date": "2026-02-13",
+      "source": "pdf-content",
+      "pageUrl": null,
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20judiciaires.pdf",
+      "timing": {
+        "agentMs": 12016,
+        "extractionMs": 5344,
+        "totalMs": 17360
+      },
+      "tokens": {
+        "inputTokens": 35265,
+        "outputTokens": 1490,
+        "totalTokens": 36755
+      },
+      "cost": 0.009349875,
+      "error": null,
+      "dateExplanation": "I checked all available date signals. The PDF text contains an exact date: \"Mise à jour le 13 février 2026\", which is the most recent exact date in the document. The same PDF also mentions the assembly dates \"14 et 21 novembre 2025\", but those are earlier and less suitable as the publication/update date. The URL path includes \"/2026-03/\", which only gives a month and is less specific than the exact PDF date. Therefore the publication date is taken as 2026-02-13 from the PDF content.",
+      "searchExplanation": "The official Cour d'appel de Lyon page titled \"Les experts\" on cours-appel.justice.fr contains a direct link labeled \"Liste des experts judiciaires\" pointing to the PDF for the expert directory."
+    },
+    "native": {
+      "date": "2026-02-13",
+      "source": "pdf-content",
+      "pageUrl": null,
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20judiciaires.pdf",
+      "timing": {
+        "agentMs": 10567,
+        "extractionMs": 6461,
+        "totalMs": 17028
+      },
+      "tokens": {
+        "inputTokens": 29416,
+        "outputTokens": 1597,
+        "totalTokens": 31013
+      },
+      "cost": 0.0093927,
+      "turns": 4,
+      "error": null,
+      "dateExplanation": "The PDF text contains multiple exact dates: the list is drawn up by the restricted assembly of magistrates on 14 and 21 November 2025, and it also states \"Mise à jour le 13 février 2026\". Following the instruction to use the most specific and most recent exact date, I selected 2026-02-13. The year-only signal in the filename/path was not used because an exact date was available in the PDF content.",
+      "searchExplanation": "I found the official Cour d'appel de Lyon page titled \"Les experts | Cour d'appel de LYON\" on cours-appel.justice.fr. The page text listed several PDFs, including the expert directory PDF \"2026 - Liste des experts judiciaires.pdf\". The direct PDF URL was taken from the page's link list."
+    }
+  },
+  {
+    "court": "Angers",
+    "datesMatch": true,
+    "mastra": {
+      "date": "2025-11-18",
+      "source": "pdf-content",
+      "pageUrl": "https://www.cours-appel.justice.fr/angers/experts-judiciaires",
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/LISTE%20EXPERTS%202026.pdf",
+      "timing": {
+        "agentMs": 10830,
+        "extractionMs": 3626,
+        "totalMs": 14457
+      },
+      "tokens": {
+        "inputTokens": 33346,
+        "outputTokens": 1373,
+        "totalTokens": 34719
+      },
+      "cost": 0.00867945,
+      "error": null,
+      "dateExplanation": "I checked all available date signals. The page text shows a site update date of 20/03/2026, the PDF URL path includes /2026-03/, and the link text contains no date. In the PDF content itself, the first page explicitly states: \"Assemblée générale des magistrats du siège de la cour d’appel du 18 novembre 2025\". This is the most specific date tied to the document, so I retained 2025-11-18 as the publication date.",
+      "searchExplanation": "I found the official Cour d'appel d'Angers page titled \"Experts judiciaires\" on cours-appel.justice.fr. The page contains a direct PDF link labeled \"Liste des experts 2026\", which I used as the expert directory document."
+    },
+    "native": {
+      "date": "2025-11-18",
+      "source": "pdf-content",
+      "pageUrl": "https://www.cours-appel.justice.fr/angers/experts-judiciaires",
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/LISTE%20EXPERTS%202026.pdf",
+      "timing": {
+        "agentMs": 9933,
+        "extractionMs": 6438,
+        "totalMs": 16371
+      },
+      "tokens": {
+        "inputTokens": 53988,
+        "outputTokens": 1832,
+        "totalTokens": 55820
+      },
+      "cost": 0.0122931,
+      "turns": 4,
+      "error": null,
+      "dateExplanation": "I checked all available date signals. The page text contains a general page update date (\"mise à jour : 20/03/2026\"), and the PDF URL path indicates /2026-03/, but these refer to the webpage/file hosting rather than the document's own date. The PDF content itself contains the exact statement \"Assemblée générale des magistrats du siège de la cour d’appel du 18 novembre 2025\", which is the most specific date tied directly to the expert list. I therefore used 2025-11-18 as the publication date.",
+      "searchExplanation": "I located the official page on the Cour d'appel d'Angers website (cours-appel.justice.fr) titled \"Experts judiciaires | Cour d'appel d'Angers\". On that page, the likely directory PDF is linked as \"Liste des experts 2026\", which points to the PDF URL under /sites/default/files/2026-03/."
+    }
+  },
+  {
+    "court": "Besançon",
+    "datesMatch": true,
+    "mastra": {
+      "date": "2026-02-24",
+      "source": "page-text",
+      "pageUrl": "https://www.cours-appel.justice.fr/besancon/experts-judiciaires",
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Annuaire%20experts%202026.pdf",
+      "timing": {
+        "agentMs": 7900,
+        "extractionMs": 2479,
+        "totalMs": 10379
+      },
+      "tokens": {
+        "inputTokens": 23909,
+        "outputTokens": 806,
+        "totalTokens": 24715
+      },
+      "cost": 0.005420175,
+      "error": null,
+      "dateExplanation": "I checked all available date signals: the PDF text only states \"LISTE DES EXPERTS POUR 2026\" (year only), the link text shows only \"2026\" (year only), and the PDF URL path indicates 2026-02 but not a day. The page text contains the exact and most specific date signal: \"mise à jour : 24/02/2026\". Therefore the publication date retained is 2026-02-24 from the page text.",
+      "searchExplanation": "I found the official Cour d'appel de Besançon page titled \"Experts judiciaires\". The page contains a direct link to the PDF \"Annuaire des experts - 2026\". The PDF URL also includes the path segment /2026-02/, confirming a February 2026 posting window."
+    },
+    "native": {
+      "date": "2026-02-24",
+      "source": "page-text",
+      "pageUrl": null,
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Annuaire%20experts%202026.pdf",
+      "timing": {
+        "agentMs": 10009,
+        "extractionMs": 2970,
+        "totalMs": 12979
+      },
+      "tokens": {
+        "inputTokens": 28412,
+        "outputTokens": 1064,
+        "totalTokens": 29476
+      },
+      "cost": 0.0069188999999999995,
+      "turns": 4,
+      "error": null,
+      "dateExplanation": "I checked all available date signals. The page text contains an exact update date: \"mise à jour : 24/02/2026\", which is the most specific signal and therefore selected. The PDF text only confirms \"LISTE DES EXPERTS POUR 2026\" (year only), the PDF link text includes 2026, and the PDF URL path includes /2026-02/ (month/year only). None of those are more precise than the page text date.",
+      "searchExplanation": "I found the official Cour d'appel de Besançon page titled \"Experts judiciaires | Cour d'appel de Besançon\" on the official Justice site. The page lists a PDF link titled \"Annuaire des experts - 2026\" pointing to the official document URL provided in the page results."
+    }
+  },
+  {
+    "court": "Bordeaux",
+    "datesMatch": true,
+    "mastra": {
+      "date": "2025-07-01",
+      "source": "filename",
+      "pageUrl": null,
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf",
+      "timing": {
+        "agentMs": 13086,
+        "extractionMs": 6388,
+        "totalMs": 19474
+      },
+      "tokens": {
+        "inputTokens": 29106,
+        "outputTokens": 1909,
+        "totalTokens": 31015
+      },
+      "cost": 0.01077345,
+      "error": null,
+      "dateExplanation": "No exact day/month/year publication date appeared in the page text or PDF text. The PDF content only states that it is the list \"pour l'année 2025\". The PDF URL path includes \"/2025-07/\", which is the most specific date signal available, so I normalized it to the first day of that month: 2025-07-01. The year in the PDF content is consistent with that signal.",
+      "searchExplanation": "I identified the official Bordeaux Cour d'appel Experts page from the court website and the linked PDF titled \"Liste des experts 2025\". The PDF link path contains \"/2025-07/\", and the PDF content confirms it is the list for the year 2025."
+    },
+    "native": {
+      "date": "2025-07-01",
+      "source": "filename",
+      "pageUrl": "https://www.cours-appel.justice.fr/bordeaux/experts",
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf",
+      "timing": {
+        "agentMs": 11267,
+        "extractionMs": 6838,
+        "totalMs": 18105
+      },
+      "tokens": {
+        "inputTokens": 34752,
+        "outputTokens": 1897,
+        "totalTokens": 36649
+      },
+      "cost": 0.011142899999999999,
+      "turns": 5,
+      "error": null,
+      "dateExplanation": "No exact publication date appears in the page text or the PDF text. The PDF link/URL path contains the segment /2025-07/, which indicates July 2025. Following the required fallback for path-based month/year signals, I converted that to 2025-07-01. The year-only references in the link text and PDF body were not used because a more specific month/year signal was available.",
+      "searchExplanation": "I found the official Cour d'appel de Bordeaux experts page at the provided URL. On that page, the expert list PDF is linked as “Liste des experts 2025” and points to the official PDF hosted on cours-appel.justice.fr."
+    }
+  },
+  {
+    "court": "Amiens",
+    "datesMatch": true,
+    "mastra": {
+      "date": "2026-02-01",
+      "source": "page-text",
+      "pageUrl": null,
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/2026%20-%20Liste%20des%20experts%20judiciaires%20-ok.pdf",
+      "timing": {
+        "agentMs": 16806,
+        "extractionMs": 6135,
+        "totalMs": 22941
+      },
+      "tokens": {
+        "inputTokens": 45559,
+        "outputTokens": 2021,
+        "totalTokens": 47580
+      },
+      "cost": 0.012511425,
+      "error": null,
+      "dateExplanation": "No exact day-level publication date was visible in the PDF text. The page text shows \"(MAJ 02/2026)\", and the PDF URL path also contains \"/2026-02/\", confirming February 2026. Because only month/year is available, I normalized it to the first day of that month: 2026-02-01. The PDF content itself only states that it is the list for \"l'année 2026\", which is less specific and does not override the February 2026 signal.",
+      "searchExplanation": "I used the official Cour d'appel d'Amiens page titled \"Les experts judiciaires près la cour d'appel d'Amiens | Cour d'appel Amiens\". The page text contains a direct link to the expert directory PDF titled \"Liste des experts judiciaires 2026\", and the linked PDF URL also appears in the 2026-02 directory on the court's official site."
+    },
+    "native": {
+      "date": "2026-02-01",
+      "source": "page-text",
+      "pageUrl": "https://www.cours-appel.justice.fr/amiens/les-experts-judiciaires-pres-la-cour-dappel-damiens",
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/2026%20-%20Liste%20des%20experts%20judiciaires%20-ok.pdf",
+      "timing": {
+        "agentMs": 11420,
+        "extractionMs": 4799,
+        "totalMs": 16219
+      },
+      "tokens": {
+        "inputTokens": 28793,
+        "outputTokens": 1480,
+        "totalTokens": 30273
+      },
+      "cost": 0.008819475,
+      "turns": 4,
+      "error": null,
+      "dateExplanation": "No exact day was visible in the page text, PDF anchor text, or PDF content. The page text contains 'MAJ 02/2026', and the PDF URL path also contains '/2026-02/', both indicating February 2026. The PDF content itself only confirms the year 2026. Using the most specific available date signal, I normalized the month/year to 2026-02-01.",
+      "searchExplanation": "I found the official Cour d'appel d'Amiens page titled 'Les experts judiciaires près la cour d'appel d'Amiens'. On that page, the expert directory PDF link 'Liste des experts judiciaires 2026' points to the official PDF hosted on cours-appel.justice.fr."
+    }
+  },
+  {
+    "court": "Aix-en-Provence",
+    "datesMatch": true,
+    "mastra": {
+      "date": "2025-12-10",
+      "source": "pdf-content",
+      "pageUrl": null,
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-12/Annuaire%20Experts%20D%C3%A9cembre%202025.pdf",
+      "timing": {
+        "agentMs": 11841,
+        "extractionMs": 3398,
+        "totalMs": 15239
+      },
+      "tokens": {
+        "inputTokens": 29156,
+        "outputTokens": 1252,
+        "totalTokens": 30408
+      },
+      "cost": 0.0078207,
+      "error": null,
+      "dateExplanation": "La page indique une mise à jour du 19/02/2026, et l’URL du PDF contient le répertoire /2025-12/ ainsi qu’un nom de fichier \"Annuaire Experts Décembre 2025.pdf\". Toutefois, le texte du PDF contient une date exacte en en-tête : \"December 10, 2025\". J’ai retenu cette date plus précise, convertie au format YYYY-MM-DD : 2025-12-10.",
+      "searchExplanation": "J’ai identifié la page officielle \"Experts judiciaires\" de la Cour d’appel d’Aix-en-Provence sur le site cours-appel.justice.fr. Cette page contient un lien PDF intitulé \"Annuaire des experts\", pointant vers l’annuaire officiel des experts judiciaires."
+    },
+    "native": {
+      "date": "2025-12-10",
+      "source": "pdf-content",
+      "pageUrl": "https://www.cours-appel.justice.fr/aix-en-provence/experts-judiciaires",
+      "pdfUrl": null,
+      "timing": {
+        "agentMs": 10830,
+        "extractionMs": 5326,
+        "totalMs": 16156
+      },
+      "tokens": {
+        "inputTokens": 34737,
+        "outputTokens": 1532,
+        "totalTokens": 36269
+      },
+      "cost": 0.009499275,
+      "turns": 3,
+      "error": null,
+      "dateExplanation": "J’ai retenu la date la plus spécifique trouvée dans le document lui-même : le texte PDF affiche explicitement « December 10, 2025 » sur la première page de l’« Annuaire des experts judiciaires ». La date de mise à jour de la page web (19/02/2026) concerne la page d’accueil et non la publication du PDF, donc elle ne remplace pas la date du document.",
+      "searchExplanation": "La page officielle de la Cour d’appel d’Aix-en-Provence a été identifiée sur le site cours-appel.justice.fr via la page « Experts judiciaires ». L’agent signale qu’elle contient l’attachement « Annuaire des experts » et une mise à jour de page au 19/02/2026. Le texte PDF fourni contient le titre de l’annuaire et une date explicite en première page."
+    }
+  },
+  {
+    "court": "Rennes",
+    "datesMatch": false,
+    "mastra": {
+      "date": "2026-03-04",
+      "source": "pdf-content",
+      "pageUrl": null,
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/Liste%20EXPERTS%20JUDICIAIRES%20Mise%20%C3%A0%20jour%2004%2003%202026.pdf",
+      "timing": {
+        "agentMs": 13113,
+        "extractionMs": 3065,
+        "totalMs": 16178
+      },
+      "tokens": {
+        "inputTokens": 31009,
+        "outputTokens": 1167,
+        "totalTokens": 32176
+      },
+      "cost": 0.007577174999999999,
+      "error": null,
+      "dateExplanation": "The publication/update date appears explicitly in the PDF text on the first page: \"LISTE DES EXPERTS JUDICIAIRES ANNEE 2026 (mise à jour au 4 mars 2026)\". The page text also confirms \"mise à jour : 04/03/2026\", and the PDF URL path contains \"/2026-03/\", all consistent. The most specific source is the exact date in the PDF content, so the date is 2026-03-04.",
+      "searchExplanation": "I identified the official Cour d'appel de Rennes page on cours-appel.justice.fr titled \"Experts, enquêteurs sociaux, interprètes et traducteurs\". On that page, the attachments section includes the PDF link \"Liste experts judiciaires 2026\" pointing to the Rennes expert directory PDF."
+    },
+    "native": {
+      "date": "2025-01-21",
+      "source": "pdf-content",
+      "pageUrl": null,
+      "pdfUrl": null,
+      "timing": {
+        "agentMs": 10563,
+        "extractionMs": 11050,
+        "totalMs": 21613
+      },
+      "tokens": {
+        "inputTokens": 30563,
+        "outputTokens": 2664,
+        "totalTokens": 33227
+      },
+      "cost": 0.014280225,
+      "turns": 3,
+      "error": null,
+      "dateExplanation": "The most specific date found is inside the PDF text: \"LISTE DES EXPERTS JUDICIAIRES ANNEE 2025 (mise à jour au 21 janvier 2025)\". That exact date was converted to 2025-01-21 and used as the publication date. Year-only signals such as \"2025\" in the PDF title/body or \"2026\" in the filename/summary do not override an exact date. The provided page text did not contain a usable publication/update date.",
+      "searchExplanation": "The Rennes Cour d'appel experts directory was identified from the provided agent summary as the official page for experts, social investigators, interpreters and translators. The PDF title matched the expert list document: \"Liste experts judiciaires 2026\". No concrete page URL, document URL, or usable link-anchor text was provided in the supplied materials, so those fields cannot be verified here."
+    }
+  },
+  {
+    "court": "Cayenne",
+    "datesMatch": false,
+    "mastra": {
+      "date": "2026-03-01",
+      "source": "filename",
+      "pageUrl": null,
+      "pdfUrl": null,
+      "timing": {
+        "agentMs": 16584,
+        "extractionMs": 10644,
+        "totalMs": 27228
+      },
+      "tokens": {
+        "inputTokens": 44881,
+        "outputTokens": 2868,
+        "totalTokens": 47749
+      },
+      "cost": 0.016272075,
+      "error": null,
+      "dateExplanation": "Aucune date exacte n’apparaît dans le texte du PDF ni dans le texte de la page fournie. La seule indication de temporalité exploitable est le répertoire '/2026-03/' associé au PDF, ce qui signale une mise en ligne en mars 2026. En l’absence de jour précis, j’ai normalisé cette indication en '2026-03-01'.",
+      "searchExplanation": "Je n’ai pas pu identifier de page officielle spécifique à la Cour d’appel de Cayenne dans les éléments fournis. La seule piste exploitable est un PDF de liste d’experts judiciaires repéré sur le portail des cours d’appel, avec un fichier nommé 'Liste des experts 2026_0.pdf' et un répertoire de publication '/2026-03/'. Le contenu du PDF renvoie toutefois à la Cour d’appel de Saint-Denis de La Réunion, pas à Cayenne, donc l’attribution à Cayenne reste non confirmée."
+    },
+    "native": {
+      "date": null,
+      "source": "not-found",
+      "pageUrl": null,
+      "pdfUrl": null,
+      "timing": {
+        "agentMs": 12202,
+        "extractionMs": 3364,
+        "totalMs": 15566
+      },
+      "tokens": {
+        "inputTokens": 49014,
+        "outputTokens": 1401,
+        "totalTokens": 50415
+      },
+      "cost": 0.00998055,
+      "turns": 5,
+      "error": null,
+      "dateExplanation": "No publication date could be extracted because no Cayenne experts page or PDF was identified. The homepage text contained no relevant update date for an experts directory, and the only PDF link present on the page was an unrelated victim guide. Since there was no Cayenne expert-list document, there was no page-text, link-text, filename, or PDF-content date to use.",
+      "searchExplanation": "I checked the official Portail des cours d'appel for Cayenne, including the expected URLs for a court page and an experts-judiciaires subpage. The accessible result was only the portal homepage (Accueil | Portail des cours d'appel), which does not provide a Cayenne experts directory. No official Cayenne experts page or PDF list could be confirmed from the available sources."
+    }
+  },
+  {
+    "court": "Grenoble",
+    "datesMatch": true,
+    "mastra": {
+      "date": "2026-02-26",
+      "source": "pdf-content",
+      "pageUrl": "https://www.cours-appel.justice.fr/grenoble/experts-et-traducteurs-judiciaires",
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/ANNUAIRE%20E.J%202026%20INTERNET_0.pdf",
+      "timing": {
+        "agentMs": 9532,
+        "extractionMs": 4757,
+        "totalMs": 14289
+      },
+      "tokens": {
+        "inputTokens": 35599,
+        "outputTokens": 1589,
+        "totalTokens": 37188
+      },
+      "cost": 0.009820424999999999,
+      "error": null,
+      "dateExplanation": "The strongest date signal is in the PDF content itself: the first page states \"Mise à jour le 26 février 2026\". The PDF link text also includes \"màj le 26/02/2026\", which corroborates that date. Although the page text shows a separate page update date, the PDF’s internal date is the most specific and directly tied to the directory, so the publication date is set to 2026-02-26.",
+      "searchExplanation": "I identified the official Cour d'appel de Grenoble page for \"Experts Judiciaires\" and, from the agent summary, the page’s PDF link to the official expert directory. The relevant document is the 2026 expert directory PDF hosted on the court’s official domain."
+    },
+    "native": {
+      "date": "2026-02-26",
+      "source": "pdf-content",
+      "pageUrl": "https://www.cours-appel.justice.fr/grenoble/experts-et-traducteurs-judiciaires",
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/ANNUAIRE%20E.J%202026%20INTERNET_0.pdf",
+      "timing": {
+        "agentMs": 11418,
+        "extractionMs": 4524,
+        "totalMs": 15942
+      },
+      "tokens": {
+        "inputTokens": 39546,
+        "outputTokens": 1647,
+        "totalTokens": 41193
+      },
+      "cost": 0.01037745,
+      "turns": 5,
+      "error": null,
+      "dateExplanation": "I checked all available date signals. The PDF itself states on its first page: \"Mise à jour le 26 février 2026\", which is the most direct and document-specific date. The link text also says \"màj le 26/02/2026\", and the PDF URL path includes \"/2026-02/\", both corroborating February 2026. The page text shows \"mise à jour : 27/02/2026\", but that appears to be the web page update date rather than the document's publication/update date, so the document date 2026-02-26 was retained.",
+      "searchExplanation": "I found the official Cour d'appel de Grenoble page titled \"Experts et traducteurs judiciaires\". That page lists two PDF attachments, and the relevant one is the expert directory PDF titled \"Liste des experts judiciaires - màj le 26/02/2026\", which links to the 2026 annual directory PDF."
+    }
+  }
+]

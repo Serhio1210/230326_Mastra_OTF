@@ -1,0 +1,259 @@
+{
+  "court": "Bordeaux",
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "startedAt": "2026-03-24T21:53:59.846Z",
+  "finishedAt": "2026-03-24T21:54:17.951Z",
+  "totalMs": 18105,
+  "steps": [
+    {
+      "turn": 0,
+      "startedAt": "2026-03-24T21:53:59.846Z",
+      "durationMs": 1107,
+      "usage": {
+        "inputTokens": 5301,
+        "outputTokens": 36,
+        "totalTokens": 5337
+      },
+      "outputItemTypes": [
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.cours-appel.justice.fr/bordeaux/experts-judiciaires"
+          },
+          "callId": "call_qdJis1aPxTpHWosALcPBVB4C"
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_qdJis1aPxTpHWosALcPBVB4C",
+          "compactOutput": "Error fetching page: HTTP 404: Not Found",
+          "fullResult": {
+            "success": false,
+            "title": null,
+            "pageText": "",
+            "pdfLinks": [],
+            "dateHints": [],
+            "error": "HTTP 404: Not Found"
+          },
+          "durationMs": 101
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "startedAt": "2026-03-24T21:54:00.953Z",
+      "durationMs": 2988,
+      "usage": {
+        "inputTokens": 9242,
+        "outputTokens": 90,
+        "totalTokens": 9332
+      },
+      "outputItemTypes": [
+        "web_search_call",
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "web_search",
+          "id": "ws_01ed593cd7fb39530069c307fa859c8199a176e5d622a71967"
+        },
+        {
+          "type": "function_call",
+          "name": "fetchPage",
+          "arguments": {
+            "url": "https://www.cours-appel.justice.fr/bordeaux/experts"
+          },
+          "callId": "call_tIPTJ8wWecKe2czGI93xcudB"
+        },
+        {
+          "type": "function_result",
+          "name": "fetchPage",
+          "callId": "call_tIPTJ8wWecKe2czGI93xcudB",
+          "compactOutput": "Title: Experts | Cour d'appel de Bordeaux\nPDF links (3):\n  - [likely-expert-list] \"la liste des experts ci-jointe\" → https://sitesca.intranet.justice.gouv.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf\n  - [unknown] \"Nouvelle nomenclature des spécialités\n        Téléchargement 245.84 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2023-01/Arr%C3%AAt%C3%A9%20du%205-12-2022-%20Nouvelle%20nomenclature%20bis-JO%2008.12.22_0.pdf\n  - [likely-expert-list] \"Liste des experts 2025\n        Téléchargement 2.05 Mo\" → https://www.cours-appel.justice.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf\nNo date patterns found in page text",
+          "fullResult": {
+            "success": true,
+            "title": "Experts | Cour d'appel de Bordeaux",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Bordeaux Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Experts Les experts judiciaires sont des professionnels spécialement habilités, chargés de donner aux juges un avis technique sur des faits afin d’apporter des éclaircissements sur une affaire. Ce sont des spécialistes de disciplines très variées (médecine, architecture, gemmologie, économie et finance, etc.). A l'attention des PARTICULIERS : pour toute demande d'expertise, merci de consulter directement la liste des experts ci-jointe, notamment pour toutes les demandes de traduction (page 185 et suivantes). A l’attention des EXPERTS : les demandes d'inscription initiale, de réinscription ou d'extension sur la liste des experts judiciaires de la cour d’appel de BORDEAUX, au titre de l’année 2027, devront être formulées entre le 1er janvier 2026 et avant le 28 février 2026 à minuit sur le site « Démarches numériques », depuis les liens que vous trouverez ci-dessous : Inscription initiale : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-inscription-initiale-campagne- Réinscription : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-reinscription-campagne-nationa Extension : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-extension-d-inscription-campag Les candidatures adressées au format papier ne seront plus prises en compte. Il convient de déposer une seule candidature par type de demande (inscription initiale, réinscription ou extension) auprès du tribunal du domicile de l’expert. A l'attention des professionnels de la justice: Contacts des correspondants du ressort en charge des experts: CA BORDEAUX: experts.ca-bordeaux@justice.fr TJ BORDEAUX: experts.tj-bordeaux@justice.fr TJ LIBOURNE : experts.tj-libourne@justice.fr TJ ANGOULEME : ",
+            "pdfLinks": [
+              {
+                "url": "https://sitesca.intranet.justice.gouv.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf",
+                "text": "la liste des experts ci-jointe",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-01/Arr%C3%AAt%C3%A9%20du%205-12-2022-%20Nouvelle%20nomenclature%20bis-JO%2008.12.22_0.pdf",
+                "text": "Nouvelle nomenclature des spécialités\n        Téléchargement 245.84 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf",
+                "text": "Liste des experts 2025\n        Téléchargement 2.05 Mo",
+                "relevanceHint": "likely-expert-list"
+              }
+            ],
+            "dateHints": [],
+            "error": null
+          },
+          "durationMs": 121
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "startedAt": "2026-03-24T21:54:03.941Z",
+      "durationMs": 1080,
+      "usage": {
+        "inputTokens": 5878,
+        "outputTokens": 49,
+        "totalTokens": 5927
+      },
+      "outputItemTypes": [
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "function_call",
+          "name": "extractPdfDate",
+          "arguments": {
+            "url": "https://sitesca.intranet.justice.gouv.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf"
+          },
+          "callId": "call_PcZa9C9ZM8NSjz9FRcRPM5KM"
+        },
+        {
+          "type": "function_result",
+          "name": "extractPdfDate",
+          "callId": "call_PcZa9C9ZM8NSjz9FRcRPM5KM",
+          "compactOutput": "Error extracting PDF: Unable to connect. Is the computer able to access the url?",
+          "fullResult": {
+            "success": false,
+            "pdfText": "",
+            "pageCount": 0,
+            "error": "Unable to connect. Is the computer able to access the url?"
+          },
+          "durationMs": 17
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "startedAt": "2026-03-24T21:54:05.021Z",
+      "durationMs": 3372,
+      "usage": {
+        "inputTokens": 5956,
+        "outputTokens": 48,
+        "totalTokens": 6004
+      },
+      "outputItemTypes": [
+        "function_call"
+      ],
+      "events": [
+        {
+          "type": "function_call",
+          "name": "extractPdfDate",
+          "arguments": {
+            "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf"
+          },
+          "callId": "call_Dwz44oVWMoeGwdpdMtt00ALo"
+        },
+        {
+          "type": "function_result",
+          "name": "extractPdfDate",
+          "callId": "call_Dwz44oVWMoeGwdpdMtt00ALo",
+          "compactOutput": "PDF (426 pages). First page text:\nCOUR D’APPEL DE BORDEAUX Place de la République 33077 BORDEAUX Cedex TEL : 05.40.45.07.90 LISTE DES EXPERTS JUDICIAIRES ETABLIE POUR LE RESSORT DE LA COUR D’APPEL DE BORDEAUX POUR L’ANNEE 2025 1 TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1er du décret du 23 décembre 2004 Arrêté du 5 décembre 2022 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . .",
+          "fullResult": {
+            "success": true,
+            "pdfText": "COUR D’APPEL DE BORDEAUX Place de la République 33077 BORDEAUX Cedex TEL : 05.40.45.07.90 LISTE DES EXPERTS JUDICIAIRES ETABLIE POUR LE RESSORT DE LA COUR D’APPEL DE BORDEAUX POUR L’ANNEE 2025 1 TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1er du décret du 23 décembre 2004 Arrêté du 5 décembre 2022 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41 ANNEXES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 412 COURTIERS ASSERMENTÉS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 413 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 414 Place de la République 33077 BORDEAUX Cedex TEL : 05.40.45.07.90 2 Nomenclature prévue à l’article 1er du décret du 23 décembre 2004 Arrêté du 5 décembre 2022 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel...... conformément à la nomenclature suivante, qui se divise en branches : ",
+            "pageCount": 426,
+            "error": null
+          },
+          "durationMs": 2241
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "startedAt": "2026-03-24T21:54:08.393Z",
+      "durationMs": 2720,
+      "usage": {
+        "inputTokens": 6226,
+        "outputTokens": 399,
+        "totalTokens": 6625
+      },
+      "outputItemTypes": [
+        "message"
+      ],
+      "events": [
+        {
+          "type": "model_text",
+          "text": "J’ai trouvé la page officielle de la Cour d’appel de Bordeaux, puis le PDF de la liste des experts judiciaires 2025.\n\n**Résultat retenu : 2025-01-01**  \n**Source de la date : `pdf-content`**\n\n### Détails\n- La page officielle **Experts | Cour d'appel de Bordeaux** contient deux liens vers le même PDF : **“Liste des experts 2025”** et **“la liste des experts ci-jointe”**.  \n- Le PDF récupéré s’intitule **`EXPERTS - 2025_0.pdf`** et son premier page indique :  \n  - **“LISTE DES EXPERTS JUDICIAIRES ÉTABLIE POUR LE RESSORT DE LA COUR D’APPEL DE BORDEAUX POUR L’ANNÉE 2025”**  \n- Je n’ai pas trouvé de date plus précise dans le texte extrait du PDF que l’année **2025**.  \n- En application de la règle demandée, j’ai donc converti l’année seule en **2025-01-01**.\n\n### Sources et erreurs\n- **Page officielle trouvée :** `https://www.cours-appel.justice.fr/bordeaux/experts`\n- **PDF officiel trouvé :** `https://www.cours-appel.justice.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf`\n- **Erreur rencontrée :** tentative initiale sur une URL devinée a renvoyé **404**, puis une tentative d’extraction sur l’URL intranet a échoué faute d’accès.\n\nSi tu veux, je peux aussi te donner un petit tableau récapitulatif avec :\n- l’URL de la page,\n- l’URL du PDF,\n- la date retenue,\n- et la justification."
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "startedAt": "2026-03-24T21:54:11.113Z",
+    "durationMs": 6838,
+    "usage": {
+      "inputTokens": 2149,
+      "outputTokens": 1275,
+      "totalTokens": 3424
+    },
+    "prompt": "You are analyzing date signals from a French court expert directory search.\n\n## Court: Bordeaux\n\n## Agent summary:\nJ’ai trouvé la page officielle de la Cour d’appel de Bordeaux, puis le PDF de la liste des experts judiciaires 2025.\n\n**Résultat retenu : 2025-01-01**  \n**Source de la date : `pdf-content`**\n\n### Détails\n- La page officielle **Experts | Cour d'appel de Bordeaux** contient deux liens vers le même PDF : **“Liste des experts 2025”** et **“la liste des experts ci-jointe”**.  \n- Le PDF récupéré s’intitule **`EXPERTS - 2025_0.pdf`** et son premier page indique :  \n  - **“LISTE DES EXPERTS JUDICIAIRES ÉTABLIE POUR LE RESSORT DE LA COUR D’APPEL DE BORDEAUX POUR L’ANNÉE 2025”**  \n- Je n’ai pas trouvé de date plus précise dans le texte extrait du PDF que l’année **2025**.  \n- En application de la règle demandée, j’ai donc converti l’année seule en **2025-01-01**.\n\n### Sources et erreurs\n- **Page officielle trouvée :** `https://www.cours-appel.justice.fr/bordeaux/experts`\n- **PDF officiel trouvé :** `https://www.cours-appel.justice.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf`\n- **Erreur rencontrée :** tentative initiale sur une URL devinée a renvoyé **404**, puis une tentative d’extraction sur l’URL intranet a échoué faute d’accès.\n\nSi tu veux, je peux aussi te donner un petit tableau récapitulatif avec :\n- l’URL de la page,\n- l’URL du PDF,\n- la date retenue,\n- et la justification.\n\n## Page title:\nExperts | Cour d'appel de Bordeaux\n\n## Page text (first 2000 chars):\nRechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Bordeaux Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Experts Les experts judiciaires sont des professionnels spécialement habilités, chargés de donner aux juges un avis technique sur des faits afin d’apporter des éclaircissements sur une affaire. Ce sont des spécialistes de disciplines très variées (médecine, architecture, gemmologie, économie et finance, etc.). A l'attention des PARTICULIERS : pour toute demande d'expertise, merci de consulter directement la liste des experts ci-jointe, notamment pour toutes les demandes de traduction (page 185 et suivantes). A l’attention des EXPERTS : les demandes d'inscription initiale, de réinscription ou d'extension sur la liste des experts judiciaires de la cour d’appel de BORDEAUX, au titre de l’année 2027, devront être formulées entre le 1er janvier 2026 et avant le 28 février 2026 à minuit sur le site « Démarches numériques », depuis les liens que vous trouverez ci-dessous : Inscription initiale : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-inscription-initiale-campagne- Réinscription : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-reinscription-campagne-nationa Extension : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-extension-d-inscription-campag Les candidatures adressées au format papier ne seront plus prises en compte. Il convient de déposer une seule candidature par type de demande (inscription initiale, réinscription ou extension) auprès du tribunal du domicile de l’expert. A l'attention des professionnels de la justice: Contacts des correspondants du ressort en charge des experts: CA BORDEAUX: experts.ca-bordeaux@justice.fr TJ BORDEAUX: experts.tj-bordeaux@justice.fr TJ LIBOURNE : experts.tj-libourne@justice.fr TJ ANGOULEME : \n\n## PDF links found on the page:\n- [likely-expert-list] \"la liste des experts ci-jointe\" → https://sitesca.intranet.justice.gouv.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf\n- [unknown] \"Nouvelle nomenclature des spécialités\n        Téléchargement 245.84 Ko\" → https://www.cours-appel.justice.fr/sites/default/files/2023-01/Arr%C3%AAt%C3%A9%20du%205-12-2022-%20Nouvelle%20nomenclature%20bis-JO%2008.12.22_0.pdf\n- [likely-expert-list] \"Liste des experts 2025\n        Téléchargement 2.05 Mo\" → https://www.cours-appel.justice.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf\n\n## PDF content (first 1500 chars):\nCOUR D’APPEL DE BORDEAUX Place de la République 33077 BORDEAUX Cedex TEL : 05.40.45.07.90 LISTE DES EXPERTS JUDICIAIRES ETABLIE POUR LE RESSORT DE LA COUR D’APPEL DE BORDEAUX POUR L’ANNEE 2025 1 TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1er du décret du 23 décembre 2004 Arrêté du 5 décembre 2022 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41 ANNEXES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 412 COURTIERS ASSERMENTÉS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 413 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 414 Place de la République 33077 BORDEAUX Cedex TEL : 05.40.45.07.90 2 Nomenclature prévue à l’article 1er du décret du 23 décembre 2004 Arrêté du 5 décembre 2022 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel...... conformément à la nomenclature suivante, qui se divise en branches : \n\nDetermine the publication date. Check ALL sources:\n1. Exact date in PDF text (e.g. \"MAJ LE 10/03/2026\", \"assemblée du 18 novembre 2025\")\n2. Exact date in page text (e.g. \"mise à jour : 24/02/2026\")\n3. Date in PDF link anchor text\n4. Date in the PDF URL path (e.g. \"/2025-07/\" means July 2025, \"/2026-03/\" means March 2026)\n5. Year only as last resort\n\nUse the most specific and most recent date. A year-only date must not override an exact date.\nDate format: YYYY-MM-DD.",
+    "result": {
+      "courtName": "Bordeaux",
+      "pageUrl": "https://www.cours-appel.justice.fr/bordeaux/experts",
+      "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf",
+      "documentTitle": "Liste des experts 2025",
+      "publicationDate": "2025-07-01",
+      "publicationDateSource": "filename",
+      "searchExplanation": "I found the official Cour d'appel de Bordeaux experts page at the provided URL. On that page, the expert list PDF is linked as “Liste des experts 2025” and points to the official PDF hosted on cours-appel.justice.fr.",
+      "dateExtractionExplanation": "No exact publication date appears in the page text or the PDF text. The PDF link/URL path contains the segment /2025-07/, which indicates July 2025. Following the required fallback for path-based month/year signals, I converted that to 2025-07-01. The year-only references in the link text and PDF body were not used because a more specific month/year signal was available.",
+      "errors": []
+    }
+  },
+  "result": {
+    "courtName": "Bordeaux",
+    "pageUrl": "https://www.cours-appel.justice.fr/bordeaux/experts",
+    "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf",
+    "documentTitle": "Liste des experts 2025",
+    "publicationDate": "2025-07-01",
+    "publicationDateSource": "filename",
+    "searchExplanation": "I found the official Cour d'appel de Bordeaux experts page at the provided URL. On that page, the expert list PDF is linked as “Liste des experts 2025” and points to the official PDF hosted on cours-appel.justice.fr.",
+    "dateExtractionExplanation": "No exact publication date appears in the page text or the PDF text. The PDF link/URL path contains the segment /2025-07/, which indicates July 2025. Following the required fallback for path-based month/year signals, I converted that to 2025-07-01. The year-only references in the link text and PDF body were not used because a more specific month/year signal was available.",
+    "errors": []
+  },
+  "totalUsage": {
+    "inputTokens": 34752,
+    "outputTokens": 1897,
+    "totalTokens": 36649
+  },
+  "rawToolData": {
+    "pageTitle": "Experts | Cour d'appel de Bordeaux",
+    "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Bordeaux Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Experts Les experts judiciaires sont des professionnels spécialement habilités, chargés de donner aux juges un avis technique sur des faits afin d’apporter des éclaircissements sur une affaire. Ce sont des spécialistes de disciplines très variées (médecine, architecture, gemmologie, économie et finance, etc.). A l'attention des PARTICULIERS : pour toute demande d'expertise, merci de consulter directement la liste des experts ci-jointe, notamment pour toutes les demandes de traduction (page 185 et suivantes). A l’attention des EXPERTS : les demandes d'inscription initiale, de réinscription ou d'extension sur la liste des experts judiciaires de la cour d’appel de BORDEAUX, au titre de l’année 2027, devront être formulées entre le 1er janvier 2026 et avant le 28 février 2026 à minuit sur le site « Démarches numériques », depuis les liens que vous trouverez ci-dessous : Inscription initiale : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-inscription-initiale-campagne- Réinscription : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-reinscription-campagne-nationa Extension : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-extension-d-inscription-campag Les candidatures adressées au format papier ne seront plus prises en compte. Il convient de déposer une seule candidature par type de demande (inscription initiale, réinscription ou extension) auprès du tribunal du domicile de l’expert. A l'attention des professionnels de la justice: Contacts des correspondants du ressort en charge des experts: CA BORDEAUX: experts.ca-bordeaux@justice.fr TJ BORDEAUX: experts.tj-bordeaux@justice.fr TJ LIBOURNE : experts.tj-libourne@justice.fr TJ ANGOULEME : ",
+    "pdfLinks": [
+      {
+        "url": "https://sitesca.intranet.justice.gouv.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf",
+        "text": "la liste des experts ci-jointe",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-01/Arr%C3%AAt%C3%A9%20du%205-12-2022-%20Nouvelle%20nomenclature%20bis-JO%2008.12.22_0.pdf",
+        "text": "Nouvelle nomenclature des spécialités\n        Téléchargement 245.84 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf",
+        "text": "Liste des experts 2025\n        Téléchargement 2.05 Mo",
+        "relevanceHint": "likely-expert-list"
+      }
+    ],
+    "pdfText": "COUR D’APPEL DE BORDEAUX Place de la République 33077 BORDEAUX Cedex TEL : 05.40.45.07.90 LISTE DES EXPERTS JUDICIAIRES ETABLIE POUR LE RESSORT DE LA COUR D’APPEL DE BORDEAUX POUR L’ANNEE 2025 1 TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1er du décret du 23 décembre 2004 Arrêté du 5 décembre 2022 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41 ANNEXES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 412 COURTIERS ASSERMENTÉS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 413 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 414 Place de la République 33077 BORDEAUX Cedex TEL : 05.40.45.07.90 2 Nomenclature prévue à l’article 1er du décret du 23 décembre 2004 Arrêté du 5 décembre 2022 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel...... conformément à la nomenclature suivante, qui se divise en branches : ",
+    "dateHints": []
+  },
+  "error": null
+}
