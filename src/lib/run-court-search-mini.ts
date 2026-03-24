@@ -56,6 +56,9 @@ export async function runCourtSearchMini(court: string, effort: MiniEffort = "no
     const extractResult = await generateText({
       model: openai("gpt-5.4-mini"),
       output: Output.object({ schema: expertFinderResultSchema }),
+      providerOptions: {
+        openai: { reasoningEffort: "medium" },
+      },
       prompt: `Extract structured data from these French court expert search findings.
 
 ## Court: ${court}
@@ -63,7 +66,8 @@ export async function runCourtSearchMini(court: string, effort: MiniEffort = "no
 ## Agent's findings:
 ${agentResult.text.slice(0, 3000)}
 
-The date inside the PDF is the AUTHORITATIVE source (publicationDateSource: "pdf-content").
+Pick the most specific and most recent date available from any source.
+An exact date from page text or filename overrides a year-only mention from the PDF.
 Date format: YYYY-MM-DD. Convert French dates (DD/MM/YYYY → YYYY-MM-DD).`,
     });
 
