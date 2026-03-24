@@ -22,7 +22,7 @@ When searching:
 Always prefer official sources (.gouv.fr, .justice.fr, cours-appel.justice.fr) over third-party directories.`,
   model: anthropic("claude-sonnet-4-6"),
   tools: {
-    web_search: anthropic.tools.webSearch_20250305({
+    web_search: anthropic.tools.webSearch_20260209({
       maxUses: 10,
       userLocation: {
         type: "approximate",
