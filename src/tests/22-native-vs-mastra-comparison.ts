@@ -52,7 +52,7 @@ async function compareCourt(court: string): Promise<{
   console.log(`  [Mastra] ${mastra.success ? "✓" : "✗"} ${fmt(mastra.timing.totalMs)} — ${mastra.result?.publicationDate || mastra.error?.slice(0, 80)}`);
 
   console.log(`  [Native] Starting...`);
-  const native = await runCourtSearchNative(court, "none");
+  const native = await runCourtSearchNative(court);
   console.log(`  [Native] ${native.result ? "✓" : "✗"} ${fmt(native.totalMs)} — ${native.result?.publicationDate || native.error?.slice(0, 80)}`);
 
   return { court, mastra, native };

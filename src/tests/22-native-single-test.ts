@@ -19,7 +19,7 @@ console.log(`  Model: gpt-5.4-mini`);
 console.log(`  Effort: ${effort}`);
 console.log(`  Started: ${new Date().toISOString()}\n`);
 
-const trace = await runCourtSearchNative(court, effort);
+const trace = await runCourtSearchNative(court, { effort });
 
 // ── Print agent steps ───────────────────────────────────────────────
 

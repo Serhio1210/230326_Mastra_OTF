@@ -1,0 +1,110 @@
+[
+  {
+    "court": "Paris",
+    "datesMatch": false,
+    "open": {
+      "date": "2026-01-23",
+      "source": "pdf-content",
+      "turns": 3,
+      "totalMs": 14383,
+      "error": null
+    },
+    "filtered": {
+      "date": "2026-03-10",
+      "source": "pdf-content",
+      "turns": 4,
+      "totalMs": 10300,
+      "error": null
+    }
+  },
+  {
+    "court": "Besançon",
+    "datesMatch": false,
+    "open": {
+      "date": null,
+      "source": "not-found",
+      "turns": 4,
+      "totalMs": 10479,
+      "error": null
+    },
+    "filtered": {
+      "date": "2026-02-24",
+      "source": "page-text",
+      "turns": 3,
+      "totalMs": 9115,
+      "error": null
+    }
+  },
+  {
+    "court": "Cayenne",
+    "datesMatch": true,
+    "open": {
+      "date": "2022-11-23",
+      "source": "filename",
+      "turns": 4,
+      "totalMs": 12080,
+      "error": null
+    },
+    "filtered": {
+      "date": "2022-11-23",
+      "source": "filename",
+      "turns": 3,
+      "totalMs": 13109,
+      "error": null
+    }
+  },
+  {
+    "court": "Rennes",
+    "datesMatch": false,
+    "open": {
+      "date": "2021-10-15",
+      "source": "pdf-content",
+      "turns": 4,
+      "totalMs": 19655,
+      "error": null
+    },
+    "filtered": {
+      "date": "2026-03-04",
+      "source": "pdf-content",
+      "turns": 4,
+      "totalMs": 12843,
+      "error": null
+    }
+  },
+  {
+    "court": "Bordeaux",
+    "datesMatch": true,
+    "open": {
+      "date": "2025-07-01",
+      "source": "filename",
+      "turns": 3,
+      "totalMs": 17633,
+      "error": null
+    },
+    "filtered": {
+      "date": "2025-07-01",
+      "source": "filename",
+      "turns": 3,
+      "totalMs": 18151,
+      "error": null
+    }
+  },
+  {
+    "court": "Amiens",
+    "datesMatch": false,
+    "open": {
+      "date": "2026-02-01",
+      "source": "page-text",
+      "turns": 3,
+      "totalMs": 16406,
+      "error": null
+    },
+    "filtered": {
+      "date": "2022-12-05",
+      "source": "pdf-content",
+      "turns": 3,
+      "totalMs": 11362,
+      "error": null
+    }
+  }
+]

@@ -101,8 +101,8 @@ export type RawToolData = {
 
 // ── Tool definitions for the Responses API ──────────────────────────
 
-const tools: OpenAI.Responses.Tool[] = [
-  {
+function buildTools(allowedDomains?: string[]): OpenAI.Responses.Tool[] {
+  const webSearch: any = {
     type: "web_search",
     user_location: {
       type: "approximate",
@@ -110,7 +110,11 @@ const tools: OpenAI.Responses.Tool[] = [
       region: "Île-de-France",
       city: "Paris",
     },
-  },
+  };
+  if (allowedDomains?.length) {
+    webSearch.filters = { allowed_domains: allowedDomains };
+  }
+  return [webSearch,
   {
     type: "function" as const,
     name: "fetchPage",
@@ -146,8 +150,8 @@ const tools: OpenAI.Responses.Tool[] = [
       additionalProperties: false,
     },
     strict: true,
-  },
-];
+  }];
+}
 
 // ── Tool implementations (same logic as Mastra tools) ───────────────
 
@@ -278,10 +282,16 @@ const functionHandlers: Record<string, (args: any) => Promise<any>> = {
 
 export type NativeEffort = "none" | "low" | "medium" | "high";
 
+export type NativeOptions = {
+  effort?: NativeEffort;
+  allowedDomains?: string[];
+};
+
 export async function runCourtSearchNative(
   court: string,
-  effort: NativeEffort = "none"
+  options: NativeOptions = {}
 ): Promise<AgentTrace> {
+  const { effort = "none", allowedDomains } = options;
   const totalStart = Date.now();
   const startedAt = new Date().toISOString();
 
@@ -311,7 +321,7 @@ export async function runCourtSearchNative(
       const response = await client.responses.create({
         model: "gpt-5.4-mini",
         input: currentInput,
-        tools,
+        tools: buildTools(allowedDomains),
         ...(effort !== "none" ? { reasoning: { effort } } : {}),
       });
 
