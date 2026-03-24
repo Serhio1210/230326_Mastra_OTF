@@ -1,0 +1,123 @@
+{
+  "batch": "4",
+  "courts": [
+    "Rennes",
+    "Riom",
+    "Rouen",
+    "Toulouse",
+    "Versailles"
+  ],
+  "results": [
+    {
+      "court": "Rennes",
+      "success": true,
+      "result": {
+        "courtName": "Rennes (Cour d'appel de Rennes)",
+        "pageUrl": "https://www.cours-appel.justice.fr/rennes/experts-enqueteurs-sociaux-interpretes-et-traducteurs",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/Liste%20EXPERTS%20JUDICIAIRES%20Mise%20%C3%A0%20jour%2004%2003%202026.pdf",
+        "documentTitle": "Liste experts judiciaires 2026",
+        "publicationDate": "2026-03-04",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "Found on cours-appel.justice.fr official page for Rennes court experts section.",
+        "dateExtractionExplanation": "Date extracted directly from PDF first page: 'mise à jour au 4 mars 2026', confirmed by page web showing 04/03/2026.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 48863,
+        "extractionMs": 5001,
+        "totalMs": 53864
+      },
+      "error": null,
+      "agentText": "Je vais rechercher la liste officielle des experts judiciaires de la Cour d'appel de Rennes. Commençons par une recherche web.Excellent ! J'ai trouvé la page officielle et le PDF 2026. Maintenant je vais récupérer la page officielle ET extraire le PDF le plus récent (2026) en parallèle.🎯 Excellent ! J'ai trouvé une version encore plus récente ! La page indique une mise à jour du **04/03/2026** et un PDF plus récent. Extrayons immédiatement ce PDF mis à jour en mars 2026.✅ **Date officielle conf"
+    },
+    {
+      "court": "Riom",
+      "success": true,
+      "result": {
+        "courtName": "Riom (Cour d'appel de Riom)",
+        "pageUrl": "https://www.cours-appel.justice.fr/riom/les-experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/Annuaire%20experts%20CA%20Riom%202026%20V23.03.2026.pdf",
+        "documentTitle": "Annuaire experts CA Riom - MAJ 20260323",
+        "publicationDate": "2026-03-23",
+        "publicationDateSource": "filename",
+        "searchExplanation": "Found on the official cours-appel.justice.fr site under /riom/les-experts-judiciaires. The page lists multiple PDFs; the most recent is dated V23.03.2026.",
+        "dateExtractionExplanation": "The filename contains 'V23.03.2026' indicating version date of 23 March 2026, confirmed by the page's 'mise à jour : 23/03/2026'. The PDF text did not contain an explicit date formula.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 53899,
+        "extractionMs": 5333,
+        "totalMs": 59233
+      },
+      "error": null,
+      "agentText": "Je vais rechercher la liste officielle des experts judiciaires de la Cour d'appel de Riom. Commençons par une recherche web.Excellent ! La page officielle et plusieurs PDFs sont trouvés. Je vois un PDF de **février 2025** qui semble le plus récent. Je vais maintenant récupérer la page officielle ET extraire la date du PDF le plus récent en parallèle.La page a été mise à jour le **23/03/2026** et le PDF le plus récent est `Annuaire experts CA Riom 2026 V23.03.2026.pdf`. Je dois maintenant extrair"
+    },
+    {
+      "court": "Rouen",
+      "success": true,
+      "result": {
+        "courtName": "Cour d'appel de Rouen",
+        "pageUrl": "https://www.cours-appel.justice.fr/rouen/experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/listeexpertsvingtsix.pdf",
+        "documentTitle": "Liste des experts - année 2026",
+        "publicationDate": "2026-02-26",
+        "publicationDateSource": "page-text",
+        "searchExplanation": "Page officielle trouvée sur cours-appel.justice.fr/rouen/experts-judiciaires, contenant deux PDFs dont le plus pertinent est listeexpertsvingtsix.pdf (1,85 Mo, millésime 2026).",
+        "dateExtractionExplanation": "La page web indique explicitement 'mise à jour : 26/02/2026', soit 2026-02-26. Le PDF ne contient pas de date précise dans ses premières pages, mais le chemin du fichier contient '2026-02' confirmant février 2026.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 46581,
+        "extractionMs": 5178,
+        "totalMs": 51763
+      },
+      "error": null,
+      "agentText": "Je vais rechercher la liste officielle des experts judiciaires de la Cour d'appel de Rouen. Commençons par une recherche web.Parfait ! La page officielle est trouvée. Je vais maintenant récupérer la page et extraire le PDF en parallèle.Excellent ! Le PDF le plus récent est celui de 2026. Je vais maintenant en extraire la date officielle.Le PDF indique \"POUR L'ANNEE 2026\" mais ne contient pas de date précise dans les premières pages. La page web indique \"mise à jour : 26/02/2026\" et le chemin du "
+    },
+    {
+      "court": "Toulouse",
+      "success": true,
+      "result": {
+        "courtName": "Cour d'appel de Toulouse",
+        "pageUrl": "https://www.cours-appel.justice.fr/toulouse/experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/Annuaire%20experts%202026.pdf",
+        "documentTitle": "Annuaire experts 2026",
+        "publicationDate": "2026-01-07",
+        "publicationDateSource": "page-text",
+        "searchExplanation": "La page officielle de la Cour d'appel de Toulouse sur cours-appel.justice.fr/toulouse/experts-judiciaires a été trouvée via recherche web, puis fetchPage a révélé le PDF Annuaire experts 2026 comme document actuellement en ligne.",
+        "dateExtractionExplanation": "Le PDF ne contient pas de date précise type 'arrêtée au' ou 'MAJ LE'. La date 2026-01-07 provient de la mention 'mise à jour : 07/01/2026' sur la page officielle, confirmée par le répertoire '2026-01/' dans l'URL du fichier.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 56263,
+        "extractionMs": 4716,
+        "totalMs": 60980
+      },
+      "error": null,
+      "agentText": "Je vais rechercher la liste officielle des experts judiciaires de la Cour d'appel de Toulouse. Commençons par une recherche web.Excellent ! La page officielle et les PDFs sont trouvés. Je lance maintenant **fetchPage** sur la page officielle ET **extractPdfDate** sur le PDF le plus récent (2025) en parallèle.🎯 **Excellent !** La page officielle révèle un PDF encore plus récent : **l'Annuaire experts 2026** ! Je dois maintenant l'analyser avec `extractPdfDate`.Le PDF 2026 ne contient pas de date"
+    },
+    {
+      "court": "Versailles",
+      "success": true,
+      "result": {
+        "courtName": "Cour d'appel de Versailles",
+        "pageUrl": "https://www.cours-appel.justice.fr/versailles/experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/CAVersailles_Annuaire_experts_2026.pdf",
+        "documentTitle": "la cour d'appel de Versailles 2026",
+        "publicationDate": "2025-11-14",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "La page officielle a été trouvée sur cours-appel.justice.fr/versailles/experts-judiciaires. Le PDF le plus récent (2026) a été identifié via fetchPage.",
+        "dateExtractionExplanation": "La date a été extraite du contenu PDF : 'dressée par l'Assemblée Générale de la Cour le 14 novembre 2025'.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 47601,
+        "extractionMs": 4486,
+        "totalMs": 52087
+      },
+      "error": null,
+      "agentText": "Je vais rechercher la liste officielle des experts judiciaires de la Cour d'appel de Versailles. Commençons par une recherche web.Excellent ! La page officielle et le PDF 2026 sont trouvés. Je lance maintenant **fetchPage** sur la page officielle et **extractPdfDate** sur le PDF le plus récent (2026) en parallèle.J'ai toutes les informations nécessaires. Voici le résultat complet et structuré :\n\n---\n\n## ✅ Résultats — Liste officielle des experts judiciaires de la Cour d'appel de Versailles\n\n### "
+    }
+  ],
+  "batchTime": "61.0"
+}
