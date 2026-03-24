@@ -1,0 +1,123 @@
+{
+  "batch": "3",
+  "courts": [
+    "Nîmes",
+    "Orléans",
+    "Pau",
+    "Poitiers",
+    "Reims"
+  ],
+  "results": [
+    {
+      "court": "Nîmes",
+      "success": true,
+      "result": {
+        "courtName": "Cour d'appel de Nîmes",
+        "pageUrl": "https://www.cours-appel.justice.fr/nimes/experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-09/2025%20ANNUAIRE%20EXPERTS.pdf",
+        "documentTitle": "2025 ANNUAIRE EXPERTS.pdf",
+        "publicationDate": "2025-09-08",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "La page officielle a été trouvée via site:justice.fr, puis le fetchPage a révélé le PDF le plus récent dans le dossier /2025-09/.",
+        "dateExtractionExplanation": "Le PDF contient la mention explicite 'Mise à jour le 8 septembre 2025', soit 2025-09-08.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 43260,
+        "extractionMs": 4196,
+        "totalMs": 47456
+      },
+      "error": null,
+      "agentText": "Parfait ! La page officielle et un PDF récent sont déjà identifiés. Je lance simultanément le **fetchPage** sur la page officielle et le **extractPdfDate** sur le PDF le plus récent (2025).Excellent ! Le **fetchPage** révèle un PDF encore plus récent : `2025 ANNUAIRE EXPERTS.pdf` dans le dossier `/2025-09/`. Je dois l'analyser immédiatement.J'ai toutes les informations nécessaires. Voici le résultat complet et structuré :\n\n---\n\n## ✅ Résultats — Liste des experts judiciaires de la Cour d'appel de"
+    },
+    {
+      "court": "Orléans",
+      "success": true,
+      "result": {
+        "courtName": "Orléans",
+        "pageUrl": "https://www.cours-appel.justice.fr/orleans/experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-01/liste experts judiciaires 2025.pdf",
+        "documentTitle": "Liste des experts judiciaires 2025",
+        "publicationDate": "2026-02-09",
+        "publicationDateSource": "page-text",
+        "searchExplanation": "La page officielle des experts judiciaires de la Cour d'appel d'Orléans a été trouvée sur cours-appel.justice.fr. Elle contient deux PDFs de liste d'experts pour 2025, de même taille et contenu.",
+        "dateExtractionExplanation": "Le PDF ne contient que l'année 2025 sans date précise. La page web officielle mentionne 'mise à jour : 09/02/2026', convertie en 2026-02-09.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 49609,
+        "extractionMs": 5013,
+        "totalMs": 54622
+      },
+      "error": null,
+      "agentText": "Parfait ! La page officielle et un PDF 2025 sont déjà identifiés. Je lance simultanément le **fetchPage** sur la page officielle et **extractPdfDate** sur le PDF 2025 le plus récent.Excellent ! La page indique une mise à jour au **09/02/2026** et il y a un second PDF 2025 (`_0`). Mais surtout, la page mentionne une date de mise à jour récente. Vérifions si le second PDF (`_0`) est plus récent ou contient une date plus précise.Les deux PDFs ont le même contenu de première page. La date la plus pr"
+    },
+    {
+      "court": "Pau",
+      "success": true,
+      "result": {
+        "courtName": "Cour d'appel de Pau",
+        "pageUrl": "https://www.cours-appel.justice.fr/pau/les-experts",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Liste%20des%20experts%202026.pdf",
+        "documentTitle": "Liste actualisée des experts 2026 (MAJ : janvier 2026)",
+        "publicationDate": "2026-01-01",
+        "publicationDateSource": "link-text",
+        "searchExplanation": "Page officielle trouvée sur cours-appel.justice.fr/pau/les-experts, listant plusieurs PDFs dont le plus récent est la liste 2026.",
+        "dateExtractionExplanation": "Le texte du lien indique 'MAJ : janvier 2026', utilisé comme date de publication. Le PDF ne contenait pas de date précise dans son contenu.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 50633,
+        "extractionMs": 4607,
+        "totalMs": 55240
+      },
+      "error": null,
+      "agentText": "Je vais rechercher la liste officielle des experts judiciaires de la Cour d'appel de Pau. Commençons par une recherche web.Excellent ! J'ai trouvé la page officielle et plusieurs PDFs. Le plus récent est celui de 2025. Je vais maintenant récupérer la page officielle ET extraire la date du PDF 2025 en parallèle.🎯 Excellent ! La page révèle qu'il existe un PDF **2026** encore plus récent ! Je vais immédiatement l'extraire.Le PDF 2026 ne contient pas de date précise dans les premières pages. Cepen"
+    },
+    {
+      "court": "Poitiers",
+      "success": true,
+      "result": {
+        "courtName": "Cour d'appel de Poitiers",
+        "pageUrl": "https://www.cours-appel.justice.fr/poitiers/experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/liste%20des%20experts%202026.pdf",
+        "documentTitle": "liste des experts 2026",
+        "publicationDate": "2026-03-01",
+        "publicationDateSource": "filename",
+        "searchExplanation": "La page officielle a été trouvée sur le site du Ministère de la Justice à l'URL cours-appel.justice.fr/poitiers/experts-judiciaires, qui contient un lien vers le PDF 2026.",
+        "dateExtractionExplanation": "Le PDF mentionne 'POUR L'ANNEE 2026' mais sans date précise. Le chemin serveur contient '2026-03' indiquant mars 2026. Date approximée au 2026-03-01.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 56538,
+        "extractionMs": 5089,
+        "totalMs": 61627
+      },
+      "error": null,
+      "agentText": "Je vais rechercher la liste officielle des experts judiciaires de la Cour d'appel de Poitiers. Commençons par une recherche web.Excellent ! J'ai trouvé la page officielle et des PDFs. Je vais maintenant récupérer la page officielle ET le PDF le plus récent (2024) en parallèle.La page officielle indique un PDF **2026** ! C'est le plus récent. Je vais immédiatement l'analyser.Le PDF 2026 est confirmé. Cependant, la première page ne contient pas de date précise (type \"arrêtée au\"). Vérifions les pa"
+    },
+    {
+      "court": "Reims",
+      "success": true,
+      "result": {
+        "courtName": "Cour d'appel de Reims",
+        "pageUrl": "https://www.cours-appel.justice.fr/reims/les-experts",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-07/Liste%20des%20experts%202025.pdf",
+        "documentTitle": "Liste des experts judiciaires près la cour d'appel de Reims - 2025",
+        "publicationDate": "2024-11-04",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "La page officielle et le PDF ont été trouvés sur cours-appel.justice.fr/reims/les-experts via recherche web.",
+        "dateExtractionExplanation": "La date a été extraite du contenu de la première page du PDF : liste dressée par l'assemblée générale des magistrats du siège réunie le 4 novembre 2024.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 41322,
+        "extractionMs": 3983,
+        "totalMs": 45305
+      },
+      "error": null,
+      "agentText": "Je vais rechercher la liste officielle des experts judiciaires de la Cour d'appel de Reims. Commençons par une recherche web.Parfait ! J'ai trouvé deux résultats très pertinents pour Reims :\n1. La page officielle : `cours-appel.justice.fr/reims/les-experts`\n2. Un PDF 2025 direct\n\nJe vais maintenant **fetcher la page officielle** et **extraire la date du PDF 2025** en parallèle.Excellent ! J'ai toutes les informations nécessaires. Voici le résultat complet et structuré :\n\n---\n\n## ✅ Résultats — Li"
+    }
+  ],
+  "batchTime": "61.6"
+}
