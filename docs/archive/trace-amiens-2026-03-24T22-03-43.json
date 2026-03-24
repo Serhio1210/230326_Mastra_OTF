@@ -1,0 +1,268 @@
+{
+  "court": "Amiens",
+  "agentId": "expert-search-mini",
+  "startedAt": "2026-03-24T22:03:03.043Z",
+  "finishedAt": "2026-03-24T22:03:21.871Z",
+  "totalMs": 18828,
+  "steps": [
+    {
+      "turn": 0,
+      "durationMs": 1453,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=GArDaeTtFK_5kdUPvamE4Q8\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=GArDaeTtFK_5kdUPvamE4Q8\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "error": null
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Cour d'appel d'Amiens experts judiciaires PDF - Recherche",
+            "pageText": "Passer au contenuCommentaires sur l’accessibilité Environ 50 résultatsOuvrir les liens dans un nouvel ongletDate stackexchange.comhttps://anime.stackexchange.com › questionsWhat is a \"cour\"? - Anime & Manga Stack Exchange12 mars 2014 · A cour is not of precisely-defined duration, and can, in practice, last anywhere from 11 to 14 weeks (and hence, the same number of episodes), though 12-13 weeks is most common, since a … stackexchange.comhttps://anime.stackexchange.com › questionsWhat was the first anime that used a split-cour format?Split-cour airing format is a noticeable trend in the anime industry recently. Unlike most multi-season shows that are aired two or more seasons in succession, split-cour shows have a break in between …stackexchange.comhttps://anime.stackexchange.com › questionsHow often do multi-season anime break their previous cour count?31 mars 2017 · Second, how often do second or third seasons break from the cour-count of previous seasons? Does it happen at least once a year, or is it uncommon enough that the last time it …stackexchange.comhttps://anime.stackexchange.com › questionsWhat defines one \"season\" of anime? - Anime & Manga Stack ExchangeFrom what I've been able to follow, the seasons of anime shows have been tied to thirteen week blocks, directly correlating with the actual season in Japan (for instance, this is the Winter 2013 se...stackexchange.comhttps://anime.stackexchange.com › questionsHow long does producing a cour take? - Anime & Manga Stack ExchangeI've read through some questions about financing anime and so on, but don't know how long it takes to produce a complete cour of anime. I'm talking writing about 12 to 13 episodes, of a standard-le...stackexchange.comhttps://anime.stackexchange.com › questionsHow long does the producing of long run anime take?I know that this is already asked before in How long does producing a cour take? But I assume that it's only related to the seasonal anime that appear once per season (except when it already has a sequel).stackexchange.comhttps://anime.stackexchange.com › questionsanime production - Why does season 2 of Gurren Lagann start so ...Are you just asking \"why did they write the story that way\"? Because none of us know what was going through the heads of the people at Gainax when they were writing Gurren Lagann. (Aside: Gurren …stackexchange.comhttps://anime.stackexchange.com › questionsWhat is the viewing order of Fate-related works?It is generally agreed that Fate/stay night and Fate/Zero are the two core works of the Fate series. They both come in multiple forms. Whatever you do, consuming these two works in some form is the first …stackexchange.comhttps://anime.stackexchange.com › questionsWhat is context of lone girl staring at field in the ending?9 févr. 2017 · The ED of the second cour of All Out!! prominently features a lone girl (probably the team manager), seen from her back. She is looking onto a darkening field for well over 30 seconds.stackexchange.comhttps://anime.stackexchange.com › questionsWhy do almost all anime series have a \"going to the beach\" episode?26 nov. 2014 · There were 29 one-cour full-length anime in Summer 2014, and if it were the case that all the other 20 had a beach episode, then the figure would come out to 21/29, which is sort of \"almost …Le contenu a été généré avec l’IA. En savoir plusToutesDernières 24 heuresla semaine passéeDernier moisDernière année",
+            "pdfLinks": [],
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "durationMs": 1352,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=GQrDabbfMZXw7M8PkL6qIQ\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=GQrDabbfMZXw7M8PkL6qIQ\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "durationMs": 4031,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "web_search",
+          "fullResult": {
+            "action": {
+              "type": "search",
+              "query": "site:cours-appel.justice.fr Amiens experts judiciaires PDF"
+            },
+            "sources": [
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/amiens/les-experts-judiciaires-pres-la-cour-dappel-damiens"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/amiens/comment-devenir-expert-judiciaire"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2024-01/2024%20-%20Liste%20des%20experts%20judiciaires.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.justice.gouv.fr/documentation/bulletin-officiel/decision-du-24-fevrier-2023-fixant-liste-organisations-syndicales-leurs"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2022-02/LISTE%20DES%20EXPERTS%20JUDICIAIRES%20ETABLIE%20POUR%20LE%20RESSORT%20DE%20LA%20COUR%202022_0.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.courdecassation.fr/files/files/Experts/2023/20230306_liste_experts_stdenis.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/amiens/informations-relatives-la-nouvelle-nomenclature"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2019-05/Liste%20des%20experts%20judiciaires%20pr%C3%A8s%20la%20Cour%20d%27Appel%20d%27Amiens%202019.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://e-justice.europa.eu/topics/find-legal-professional/legal-translators-interpreters/fr_fr"
+              },
+              {
+                "type": "url",
+                "url": "https://www.courdecassation.fr/files/files/Experts/20220315_liste_experts_StDenis.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/bastia/liste-des-experts-judiciaires-2020"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/bastia/linscription-des-experts-judiciaires-et-enqueteurs-sociaux"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/amiens/les-administrateurs-adhoc-de-la-cour-dappel-damiens"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/amiens/partenaires-de-justice"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/angers/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049343459"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/rouen"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/Expert_judiciaire_%28France%29"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/Liste_des_membres_du_Conseil_sup%C3%A9rieur_de_la_magistrature"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/Traducteur_interpr%C3%A8te_officiel"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/S%C3%A9rie_U_des_archives_d%C3%A9partementales"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/Expert_judiciaire_%28Maroc%29"
+              }
+            ]
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "web_search",
+          "fullResult": {
+            "action": {
+              "type": "openPage",
+              "url": "https://www.cours-appel.justice.fr/amiens/les-experts-judiciaires-pres-la-cour-dappel-damiens"
+            }
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "extractPdfDate",
+          "fullResult": {
+            "success": true,
+            "pdfText": "1 LISTE DES EXPERTS JUDICIAIRES E TABLIE POUR LE RESSORT DE LA COUR D’APPEL D’AMIENS POUR L’ANNEE 2024 2 TABLE DES MATIÈRES Pages : NOMENCLATURE PRÉVUE À L’ARTICLE 1ER DU DÉCRET DU 23 DÉCEMBRE 2004 A RRÊTÉ DU 05 DÉCEMBRE 2022 ................................ ................................ ........................ 3 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE ................................ .......................... 20 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE ................................ .......................... 253 EXPERTS HONORAIRES ................................ ................................ ................................ . 260 3 Nomenclature prévue à l’article 1er du décret du 23 décembre 2004 Arrêté du 05 décembre 2022 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel … conformément à la nomenclature suiva nte, qui se divise en branches ( e x. : A . ), rubriques (ex.: A.1.) et spécialités (ex. : A.1.1). A - AGRICULTURE - AGRO - ALIMENTAIRE - ANIMAUX - FORETS A - 01 - AGRICULTURE ................................ ................................ ................................ ................................ . 20 A - 01.01 – Applications de produits phytopharmaceutiques, matières fertilisantes et supports de cultures ................................ ................................ ................................ ................................ ................................ ... 20 A - 01.02 – Foncier rural ................................ ................................ ................................ ............................... 20 A - 01.03 - Constructions et aménagements ruraux ................................ ................................ .................... 22 A - 01.04 - Economie et gestion agricole – Fonds agricoles ................................ ................................ ......... 24 A - 01.05 - Estimations foncières agricoles ................................ ................................ ................................ .. 25 A - 01.06 - Hydraulique agricole et rurale ................................ ................................ ................................ .... 27 A - 01.07 - Matériel et technique agricole ................................ ................................ ................................ ... 27 A - 01.08 – Productions des grandes cultures et de cultures spécialisées ................................ ................... 28 A - 02 - AGRO - ALIMENTAIRE ................................ ................................ ................................ ....................... 29 A - 03 - AMENAGEMENT ET EQUIPEMENT RURAL ................................ ................................ ....................... 30 Espaces naturels – Biodiversité – Zonages – Préservation et protections des milieux naturels – Flore et habitats naturels. A - 04 - ANIMAUX AUTRES QUE D'ELEVAGE ................................ ................................ ................................ 31 A - 05 - AQUACULTURE ................................ ................................ ................................ ............................... 31 A - 06 - BIOTECHNOLOGIES ................................ ................................ ................................ ......................... 31 A - 07 - ELEVAGE ................................ ................................ ................................ ................................ ......... 31 A - 08 - HORTICULTURE ................................ ................................ ................................ ............................... 31 A - 09 - RISQUES CLIMATIQUES ET METEOROLOGIQUES. ................................ ................................ ............. 31 A - 10 - NUISANCES - POLLUTIONS AGRICOLES ET DEPOLLUTION ................................ ................................ . 31 A - 11 - PECHE – CHASSE – FAUNE SAUVAGE VERTEBREE ET INVERTEBREE ................................ .................. 32 A - 11.01 - Armement – Accastillage – Matériels et équipements pour la pêche et pour la chasse. .......... 32 A - 11.02 - Dégâts de gibier. ................................ ................................ ................................ ......................... 32 A - 11.03 - Estimations. ................................ ................................ ................................ ................................ 32 A - 11.04 - Peuplements et équilibres cynégétiques – Estimations ................................ ............................. 32 A - 12 - SYLVICULTURE ................................ ................................ ................................ ................................ 33 A - 13 - VITICULTURE ET OENOLOGIE ................................ ................................ ................................ ........... 33 A - 13.01 - Distillation, élaboration des liqueurs et des alcools. ................................ ................................ .. 33 4 A - 13.02 - Emballage et conditionnement des vins, des liq ueurs et des alcools – Matériel de conditionnement des vins, des liqueurs et des alcools. ................................ ................................ ............. 33 A - 13.03 - Estimation et gestion – Exploitation viticole – Matériels de culture de la vigne – Pépinières et plantations – Produits, traitements et protection de la vigne. ................................ ................................ .. 33 A - 13.04 - Œnologie – Appellations – Dégustations des vins et des alcools – Vinification et assemblages – Fermentations – Analyse des vins et des alcools – Matériel de vinification, de stockage et de préparation des vins et alcools – Tra nsports des vins et des alcools. ................................ ................................ ............ 33 A - 14 - SANTE VETERINAIRE ................................ ................................ ................................ ....................... 33 A - 14.01 - Biologie, pharmacologie et toxicologie vétérinaires ................................ ................................ .. 33 A - 14.02 - Médecine, chirurgie, élevage, bien - être et transport des animaux de compagnie (chiens, chats, NAC (nouveaux animaux de compagnie)). ................................ ................................ ................................ . 34 A - 14.03 - Médecine, chirurgie, élevage, bien - être et transport des ruminants (bovins, ovins, caprins, camélidés), des équidés (chevaux, poneys, ânes et croisements) et des porcins. ................................ .... 34 A - 14.04 - Médecine, chirurgie, élevage, bien - être et transport des volailles, lapins et gibiers d’élevage. 34 A - 14.05 - Médecine, chirurgie, élevage, bien - être et transport de la faune sauvage. ............................... 34 A - 14.06 - Santé publique, qualité et sécurité des aliments. ................................ ................................ ...... 34 B - ARTS – CULTURE – COMMUNICATION – MEDIAS B - 01 - ECRITURES ................................ ................................ ................................ ................................ ...... 35 B - 01.01 - Documents et écritures ................................ ................................ ................................ .............. 35 B - 01.02 - Paléographie ................................ ................................ ................................ ............................... 35 B - 02 - GENEALOGIE SUCCESSORALE. ................................ ................................ ................................ ......... 35 B - 03 - OBJETS D'ART ET DE COLLECTION ................................ ................................ ................................ .... 35 B - 03.01 - Armes anciennes ................................ ................................ ................................ ......................... 35 B - 03.02 - Bijouterie, joaillerie, horlogerie, orfèvrerie ................................ ................................ ................ 35 B - 03.03 - Céramiques anciennes et d'art ................................ ................................ ................................ ... 35 B - 03.05 - Ebénisterie – Marqueterie ................................ ................................ ................................ .......... 35 B - 03.06 - Etoffes anciennes et tissages ................................ ................................ ................................ ...... 35 B - 03.07 - Ferronnerie et bronzes ................................ ................................ ................................ ............... 35 B - 03.08 - Gravures et arts graphiques ................................ ................................ ................................ ....... 35 B - 03.09 - Héraldique ................................ ................................ ................................ ................................ .. 36 B - 03.10 - Livres anciens et modernes ................................ ................................ ................................ ........ 36 B - 03.11 - Lutherie et instruments de musique ................................ ................................ .......................... 36 B - 03.12 - Meubles et mobiliers anciens ................................ ................................ ................................ ..... 36 B - 03.13 - Numismatique et médailles ................................ ................................ ................................ ........ 36 B - 03.14 - Philatélie ................................ ................................ ................................ ................................ ..... 36 B - 03.15 - Sculptures ................................ ................................ ................................ ................................ ... 36 B - 03.16 - Tableaux ................................ ................................ ................................ ................................ ...... 36 B - 03.17 - Tapisseries et tapis ................................ ................................ ................................ ..................... 37 B - 03.18 - Vitraux et vitrerie d'art ................................ ................................ ................................ ............... 37 B - 03.19 - Archéologie. ................................ ................................ ................................ ................................ 37 B - 03.20 - Art d’Asie et d’Extrême Orient, Art africain, Art océanien, Art américain. ................................ . 37 B - 03.21 - Œuvres d’art dématérialisées NFT. ................................ ................................ ............................. 37 B - 04 - PRODUCTIONS CULTURELLES ET DE COMMUNICATION ................................ ................................ ... 37 B - 04.01 - Cinéma, télévision, vidéo, audiovisuel, tous supports médias et plateformes digitales. ........... 37 B - 04.02 - Imprimerie ................................ ................................ ................................ ................................ .. 37 B - 04.0 3 - Musique ................................ ................................ ................................ ................................ ...... 37 B - 04.04 - Photographie analogique et numérique – Datation et certification – Attribution – Reconnaissance faciale. ................................ ................................ ................................ ................................ ........................ 37 B - 04.05 - Presse, édition ................................ ................................ ................................ ............................ 37 B - 04.06 - Communication, publicité digitale et médias ................................ ................................ ............. 37 5 B - 04.07 - Spectacles vivants ................................ ................................ ................................ ....................... 37 B - 04.08 - Relations médias, presse, publics. ................................ ................................ .............................. 37 B - 05 - PROPRIETE LITTERAIRE ET ARTISTIQUE ................................ ................................ ............................ 37 B - 05.01 - Gestion des droits d'auteur ................................ ................................ ................................ ........ 37 B - 05.02 - Gestion des droits voisins ................................ ................................ ................................ ........... 38 B - 05.03 - Gestion des droits dérivés ................................ ................................ ................................ .......... 38 B - 05.04 - Gestion des droits à l'image ................................ ................................ ................................ ........ 38 B - 05.05 - Gestion des droits de reproduction ................................ ................................ ............................ 38 B - 06 - SPORT ................................ ................................ ................................ ................................ ............. 38 B - 06.01 - Activités sportives. ................................ ................................ ................................ ...................... 38 B - 06.02 - Matériel et installations sportive ................................ ................................ ................................ 38 C - BATIMENT - TRAVAUX PUBLICS - GESTION IMMOBILIERE C - 01 - ACOUSTIQUE, BRUITS, VIBRATIONS. ................................ ................................ ............................... 39 C - 02 - C ONSTRUCTIONS GÉNÉRALES TOUS CORPS D ’ ÉTAT . ................................ ................................ ...................... 39 C - 02.01 - Architecture – Ingénierie – Maîtri se d’œuvre ................................ ................................ ............ 39 C - 02.02 - Architecture d’intérieur – Décoration. ................................ ................................ ....................... 41 C - 02.03 - Architecture du paysage – Espaces verts et de loisirs – Aménagements sportifs extérieurs. .... 41 C - 02.04 - Coordination de la sécurité et protection de la santé (CSPS ................................ ...................... 41 C - 02.05 - Economie de la construction, valorisation des travaux et métrés. ................................ ............. 42 C - 02.06 - Monuments historiques et patrimoine bâti. ................................ ................................ .............. 44 C - 02.07 - Ordonnancement, pilotage, coordination (OPC). ................................ ................................ ....... 45 C - 02.08 - Piscines: gros - œuvre, étanchéité, bassins préfabriqués, traitement de l’eau, de l’air, équipements. ................................ ................................ ................................ ................................ ............. 46 C - 02.09 - Urbanisme – Aménagement du territoire – Aménagement et mobilier urbain. ........................ 47 C - 03 - STRUCTURES. ................................ ................................ ................................ ................................ .. 47 C - 03.01 - Structures: généralistes. ................................ ................................ ................................ ............. 47 C - 03.02 - Béton, béton armé, béton précontraint, bétons sp éciaux ................................ ......................... 48 C - 03.03 - Charpentes et ossatures bois – Constructions en bois. ................................ .............................. 48 C - 03.04 - Constructions métalliques. ................................ ................................ ................................ ......... 49 C - 03.05 - Etanchéités des parois enterrées, cuvelages. ................................ ................................ ............. 50 C - 03.06 - Maçonneries à base de produits industriels ou de matériaux naturels. ................................ .... 51 C - 03.07 - Structures spéciales, toiles tendues, chapiteaux, structures gonflables, équ ipements scéniques, structures composites. ................................ ................................ ................................ ............................... 52 C - 04 - GENIE - CIVIL – TRAVAUX PUBLICS. ................................ ................................ ................................ ... 52 C - 04.01 - Génie - civil et travaux publics: généralistes. ................................ ................................ ............... 52 C - 04.02 - Aménagements portuaires, ouvrages maritimes, travaux sous - marins. ................................ .... 53 C - 04.03 - Barrages, grands soutènements. ................................ ................................ ................................ 53 C - 04.04 - Murs de soutènement. ................................ ................................ ................................ ............... 53 C - 04.05 - Ponts (y compris les abords et fondations). ................................ ................................ ............... 53 C - 04.06 - Réseaux de drainage et évacuation des eaux, hydraulique de surface, canaux, retenues. ........ 53 C - 04.11 - Tunnels: travaux et équipements. ................................ ................................ .............................. 56 C - 05 - SOLS. ................................ ................................ ................................ ................................ ............... 56 C - 05.01 - Fondations spéciales: pieux et puits, radiers épais, amélioration des sols, massifs de machines .. ................................ ................................ ................................ ................................ ................................ .. . 56 C - 05.02 - Géotechnique générale, fondations, confortements, stabilisation des terrains et talus. .......... 56 C - 05.03 - Hydrogéologie. ................................ ................................ ................................ ............................ 57 C - 05.04 - Mines et carrières. ................................ ................................ ................................ ...................... 57 C - 06 - C OUVERTURE – E TANCHÉITÉ Y COMPRIS ACCESSOIRES , ÉQUIPEMENTS RAPPORTÉS , ISOLATION . .............................. 58",
+            "pageCount": 261,
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "durationMs": 2832,
+      "events": [
+        {
+          "type": "model_text",
+          "text": "J’ai trouvé la page officielle de la Cour d’appel d’Amiens sur `cours-appel.justice.fr`, qui affiche bien la rubrique **“Les experts judiciaires près la cour d'appel d'Amiens”**. La page indique un lien vers **“Liste des experts judiciaires 2026”** et précise aussi **“(MAJ 02/2026)”**. \n\nJ’ai ensuite utilisé le PDF lié par cette page. Le texte extrait du PDF commence par **“LISTE DES EXPERTS JUDICIAIRES … POUR LE RESSORT DE LA COUR D’APPEL D’AMIENS POUR L’ANNEE 2024”** et mentionne **“ARRÊTÉ DU 05 DÉCEMBRE 2022”** sur la première page. \n\n**Date officielle retenue : 2026-02-01**  \n- **publicationDateSource:** page-text  \n- **Pourquoi ce choix :** la page officielle donne une mise à jour explicite **“MAJ 02/2026”**, plus récente et plus spécifique qu’une année de couverture du PDF ou qu’un arrêté interne ancien. Le PDF lui-même semble porter un contenu pour 2024, ce qui est incohérent avec l’étiquette de la page, donc je privilégie la date la plus explicite affichée sur la page officiell"
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "durationMs": 9158,
+    "usage": {
+      "inputTokens": 1222,
+      "outputTokens": 1393,
+      "totalTokens": 2615
+    },
+    "result": {
+      "courtName": "Amiens",
+      "pageUrl": null,
+      "documentUrl": null,
+      "documentTitle": "Liste des experts judiciaires 2026",
+      "publicationDate": "2026-02-01",
+      "publicationDateSource": "page-text",
+      "searchExplanation": "The official Cour d’appel d’Amiens experts directory page on cours-appel.justice.fr was identified from the agent summary as the page titled around “Les experts judiciaires près la cour d'appel d'Amiens”. That page contains a link to the PDF labeled “Liste des experts judiciaires 2026” and a visible update marker “(MAJ 02/2026)”. The Google Search page shown in the prompt did not itself expose the destination link, so the official page and linked PDF were relied on from the summary.",
+      "dateExtractionExplanation": "I checked all available date signals. The PDF text contains an exact date: “Arrêté du 05 décembre 2022”, but that is the decree date inside the document, not the publication/update date of the directory. The page text provides “MAJ 02/2026”, which is the newest and most relevant publication/update signal, but only at month/year precision. The PDF link text includes “2026” only, which is less specific. No PDF URL path was available to extract a date from. Because month/year was the best publication signal, I normalized it to the first day of that month: 2026-02-01.",
+      "errors": [
+        "The prompt did not provide the actual official page URL or PDF URL, so both are null.",
+        "The page text available in the prompt was a Google Search interstitial, not the official court page; the official page details came from the agent summary."
+      ]
+    }
+  },
+  "result": {
+    "courtName": "Amiens",
+    "pageUrl": null,
+    "documentUrl": null,
+    "documentTitle": "Liste des experts judiciaires 2026",
+    "publicationDate": "2026-02-01",
+    "publicationDateSource": "page-text",
+    "searchExplanation": "The official Cour d’appel d’Amiens experts directory page on cours-appel.justice.fr was identified from the agent summary as the page titled around “Les experts judiciaires près la cour d'appel d'Amiens”. That page contains a link to the PDF labeled “Liste des experts judiciaires 2026” and a visible update marker “(MAJ 02/2026)”. The Google Search page shown in the prompt did not itself expose the destination link, so the official page and linked PDF were relied on from the summary.",
+    "dateExtractionExplanation": "I checked all available date signals. The PDF text contains an exact date: “Arrêté du 05 décembre 2022”, but that is the decree date inside the document, not the publication/update date of the directory. The page text provides “MAJ 02/2026”, which is the newest and most relevant publication/update signal, but only at month/year precision. The PDF link text includes “2026” only, which is less specific. No PDF URL path was available to extract a date from. Because month/year was the best publication signal, I normalized it to the first day of that month: 2026-02-01.",
+    "errors": [
+      "The prompt did not provide the actual official page URL or PDF URL, so both are null.",
+      "The page text available in the prompt was a Google Search interstitial, not the official court page; the official page details came from the agent summary."
+    ]
+  },
+  "totalUsage": {
+    "inputTokens": 33117,
+    "outputTokens": 2099,
+    "totalTokens": 35216
+  },
+  "rawToolData": {
+    "pageTitle": "Google Search",
+    "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=GQrDabbfMZXw7M8PkL6qIQ\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=GQrDabbfMZXw7M8PkL6qIQ\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+    "pdfLinks": [],
+    "pdfText": "1 LISTE DES EXPERTS JUDICIAIRES E TABLIE POUR LE RESSORT DE LA COUR D’APPEL D’AMIENS POUR L’ANNEE 2024 2 TABLE DES MATIÈRES Pages : NOMENCLATURE PRÉVUE À L’ARTICLE 1ER DU DÉCRET DU 23 DÉCEMBRE 2004 A RRÊTÉ DU 05 DÉCEMBRE 2022 ................................ ................................ ........................ 3 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE ................................ .......................... 20 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE ................................ .......................... 253 EXPERTS HONORAIRES ................................ ................................ ................................ . 260 3 Nomenclature prévue à l’article 1er du décret du 23 décembre 2004 Arrêté du 05 décembre 2022 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel … conformément à la nomenclature suiva nte, qui se divise en branches ( e x. : A . ), rubriques (ex.: A.1.) et spécialités (ex. : A.1.1). A - AGRICULTURE - AGRO - ALIMENTAIRE - ANIMAUX - FORETS A - 01 - AGRICULTURE ................................ ................................ ................................ ................................ . 20 A - 01.01 – Applications de produits phytopharmaceutiques, matières fertilisantes et supports de cultures ................................ ................................ ................................ ................................ ..........................."
+  },
+  "error": null
+}

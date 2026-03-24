@@ -1,0 +1,423 @@
+{
+  "court": "Lyon",
+  "agentId": "expert-search-mini",
+  "startedAt": "2026-03-24T22:02:45.449Z",
+  "finishedAt": "2026-03-24T22:03:03.043Z",
+  "totalMs": 17594,
+  "steps": [
+    {
+      "turn": 0,
+      "durationMs": 1597,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Accueil | Cour d'appel de LYON",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de LYON Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) À la une Visite virtuelle de la cour d'appel Audience solennelle de rentrée 2026 Fiche pratique : Inscription sur les listes électorales Je voudrais Trouver un tribunal près de chez moi Récupérer un formulaire Demande de copie d'une décision de justice pénale Demande de certificat de non appel Demande de copie d'une décision de justice en matière civile, sociale ou commerciale Demande au juge aux affaires familiales Tous les formulaires Des réponses à des questions Je souhaite porter plainte Comment contester une radiation ou un refus d'inscription sur les listes électorales Comment renoncer à une succession ? Je suis en conflit avec mon employeur - comment saisir le conseil de prud'hommes ? Enfant en danger - comment le signaler ? Toutes les réponses à vos questions Actualité du ressort 30 septembre 2024 CA LYON : présentation de Madame Anne Kostomaroff, procureur général à l'audience solennelle du 30 septembre 2024 Lundi 30 septembre 2024, la cour d'appel de Lyon s'est réunie en audience solennelle, sous la présidence de Madame Catherine Pautrat, première présidente, sur les réquisitions de Monsieur Jean-Daniel Regnauld, avocat général doyen, p CA LYON : présentation de Madame Anne Kostomaroff, procureur général 21 septembre 2024 CA Lyon : journées européennes du patrimoine Le 21 septembre 2024 le public était au rendez-vous ! 10 heures, déjà une file se dresse devant les CA Lyon : journées européennes du patrimoine 08 juillet 2024 Dévoilement de la Passerelle Pierre Truche et de l’Espace Paul Bouchet Le 4 juillet 2024 Le 4 juillet 2024, le maire de Lyon Grégory Doucet et le président de la Métropole de Lyon Bruno Bernard, en présence de Catherine Pautrat et Anne Kostomaroff, cheffes de la cour d’appel de Lyon, de Bruno Cotte, président honoraire de la chambre criminelle de Dévoilement de la Passerelle Pierre Truche et de l’Espace Paul Bouchet Mardi 10 mars 2026Fiche pratique : Inscription sur les listes électorales Vendredi 16 janvier 2026Audience solennelle de rentrée à la cour d’appel de LyonLe 12 janvier 2026 Lundi 07 juillet 2025TJ Lyon : ouverture du service d'accueil unique du justiciable à partir du 8 juillet 2025 Vendredi 28 mars 2025Cour d'appel de Lyon : des professeurs et personnels de l’académie de Lyon formés à la conciliationLes promesses d’un partenariat novateur… Mercredi 15 janvier 2025Audience solennelle de rentrée à la cour d'appel de Lyon le 13 janvier 2025 Journées européennes du patrimoine 2024 à la cour d'appel de Lyon Geofield POINT (4.8285658413723 45.761825713845) Accéder aux autres sites des cours d'appel Choisir une cour d’appel Agen Cour d'appel d'Agen Aix-en-Provence Cour d'appel d'Aix-en-Provence Amiens Cour d'appel d'Amiens Angers Cour d'appel d'Angers Basse-Terre Cour d'appel de Basse-Terre Bastia Cour d'appel de Bastia Besançon Cour d'appel de Besançon Bordeaux Cour d'appel de Bordeaux Bourges Cour d'appel de Bourges Caen Cour d'appel de Caen Cayenne Chambéry Cour d'appel de Chambéry Colmar Cour d'appel de Colmar Dijon Cour d'appel de Dijon Douai Cour d'appel de Douai Fort-de-France Cour d'appel de Fort-de-France Grenoble Cour d'appel de Grenoble Limoges Cour d'appel de Limoges Lyon Cour d'appel de Lyon Metz Cour d'appel de Metz Montpellier Cour d'appel de Montpellier Nancy Cour d'appel de Nancy Nîmes Cour d'appel de Nîmes Nouméa Cour d'appel de Nouméa Orléans Cour d'appel d'Orléans Papeete Paris Cour d'appel de Paris Pau Cour d'appel de Pau Poitiers Cour d'appel de Poitiers Reims Cour d'appel de Reims Rennes Cour d'appel de Rennes Riom Cour d'appel de Riom Rouen Courd d'appel de Rouen Saint-Denis Cour d’appel de Saint-Denis Toulouse Cour d'appel de Toulouse Versailles Cour d'appel de Versailles Saint-Pierre Saint-Pierre-et-Miquelon",
+            "pdfLinks": [],
+            "error": null
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": false,
+            "title": null,
+            "pageText": "",
+            "pdfLinks": [],
+            "error": "Unable to connect. Is the computer able to access the url?"
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "durationMs": 3060,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "web_search",
+          "fullResult": {
+            "action": {
+              "type": "search",
+              "query": "site:cours-appel.justice.fr Lyon experts judiciaires Cour d'appel de Lyon PDF"
+            },
+            "sources": [
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/lyon/interpretes-et-traducteurs"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-06/2025%20-%20Liste%20des%20experts%20judiciaires.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/lyon/partenaires-de-justice"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/2026%20-%20Liste%20des%20experts%20judiciaires.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/amiens/les-experts-judiciaires-pres-la-cour-dappel-damiens"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/lyon/les-avocats"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-04/2025%20-%20Liste%20des%20experts%20honoraires.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/nimes/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/bastia/linscription-des-experts-judiciaires-et-enqueteurs-sociaux"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/lyon/les-medecins-agrees"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2020-03/EXPERTS%202020-CA%20CHAMBERY-Liste%20alphab%C3%A9tique%20.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/chambery/ca-chambery-liste-des-experts-judiciaires-2025-formalites-dinscription"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2021-02/2020%20-%20LISTE%20DES%20EXPERTS%20%202021.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/douai/les-experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2021-07/2021-%20LISTE%20DES%20EXPERTS%20JUDICIAIRES_0.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/bastia/liste-des-experts-judiciaires-2020"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/poitiers/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/angers/experts-judiciaires"
+              }
+            ]
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Partenaires de justice | Cour d'appel de LYON",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de LYON Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Partenaires de justice Trouvez votre avocat, notaire, conciliateur… La justice fonctionne grâce au concours de la société civile à qui elle confie des missions essentielles de service public et qui intervient dans des domaines très divers. Les associations d'aide aux victimes 30.10.24 DEPARTEMENT DU RHONE (69) TRIBUNAL JUDICIAIRE DE LYON LE MAS 17 rue Crépet - Lyon (69007) Tel : 04 78 60 00 13infodroitsvictimes@mas-asso.fr VIFFIL (Violences Intra Familiales Femmes Informations Libertés) 167 cours Tolstoï - Villeurbanne (69100) Tel : 04 78 85 76 47viffilavi@viffil.com TRIBUNAL JUDICIAIRE DE VILLEFRANCHE-SUR-SAONE TANDEM 427 rue Dechavanne - Villefranche-sur-Saône (69400) Tel : 04 81 04 11 90accueil.tandem@gmail.com DEPARTEMENT DE LA LOIRE (42) TRIBUNAL JUDICIAIRE DE ROANNE ARRAVEM (Association Région Roannaise Aide aux Victimes Et Médiation) 15 rue d'Albon - Roanne (42300) Tel : 04 77 70 97 08contact@arravem.fr TRIBUNAL JUDICIAIRE DE SAINT-ETIENNE SAUVEGARDE42 16 rue Général Foy - Saint-Etienne (42000) Tel : 04 27 40 27 17 administration.av@sauvegarde42.fr DEPARTEMENT DE L'AIN (01) TRIBUNAL JUDICIAIRE DE BOURG-EN-BRESSE AVEMA (Aide aux Victimes Et Médiation dans l'Ain) 1 rue de la bibliothèque - Bourg en Bresse (01100) Tel : 04 74 32 27 12 N° d'urgence (soirs et week-ends) : 06 08 24 03 62accueil@avema01.org Liste des associations d'aide aux victimes Téléchargement 118.85 Ko Voir la catégorie > Associations de médiation familiale 05.12.19 DEPARTEMENT DU RHONE AFCCC Rhône-Alpes Association Française des Centres de Consultation Conjugale Rhône-Alpes Siège : 13, rue d’Algérie - 69001 LYON ASSOCIATION COLIN MAILLARD Siège : 16 bis rue Emile Decorps – 69100 VILLEURBANNE SAUVEGARDE 69 Siège : 20 rue Jules Brunard 69007 LYON DEPARTEMENT DE LA LOIRE ARRAVEM Association Région Roannaise Aide aux Victimes Et Médiation Siège : 15 rue d’Albon 42300 ROANNE Association POINT VERT Siège : 19 rue de la Convention 42100 SAINT ETIENNE ADSEA42 Sauvegarde 42 – Espace rencontre Astrée Siège : 35 rue Ponchardier – 42 000 Saint-Etienne DEPARTEMENT DE L'AIN ADSEA 01 Association de Sauvegarde de l’enfant à l’Adulte 01 Siège : 526 rue Paul Verlaine – 01 960 PERONNAS Voir la catégorie > Les conciliateurs de justice 16.04.19 1) Qu'est-ce qu'un conciliateur de justice ? Auxiliaire de justice, le conciliateur de justice intervient dans le cadre d'un conflit entre deux personnes physiques ou morales afin d'obtenir un accord amiable entre elles et d'éviter ainsi un procès. Pour aller plus loin : http://www.metiers.justice.gouv.fr/la-justice-hors-de-la-fonction-publique-12684/conciliateur-de-justice-26863.html 2) Saisir un conciliateur de justice Liste des conciliateurs de justice sur le ressort de la cour d'appel de Lyon : Conciliateurs de justice - Lyon Téléchargement 610.31 Ko Conciliateurs de justice - Bourg-en-Bresse Téléchargement 633.12 Ko Conciliateurs de justice - Saint-Etienne Téléchargement 437.15 Ko Conciliateurs de justice - Villefranche-sur-Saône Téléchargement 535.84 Ko Conciliateurs de justice - Roanne Téléchargement 487.96 Ko Annexe : Attestation de fin de mission Téléchargement 1.82 Mo 3) Devenir conciliateur de justice : Devenez conciliateur de justice | La Justice recrute Pour candidater, vous devez réunir quatre conditions : être majeur et jouir de ses droits civiques et politiques ; justifier d'une expérience en matière juridique ; ne pas avoir de mandat électif dans le ressort de la cour d'appel où le candidat souhaite exercer ; ne pas exercer d'activité judiciaire, ni participer au fonctionnement du service de la justice. Les candidatures sont à adresser par courrier au magistrat coordonnateur de la protection et de la conciliation de justice du tribunal judiciaire de votre domicile, ou par courriel : TJ de LYON : recrutement.tj-lyon@justice.fr, 67 rue Servient 69433 LYON CEDEX 3 TJ de SAINT-ETIENNE : recrutement.tj-saint-etienne@justice.fr, Place du Palais de justice 42022 SAINT ETIENNE CEDEX 1 TJ de BOURG-EN-BRESSE : recrutement.tj-bourg-en-bresse@justice.fr, 32 avenue Alsace Lorraine - CS 30306 01011 BOURG EN BRESSE CEDEX TJ de VILLEFRANCHE-SUR-SAÔNE : recrutement.tj-villefranche-sur-saone@justice.fr, 350 boulevard Gambetta - BP 474 69665 VILLEFRANCHE SUR SAONE CEDEX TJ de ROANNE : recrutement.tj-roanne@justice.fr, 5 bis place Georges Clémenceau - BP 515 42328 ROANNE CEDEX Quels éléments doit contenir le dossier de candidature ? Le curriculum vitae, Les motivations de la candidature, L’indication du ressort dans lequel le candidat souhaite exercer ses fonctions, Tous les documents qui justifient de l’expérience exigée. Le conciliateur est nommé pour une première période d’un an, par ordonnance du Premier Président de la cour d’appel. À l’issue de cette première année, ses fonctions peuvent être reconduites pour une période renouvelable de deux ans. Les conciliateurs de justice bénéficient des formations dispensées par le département des formations professionnelles spécialisées de l’Ecole nationale de la magistrature (ENM). Vous trouverez ci-dessous : Le dossier de candidature à remplir - version numérique Téléchargement 1.3 Mo - Le dossier de candidature à remplir en version imprimable et à adresser à la juridiction Téléchargement 1.29 Mo - Le dépliant présentant la fonction de conciliateur de justice Téléchargement 343.61 Ko Voir la catégorie > Les experts 16.04.19 Depuis le 2 janvier 2026, les dossiers de candidatures sur la liste des experts judiciaires sont entièrement dématérialisés et la procédure d'inscription s'effectue depuis la plateforme \"Démarches Numériques\". Les liens vers les formulaires de candidatures (inscription, réinscription, extensions) sont ci-dessous : Inscription initiale : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-inscription-initiale-campagne- Réinscription : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-reinscription-campagne-nationa Extension : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-extension-d-inscription-campag La notification des décisions concernant les candidatures sera effectuée dans le courant du mois de décembre suivant le dépôt de la demande. -> Référentiel des Partenaires de la Justice : Livret RPJ Téléchargement 1.07 Mo Lorsqu'ils ordonnent des expertises, les tribunaux choisissent les experts sur la liste établie par la cour d'appel. La cour d’appel procède chaque année à la révision de la liste des experts assermentés. Elle inscrit de nouveaux experts et procède à la radiation de ceux qui n’exercent plus. Si vous désirez faire acte de candidature, vous devez adresser votre demande à partir du mois de novembre et avant le 1er mars de chaque année (soit au plus tard le 28 ou 29 février). Votre attention est attirée sur la nouvelle condition pour les candidats de justifier d’une formation à l’expertise pour pouvoir être inscrits sur une liste d’experts judiciaires (définie par le décret n° 2023-468 du 16 juin 2023) Chaque année et avant le 1er mars, les experts judiciaires doivent déposer leur rapport d'activité de l'année précédente ainsi qu'un état des formations suivies durant cette année (cf. imprimé du rapport). L'arrêté du 5 décembre 2022 a modifié la nomenclature applicable à la liste des experts judiciaires (voir formulaire de candidature). Cette nouvelle nomenclature est applicable depuis le 1er janvier 2024 (voir arrêté ci-dessous) Arrêté 5 décembre 2022 Téléchargement 290.75 Ko Liste établie pour l'année 2026 (mise à jour janvier 2026) : Liste des experts judiciaires Téléchargement 1.84 Mo Liste des experts honoraires Téléchargement 496.96 Ko Annexe : Attestation de fin de mission Téléchargement 1.82 Mo Voir la catégorie > Les huissiers de justice 21.11.19 L’huissier de justice est un officier public et ministériel exerçant une profession libérale réglementée. Il a seul qualité pour exécuter les décisions de justice et délivrer des actes. Il exerce également de manière concurrentielle dans des domaines aussi variés que le recouvrement amiable de créances, l’aide à la rédaction des actes sous seing privé, les consultations juridiques, l’administration d’immeubles, les ventes aux enchères publiques. Il est le seul habilité pour signifier aux personnes intéressées des actes judiciaires ou extra-judiciaires, tels que : assignation à comparaître devant un tribunal, signification de décisions de justice exécution des décisions de justice exécution des actes notariés Annexe : Attestation de fin de mission Téléchargement 1.82 Mo Voir la catégorie > Interprètes et traducteurs 05.12.19 Pour faire certaines démarches, il est nécessaire de joindre la traduction française d'un document rédigé dans une langue étrangère. Par exemple, pour échanger un permis de conduire étranger contre un permis de conduire français. La traduction doit être faite par un traducteur agréé inscrit sur une liste des experts judiciaires. On parle de traduction certifiée conforme à l'original ou officielle. Liste des interprètes et des traducteurs de la cour d'appel de Lyon pour l'année 2026: Liste des interprètes et traducteurs Téléchargement 963.2 Ko (Mise à jour janvier 2026) Note relative aux mémoires de traduction et interprétariat : ICI Téléchargement 586.96 Ko Vous pouvez consulter la liste de ces traducteurs sur le site internet de la Cour de cassation. Si vous vous trouvez à l'étranger, vous pouvez consulter la liste des traducteurs agréés sur le site de votre consulat. La signature du traducteur devra être légalisée par le consulat. Annexe : Attestation de fin de mission Téléchargement 1.82 Mo Voir la catégorie > Les médiateurs de justice 16.04.19 Le médiateur est un tiers qualifié pour résoudre les conflits. Le juge fait appel à lui quand les parties",
+            "pdfLinks": [
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2024-10/Coordonnees-associations-aide-aux-victimes.pdf",
+                "text": "Liste des associations d'aide aux victimes\n        Téléchargement 118.85 Ko",
+                "relevanceHint": "possible-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Conciliateurs%20de%20justice%20Lyon%202026_0.pdf",
+                "text": "Conciliateurs de justice - Lyon\n        Téléchargement 610.31 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Conciliateurs%20de%20justice%20Bourg-en-Bresse%202026_0.pdf",
+                "text": "Conciliateurs de justice - Bourg-en-Bresse\n        Téléchargement 633.12 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Conciliateurs%20de%20justice%20Saint-Etienne%202026_0.pdf",
+                "text": "Conciliateurs de justice - Saint-Etienne\n        Téléchargement 437.15 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Conciliateurs%20de%20justice%20Villefranche-sur-Sa%C3%B4ne%202026.pdf",
+                "text": "Conciliateurs de justice - Villefranche-sur-Saône\n        Téléchargement 535.84 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Conciliateurs%20de%20justice%20Roanne%202026.pdf",
+                "text": "Conciliateurs de justice - Roanne\n        Téléchargement 487.96 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2024-12/Annexe1-AFM.pdf",
+                "text": "Attestation de fin de mission\n        Téléchargement 1.82 Mo",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/Annexe%201.1%20-%20D%C3%A9pliant%20d%27information%20pour%20le%20recrutement_2.pdf",
+                "text": "-\tLe dépliant présentant la fonction de conciliateur de justice\n        Téléchargement 343.61 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/Livret%20RPJ%20expert_internet%20CA%20.pdf",
+                "text": "Livret RPJ\n        Téléchargement 1.07 Mo",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-01/Arr%C3%AAt%C3%A9%20du%205%20d%C3%A9cembre%202022%20relatif%20%C3%A0%20la%20...-1463%20du%2023%20d%C3%A9cembre%202004%20-%20L%C3%A9gifrance.pdf",
+                "text": "Arrêté 5 décembre 2022\n        Téléchargement 290.75 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20judiciaires.pdf",
+                "text": "Liste des experts judiciaires\n        Téléchargement 1.84 Mo",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20honoraires.pdf",
+                "text": "Liste des experts honoraires\n        Téléchargement 496.96 Ko",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2024-12/Annexe1-AFM.pdf",
+                "text": "Attestation de fin de mission\n        Téléchargement 1.82 Mo",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2024-12/Annexe1-AFM.pdf",
+                "text": "Attestation de fin de mission\n        Téléchargement 1.82 Mo",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20interpretes%20traducteurs_0.pdf",
+                "text": "Liste des interprètes et traducteurs\n        Téléchargement 963.2 Ko",
+                "relevanceHint": "possible-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-06/Note%2520DSJ_6%2520juillet%25202018_interpr%25E9tation_traduction_0.pdf",
+                "text": "ICI\n        Téléchargement 586.96 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2024-12/Annexe1-AFM.pdf",
+                "text": "Attestation de fin de mission\n        Téléchargement 1.82 Mo",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2024-2026%20Liste%20des%20m%C3%A9diateurs%20de%20la%20cour%20d%27appel%20de%20Lyon%20par%20d%C3%A9partement.pdf",
+                "text": "Liste des médiateurs par département \n        Téléchargement 276.16 Ko",
+                "relevanceHint": "possible-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2024-12/Annexe1-AFM.pdf",
+                "text": "Attestation de fin de mission\n        Téléchargement 1.82 Mo",
+                "relevanceHint": "unknown"
+              }
+            ],
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "durationMs": 2511,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "extractPdfDate",
+          "fullResult": {
+            "success": true,
+            "pdfText": "COUR D’APPEL DE LYON LISTE DES EXPERTS POUR 2026 dressée par l’assemblée générale restreinte des magistrats des 14 et 21 novembre 2025 Conformément à l’article R312-43 du code de l’organisation judiciaire à la loi du 29 juin 1970 et celle du 11 février 2004 au décret du 23 décembre 2004 et à l’arrêté du 05 décembre 2022 Les années mentionnées en marge à gauche précisent, pour la première, l’année d’inscription initiale de l’expert, pour la seconde, l’année de sa dernière réinscription quinquennale (ou l’année d’inscription initiale pour les experts en période probatoire). Mise à jour le 13 février 2026 1 TABLE DES MATIÈRES Pages SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES . . . . . . . . . . . . . . . . . . . . . . 3 LISTE PAR SPÉCIALITÉ DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 343 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 350 2 SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . . . . . . . . . . 14 A-01 Agriculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 A-01.01 APPLICATIONS DE PRODUITS PHYTOPHARMACEUTIQUES, MATIERES FERTILISANTES ET SUPPORTS DE CULTURE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 A-01.02 FONCIER RURAL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 A-01.03 CONSTRUCTIONS ET AMENAGEMENTS RURAUX . . . . . . . . . . . . . . . . . . . . . . 16 A-01.04 ÉCONOMIE ET GESTION AGRICOLES - FONDS AGRICOLES . . . . . . . . . . . . . . . 16 A-01.05 ESTIMATIONS FONCIERES AGRICOLES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17 A-01.06 HYDRAULIQUE AGRICOLE ET RURALE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19 A-01.07 MATERIEL ET TECHNIQUE AGRICOLE. (MATERIEL A MOTORISATION THERMIQUE : VOIR E.7.9.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20 A-01.08 PRODUCTIONS DE GRANDES CULTURES ET DE CULTURES SPECIALISEES . . . 20 A-02 Agro-alimentaire. (Bâtiments : voir C.2.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21 A-03 Aménagements et équipements de l'espace rural . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21 A-08 Horticulture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 A-10 Nuisances - Pollutions agricoles et dépollutions. (voir I.1. et I.7.) . . . . . . . . . . . . . . . . . . . . . . . 22 A-11.04 PEUPLEMENTS ET EQUILIBRES CYNEGETIQUES - ESTIMATIONS . . . . . . . . . . . 22 A-12 Sylviculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 A-13 Viticulture et oenologie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23 A-13.02 EMBALLAGE ET CONDITIONNEMENT DES VINS, DES LIQUEURS ET DES ALCOOLS - MATERIEL DE CONDITIONNEMENT DES VINS, DES LIQUEURS ET DES ALCOOLS . . . 23 A-13.03 ESTIMATION ET GESTION - EXPLOITATION VITICOLE - MATERIELS DE CULTURE DE LA VIGNE - PEPINIERES ET PLANTATIONS - PRODUITS, TRAITEMENTS ET PROTECTION DE LA VIGNE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23 A-13.04 OENOLOGIE - APPELLATIONS - DEGUSTATIONS DES VINS ET DES ALCOOLS - VINIFICATION ET ASSEMBLAGES - FERMENTATIONS - ANALYSE DES VINS ET DES ALCOOLS - MATERIEL DE VINIFICATION, DE STOCKAGE ET DE PREPARATION DES VINS ET ALCOOLS - TRANSPORTS DES VINS ET DES ALCOOLS . . . . . . . . . . . . . . . . . . . . . . 24 A-14 Santé vétérinaire . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24 A-14.01 BIOLOGIE, PHARMACOLOGIE ET TOXICOLOGIE VETERINAIRES . . . . . . . . . . . 24 A-14.02 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DES ANIMAUX DE COMPAGNIE (CHIENS, CHATS, NAC (NOUVEAUX ANIMAUX DE COMPAGNIE)) . . . . . . 24 A-14.03 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DES RUMINANTS (BOVINS, OVINS, CAPRINS, CAMELIDES), DES EQUIDES (CHEVAUX, PONEYS, ANES ET CROISEMENTS) ET DES PORCINS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25 A-14.04 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DES VOLAILLES, LAPINS ET GIBIERS D'ELEVAGE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26 A-14.05 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DE LA FAUNE SAUVAGE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26 B-ARTS - CULTURE - COMMUNICATION - MÉDIAS . . . . . . . . . . . . . . . . . . . . . . . . 27 B-01 Ecritures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 B-01.01 DOCUMENTS ET ECRITURES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 B-01.02 PALEOGRAPHIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 B-02 Généalogie successorale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 B-03 Objets d'art et de collection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 B-03.01 ARMES ANCIENNES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 B-03.02 BIJOUTERIE, JOAILLERIE, HORLOGERIE, ORFEVRERIE . . . . . . . . . . . . . . . . . . 27 3 C-BATIMENT - TRAVAUX PUBLICS - GESTION IMMOBILIÈRE . . . . . . . . . . . . . 29 C-01 Acoustique, bruits, vibrations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 C-02 Constructions générales tous corps d'état . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 C-02.01 ARCHITECTURE - INGENIERIE - MAITRISE D'OEUVRE. . . . . . . . . . . . . . . . . . . . 29 C-02.02 ARCHITECTURE D'INTERIEUR - DECORATION . . . . . . . . . . . . . . . . . . . . . . . . . 36 C-02.03 ARCHITECTURE DU PAYSAGE - ESPACES VERTS ET DE LOISIRS - AMENAGEMENTS SPORTIFS EXTERIEURS. (HORTICULTURE : VOIR A.8.) . . . . . . . . . . . . . . . . . . . . . . . . . 39 C-02.04 COORDINATION DE LA SECURITE ET PROTECTION DE LA SANTE (CSPS) . . . . 40 C-02.05 ÉCONOMIE DE LA CONSTRUCTION, VALORISATION DES TRAVAUX ET METRES 40 C-02.06 MONUMENTS HISTORIQUES ET PATRIMOINE BATI . . . . . . . . . . . . . . . . . . . . . 43 C-02.07 ORDONNANCEMENT, PILOTAGE, COORDINATION (OPC) . . . . . . . . . . . . . . . . . 43 C-02.08 PISCINES : GROS-OEUVRE, ETANCHEITE, BASSINS PREFABRIQUES, TRAITEMENT DE L'EAU, DE L'AIR, EQUIPEMENTS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46 C-02.09 URBANISME - AMENAGEMENT DU TERRITOIRE - AMENAGEMENT ET MOBILIER URBAIN . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47 C-03 Structures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48 C-03.01 STRUCTURES : GENERALISTES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48 C-03.02 BETON, BETON ARME, BETON PRECONTRAINT, BETONS SPECIAUX . . . . . . . . 50 C-03.03 CHARPENTES ET OSSATURES BOIS - CONSTRUCTIONS EN BOIS . . . . . . . . . . . 52 C-03.04 CONSTRUCTIONS METALLIQUES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53 C-03.05 ÉTANCHEITES DES PAROIS ENTERREES, CUVELAGES . . . . . . . . . . . . . . . . . . . 54 C-03.06 MACONNERIES A BASE DE PRODUITS INDUSTRIELS OU DE MATERIAUX NATURELS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55 C-03.07 STRUCTURES SPECIALES, TOILES TENDUES, CHAPITEAUX, STRUCTURES GONFLABLES, EQUIPEMENTS SCENIQUES, STRUCTURES COMPOSITES . . . . . . . . . . . 56 C-04 Génie-civil - Travaux publics. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56 C-04.01 GENIE-CIVIL ET TRAVAUX PUBLICS : GENERALISTES . . . . . . . . . . . . . . . . . . . 56 C-04.02 AMENAGEMENTS PORTUAIRES, OUVRAGES MARITIMES, TRAVAUX SOUS-MARINS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58 C-04.03 BARRAGES, GRANDS SOUTENEMENTS. (PRODUCTION D'ELECTRICITE : VOIR E.2.1.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58 C-04.04 MURS DE SOUTENEMENT. (LIE AVEC C.5.1.) . . . . . . . . . . . . . . . . . . . . . . . . . . 59 C-04.05 PONTS (Y COMPRIS LES ABORDS ET FONDATIONS) . . . . . . . . . . . . . . . . . . . . . 60 C-04.06 RESEAUX DE DRAINAGE ET EVACUATION DES EAUX, HYDRAULIQUE DE SURFACE, CANAUX, RETENUES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61 C-04.07 RESERVOIRS, TRAVAUX EN LACS ET RIVIERES . . . . . . . . . . . . . . . . . . . . . . . . 62 C-04.08 REVETEMENTS DE SOLS EXTERIEURS (PAVAGES, DALLAGES, PIERRES, PANNEAUX, SOLS SPORTIFS, PLATEFORMES, TERRASSES ET PLATELAGES BOIS...) . . . . . . . . . . . . 63 C-04.09 TERRASSEMENTS GENERAUX ET GRANDS AMENAGEMENTS - VOIES FERREES ET INFRASTRUCTURES FERROVIAIRES. (MATERIEL FERROVIAIRE : VOIR E.7.12.) . . . . . . 64 C-04.10 VOIRIES, CHAUSSEES LOURDES ET LEGERES . . . . . . . . . . . . . . . . . . . . . . . . . 64 C-04.11 TUNNELS : TRAVAUX ET EQUIPEMENTS. (TUNNELIERS : VOIR E.7.8. ET E.7.9.) 66 C-05 Sols . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66 C-05.01 FONDATIONS SPECIALES : PIEUX ET PUITS, RADIERS EPAIS, AMELIORATION DES SOLS, MASSIFS DE MACHINES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66 C-05.02 GEOTECHNIQUE GENERALE, FONDATIONS, CONFORTEMENTS, STABILISATION DES TERRAINS ET TALUS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67 C-05.03 HYDROGEOLOGIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 68 C-05.04 MINES ET CARRIERES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 69 C-06 Couverture - Étanchéité y compris accessoires, équipements rapportés, isolation. (Étanchéité des parois enterrées : voir C.3.6.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70 C-06.01 COUVERTURE - ÉTANCHEITE : GENERALISTES . . . . . . . . . . . . . . . . . . . . . . . . 70 C-06.02 COUVERTURES METALLIQUES PAR GRANDS ELEMENTS (ZINC, ACIER, CUIVRE, ALUMINIUM, PLOMB, PANNEAUX COMPOSITES...) . . . . . . . . . . . . . . . . . . . . . . . . . . . 72 C-06.03 COUVERTURES PAR PETITS ELEMENTS (TUILES, ARDOISES, BARDEAUX, SHINGLES...) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 73 C-06.04 COUVERTURES REGIONALES (CHAUME, LAUZES, TAVAILLONS...) . . . . . . . . . 75 C-06.05 ÉTANCHEITE COLLEE OU COULEE, MEMBRANES - TOITURES PAYSAGERES OU 4 AMENAGEES. (PANNEAUX PHOTOVOLTAIQUES ET CAPTEURS SOLAIRES : VOIR C.13.1.) 75 C-07 Menuiseries, verre dans le bâtiment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76 C-07.01 MENUISERIES INTERIEURES ET AGENCEMENTS, MEUBLES MODERNES . . . . . 76 C-07.02 MENUISERIES EXTERIEURES : BOIS - ACIER - ALUMINIUM - PVC - COMPOSITE - FERRONERIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77 C-07.03 MIROITERIE, VITRERIE, ELEMENTS FIXES OU MOBILES, DECORATIFS. (VITRAUX : VOIR B.3.20.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 78 C-07.04 MURS RIDEAUX ET ENVELOPPES VITREES DU BATIMENT . . . . . . . . . . . . . . . 79 C-08 Revêtements et finitions extérieurs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79 C-08.01 BARDAGES, VETURES, BOIS METAL ET COMPOSITES . . . . . . . . . . . . . . . . . . . 79 C-08.02 ENDUITS, RAVALEMENTS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 80 C-08.03 ISOLATION THERMIQUE PAR L'EXTERIEUR (ITE) . . . . . . . . . . . . . . . . . . . . . . . 81 C-08.05 PEINTURES EXTERIEURES, DECORS. (REVETEMENTS DE SOL EXETRIEURS : VOIR C.4.4.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 81 C-09 Revêtements et finitions intérieurs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 82 C-09.01 REVETEMENTS ET FINITIONS INTERIEURS : GENERALISTES . . . . . . . . . . . . . . 82 C-09.02 PEINTURES INTERIEURES, VERNIS, DECORS . . . . . . . . . . . . . . . . . . . . . . . . . . 83 C-09.03 CARRELAGES MURAUX, MARBRERIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 83 C-09.06 PARQUETS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 84 C-09.08 REVETEMENTS DE SOL COULES, RESINE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 84 C-09.09 REVETEMENTS DE SOL SOUPLES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 85 C-09.10 REVETEMENTS DE SOLS DURS SCELLES, COLLES, COULES . . . . . . . . . . . . . . . 85 C-10 Plomberie - Sanitaire . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 85 C-10.01 PLOMBERIE, SANITAIRE : GENERALISTES . . . . . . . . . . . . . . . . . . . . . . . . . . . . 85 C-10.02 ASSAINISSEMENT AUTONOME. (STATIONS D'EPURATION : VOIR E.3.5.) . . . . . 87 C-10.03 DISTRIBUTION DE GAZ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 88 C-10.04 PLOMBERIE, ROBINETTERIE, APPAREILS SANITAIRES . . . . . . . . . . . . . . . . . . 89 C-10.05 RECUPERATION DES EAUX DE PLUIE, STOCKAGE ET TRAITEMENT. (POUR LA PARTIE PUBLIQUE : VOIR C.15.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 90 C-10.06 RESEAUX D'EAU POTABLE, EAUX USEES, EAUX VANNES, EAUX PLUVIALES . 91 C-11 Polluants du bâtiment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 93 C-11.01 AMIANTE EN BATIMENT ET INDUSTRIE OU TRANSPORTS . . . . . . . . . . . . . . . . 93 C-11.02 PARASITES DU BOIS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 94 C-11.03 PLOMB EN BATIMENT ET INDUSTRIE OU TRANSPORTS . . . . . . . . . . . . . . . . . 94 C-11.04 AUTRES PARASITES ET POLLUANTS (VIVANTS, VEGETAUX, CHIMIQUES) . . . 95 C-12 Electricité . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 95 C-12.01 ANTENNES ET RESEAUX DE DONNEES : INSTALLATIONS ET TRAVAUX . . . . . 95 C-12.02 AUTOMATISMES DU BATIMENT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 96 C-12.03 COURANTS FORTS - COURANTS FAIBLES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 97 C-12.04 DOMOTIQUE DU BATIMENT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 99 C-13 Thermique - Chauffage - Climatisation - Froid - Isolation . . . . . . . . . . . . . . . . . . . . . . . . . . . . 100 C-13.01 GENIE THERMIQUE : CHAUFFAGE TOUTES ENERGIES, STATIONS ET RESEAUX DE CHAUFFAGE, CAPTEURS SOLAIRES - EAU CHAUDE SANITAIRE (ECS) -FOURS, FUMISTERIE, VENTILATION, USINE ET PROCESS D'INCINERATION - THERMIQUE INDUSTRIELLE . 100 C-13.02 GENIE CLIMATIQUE : POMPES A CHALEUR, CLIMATISATION, TRAITEMENT DE L'AIR, SALLES BLANCHES, VMC, ECONOMIES ET RECUPERATION D'ENERGIE . . . . . . 102 C-13.03 GENIE FRIGORIFIQUE : PRODUCTION ET DISTRIBUTION DE FROID ET TRANSPORT FRIGORIFIQUE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 104 C-13.04 GEOTHERMIE ET RESEAUX URBAINS ASSOCIES . . . . . . . . . . . . . . . . . . . . . . 105 C-13.05 ISOLATION THERMIQUE DES BATIMENTS ET DE LEURS EQUIPEMENTS . . . . 106 C-14 Ascenseurs et matériels mécaniques et de chantier . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 108 C-14.01 ASCENSEURS ET MONTE-CHARGES, DEFINITIFS OU DE CHANTIER . . . . . . . . 108 C-14.02 ESCALIERS ROULANTS, TAPIS ROULANTS, TRANSPORTS DE MATERIAUX DE CHANTIER (TAPIS, POMPES) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 108 C-14.03 ÉCHAFAUDAGES (GRUES ET ENGINS DE CHANTIER : VOIR E.7.7. ET E.7.8.) . . 108 C-15 Réseaux publics et privés . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 109 C-15.01 EAU POTABLE ET INDUSTRIELLE (INCENDIE, LAVAGE, PROCESS...). (PRODUCTION D'EAU : VOIR E.2.9.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 109 5",
+            "pageCount": 355,
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "durationMs": 2969,
+      "events": [
+        {
+          "type": "model_text",
+          "text": "J’ai trouvé la page officielle de la Cour d’appel de Lyon sur le site **cours-appel.justice.fr** et, dans la liste des PDF, le document pertinent est **“2026 - Liste des experts judiciaires.pdf”**. Le PDF est bien la liste officielle des experts judiciaires de Lyon. citeturn0search11\n\n**Date officielle retenue : 2025-11-21**  \n**Source de la date : pdf-content**\n\n### Pourquoi cette date ?\nDans le PDF, la première page indique que la liste est :\n- “dressée par l’assemblée générale restreinte des magistrats des **14 et 21 novembre 2025**”\n\nC’est la date la plus précise et la plus récente trouvée dans le document, donc c’est celle qu’il faut retenir pour la publication/arrêté de la liste. Le nom du fichier et la page confirment aussi qu’il s’agit de la liste **2026**, mais la date la plus spécifique vient bien du contenu du PDF. citeturn0search11\n\n### Résumé des indices trouvés\n- **Page web** : pas de date explicite trouvée dans le texte de la page. citeturn0search11\n- **Lien PDF"
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "durationMs": 7454,
+    "usage": {
+      "inputTokens": 3270,
+      "outputTokens": 1329,
+      "totalTokens": 4599
+    },
+    "result": {
+      "courtName": "Cour d'appel de Lyon",
+      "pageUrl": null,
+      "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20judiciaires.pdf",
+      "documentTitle": "Liste des experts judiciaires",
+      "publicationDate": "2026-02-13",
+      "publicationDateSource": "pdf-content",
+      "searchExplanation": "J’ai identifié la page officielle de la Cour d’appel de Lyon sur cours-appel.justice.fr (rubrique « Partenaires de justice »). Parmi les liens PDF de cette page, le document pertinent est « Liste des experts judiciaires », pointant vers le PDF de la liste des experts judiciaires de Lyon pour 2026.",
+      "dateExtractionExplanation": "J’ai vérifié toutes les sources demandées. Le texte de la page ne donne pas de date explicite pour cette liste. Le libellé du lien indique seulement l’année 2026. L’URL du PDF contient aussi seulement un dossier daté de 2026-03, sans date précise de publication. En revanche, le contenu du PDF indique explicitement « Mise à jour le 13 février 2026 », ce qui est la date exacte la plus spécifique trouvée ; elle est plus récente et plus précise que la mention des assemblées des 14 et 21 novembre 2025.",
+      "errors": []
+    }
+  },
+  "result": {
+    "courtName": "Cour d'appel de Lyon",
+    "pageUrl": null,
+    "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20judiciaires.pdf",
+    "documentTitle": "Liste des experts judiciaires",
+    "publicationDate": "2026-02-13",
+    "publicationDateSource": "pdf-content",
+    "searchExplanation": "J’ai identifié la page officielle de la Cour d’appel de Lyon sur cours-appel.justice.fr (rubrique « Partenaires de justice »). Parmi les liens PDF de cette page, le document pertinent est « Liste des experts judiciaires », pointant vers le PDF de la liste des experts judiciaires de Lyon pour 2026.",
+    "dateExtractionExplanation": "J’ai vérifié toutes les sources demandées. Le texte de la page ne donne pas de date explicite pour cette liste. Le libellé du lien indique seulement l’année 2026. L’URL du PDF contient aussi seulement un dossier daté de 2026-03, sans date précise de publication. En revanche, le contenu du PDF indique explicitement « Mise à jour le 13 février 2026 », ce qui est la date exacte la plus spécifique trouvée ; elle est plus récente et plus précise que la mention des assemblées des 14 et 21 novembre 2025.",
+    "errors": []
+  },
+  "totalUsage": {
+    "inputTokens": 32257,
+    "outputTokens": 1955,
+    "totalTokens": 34212
+  },
+  "rawToolData": {
+    "pageTitle": "Partenaires de justice | Cour d'appel de LYON",
+    "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de LYON Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Partenaires de justice Trouvez votre avocat, notaire, conciliateur… La justice fonctionne grâce au concours de la société civile à qui elle confie des missions essentielles de service public et qui intervient dans des domaines très divers. Les associations d'aide aux victimes 30.10.24 DEPARTEMENT DU RHONE (69) TRIBUNAL JUDICIAIRE DE LYON LE MAS 17 rue Crépet - Lyon (69007) Tel : 04 78 60 00 13infodroitsvictimes@mas-asso.fr VIFFIL (Violences Intra Familiales Femmes Informations Libertés) 167 cours Tolstoï - Villeurbanne (69100) Tel : 04 78 85 76 47viffilavi@viffil.com TRIBUNAL JUDICIAIRE DE VILLEFRANCHE-SUR-SAONE TANDEM 427 rue Dechavanne - Villefranche-sur-Saône (69400) Tel : 04 81 04 11 90accueil.tandem@gmail.com DEPARTEMENT DE LA LOIRE (42) TRIBUNAL JUDICIAIRE DE ROANNE ARRAVEM (Association Région Roannaise Aide aux Victimes Et Médiation) 15 rue d'Albon - Roanne (42300) Tel : 04 77 70 97 08contact@arravem.fr TRIBUNAL JUDICIAIRE DE SAINT-ETIENNE SAUVEGARDE42 16 rue Général Foy - Saint-Etienne (42000) Tel : 04 27 40 27 17 administration.av@sauvegarde42.fr DEPARTEMENT DE L'AIN (01) TRIBUNAL JUDICIAIRE DE BOURG-EN-BRESSE AVEMA (Aide aux Victimes Et Médiation dans l'Ain) 1 rue de la bibliothèque - Bourg en Bresse (01100) Tel : 04 74 32 27 12 N° d'urgence (soirs et week-ends) : 06 08 24 03 62accueil@avema01.org Liste des associations d'aide aux victimes Téléchargement 118.85 Ko Voir la catégorie > Associations de médiation familiale 05.12.19 DEPARTEMENT DU RHONE AFCCC Rhône-Alpes Association Française des Centres de Consultation Conjugale Rhône-Alpes Siège : 13, rue d’Algérie - 69001 LYON ASSOCIATION COLIN MAILLARD Siège : 16 bis rue Emile Decorps – 69100 VILLEURBANNE SAUVEGARDE 69 Siège : 20",
+    "pdfLinks": [
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2024-10/Coordonnees-associations-aide-aux-victimes.pdf",
+        "text": "Liste des associations d'aide aux victimes\n        Téléchargement 118.85 Ko",
+        "relevanceHint": "possible-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Conciliateurs%20de%20justice%20Lyon%202026_0.pdf",
+        "text": "Conciliateurs de justice - Lyon\n        Téléchargement 610.31 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Conciliateurs%20de%20justice%20Bourg-en-Bresse%202026_0.pdf",
+        "text": "Conciliateurs de justice - Bourg-en-Bresse\n        Téléchargement 633.12 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Conciliateurs%20de%20justice%20Saint-Etienne%202026_0.pdf",
+        "text": "Conciliateurs de justice - Saint-Etienne\n        Téléchargement 437.15 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Conciliateurs%20de%20justice%20Villefranche-sur-Sa%C3%B4ne%202026.pdf",
+        "text": "Conciliateurs de justice - Villefranche-sur-Saône\n        Téléchargement 535.84 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Conciliateurs%20de%20justice%20Roanne%202026.pdf",
+        "text": "Conciliateurs de justice - Roanne\n        Téléchargement 487.96 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2024-12/Annexe1-AFM.pdf",
+        "text": "Attestation de fin de mission\n        Téléchargement 1.82 Mo",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/Annexe%201.1%20-%20D%C3%A9pliant%20d%27information%20pour%20le%20recrutement_2.pdf",
+        "text": "-\tLe dépliant présentant la fonction de conciliateur de justice\n        Téléchargement 343.61 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/Livret%20RPJ%20expert_internet%20CA%20.pdf",
+        "text": "Livret RPJ\n        Téléchargement 1.07 Mo",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-01/Arr%C3%AAt%C3%A9%20du%205%20d%C3%A9cembre%202022%20relatif%20%C3%A0%20la%20...-1463%20du%2023%20d%C3%A9cembre%202004%20-%20L%C3%A9gifrance.pdf",
+        "text": "Arrêté 5 décembre 2022\n        Téléchargement 290.75 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20judiciaires.pdf",
+        "text": "Liste des experts judiciaires\n        Téléchargement 1.84 Mo",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20honoraires.pdf",
+        "text": "Liste des experts honoraires\n        Téléchargement 496.96 Ko",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2024-12/Annexe1-AFM.pdf",
+        "text": "Attestation de fin de mission\n        Téléchargement 1.82 Mo",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2024-12/Annexe1-AFM.pdf",
+        "text": "Attestation de fin de mission\n        Téléchargement 1.82 Mo",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20interpretes%20traducteurs_0.pdf",
+        "text": "Liste des interprètes et traducteurs\n        Téléchargement 963.2 Ko",
+        "relevanceHint": "possible-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-06/Note%2520DSJ_6%2520juillet%25202018_interpr%25E9tation_traduction_0.pdf",
+        "text": "ICI\n        Téléchargement 586.96 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2024-12/Annexe1-AFM.pdf",
+        "text": "Attestation de fin de mission\n        Téléchargement 1.82 Mo",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2024-2026%20Liste%20des%20m%C3%A9diateurs%20de%20la%20cour%20d%27appel%20de%20Lyon%20par%20d%C3%A9partement.pdf",
+        "text": "Liste des médiateurs par département \n        Téléchargement 276.16 Ko",
+        "relevanceHint": "possible-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2024-12/Annexe1-AFM.pdf",
+        "text": "Attestation de fin de mission\n        Téléchargement 1.82 Mo",
+        "relevanceHint": "unknown"
+      }
+    ],
+    "pdfText": "COUR D’APPEL DE LYON LISTE DES EXPERTS POUR 2026 dressée par l’assemblée générale restreinte des magistrats des 14 et 21 novembre 2025 Conformément à l’article R312-43 du code de l’organisation judiciaire à la loi du 29 juin 1970 et celle du 11 février 2004 au décret du 23 décembre 2004 et à l’arrêté du 05 décembre 2022 Les années mentionnées en marge à gauche précisent, pour la première, l’année d’inscription initiale de l’expert, pour la seconde, l’année de sa dernière réinscription quinquennale (ou l’année d’inscription initiale pour les experts en période probatoire). Mise à jour le 13 février 2026 1 TABLE DES MATIÈRES Pages SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES . . . . . . . . . . . . . . . . . . . . . . 3 LISTE PAR SPÉCIALITÉ DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 343 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 350 2 SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . . . . . . . . . . 14 A-01 Agriculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 A-01.01 APPLICATIONS DE PRODUITS PHYTOPHARMACEUTIQUES, MATIERES FERTILISA"
+  },
+  "error": null
+}

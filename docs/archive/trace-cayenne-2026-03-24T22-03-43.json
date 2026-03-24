@@ -1,0 +1,288 @@
+{
+  "court": "Cayenne",
+  "agentId": "expert-search-mini",
+  "startedAt": "2026-03-24T22:03:21.872Z",
+  "finishedAt": "2026-03-24T22:03:35.737Z",
+  "totalMs": 13865,
+  "steps": [
+    {
+      "turn": 0,
+      "durationMs": 1692,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=KwrDabObIImC7M8P0siLuAw\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=KwrDabObIImC7M8P0siLuAw\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "error": null
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=KwrDaY73H5enkdUPvtOsmAg\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=KwrDaY73H5enkdUPvtOsmAg\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "durationMs": 3068,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "web_search",
+          "fullResult": {
+            "action": {
+              "type": "search",
+              "query": "Cour d'appel de Cayenne experts judiciaires site:cours-appel.justice.fr"
+            },
+            "sources": [
+              {
+                "type": "url",
+                "url": "https://www.courdecassation.fr/files/files/Experts/20200427_Liste_experts_ca_cayenne.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/media/17947"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/chambery/ca-chambery-liste-des-experts-judiciaires-2025-formalites-dinscription"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/amiens/informations-relatives-la-nouvelle-nomenclature"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/amiens"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/pau/les-experts"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2024-03/2024_Liste_experts_CA_974.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/nancy/les-experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/chambery/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-05/2025_Liste_experts_CA_974.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/fort-de-france/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://guadeloupeattitude.com/2010/05/23/liste-des-experts-pres-la-cour-dappel-de-fort-de-france-et-cayenne/"
+              },
+              {
+                "type": "url",
+                "url": "https://experts-ccd.org/liste-des-experts-par-specialite/"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cecaad.org/compagnie/historique-listes"
+              },
+              {
+                "type": "url",
+                "url": "https://unispournosenfants.org/ressources-2/annuaire-des-professionnels/liste-des-experts-judiciaires-de-la-cour-dappel-de-cayenne/"
+              },
+              {
+                "type": "url",
+                "url": "https://martinique.tribunal-administratif.fr/Media/mediatheque-ta-martinique/documents/2024/2024-documents/tableau-des-experts-2024"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/Cour_d%27appel_de_Basse-Terre"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/Expert_judiciaire_%28France%29"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/Traducteur_interpr%C3%A8te_officiel"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/Paul_Bensussan"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/Expert_judiciaire_%28Maroc%29"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/Cour_d%27appel_de_Cayenne"
+              }
+            ]
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "web_search",
+          "fullResult": {
+            "action": {
+              "type": "openPage",
+              "url": "https://unispournosenfants.org/ressources-2/annuaire-des-professionnels/liste-des-experts-judiciaires-de-la-cour-dappel-de-cayenne/"
+            }
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Liste des experts judiciaires de la cour d'appel de Cayenne - Unis Pour Nos Enfants",
+            "pageText": "Unis Pour Nos Enfants Facebook Youtube Twitter Instagram asso.upne@gmail.com Menu Liste des experts judiciaires de la cour d’appel de Cayenne Liste des experts judiciaires de la cour d’appel de CayenneTélécharger Sign in Create an Account Username or email * Password * Login Lost your password? Rechercher : Main Menu",
+            "pdfLinks": [
+              {
+                "url": "https://unispournosenfants.org/wp-content/uploads/2022/08/20200427_Liste_experts_ca_cayenne.pdf",
+                "text": "Liste des experts judiciaires de la cour d’appel de Cayenne",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://unispournosenfants.org/wp-content/uploads/2022/08/20200427_Liste_experts_ca_cayenne.pdf",
+                "text": "Télécharger",
+                "relevanceHint": "likely-expert-list"
+              }
+            ],
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "durationMs": 1504,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "extractPdfDate",
+          "fullResult": {
+            "success": true,
+            "pdfText": "1 LISTE DES EXPERTS JUDICIAIRES Du ressort de la COUR D’APPEL DE CAYENNE Pour l’année judiciaire 2020 Conformément au décret n° 2004-1463 du 23 décembre 2004 relatif aux experts judiciaires Et à l’assemblée générale des magistrats du siège de la cour d’appel de Cayenne réunie le 25 novembre 2019 1, rue Louis Blanc - 97300 CAYENNE Téléphone secrétariat : 05.94.27.48.48 Fax : 05.94.27.48.71 2 Cette liste est également consultable sur : - Le site intranet de la cour d’appel de Cayenne - Les sites intranet et internet de la Cour de cassation, qui hébergent l’ensemble des listes d’experts près les cours d’appel. 3 SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPÉCIALITÉS A - AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS A.1. AGRICULTURE p. 7 A.1.3. Constructions et aménagements C - BÂTIMENT – TRAVAUX PUBLICS – GESTION IMMOBILIERE C.1. BATIMENT – TRAVAUX PUBLICS p.7 C.1.2. Architecture - ingénierie C.1.5. Assainissement *Déchets industriels et urbains *Epuration des eaux potables *Traitement des eaux usées C.1.6. Economie de la construction C.1.7. Electricité *Courants forts *Electronique, automatismes, domotique *Sécurité (alarme, protection incendie) C.1.8. Enduits *Enduits et revêtements extérieurs, carrelage, ravalement *Enduits intérieurs (plâtres, staff, stucs) C.1.9. Explosion – Incendie C.1.10. Génie civil *Aéroports, barrages, ouvrages d’art, ponts, ports, tunnels, voies ferrées C.1.11. Gestion de projet et de chantier * Coordination, ordonnancement, pilotage *Coordination et sécurité C.1.12. Gros œuvre - Structure * Béton armé, charpentes bois et métalliques, coffrages, fondations, maçonnerie C.1.15. Menuiseries *Bois, métalliques, plastiques C.1.18. Murs rideaux - Bardages C.1.19. Piscines C.1.21. Plomberie, sanitaire, robinetterie, eau, gaz C.1.22. Revêtements intérieurs *Peinture, tapisserie, vernis *Revêtements de sols et murs, carrelage C.1.23. Réseaux publics * Eaux, égouts, électricité, gaz C.1.24. Routes, voiries et réseaux divers C.1.27. Toiture *Couverture, charpente, zinguerie, étanchéité C.1.28. Topométrie C.1.30. Urbanisme et aménagement urbain C.2. GESTION IMMOBILIÈRE p.16 C.2.1. Bornage, délimitation, division de lots C.2.2. Estimations immobilières *Loyers d’habitation * Loyers commerciaux *Fonds de commerce, indemnités d’éviction *Terrains non agricoles, bâtiments C.2.3. Gestion d’immeuble – Copropriété 4 D - ÉCONOMIE ET FINANCE D.1. COMPTABILITÉ p.17 D.1.1. Exploitation de toutes données chiffrées - Analyse de l’organisation et des systèmes comptables D.2. EVALUATION D’ENTREPRISE ET DE DROITS SOCIAUX p.17 D.4. GESTION D’ENTREPRISE p.18 D.4.1. Analyse de gestion D.4.2. Contrefaçons, concurrence déloyale D.4.3. Distribution commerciale, franchises, concessions D.4.4. Etude de marchés D.4.5. Stratégie et politique générale d’entreprise D.6. FISCALITE p.20 D.6.1. Fiscalité personnelle D.6.2. Fiscalité d’entreprise D.7. DIAGNOSTIC D’ENTREPRISE p.20 Mandats ad hoc et expertises (art. L 611-3 du code de commerce) - Expertises (art. L 813-1 du code de commerce) E - INDUSTRIES E.2. ENERGIE ET UTILITES p.21 E.2.2. Energie solaire E.2.4. Pétrole, gaz et hydrocarbures E.2.5. Utilités (air, eau, vapeur) E.3. POLLUTION p.22 E.3.1. Air E.3.2. Déchets E.3.3. Eau E.3.4. Sols E.5. METALLURGIE p.23 E.5.4. Activités annexes (analyse, essais, contrôles…) E.6. PRODUITS INDUSTRIELS p.23 E.6.6. Mines et carrières E.7. TRANSPORT (Matériel) p.24 E.7.2. Appareils de levage et de manutention E.8. TRANSPORT (usage et usagers) p.24 E.8.3 Terrestre *Chemins de fer *Routes E.9. PROPRIETE INDUSTRIELLE p.24 5 F - SANTÉ F.1. MÉDECINE p.25 F.1.14. Médecine générale F.2. PSYCHIATRIE p.25 F.2.1. Psychiatrie d’adultes F.2.2. Pédopsychiatrie F.3. CHIRURGIE p.26 F.3.5. Chirurgie orthopédique et traumatologique F.3.10. Neurochirurgie F.5. BIOLOGIE MÉDICALE ET PHARMACIE p.27 F.5.7. Hématologie biologique F.7. PSYCHOLOGIE p.27 F.7.1. Psychologie de l’adulte G - MÉDECINE LÉGALE, CRIMINALISTIQUE ET SCIENCES CRIMINELLES G.1. DOMAINE MÉDICO-JUDICIAIRE SPÉCIALISÉ p.27 G.1.3. Autopsie et thanatologie G.1.4. Médecine légale du vivant - Dommage corporel et traumatologie séquellaire G.2. INVESTIGATIONS SCIENTIFIQUES ET TECHNIQUES p.29 G.2.7. Explosions et incendie H - INTERPRÉTARIAT - TRADUCTION H.1. INTERPRÉTARIAT p.29 H.1.1. Langues anglaise et anglo-saxonne - Anglais p.29 H.1.2. Langues arabe, chinoise, japonaise, hébraïque, autres domaines linguistiques - Arabe p.31 - Chinois p.32 H.1.3. Langue française et dialectes - Créole p.33 - Créole guyanais p.33 - Créole haïtien p.34 - Aluku / Ndjuka / Okanisi tongo / Saramaca p.34 - Sranan tongo p.35 H.1.4. Langues germaniques et scandinaves - Allemand p.37 - Néerlandais p.37 - Norvégien p.39 H.1.5. Langues romanes : espagnol, italien, portugais, autres langues romanes - Espagnol p.39 - Italien p.41 - Portugais p.41",
+            "pageCount": 64,
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "durationMs": 2907,
+      "events": [
+        {
+          "type": "model_text",
+          "text": "J’ai trouvé la page officielle de la liste des experts judiciaires pour la Cour d’appel de Cayenne, puis le PDF associé. Le document PDF contient sur sa première page : « Pour l’année judiciaire 2020 » et mentionne aussi l’assemblée générale des magistrats du siège réunie le 25 novembre 2019. Le PDF est nommé `20200427_Liste_experts_ca_cayenne.pdf`, ce qui suggère une mise en ligne ou un horodatage de fichier au 27/04/2020, mais la date la plus officielle et la plus spécifique dans le contenu du PDF est l’année judiciaire 2020. citeturn1view0turn0search21\n\n**Résultat retenu**\n- **Cour d’appel :** Cayenne\n- **Page officielle trouvée :** liste des experts judiciaires de la cour d’appel de Cayenne\n- **PDF :** `20200427_Liste_experts_ca_cayenne.pdf`\n- **Date officielle retenue :** **2020-01-01**\n- **Source de la date :** **pdf-content** citeturn1view0\n\n**Pourquoi cette date ?**\n- Le **PDF** donne une **année judiciaire 2020**, qui est la date la plus officielle disponible dans le do"
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "durationMs": 4692,
+    "usage": {
+      "inputTokens": 1480,
+      "outputTokens": 780,
+      "totalTokens": 2260
+    },
+    "result": {
+      "courtName": "Cayenne",
+      "pageUrl": null,
+      "documentUrl": "https://unispournosenfants.org/wp-content/uploads/2022/08/20200427_Liste_experts_ca_cayenne.pdf",
+      "documentTitle": "Liste des experts judiciaires de la cour d'appel de Cayenne",
+      "publicationDate": "2020-04-27",
+      "publicationDateSource": "filename",
+      "searchExplanation": "The expert-directory page was identified from the provided page title/text for the Cour d'appel de Cayenne, and the PDF was taken from the linked document on that page. The PDF link text matches the expert list title and points to the file 20200427_Liste_experts_ca_cayenne.pdf.",
+      "dateExtractionExplanation": "I checked all available signals. The PDF content only gives a year-only reference ('Pour l’année judiciaire 2020'), which is too coarse to use over an exact date. The PDF filename contains the exact date '20200427', which is the most specific date signal available, so the publication date is taken as 2020-04-27. The page text and anchor text do not provide a more specific date.",
+      "errors": [
+        "Page URL was not provided in the source materials, so it could not be confirmed exactly."
+      ]
+    }
+  },
+  "result": {
+    "courtName": "Cayenne",
+    "pageUrl": null,
+    "documentUrl": "https://unispournosenfants.org/wp-content/uploads/2022/08/20200427_Liste_experts_ca_cayenne.pdf",
+    "documentTitle": "Liste des experts judiciaires de la cour d'appel de Cayenne",
+    "publicationDate": "2020-04-27",
+    "publicationDateSource": "filename",
+    "searchExplanation": "The expert-directory page was identified from the provided page title/text for the Cour d'appel de Cayenne, and the PDF was taken from the linked document on that page. The PDF link text matches the expert list title and points to the file 20200427_Liste_experts_ca_cayenne.pdf.",
+    "dateExtractionExplanation": "I checked all available signals. The PDF content only gives a year-only reference ('Pour l’année judiciaire 2020'), which is too coarse to use over an exact date. The PDF filename contains the exact date '20200427', which is the most specific date signal available, so the publication date is taken as 2020-04-27. The page text and anchor text do not provide a more specific date.",
+    "errors": [
+      "Page URL was not provided in the source materials, so it could not be confirmed exactly."
+    ]
+  },
+  "totalUsage": {
+    "inputTokens": 32990,
+    "outputTokens": 1500,
+    "totalTokens": 34490
+  },
+  "rawToolData": {
+    "pageTitle": "Liste des experts judiciaires de la cour d'appel de Cayenne - Unis Pour Nos Enfants",
+    "pageText": "Unis Pour Nos Enfants Facebook Youtube Twitter Instagram asso.upne@gmail.com Menu Liste des experts judiciaires de la cour d’appel de Cayenne Liste des experts judiciaires de la cour d’appel de CayenneTélécharger Sign in Create an Account Username or email * Password * Login Lost your password? Rechercher : Main Menu",
+    "pdfLinks": [
+      {
+        "url": "https://unispournosenfants.org/wp-content/uploads/2022/08/20200427_Liste_experts_ca_cayenne.pdf",
+        "text": "Liste des experts judiciaires de la cour d’appel de Cayenne",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://unispournosenfants.org/wp-content/uploads/2022/08/20200427_Liste_experts_ca_cayenne.pdf",
+        "text": "Télécharger",
+        "relevanceHint": "likely-expert-list"
+      }
+    ],
+    "pdfText": "1 LISTE DES EXPERTS JUDICIAIRES Du ressort de la COUR D’APPEL DE CAYENNE Pour l’année judiciaire 2020 Conformément au décret n° 2004-1463 du 23 décembre 2004 relatif aux experts judiciaires Et à l’assemblée générale des magistrats du siège de la cour d’appel de Cayenne réunie le 25 novembre 2019 1, rue Louis Blanc - 97300 CAYENNE Téléphone secrétariat : 05.94.27.48.48 Fax : 05.94.27.48.71 2 Cette liste est également consultable sur : - Le site intranet de la cour d’appel de Cayenne - Les sites intranet et internet de la Cour de cassation, qui hébergent l’ensemble des listes d’experts près les cours d’appel. 3 SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPÉCIALITÉS A - AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS A.1. AGRICULTURE p. 7 A.1.3. Constructions et aménagements C - BÂTIMENT – TRAVAUX PUBLICS – GESTION IMMOBILIERE C.1. BATIMENT – TRAVAUX PUBLICS p.7 C.1.2. Architecture - ingénierie C.1.5. Assainissement *Déchets industriels et urbains *Epuration des eaux potables *Traitement des eaux usées C.1.6. Economie de la construction C.1.7. Electricité *Courants forts *Electronique, automatismes, domotique *Sécurité (alarme, protection incendie) C.1.8. Enduits *Enduits et revêtements extérieurs, carrelage, ravalement *Enduits intérieurs (plâtres, staff, stucs) C.1.9. Explosion – Incendie C.1.10. Génie civil *Aéroports, barrages, ouvrages d’art, ponts, ports, tunnels, voies ferrées C.1.11. Gestion de projet et de chantier * Coordination, ordonnancement, pilotage *Coordinat"
+  },
+  "error": null
+}

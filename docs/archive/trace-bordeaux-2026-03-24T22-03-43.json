@@ -1,0 +1,298 @@
+{
+  "court": "Bordeaux",
+  "agentId": "expert-search-mini",
+  "startedAt": "2026-03-24T22:02:59.102Z",
+  "finishedAt": "2026-03-24T22:03:14.156Z",
+  "totalMs": 15054,
+  "steps": [
+    {
+      "turn": 0,
+      "durationMs": 1329,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=FArDab3_FvmkkdUP-pTKwQg\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=FArDab3_FvmkkdUP-pTKwQg\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "error": null
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Accueil | Cour d'appel de Bordeaux",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Bordeaux Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Je voudrais Trouver un tribunal près de chez moi Récupérer un formulaire Demande d'aide juridictionnelle Demande de certificat de non appel Trouver un formulaire sur Justice.fr JUSTICE.FR: l'appli MOBILE qui vous informe! Justice.fr Des réponses à des questions Quels documents dois-je fournir au service apostilles ? Je souhaite porter plainte Puis-je bénéficier de l'aide juridictionnelle ? TJ Bergerac - Bâtiment Carmes Informations pratiques Tribunal judiciaire de Bergerac - Palais des Carmes 6 bis Rue des Carmes 24100 Bergerac France Lundi 9h -12h ; 13h30 -17h Mardi 9h -12h ; 13h30 -17h Mercredi 9h -12h ; 13h30 -17h Jeudi 9h -12h ; 13h30 -17h Vendredi 9h -12h ; 13h30 -17h Samedi Fermé Dimanche Fermé Téléphone 05.53.74.40.00 PAD Nontron Informations pratiques Point d'accès au droit 12 bis boulevard Gambetta 24300 Nontron France Lundi 09:00 - 12:30 / 13:30 - 17:00 Mardi 09:00 - 12:30 / 13:30 - 17:00 Mercredi Fermé Jeudi 09:00 - 12:30 / 13:30 - 17:00 Vendredi 09:00 - 12:30 / 13:30 - 16:00 Samedi Fermé Dimanche Fermé Téléphone 05.53.06.39.33 PAD Ribérac Informations pratiques Point d'accès au droit Mission locale - 36 rue du 26 mars 1944 24600 Ribérac France Lundi 09:00 - 12:30 / 13:30 - 17:00 Mardi 09:00 - 12:30 / 13:30 - 17:00 Mercredi Fermé Jeudi 09:00 - 12:30 / 13:30 - 17:00 Vendredi 09:00 - 12:30 / 13:30 - 16:00 Samedi Fermé Dimanche Fermé Téléphone 05.53.06.39.33 PAD Terrasson Informations pratiques Point d'accès au droit Château Jeanne d'Arc - 15 place Foirail 24120 Terrasson-Lavilledieu France Lundi 09:00 - 12:30 / 13:30 - 17:00 Mardi 09:00 - 12:30 / 13:30 - 17:00 Mercredi Fermé Jeudi 09:00 - 12:30 / 13:30 - 17:00 Vendredi 09:00 - 12:30 / 13:30 - 16:00 Samedi Fermé Dimanche Fermé Téléphone 05.53.06.39.33 MSAP Confolens Informations pratiques Espace France Services Sous-Préfecture de Confolens- 1 rue Antoine Babaud Lacroze 16500 Confolens France Lundi 08:30 - 12:00 Mardi 08:30 - 12:00 Mercredi 08:30 - 12:00 / 13:30 - 17:30 Jeudi 08:30 - 12:00 Vendredi 08:30 - 12:00 Samedi Fermé Dimanche Fermé Téléphone 05.45.84.10.65 Espace France Services Montmoreau Informations pratiques Espace France Services 35 avenue d'Aquitaine 16190 Montmoreau France Lundi 09:00 - 12:00 / 14:00 - 17:00 Mardi 09:00 - 12:00 / 14:00 - 17:00 Mercredi 09:00 - 12:00 / 13:00 - 16:00 Jeudi 09:00 - 12:00 / 14:00 - 17:00 Vendredi 09:00 - 12:00 Samedi Fermé Dimanche Fermé Téléphone 05.45.24.08.79 MJD Bergerac Informations pratiques Maison de justice et du droit de Bergerac 16 rue du petit sol 24100 Bergerac France Lundi 09:00 - 12:00 / 13:30 - 16:30 Mardi 09:00 - 12:00 / 13:30 - 16:30 Mercredi 09:00 - 12:00 / 13:30 - 16:30 Jeudi 09:00 - 12:00 / 13:30 - 16:30 Vendredi Fermé Samedi Fermé Dimanche Fermé Téléphone 05.53.73.24.77 MJD Angoulême Informations pratiques Maison de justice et du droit Rue René Pajot 16000 Angoulême France Téléphone 05.45.24.68.01 MJD Bordeaux Informations pratiques Maison de justice et du droit 3ème étage - entrée A - 2 Place Ravezies 33300 Bordeaux France Lundi 9:00 - 12:00 / 13:30 - 17:30 Mardi 9:00 - 12:00 / 13:30 - 17:30 Mercredi 9:00 - 12:00 / 13:30 - 17:30 Jeudi 9:00 - 12:00 / 13:30 - 17:30 Vendredi 9:00 - 12:00 / 13:30 - 16:00 Samedi Fermé Dimanche Fermé Téléphone 05.56.11.27.10 MJD Lormont Informations pratiques Maison de justice et du droit 45 avenue de la Libération 33310 Lormont France Lundi 9:00 - 12:00 / 13:30 - 17:30 Mardi 9:00 - 12:00 / 13:30 - 17:30 Mercredi 9:00 - 12:00 / 13:30 - 17:30 Jeudi 9:00 - 12:00 / 13:30 - 19:00 Vendredi 9:00 - 12:00 / 13:30 - 16:00 Samedi Fermé Dimanche Fermé Téléphone 05.57.77.74.60 Point d'accès au droit de Lesparre-Médoc Informations pratiques Point d'accès au droit de Lesparre-Médoc Espace Info Ecoute - 10 place du Maréchal Foch 33340 Lesparre-Médoc France Lundi 09:00 -12:30 / 13:30 - 17:00 Mardi 09:00 -12:30 / 13:30 - 17:00 Mercredi 09:00 -12:30 / 13:30 - 17:00 Jeudi 09:00 -12:30 / 13:30 - 17:00 Vendredi 09:00 -12:30 Samedi Fermé Dimanche Fermé Téléphone 05.56.41.41.39 Point d'accès au droit Langon Informations pratiques Point d'accès au droit de Langon Résidence de l'horloge - Place de l'horloge 33210 LANGON France Lundi 9:00 - 13:00 Mardi 9:00 - 13:00 Mercredi 9:00 - 13:00 Jeudi 9:00 - 13:00 Vendredi 9:00 - 13:00 Samedi Fermé Dimanche Fermé Téléphone 05.57.36.25.54 CPH Angoulême Informations pratiques Conseil de prud'hommes d'Angoulême Place Francis Louvel 16007 Angoulême Cedex France Lundi 8:30 - 12:00 / 13:30 – 17:00 Mardi 8:30 - 12:00 / 13:30 – 17:00 Mercredi 8:30 - 12:00 / 13:30 – 17:00 Jeudi 8:30 - 12:00 / 13:30 – 17:00 Vendredi 8:30 - 12:00 / 13:30 – 16:00 Samedi Fermé Dimanche Fermé Téléphone 05.45.37.11.70 CPH Libourne Informations pratiques Conseil de prud'hommes de Libourne 36 rue Victor Hugo 33501 Libourne Cedex France Lundi 09:00 - 12:00 / 14:00 – 16:00 Mardi 09:00 - 12:00 / 14:00 – 16:00 Mercredi 09:00 - 12:00 / 14:00 – 16:00 Jeudi 09:00 - 12:00 / 14:00 – 16:00 Vendredi 09:00 - 12:00 / 14:00 – 16:00 Samedi Fermé Dimanche Fermé Téléphone 05.57.51.75.42 CPH Périgueux Informations pratiques Conseil de prud'hommes de Périgueux 5 rue Maleville 24019 Périgueux Cedex France Lundi 8:30 - 12:00 / 13:30 – 17:00 Mardi 8:30 - 12:00 / 13:30 – 17:00 Mercredi 8:30 - 12:00 / 13:30 – 17:00 Jeudi 8:30 - 12:00 / 13:30 – 17:00 Vendredi 8:30 - 12:00 / 13:30 – 16:00 Samedi Fermé Dimanche Fermé Téléphone 05.53.08.64.43 CPH Bergerac Informations pratiques Conseil de prud'hommes de Bergerac Rue des Carmes 24100 Bergerac France Lundi 8:30 - 12:00 / 13:30 – 16:30 Mardi 8:30 - 12:00 / 13:30 – 16:30 Mercredi 8:30 - 12:00 / 13:30 – 16:30 Jeudi 8:30 - 12:00 / 13:30 – 16:30 Vendredi 8:30 - 12:00 / 13:30 – 16:30 Samedi Fermé Dimanche Fermé Téléphone 05.53.57.68.25 CPH Bordeaux Informations pratiques Conseil de prud'hommes de Bordeaux Place de la République 33077 Bordeaux Cedex France Lundi 8:30 - 12:00 / 13:00 - 17:00 Mardi 8:30 - 12:00 / 13:00 - 17:00 Mercredi 8:30 - 12:00 / 13:00 - 17:00 Jeudi 8:30 - 12:00 / 13:00 - 17:00 Vendredi 8:30 - 12:00 / 13:00 - 17:00 Samedi Fermé Dimanche Fermé Téléphone 05.47.33.95.95 TPROX Cognac Informations pratiques Tribunal de proximité de Cognac 3 rue Pierre Martin Civat 16100 Cognac France Lundi 8:30 - 12:00 / 13:30 - 16:30 Mardi 8:30 - 12:00 / 13:30 - 16:30 Mercredi 8:30 - 12:00 / 13:30 - 16:30 Jeudi 8:30 - 12:00 / 13:30 - 16:30 Vendredi 8:30 - 12:00 / 13:30 - 16:00 Samedi Fermé Dimanche Fermé Téléphone 05.47.33.93.00 TPROX Sarlat-la-Canéda Informations pratiques Tribunal de proximité de Sarlat-la-Canéda Place de la Grande Rigaudie 24200 Sarlat-la-Canéda France Lundi 8:30 - 12:15 / 14:00 - 17:00 Mardi 8:30 - 12:15 / 14:00 - 17:00 Mercredi 8:30 - 12:15 / 14:00 - 17:00 Jeudi 8:30 - 12:15 / 14:00 - 17:00 Vendredi 8:30 - 12:15 / 14:00 - 17:00 Samedi Fermé Dimanche Fermé Téléphone 05.24.10.10.00 TJ Libourne Informations pratiques Tribunal judiciaire de Libourne 22 rue Thiers - CS 60202 33509 Libourne Cedex France Lundi 9:00 - 12:00 / 14:00 - 17:00 Mardi 9:00 - 12:00 / 14:00 - 17:00 Mercredi 9:00 - 12:00 / 14:00 - 17:00 Jeudi 9:00 - 12:00 / 14:00 - 17:00 Vendredi 9:00 - 12:00 / 14:00 - 17:00 Samedi Fermé Dimanche Fermé Téléphone 05.40.58.06.00 TJ Périgueux Informations pratiques Tribunal judiciaire de Périgueux 19 bis boulevard Montaigne 24019 Périgueux Cedex France Lundi 8:30 - 12:00 / 13:30 - 17:00 Mardi 8:30 - 12:00 / 13:30 - 17:00 Mercredi 8:30 - 12:00 / 13:30 - 17:00 Jeudi 8:30 - 12:00 / 13:30 - 17:00 Vendredi 8:30 - 12:00 / 13:30 - 17:00 Samedi Fermé Dimanche Fermé Téléphone 05.53.02.77.00 TJ Bergerac Informations pratiques Tribunal judiciaire de Bergerac - Palais République Place de la République 24100 Bergerac France Lundi 8:45 - 12:15 / 13:00 - 17:00 Mardi 8:45 - 12:15 / 13:00 - 17:00 Mercredi 8:45 - 12:15 / 13:00 - 17:00 Jeudi 8:45 - 12:15 / 13:00 - 17:00 Vendredi 8:45 - 12:15 / 13:00 - 17:00 Samedi Fermé Dimanche Fermé Téléphone 05.53.74.40.00 TPROX Arcachon Informations pratiques Tribunal de proximité d'Arcachon 2 place Lucien de Gracia 33120 Arcachon France Lundi 8:30 - 12:00 / 13:30 - 16:30 Mardi 8:30 - 12:00 / 13:30 - 16:30 Mercredi 8:30 - 12:00 / 13:30 - 16:30 Jeudi 8:30 - 12:00 / 13:30 - 16:30 Vendredi 8:30 - 12:00 / 13:30 - 16:30 Samedi Fermé Dimanche Fermé Téléphone 05.47.33.92.40 TJ Bordeaux Informations pratiques Tribunal judiciaire de Bordeaux 30 rue des Frères Bonie 33000 Bordeaux France Lundi 8:30 - 17:00 Mardi 8:30 - 17:00 Mercredi 8:30 - 17:00 Jeudi 8:30 - 17:00 Vendredi 8:30 - 17:00 Samedi Fermé Dimanche Fermé Téléphone 05.47.33.90.00 TJ Angoulême Informations pratiques Tribunal judiciaire d'Angoulême Place Francis Louvel 16000 Angoulême France Lundi 8:15 - 12:00 / 13:15 - 17:00 Mardi 8:15 - 12:00 / 13:15 - 17:00 Mercredi 8:15 - 12:00 / 13:15 - 17:00 Jeudi 8:15 - 12:00 / 13:15 - 17:00 Vendredi 8:15 - 12:00 / 13:15 - 16:00 Samedi Fermé Dimanche Fermé Téléphone 05.45.37.11.00 Cour d'appel de Bordeaux Informations pratiques Cour d'appel de Bordeaux Place de la République 33077 Bordeaux Cedex France Lundi 8:30 - 12:00 / 13:00 - 17:00 Mardi 8:30 - 12:00 / 13:00 - 17:00 Mercredi 8:30 - 12:00 / 13:00 - 17:00 Jeudi 8:30 - 12:00 / 13:00 - 17:00 Vendredi 8:30 - 12:00 / 13:00 - 17:00 Samedi Fermé Dimanche Fermé Téléphone 05.47.33.90.00 Accéder aux autres sites des cours d'appel Choisir une cour d’appel Agen Cour d'appel d'Agen Aix-en-Provence Cour d'appel d'Aix-en-Provence Amiens Cour d'appel d'Amiens Angers Cour d'appel d'Angers Basse-Terre Cour d'appel de Basse-Terre Bastia Cour d'appel de Bastia Besançon Cour d'appel de Besançon Bordeaux Cour d'appel de Bordeaux Bourges Cour d'appel de Bourges Caen Cour d'appel de Caen Cayenne Chambéry Cour d'appel de Chambéry Colmar Cour d'appel de Colmar Dijon Cour d'appel de Dijon Douai Cour d'appel de Douai Fort-de-France ",
+            "pdfLinks": [],
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "durationMs": 2777,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "web_search",
+          "fullResult": {
+            "action": {
+              "type": "search",
+              "query": "site:cours-appel.justice.fr Bordeaux experts judiciaires pdf"
+            },
+            "sources": [
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/bordeaux/experts"
+              },
+              {
+                "type": "url",
+                "url": "https://bordeaux.cour-administrative-appel.fr/vos-demarches/je-suis-un-expert/tableau-des-experts"
+              },
+              {
+                "type": "url",
+                "url": "https://www.exjudis.fr/experts-judiciaires-cour-appel-bordeaux/"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-03/liste_experts_2025.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/bordeaux/informations-utiles"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2022-03/LISTE%20DES%20EXPERTS%20%202022.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cdad-gironde.justice.fr/pdf/liste-expert.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/bordeaux/consulter-mon-casier-judiciaire"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/bordeaux/informations-pratiques-et-recrutement"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/bastia/linscription-des-experts-judiciaires-et-enqueteurs-sociaux"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/media/17947"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/bordeaux/partenaires-de-justice-0"
+              },
+              {
+                "type": "url",
+                "url": "https://bordeaux.cour-administrative-appel.fr/vos-demarches/je-suis-un-expert/inscription-sur-le-tableau-des-experts-de-la-cour"
+              },
+              {
+                "type": "url",
+                "url": "https://www.courdecassation.fr/publications/lettre-de-la-deuxieme-chambre-civile/ndeg12-juillet-2024/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/bordeaux/mediateurs-de-justice"
+              },
+              {
+                "type": "url",
+                "url": "https://www.conseil-etat.fr/Media/mediatheque-ta-saint-pierre-et-miquelon/documents/2024-documents/tableau-des-experts-2024"
+              },
+              {
+                "type": "url",
+                "url": "https://bordeaux.cour-administrative-appel.fr/content/download/203324/file/tableau%202024.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/Traducteur_interpr%C3%A8te_officiel"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/Gilbert_Azibert"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/Jacques_Dallest"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/Expert_judiciaire_%28France%29"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/Cour_administrative_d%27appel_de_Bordeaux"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/Cour_d%27appel_de_Basse-Terre"
+              }
+            ]
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "web_search",
+          "fullResult": {
+            "action": {
+              "type": "openPage",
+              "url": "https://www.cours-appel.justice.fr/bordeaux/experts"
+            }
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Experts | Cour d'appel de Bordeaux",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Bordeaux Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Experts Les experts judiciaires sont des professionnels spécialement habilités, chargés de donner aux juges un avis technique sur des faits afin d’apporter des éclaircissements sur une affaire. Ce sont des spécialistes de disciplines très variées (médecine, architecture, gemmologie, économie et finance, etc.). A l'attention des PARTICULIERS : pour toute demande d'expertise, merci de consulter directement la liste des experts ci-jointe, notamment pour toutes les demandes de traduction (page 185 et suivantes). A l’attention des EXPERTS : les demandes d'inscription initiale, de réinscription ou d'extension sur la liste des experts judiciaires de la cour d’appel de BORDEAUX, au titre de l’année 2027, devront être formulées entre le 1er janvier 2026 et avant le 28 février 2026 à minuit sur le site « Démarches numériques », depuis les liens que vous trouverez ci-dessous : Inscription initiale : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-inscription-initiale-campagne- Réinscription : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-reinscription-campagne-nationa Extension : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-extension-d-inscription-campag Les candidatures adressées au format papier ne seront plus prises en compte. Il convient de déposer une seule candidature par type de demande (inscription initiale, réinscription ou extension) auprès du tribunal du domicile de l’expert. A l'attention des professionnels de la justice: Contacts des correspondants du ressort en charge des experts: CA BORDEAUX: experts.ca-bordeaux@justice.fr TJ BORDEAUX: experts.tj-bordeaux@justice.fr TJ LIBOURNE : experts.tj-libourne@justice.fr TJ ANGOULEME : experts.tj-angouleme@justice.fr TJ BERGERAC : experts.tj-bergerac@justice.fr TJ PERIGUEUX : experts.tj-perigueux@justice.fr En cours de chargement... En savoir plus Nouvelle nomenclature des spécialités Téléchargement 245.84 Ko Compte-rendu d'activité / Etat des missions Téléchargement 29.43 Ko Liste des experts 2025 Téléchargement 2.05 Mo Liens pratiques Devenir expert judiciaire",
+            "pdfLinks": [
+              {
+                "url": "https://sitesca.intranet.justice.gouv.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf",
+                "text": "la liste des experts ci-jointe",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-01/Arr%C3%AAt%C3%A9%20du%205-12-2022-%20Nouvelle%20nomenclature%20bis-JO%2008.12.22_0.pdf",
+                "text": "Nouvelle nomenclature des spécialités\n        Téléchargement 245.84 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf",
+                "text": "Liste des experts 2025\n        Téléchargement 2.05 Mo",
+                "relevanceHint": "likely-expert-list"
+              }
+            ],
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "durationMs": 2594,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "extractPdfDate",
+          "fullResult": {
+            "success": true,
+            "pdfText": "COUR D’APPEL DE BORDEAUX Place de la République 33077 BORDEAUX Cedex TEL : 05.40.45.07.90 LISTE DES EXPERTS JUDICIAIRES ETABLIE POUR LE RESSORT DE LA COUR D’APPEL DE BORDEAUX POUR L’ANNEE 2025 1 TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1er du décret du 23 décembre 2004 Arrêté du 5 décembre 2022 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41 ANNEXES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 412 COURTIERS ASSERMENTÉS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 413 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 414 Place de la République 33077 BORDEAUX Cedex TEL : 05.40.45.07.90 2 Nomenclature prévue à l’article 1er du décret du 23 décembre 2004 Arrêté du 5 décembre 2022 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel...... conformément à la nomenclature suivante, qui se divise en branches : (ex. : A), rubriques (ex.: A.1.) et spécialités (ex. : A.1.1). A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . Pour être plus amplement informés, les magistrats peuvent se référer à l'annuaire national des experts développé par le CNCEJ qui répertorie des informations plus précises sur le profil l'expérience et les spécialités de l'expert. A-01 Agriculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . A-01.01 APPLICATIONS DE PRODUITS PHYTOPHARMACEUTIQUES, MATIERES FERTILISANTES ET SUPPORTS DE CULTURE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Application de produits phytopharmaceutiques par voie terrestre - Traitement des semences, des plants, des bulbes, des denrées stockées - Application des matières fertilisantes et des supports de culture A-01.02 FONCIER RURAL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Bornage - Voies d'accès - Remembrement des parcelles - Catégories du foncier rural - Servitudes et urbanisme (Bornage : voir C.16. - Voiries : voir C.4.3.) - Baux ruraux : calculs d'amélioration foncière et culturale - Révision de fermage - Etat des lieux A-01.03 CONSTRUCTIONS ET AMENAGEMENTS RURAUX . . . . . . . . . . . . . . . . . . . Équipements agricoles (dont équipements d'énergies alternatives) - Estimations des haras et établissements équestres A-01.04 ÉCONOMIE ET GESTION AGRICOLES - FONDS AGRICOLES . . . . . . . . . . . . Évaluation des exploitations agricoles - Parts sociales A-01.05 ESTIMATIONS FONCIERES AGRICOLES . . . . . . . . . . . . . . . . . . . . . . . . . . . Bâtis et non bâtis - Expropriations et évictions - Successions - Estimations A-01.06 HYDRAULIQUE AGRICOLE ET RURALE . . . . . . . . . . . . . . . . . . . . . . . . . . Gestion de l'eau - Réseaux et équipements - Voieries - Droits d'eau. (Réseaux et travaux hydrauliques : voir C.4.8.) A-01.07 MATERIEL ET TECHNIQUE AGRICOLE. (MATERIEL A MOTORISATION THERMIQUE : VOIR E.7.9.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Estimation de matériel agricole - Préparation et conduite des cultures - Applications des intrants agricoles - Récoltes et post-récoltes - Transport et manutention - Stockage A-01.08 PRODUCTIONS DE GRANDES CULTURES ET DE CULTURES SPECIALISEES Cultures annuelles, pluriannuelles et pérennes - Pédologie et agronomie - Productions de semences, de plants, de bulbes A-02 Agro-alimentaire. (Bâtiments : voir C.2.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Contrôles qualitatifs et analyses - Ingénierie, normes - Ouvrages et équipements (matériels et installations) - Produits alimentaires et leurs transformations - Emballages et conditionnements - Stockage et transport - Modes de conservation, traçabilité - Restauration collective - Tables gastronomiques - Gites ruraux A-03 Aménagements et équipements de l'espace rural . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Espaces naturels - Biodiversité - Zonages - Préservation et protections des milieux naturels - Flore et habitats naturels A-04 Animaux autres que d'élevage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Animaux de compagnie et de sport - Courses et concours - Établissements et sports équestres - Haras - Estimations A-05 Aquaculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Productions en eaux douces et de mer - Médecine, élevage, bien-être et transport des poissons - Estimations A-06 Biotechnologies . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Équipements, procédés, fermentation - Produits des biotechnologies - Emballages et conditionnements des produits de biotechnologies 3 A-07 Élevage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Estimation de matériel agricole - Préparation et conduite des cultures - Applications des intrants agricoles - Récoltes et post-récoltes - Transport et manutention - Stockage A-08 Horticulture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Arboriculture fruitière et ornementale - Maraichage - Floriculture et décoration florale - Espaces verts, parcs et aménagements paysagés - Matériels d'horticulture A-09 Risques climatiques et météorologiques . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Neige - Avalanches - Tornades - Submersions A-10 Nuisances - Pollutions agricoles et dépollutions. (voir I.1. et I.7.) . . . . . . . . . . . . . . . . . . . . . . . . . Équipements et procédés - Études d'impact - Toxicologie non médicale - Énergies alternatives A-11 Pêche - Chasse - Faune sauvage vertebrée et invertebrée . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . A-11.01 ARMEMENT - ACCASTILLAGE - MATERIELS ET EQUIPEMENTS POUR LA PECHE ET POUR LA CHASSE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . A-11.02 DEGATS DE GIBIER . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . A-11.03 ESTIMATIONS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . A-11.04 PEUPLEMENTS ET EQUILIBRES CYNEGETIQUES - ESTIMATIONS . . . . . . . A-12 Sylviculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Estimation et gestion - Semis, pépinières et plantations - Travaux et exploitations forestières - Sciage et produits forestiers - Restauration des terrains par plantations - Transports des vins et des alcools - État sanitaire A-13 Viticulture et oenologie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . A-13.01 DISTILLATION, ELABORATION DES LIQUEURS ET DES ALCOOLS . . . . . . A-13.02 EMBALLAGE ET CONDITIONNEMENT DES VINS, DES LIQUEURS ET DES ALCOOLS - MATERIEL DE CONDITIONNEMENT DES VINS, DES LIQUEURS ET DES ALCOOLS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . A-13.03 ESTIMATION ET GESTION - EXPLOITATION VITICOLE - MATERIELS DE CULTURE DE LA VIGNE - PEPINIERES ET PLANTATIONS - PRODUITS, TRAITEMENTS ET PROTECTION DE LA VIGNE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . A-13.04 OENOLOGIE - APPELLATIONS - DEGUSTATIONS DES VINS ET DES ALCOOLS - VINIFICATION ET ASSEMBLAGES - FERMENTATIONS - ANALYSE DES VINS ET DES ALCOOLS - MATERIEL DE VINIFICATION, DE STOCKAGE ET DE PREPARATION DES VINS ET ALCOOLS - TRANSPORTS DES VINS ET DES ALCOOLS . . . . . . . . . . . . . . . . . . . . . . . . A-14 Santé vétérinaire . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . A-14.01 BIOLOGIE, PHARMACOLOGIE ET TOXICOLOGIE VETERINAIRES . . . . . . . A-14.02 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DES ANIMAUX DE COMPAGNIE (CHIENS, CHATS, NAC (NOUVEAUX ANIMAUX DE COMPAGNIE)) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . A-14.03 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DES RUMINANTS (BOVINS, OVINS, CAPRINS, CAMELIDES), DES EQUIDES (CHEVAUX, PONEYS, ANES ET CROISEMENTS) ET DES PORCINS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . A-14.04 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DES VOLAILLES, LAPINS ET GIBIERS D'ELEVAGE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . A-14.05 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DE LA FAUNE SAUVAGE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4 A-14.06 SANTE PUBLIQUE, QUALITE ET SECURITE DES ALIMENTS . . . . . . . . . . . . B-ARTS - CULTURE - COMMUNICATION - MÉDIAS . . . . . . . . . . . . . . . . . . . . . . . . . . Pour être plus amplement informés, les magistrats peuvent se référer à l'annuaire national des experts développé par le CNCEJ qui répertorie des informations plus précises sur le profil l'expérience et les spécialités de l'expert. B-01 Ecritures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-01.01 DOCUMENTS ET ECRITURES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-01.02 PALEOGRAPHIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-02 Généalogie successorale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-03 Objets d'art et de collection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-03.01 ARMES ANCIENNES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-03.02 BIJOUTERIE, JOAILLERIE, HORLOGERIE, ORFEVRERIE . . . . . . . . . . . . . . . . . . . . . B-03.03 CERAMIQUES ANCIENNES ET D'ART . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-03.04 CRISTALLERIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-03.05 EBENISTERIE - MARQUETERIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-03.06 ETOFFES ANCIENNES ET TISSAGES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-03.07 FERRONNERIE ET BRONZES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-03.08 GRAVURES ET ARTS GRAPHIQUES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-03.09 HERALDIQUE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-03.10 LIVRES ANCIENS ET MODERNES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-03.11 LUTHERIE ET INSTRUMENTS DE MUSIQUE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-03.12 MEUBLES ET MOBILIERS ANCIENS. (MEUBLES MODERNES : VOIR C.7.1.) . . . . . . B-03.13 NUMISMATIQUE ET MEDAILLES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-03.14 PHILATELIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-03.15 SCULPTURES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-03.16 TABLEAUX . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-03.17 TAPISSERIES ET TAPIS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-03.18 VITRAUX ET VITRERIE D'ART . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-03.19 ARCHEOLOGIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-03.20 ART D'ASIE ET D'EXTREME ORIENT, ART AFRICAIN, ART OCEANIEN, ART AMERICAIN . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-03.21 OEUVRES D'ART DEMATERIALISEES NFT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . B-04 Productions culturelles et de communication . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5",
+            "pageCount": 426,
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "durationMs": 3675,
+      "events": [
+        {
+          "type": "model_text",
+          "text": "J’ai trouvé la page officielle de la **Cour d’appel de Bordeaux** sur le site **cours-appel.justice.fr**, section **Experts**. La page affiche un lien vers **“Liste des experts 2025”**, et le PDF correspondant est bien la liste officielle des experts judiciaires pour le ressort de Bordeaux. citeturn1view0\n\nJ’ai ensuite utilisé `extractPdfDate` sur ce PDF. Le texte extrait de la première page indique clairement : **“LISTE DES EXPERTS JUDICIAIRES … POUR L’ANNEE 2025”**. C’est la date/année officielle la plus spécifique trouvée dans le document. citeturn1view0\n\n### Résultat\n- **Cour d’appel** : Bordeaux\n- **Page officielle** : Experts\n- **PDF officiel** : Liste des experts 2025\n- **Date officielle retenue** : **2025-01-01**\n- **Source de la date** : **pdf-content**\n\n### Pourquoi 2025-01-01 ?\nLe PDF ne donne pas, dans l’extrait obtenu, un jour/mois précis de publication. Il donne seulement l’année **2025**. D’après la règle demandée, lorsqu’on n’a qu’une année, on l’approxime en **YY"
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "durationMs": 4677,
+    "usage": {
+      "inputTokens": 2316,
+      "outputTokens": 780,
+      "totalTokens": 3096
+    },
+    "result": {
+      "courtName": "Bordeaux",
+      "pageUrl": "https://www.cours-appel.justice.fr/bordeaux/experts",
+      "documentUrl": "https://sitesca.intranet.justice.gouv.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf",
+      "documentTitle": "Liste des experts 2025",
+      "publicationDate": "2025-07-01",
+      "publicationDateSource": "filename",
+      "searchExplanation": "I found the official Cour d'appel de Bordeaux Experts page on cours-appel.justice.fr. The page contains a PDF link titled “Liste des experts 2025”, which points to the official expert list PDF for Bordeaux.",
+      "dateExtractionExplanation": "I checked all available date signals. The PDF text only states that the list is established for the year 2025, which is not an exact date. The page text and link text also show only 2025. The PDF URL path includes /2025-07/, which provides a month/year signal more specific than the year alone. Using the URL path as the best available date signal and normalizing month-only information to the first day of the month gives 2025-07-01. No exact day was found in the PDF text or page text.",
+      "errors": []
+    }
+  },
+  "result": {
+    "courtName": "Bordeaux",
+    "pageUrl": "https://www.cours-appel.justice.fr/bordeaux/experts",
+    "documentUrl": "https://sitesca.intranet.justice.gouv.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf",
+    "documentTitle": "Liste des experts 2025",
+    "publicationDate": "2025-07-01",
+    "publicationDateSource": "filename",
+    "searchExplanation": "I found the official Cour d'appel de Bordeaux Experts page on cours-appel.justice.fr. The page contains a PDF link titled “Liste des experts 2025”, which points to the official expert list PDF for Bordeaux.",
+    "dateExtractionExplanation": "I checked all available date signals. The PDF text only states that the list is established for the year 2025, which is not an exact date. The page text and link text also show only 2025. The PDF URL path includes /2025-07/, which provides a month/year signal more specific than the year alone. Using the URL path as the best available date signal and normalizing month-only information to the first day of the month gives 2025-07-01. No exact day was found in the PDF text or page text.",
+    "errors": []
+  },
+  "totalUsage": {
+    "inputTokens": 41188,
+    "outputTokens": 1669,
+    "totalTokens": 42857
+  },
+  "rawToolData": {
+    "pageTitle": "Experts | Cour d'appel de Bordeaux",
+    "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Bordeaux Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Experts Les experts judiciaires sont des professionnels spécialement habilités, chargés de donner aux juges un avis technique sur des faits afin d’apporter des éclaircissements sur une affaire. Ce sont des spécialistes de disciplines très variées (médecine, architecture, gemmologie, économie et finance, etc.). A l'attention des PARTICULIERS : pour toute demande d'expertise, merci de consulter directement la liste des experts ci-jointe, notamment pour toutes les demandes de traduction (page 185 et suivantes). A l’attention des EXPERTS : les demandes d'inscription initiale, de réinscription ou d'extension sur la liste des experts judiciaires de la cour d’appel de BORDEAUX, au titre de l’année 2027, devront être formulées entre le 1er janvier 2026 et avant le 28 février 2026 à minuit sur le site « Démarches numériques », depuis les liens que vous trouverez ci-dessous : Inscription initiale : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-inscription-initiale-campagne- Réinscription : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-reinscription-campagne-nationa Extension : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-extension-d-inscription-campag Les candidatures adressées au format papier ne seront plus prises en compte. Il convient de déposer une seule candidature par type de demande (inscription initiale, réinscription ou extension) auprès du tribunal du domicile de l’expert. A l'attention des professionnels de la justice: Contacts des correspondants du ressort en charge des experts: CA BORDEAUX: experts.ca-bordeaux@justice.fr TJ BORDEAUX: experts.tj-bordeaux@justice.fr TJ LIBOURNE : experts.tj-libourne@justice.fr TJ ANGOULEME : ",
+    "pdfLinks": [
+      {
+        "url": "https://sitesca.intranet.justice.gouv.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf",
+        "text": "la liste des experts ci-jointe",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-01/Arr%C3%AAt%C3%A9%20du%205-12-2022-%20Nouvelle%20nomenclature%20bis-JO%2008.12.22_0.pdf",
+        "text": "Nouvelle nomenclature des spécialités\n        Téléchargement 245.84 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf",
+        "text": "Liste des experts 2025\n        Téléchargement 2.05 Mo",
+        "relevanceHint": "likely-expert-list"
+      }
+    ],
+    "pdfText": "COUR D’APPEL DE BORDEAUX Place de la République 33077 BORDEAUX Cedex TEL : 05.40.45.07.90 LISTE DES EXPERTS JUDICIAIRES ETABLIE POUR LE RESSORT DE LA COUR D’APPEL DE BORDEAUX POUR L’ANNEE 2025 1 TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1er du décret du 23 décembre 2004 Arrêté du 5 décembre 2022 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41 ANNEXES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 412 COURTIERS ASSERMENTÉS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 413 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 414 Place de la République 33077 BORDEAUX Cedex TEL : 05.40.45.07.90 2 Nomenclature prévue à l’article 1er du décret du 23 décembre 2004 Arrêté du 5 décembre 2022 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel...... conformément à la nomenclature suivante, qui se divise en branches : "
+  },
+  "error": null
+}

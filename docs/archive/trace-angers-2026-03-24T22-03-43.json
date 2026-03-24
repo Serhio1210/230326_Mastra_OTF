@@ -1,0 +1,367 @@
+{
+  "court": "Angers",
+  "agentId": "expert-search-mini",
+  "startedAt": "2026-03-24T22:02:45.449Z",
+  "finishedAt": "2026-03-24T22:02:58.342Z",
+  "totalMs": 12893,
+  "steps": [
+    {
+      "turn": 0,
+      "durationMs": 1823,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=BwrDacOpDNyTkdUP8_Xx8QE\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=BwrDacOpDNyTkdUP8_Xx8QE\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "error": null
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=BwrDacq1DI66kdUPkY6uuAU\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=BwrDacq1DI66kdUPkY6uuAU\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "durationMs": 2639,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "web_search",
+          "fullResult": {
+            "action": {
+              "type": "search",
+              "query": "site:cours-appel.justice.fr Angers experts judiciaires pdf Cour d'appel"
+            },
+            "sources": [
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-01/LISTE%2017.01.2023.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-08/liste_experts_29082018.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2020-01/CA-ANGERS_LISTE_EXPERTS_2020_16012020_0.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.justice.gouv.fr/arrete-du-21-octobre-2016-portant-cessation-fonctions-nomination-regisseurs-davances-recettes-cour-dappel-dangers"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/amiens/les-experts-judiciaires-pres-la-cour-dappel-damiens"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-04/LISTE%20EXPERTS%2017.04.2025.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/rouen"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/angers/mediateurs"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-09/CA_ANGERS-Candidature-Initiale-Experts.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/douai/les-experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cejca-angers.org/_upload/public_formations/e5709bb9999dbb83b652c9589eb9d884_formation-postulants-a-l-expertise-bulletin-reponse.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://assertra.fr/pl/annuaire/cour/angers"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/amiens/informations-relatives-la-nouvelle-nomenclature"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/nancy/les-experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/media/17947"
+              },
+              {
+                "type": "url",
+                "url": "https://www.societe.com/societe/compagnie-des-experts-judiciaires-pres-la-cour-d-appel-de-metz-818006470.html"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/chambery/ca-chambery-liste-des-experts-judiciaires-2025-formalites-dinscription"
+              },
+              {
+                "type": "url",
+                "url": "https://www.adzuna.fr/details/5595975701"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/Traducteur_interpr%C3%A8te_officiel"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/Expert_judiciaire_%28Maroc%29"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/Paul_Bensussan"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/Expert_judiciaire_%28France%29"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/Pierre_Waquet"
+              },
+              {
+                "type": "url",
+                "url": "https://fr.wikipedia.org/wiki/Cour_d%27appel_d%27Angers"
+              }
+            ]
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "web_search",
+          "fullResult": {
+            "action": {
+              "type": "openPage",
+              "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-01/LISTE%2017.01.2023.pdf"
+            }
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Accueil | Cour d'appel d'Angers",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel d'Angers Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Actuellement à la cour d'appel d'Angers Festival du film judiciaire de Laval 2025 Installation des nouveaux chefs de cour 4è édition des Dialogues Angevins du Droit et de la Justice Je voudrais Trouver un tribunal près de chez moi FORMULAIRES Demande au juge aux affaires familiales (autorité parentale, droit de visite, pension alimentaire...) Demande de copie d'une décision de justice pénale Demande de copie d'une décision de justice en matière civile, sociale ou commerciale Déclaration de renonciation à succession par un majeur Des réponses à des questions pour mes démarches Je souhaite porter plainte L'aide juridictionnelle : estimez vos droits et constituez votre dossier Simulez vos pensions alimentaires Enfant en danger : comment le signaler ? Comment régler une succession quand l'héritier est mineur ou majeur protégé ? Evènements sur le ressort de la cour d'appel d'Angers 27 août 2024 4è édition des Dialogues Angevins du Droit et de la Justice La 4e édition des « dialogues angevins du droit et de la justice », organisée par la faculté de droit et la cour d’appel d’Angers, se tiendra le vendredi 21 novembre 2024 de 8h30 à 13h0 4è édition des Dialogues Angevins du Droit et de la Justice 06 février 2020 CA Angers - CDAD 49 : \"Les enfants au coeur de la justice\" 137 enfants réunis au palais de justice d'Angers ! CA Angers - CDAD 49 : \"Les enfants au coeur de la justice\" 23 janvier 2020 TJ Laval – CDAD Mayenne : Festival « Cinéma et droits humains » TJ Laval – CDAD Mayenne : Festival « Cinéma et droits humains » Jeudi 23 octobre 2025Festival du film judiciaire de Laval 2025 : Un rendez-vous à ne pas manquer entre justice et cinéma Jeudi 16 octobre 2025Installation des nouveaux chefs de cour Jeudi 09 octobre 2025Communiqué de presse des chefs de cour9 octobre 2025 Lundi 22 septembre 2025La Nuit du droit dans le ressort Edition 2025 Mercredi 03 septembre 2025Journées Européennes du Patrimoine 2025Palais de justice d'Angers - samedi 20 septembre 2025 /angers/ca-angers-presentation-palais-de-justice-dangers Cour d'appel d'Angers Informations pratiques rue Waldeck Rousseau 49043 Angers Cedex France Lundi 9:00 - 12:00 / 13h30 - 16h30 Mardi 9:00 - 12:00 / 13h30 - 16h30 Mercredi 9:00 - 12:00 / 13h30 - 16h30 Jeudi 9:00 - 12:00 / 13h30 - 16h30 Vendredi 9:00 - 12:00 / 13h30 - 16h30 Samedi Fermé Téléphone 02 41 20 51 00 Accéder aux autres sites des cours d'appel Choisir une cour d’appel Agen Cour d'appel d'Agen Aix-en-Provence Cour d'appel d'Aix-en-Provence Amiens Cour d'appel d'Amiens Angers Cour d'appel d'Angers Basse-Terre Cour d'appel de Basse-Terre Bastia Cour d'appel de Bastia Besançon Cour d'appel de Besançon Bordeaux Cour d'appel de Bordeaux Bourges Cour d'appel de Bourges Caen Cour d'appel de Caen Cayenne Chambéry Cour d'appel de Chambéry Colmar Cour d'appel de Colmar Dijon Cour d'appel de Dijon Douai Cour d'appel de Douai Fort-de-France Cour d'appel de Fort-de-France Grenoble Cour d'appel de Grenoble Limoges Cour d'appel de Limoges Lyon Cour d'appel de Lyon Metz Cour d'appel de Metz Montpellier Cour d'appel de Montpellier Nancy Cour d'appel de Nancy Nîmes Cour d'appel de Nîmes Nouméa Cour d'appel de Nouméa Orléans Cour d'appel d'Orléans Papeete Paris Cour d'appel de Paris Pau Cour d'appel de Pau Poitiers Cour d'appel de Poitiers Reims Cour d'appel de Reims Rennes Cour d'appel de Rennes Riom Cour d'appel de Riom Rouen Courd d'appel de Rouen Saint-Denis Cour d’appel de Saint-Denis Toulouse Cour d'appel de Toulouse Versailles Cour d'appel de Versailles Saint-Pierre Saint-Pierre-et-Miquelon",
+            "pdfLinks": [],
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "durationMs": 2627,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "web_search",
+          "fullResult": {
+            "action": {
+              "type": "search",
+              "query": "site:cours-appel.justice.fr/angers experts judiciaires PDF Angers"
+            },
+            "sources": [
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/angers/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-10/LISTE%20EXPERTS%202025.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/angers/administrateurs-ad-hoc"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/LISTE%20EXPERTS%202026.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2024-02/LISTE%20EXPERTS%2029.01.2024.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2024-11/LISTE%20EXPERTS%202024.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-01/LISTE%2017.01.2023.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-01/LISTE%20EXPERTS%2026.01.2023.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/amiens/les-experts-judiciaires-pres-la-cour-dappel-damiens"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/douai/les-experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/angers/mediateurs"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/nancy/les-experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/media/17947"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/orleans/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/angers/commissaires-de-justice"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/angers/conciliateurs-de-justice"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/angers/vos-demarches-la-cour-dappel-dangers"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/montpellier/partenaires-de-justice"
+              }
+            ]
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "extractPdfDate",
+          "fullResult": {
+            "success": true,
+            "pdfText": "LISTE DES EXPERTS JUDICIAIRES & LISTE DES COURTIERS DE MARCHANDISES ASSERMENTÉS ETABLIES POUR LE RESSORT DE LA COUR D’APPEL D’ANGERS POUR L’ANNÉE 2026 Assemblée générale des magistrats du siège de la cour d’appel du 18 novembre 2025 COUR D’APPEL Palais de Justice 49043 ANGERS Cedex 01 www.ca-angers.justice.fr experts.ca-angers@justice.fr TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêté du 5 décembre2022 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 158 COURTIERS ASSERMENTÉS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 162 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 163 1 Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêté du 5 décembre2022 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel...... conformément à la nomenclature suivante, qui se divise en branches : (ex. : A), rubriques (ex.: A.1.) et spécialités (ex. : A.1.1). A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 A-01 AGRICULTURE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 A-01.01 applications de produits phytopharmaceutiques, matières fertilisantes et supports de culture. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 A-01.02 foncier rural . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 A-01.03 constructions et aménagements ruraux . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19 A-01.04 économie et gestion agricoles - fonds agricoles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19 A-01.05 estimations foncières agricoles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20 A-01.06 hydraulique agricole et rurale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20 A-01.07 matériel et technique agricole. (matériel à motorisation thermique : voir E.7.9.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20 A-01.08 productions de grandes cultures et de cultures spécialisées . . . . . . . . . . . . . . . . . . . . . . . . 21 A-02 AGRO-ALIMENTAIRE. (Bâtiments : voir C.2.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21 Contrôles qualitatifs et analyses - Ingénierie, normes - Ouvrages et équipements (matériels et installations) - Produits alimentaires et leurs transformations - Emballages et conditionnements - Stockage et transport - Modes de conservation, traçabilité - Restauration collective - Tables gastronomiques - Gites ruraux A-03 AMÉNAGEMENTS ET ÉQUIPEMENTS DE L'ESPACE RURAL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21 Espaces naturels - Biodiversité - Zonages - Préservation et protections des milieux naturels - Flore et habitats naturels A-04 ANIMAUX AUTRES QUE D'ÉLEVAGE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 Animaux de compagnie et de sport - Courses et concours - Établissements et sports équestres - Haras - Estimations A-05 AQUACULTURE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 Productions en eaux douces et de mer - Médecine, élevage, bien-être et transport des poissons - Estimations A-06 BIOTECHNOLOGIES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 Équipements, procédés, fermentation - Produits des biotechnologies - Emballages et conditionnements des produits de biotechnologies A-07 ÉLEVAGE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 Estimation de matériel agricole - Préparation et conduite des cultures - Applications des intrants agricoles - Récoltes et post-récoltes - Transport et manutention - Stockage A-08 HORTICULTURE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23 Arboriculture fruitière et ornementale - Maraichage - Floriculture et décoration florale - Espaces verts, parcs et aménagements paysagés - Matériels d'horticulture A-09 RISQUES CLIMATIQUES ET MÉTÉOROLOGIQUES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23 Neige - Avalanches - Tornades - Submersions A-10 NUISANCES - POLLUTIONS AGRICOLES ET DÉPOLLUTIONS. (voir I.1. et I.7.) . . . . . . . . . . . . . . . 23 Équipements et procédés - Études d'impact - Toxicologie non médicale - Énergies alternatives 2 A-11 PÊCHE - CHASSE - FAUNE SAUVAGE VERTEBRÉE ET INVERTÉBRÉE . . . . . . . . . . . . . . . . . . . . . 23 A-11.01 armement - accastillage - matériels et équipements pour la pêche et pour la chasse . . . . . 23 A-11.02 dégâts de gibier . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23 A-11.03 estimations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23 A-11.04 peuplements et équilibres cynégétiques - estimations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23 A-12 SYLVICULTURE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23 Estimation et gestion - Semis, pépinières et plantations - Travaux et exploitations forestières - Sciage et produits forestiers - Restauration des terrains par plantations - Transports des vins et des alcools - État sanitaire A-13 VITICULTURE ET OENOLOGIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24 A-13.01 distillation, élaboration des liqueurs et des alcools . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24 A-13.02 emballage et conditionnement des vins, des liqueurs et des alcools - matériel de conditionnement des vins, des liqueurs et des alcools . . . . . . . . . . . . . . . . . . . 24 A-13.03 estimation et gestion - exploitation viticole - matériels de culture de la vigne - pépinières et plantations - produits, traitements et protection de la vigne . . . 25 A-13.04 oenologie - appellations - dégustations des vins et des alcools - vinification et assemblages - fermentations - analyse des vins et des alcools - matériel de vinification, de stockage et de préparation des vins et alcools - transports des vins et des alcools . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25 A-14 SANTÉ VÉTÉRINAIRE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26 A-14.01 biologie, pharmacologie et toxicologie vétérinaires . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26 A-14.02 médecine, chirurgie, élevage, bien-être et transport des animaux de compagnie (chiens, chats, NAC (nouveaux animaux de compagnie)). . . . . . . . . . . . . . . . . . . . . . . . . . 26 A-14.03 médecine, chirurgie, élevage, bien-être et transport des ruminants (bovins, ovins, caprins, camélidés), des équidés (chevaux, poneys, ânes et croisements) et des porcins . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 A-14.04 médecine, chirurgie, élevage, bien-être et transport des volailles, lapins et gibiers d'élevage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 A-14.05 médecine, chirurgie, élevage, bien-être et transport de la faune sauvage . . . . . . . . . . . . . . 27 A-14.06 santé publique, qualité et sécurité des aliments. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28 B- ARTS - CULTURE - COMMUNICATION - MÉDIAS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 B-01 ECRITURES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 B-01.01 documents et écritures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 B-01.02 paléographie. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 B-02 GÉNÉALOGIE SUCCESSORALE. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 B-03 OBJETS D'ART ET DE COLLECTION. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 B-03.01 armes anciennes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 B-03.02 bijouterie, joaillerie, horlogerie, orfèvrerie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 B-03.03 céramiques anciennes et d'art. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 B-03.04 cristallerie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 B-03.05 ébénisterie - marqueterie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 B-03.06 étoffes anciennes et tissages . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 B-03.07 ferronnerie et bronzes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 B-03.08 gravures et arts graphiques . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30 B-03.09 héraldique . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30 B-03.10 livres anciens et modernes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30 B-03.11 lutherie et instruments de musique . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30 B-03.12 meubles et mobiliers anciens. (meubles modernes : voir C.7.1.) . . . . . . . . . . . . . . . . . . . . 30 B-03.13 numismatique et médailles. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30 3 B-03.14 philatélie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30 B-03.15 sculptures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30 B-03.16 tableaux . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30 B-03.17 tapisseries et tapis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30 B-03.18 vitraux et vitrerie d'art . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30 B-03.19 archéologie. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30 B-03.20 art d'Asie et d'Extrême Orient, art africain, art océanien, art américain . . . . . . . . . . . . . . . 30 B-03.21 oeuvres d'art dématérialisées NFT. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 B-04 PRODUCTIONS CULTURELLES ET DE COMMUNICATION. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 B-04.01 cinéma, télévision, vidéo, audiovisuel, tous supports médias et plateformes digitales . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 B-04.02 imprimerie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 B-04.03 musique . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 B-04.04 photographie analogique et numérique - datation et certification - attribution - reconnaissance faciale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 B-04.05 presse, édition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 B-04.06 communication, publicité digitale et médias . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 B-04.07 spectacles vivants. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 B-04.08 relations médias, presse, publics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 B-05 PROPRIÉTÉ LITTÉRAIRE ET ARTISTIQUE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 B-05.01 gestion des droits d'auteur . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 B-05.02 gestion des droits voisins . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 B-05.03 gestion des droits dérivés. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 B-05.04 gestion des droits à l'image . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 B-05.05 gestion des droits de reproduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 B-06 SPORT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 B-06.01 activités sportives. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 B-06.02 matériel et installations sportives (bâtiments, gymnases, stades couverts : voir C.2.) . . . . 32 C-BÂTIMENT - TRAVAUX PUBLICS - GESTION IMMOBILIÈRE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32 C-01 ACOUSTIQUE, BRUITS, VIBRATIONS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32 C-02 CONSTRUCTIONS GÉNÉRALES TOUS CORPS D'ÉTAT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32 C-02.01 architecture - ingénierie - maîtrise d'oeuvre. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32 C-02.02 architecture d'intérieur - décoration. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34 C-02.03 architecture du paysage - espaces verts et de loisirs - aménagements sportifs extérieurs. (horticulture : voir A.8.). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35 C-02.04 coordination de la sécurité et protection de la santé (CSPS). . . . . . . . . . . . . . . . . . . . . . . . 35 C-02.05 économie de la construction, valorisation des travaux et mètres . . . . . . . . . . . . . . . . . . . . 35 C-02.06 monuments historiques et patrimoine bâti. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36 C-02.07 ordonnancement, pilotage, coordination (OPC) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36 C-02.08 piscines : gros-oeuvre, étanchéité, bassins préfabriqués, traitement de l'eau, de l'air, équipements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36 C-02.09 urbanisme - aménagement du territoire - aménagement et mobilier urbain . . . . . . . . . . . . 36 C-03 STRUCTURES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37 C-03.01 structures : généralistes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37 C-03.02 béton, béton arme, béton précontraint, bétons spéciaux . . . . . . . . . . . . . . . . . . . . . . . . . . . 38 C-03.03 charpentes et ossatures bois - constructions en bois . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38 C-03.04 constructions métalliques . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38 C-03.05 étanchéités des parois enterrées, cuvelages . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39 4",
+            "pageCount": 165,
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "durationMs": 2516,
+      "events": [
+        {
+          "type": "model_text",
+          "text": "J’ai trouvé la liste officielle des experts judiciaires de la Cour d’appel d’Angers, et le PDF le plus récent que j’ai pu identifier est la **liste pour l’année 2026** sur le site officiel **cours-appel.justice.fr**. \n\n### Date officielle retenue\n- **PublicationDate** : **2025-11-18**\n- **publicationDateSource** : **pdf-content**\n\n### Pourquoi cette date ?\nDans le PDF, la première page indique :\n- **“Assemblée générale des magistrats du siège de la cour d’appel du 18 novembre 2025”**\n- **“POUR L’ANNÉE 2026”**  \nCe sont les dates les plus spécifiques et les plus récentes trouvées dans le document, donc j’ai retenu **18/11/2025** comme date officielle de la liste. \n\n### Autres indices trouvés\n- Le fichier est un PDF officiel de la Cour d’appel d’Angers.\n- Le contenu mentionne aussi des éléments plus anciens comme **“Arrêté du 5 décembre 2022”**, mais c’est un texte de référence juridique, pas la date de publication de la liste 2026. \n\n### Erreurs / limites rencontrées\n- La recherche init"
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "durationMs": 3283,
+    "usage": {
+      "inputTokens": 1826,
+      "outputTokens": 494,
+      "totalTokens": 2320
+    },
+    "result": {
+      "courtName": "Angers",
+      "pageUrl": null,
+      "documentUrl": null,
+      "documentTitle": null,
+      "publicationDate": "2025-11-18",
+      "publicationDateSource": "pdf-content",
+      "searchExplanation": "The court searched is the Cour d'appel d'Angers. The provided page text came from the official Angers court homepage, but it did not expose a usable PDF link in the extracted page links. The publication date was therefore taken from the official PDF content already identified on the justice domain.",
+      "dateExtractionExplanation": "The PDF text contains an exact and specific date: “Assemblée générale des magistrats du siège de la cour d’appel du 18 novembre 2025”, alongside “Pour l’année 2026”. Since this is the clearest exact date in the document and is more specific than the year-only reference to 2026, the publication date was set to 2025-11-18. The older reference “Arrêté du 5 décembre 2022” is a legal citation, not the publication date of this list.",
+      "errors": [
+        "No direct page URL was provided in the input.",
+        "No PDF URL or anchor text was available from the page extraction.",
+        "The homepage extraction did not list useful PDF links."
+      ]
+    }
+  },
+  "result": {
+    "courtName": "Angers",
+    "pageUrl": null,
+    "documentUrl": null,
+    "documentTitle": null,
+    "publicationDate": "2025-11-18",
+    "publicationDateSource": "pdf-content",
+    "searchExplanation": "The court searched is the Cour d'appel d'Angers. The provided page text came from the official Angers court homepage, but it did not expose a usable PDF link in the extracted page links. The publication date was therefore taken from the official PDF content already identified on the justice domain.",
+    "dateExtractionExplanation": "The PDF text contains an exact and specific date: “Assemblée générale des magistrats du siège de la cour d’appel du 18 novembre 2025”, alongside “Pour l’année 2026”. Since this is the clearest exact date in the document and is more specific than the year-only reference to 2026, the publication date was set to 2025-11-18. The older reference “Arrêté du 5 décembre 2022” is a legal citation, not the publication date of this list.",
+    "errors": [
+      "No direct page URL was provided in the input.",
+      "No PDF URL or anchor text was available from the page extraction.",
+      "The homepage extraction did not list useful PDF links."
+    ]
+  },
+  "totalUsage": {
+    "inputTokens": 45053,
+    "outputTokens": 1226,
+    "totalTokens": 46279
+  },
+  "rawToolData": {
+    "pageTitle": "Accueil | Cour d'appel d'Angers",
+    "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel d'Angers Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Actuellement à la cour d'appel d'Angers Festival du film judiciaire de Laval 2025 Installation des nouveaux chefs de cour 4è édition des Dialogues Angevins du Droit et de la Justice Je voudrais Trouver un tribunal près de chez moi FORMULAIRES Demande au juge aux affaires familiales (autorité parentale, droit de visite, pension alimentaire...) Demande de copie d'une décision de justice pénale Demande de copie d'une décision de justice en matière civile, sociale ou commerciale Déclaration de renonciation à succession par un majeur Des réponses à des questions pour mes démarches Je souhaite porter plainte L'aide juridictionnelle : estimez vos droits et constituez votre dossier Simulez vos pensions alimentaires Enfant en danger : comment le signaler ? Comment régler une succession quand l'héritier est mineur ou majeur protégé ? Evènements sur le ressort de la cour d'appel d'Angers 27 août 2024 4è édition des Dialogues Angevins du Droit et de la Justice La 4e édition des « dialogues angevins du droit et de la justice », organisée par la faculté de droit et la cour d’appel d’Angers, se tiendra le vendredi 21 novembre 2024 de 8h30 à 13h0 4è édition des Dialogues Angevins du Droit et de la Justice 06 février 2020 CA Angers - CDAD 49 : \"Les enfants au coeur de la justice\" 137 enfants réunis au palais de justice d'Angers ! CA Angers - CDAD 49 : \"Les enfants au coeur de la justice\" 23 janvier 2020 TJ Laval – CDAD Mayenne : Festival « Cinéma et droits humains » TJ Laval – CDAD Mayenne : Festival « Cinéma et droits humains » Jeudi 23 octobre 2025Festival du film judiciaire de Laval 2025 : Un rendez-vous à ne pas manquer entre justice et cinéma Jeudi 16 octobre 2025Installation des nouveaux chefs de c",
+    "pdfLinks": [],
+    "pdfText": "LISTE DES EXPERTS JUDICIAIRES & LISTE DES COURTIERS DE MARCHANDISES ASSERMENTÉS ETABLIES POUR LE RESSORT DE LA COUR D’APPEL D’ANGERS POUR L’ANNÉE 2026 Assemblée générale des magistrats du siège de la cour d’appel du 18 novembre 2025 COUR D’APPEL Palais de Justice 49043 ANGERS Cedex 01 www.ca-angers.justice.fr experts.ca-angers@justice.fr TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêté du 5 décembre2022 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 158 COURTIERS ASSERMENTÉS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 162 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 163 1 Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêté du 5 décembre2022 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel...... conformé"
+  },
+  "error": null
+}

@@ -1,0 +1,253 @@
+{
+  "court": "Aix-en-Provence",
+  "agentId": "expert-search-mini",
+  "startedAt": "2026-03-24T22:03:14.092Z",
+  "finishedAt": "2026-03-24T22:03:27.151Z",
+  "totalMs": 13059,
+  "steps": [
+    {
+      "turn": 0,
+      "durationMs": 1231,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Accueil | Cour d'appel d'Aix-en-Provence",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel d'Aix-en-Provence Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) L'essentiel La Nuit du Droit au Palais Verdun Pour voir le droit sous un nouveau jour Journées européennes du Patrimoine La cour d'appel ouvre ses portes au public Présence du Réseau judiciaire européen en matière civile et commerciale à la cour d’appel d’Aix en Provence Je voudrais Trouver un tribunal près de chez moi Obtenir une copie de son casier judiciaire Faire appel d'un jugement civil ou pénal Demander la rectification de mon acte d'état civil Demander une apostille Rechercher un autre formulaire Des réponses à des questions Je cherche une salle d'audience Je souhaite un avocat, comment faire ? Je vais être juré d'assises, à quoi cela correspond-il ? Je suis victime d'une infraction, puis-je être aidé(e) ? Où puis-je obtenir la copie d'un jugement ? Actualité du lieu 23 septembre 2025 La Nuit du Droit au Palais Verdun Pour voir le droit sous un nouveau jour Le jeudi 2 octobre prochain, dès 18h30 et jusqu’à 22h45, la cour d’appel d’Aix-en-Provence ouvre ses portes dans le cadre de l’édition 2025 de la Nuit du Droit. La Nuit du Droit au Palais Verdun 12 septembre 2025 Journées européennes du Patrimoine La cour d'appel ouvre ses portes au public À l’occasion des Journées européennes du Patrimoine, la cour d’appel d’Aix-en-Provence vous ouvre ses portes l Journées européennes du Patrimoine 11 juillet 2019 Colloque « La protection de l'environnement en mer Méditerranée » Colloque organisé le 4 et 5 juillet 2019 à Toulon Colloque « La protection de l'environnement en mer Méditerranée » Mardi 23 septembre 2025La Nuit du Droit au Palais VerdunPour voir le droit sous un nouveau jour Vendredi 12 septembre 2025Journées européennes du PatrimoineLa cour d'appel ouvre ses portes au public Jeudi 13 juin 2024La Nuit du droit 2024La cour d’appel d’Aix-en-Provence vous propose le 3 octobre 2024, de 18h30 à 22h45, au Palais Verdun, de célébrer le droit le temps d'une nuit! Mardi 04 juin 2024Journées européennes du Patrimoine 2024Samedi 21 septembre 2024 de 10h à 17h, sur les thèmes \"Patrimoines des itinéraires, des réseaux et des connexions\" et \"Patrimoine maritime\" Vendredi 17 juin 2022Colloque sur l'office du juge Lire les dernières actualités TGI Toulon Informations pratiques Tribunal de Grande Instance de Toulon place Gabriel Péri 83000 Toulon France TGI Tarascon Informations pratiques Tribunal de Grande Instance de Tarascon 28 allée du Gl Jennings Kilmaine 13150 Tarascon France TGI Nice Informations pratiques Tribunal de Grande Instance de Nice 3 Place du Palais de Justice 06300 Nice France TGI Marseille Informations pratiques Tribunal de Grande Instance de Marseille 6 rue Joseph Autran 13006 Marseille France TGI Grasse Informations pratiques Tribunal de Grande Instance de Grasse 37 avenue Pierre Semard 06130 Grasse France TGI Draguignan Informations pratiques Tribunal de Grande Instance de Draguignan 11 rue Pierre Clément 83000 Draguignan France TGI Digne-les-Bains Informations pratiques Tribunal de Grande Instance de Digne-les-Bains 6 place des Récollets 04000 Digne-les-Bains France TGI Aix-en-Provence Informations pratiques Tribunal de Grande Instance d'Aix-en-Provence 40 boulevard Carnot 13100 Aix-en-Provence France Cour d'appel d'Aix en Provence Informations pratiques 20 place de Verdun 13616 Aix-en-Provence Cedex 1 France Lundi 8:00 - 17:00 Mardi 8:00 - 17:00 Mercredi 8:00 - 17:00 Jeudi 8:00 - 17:00 Vendredi 8:00 - 17:00 Samedi Fermé Téléphone 04 42 33 80 00 Accéder aux autres sites des cours d'appel Choisir une cour d’appel Agen Cour d'appel d'Agen Aix-en-Provence Cour d'appel d'Aix-en-Provence Amiens Cour d'appel d'Amiens Angers Cour d'appel d'Angers Basse-Terre Cour d'appel de Basse-Terre Bastia Cour d'appel de Bastia Besançon Cour d'appel de Besançon Bordeaux Cour d'appel de Bordeaux Bourges Cour d'appel de Bourges Caen Cour d'appel de Caen Cayenne Chambéry Cour d'appel de Chambéry Colmar Cour d'appel de Colmar Dijon Cour d'appel de Dijon Douai Cour d'appel de Douai Fort-de-France Cour d'appel de Fort-de-France Grenoble Cour d'appel de Grenoble Limoges Cour d'appel de Limoges Lyon Cour d'appel de Lyon Metz Cour d'appel de Metz Montpellier Cour d'appel de Montpellier Nancy Cour d'appel de Nancy Nîmes Cour d'appel de Nîmes Nouméa Cour d'appel de Nouméa Orléans Cour d'appel d'Orléans Papeete Paris Cour d'appel de Paris Pau Cour d'appel de Pau Poitiers Cour d'appel de Poitiers Reims Cour d'appel de Reims Rennes Cour d'appel de Rennes Riom Cour d'appel de Riom Rouen Courd d'appel de Rouen Saint-Denis Cour d’appel de Saint-Denis Toulouse Cour d'appel de Toulouse Versailles Cour d'appel de Versailles Saint-Pierre Saint-Pierre-et-Miquelon",
+            "pdfLinks": [],
+            "error": null
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": false,
+            "title": null,
+            "pageText": "",
+            "pdfLinks": [],
+            "error": "Unable to connect. Is the computer able to access the url?"
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "durationMs": 1872,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "web_search",
+          "fullResult": {
+            "action": {
+              "type": "search",
+              "query": "site:cours-appel.justice.fr Aix-en-Provence experts judiciaires Cour d'appel PDF"
+            },
+            "sources": [
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/aix-en-provence/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/aix-en-provence/devenir-expert-judiciaire"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/amiens/les-experts-judiciaires-pres-la-cour-dappel-damiens"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/nimes/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/douai/les-experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/colmar/les-experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/bastia/linscription-des-experts-judiciaires-et-enqueteurs-sociaux"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-03/annuaire%20des%20experts%202023%20CA%20AIX%20EN%20PROVENCE_0.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/poitiers/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/grenoble/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/angers/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/chambery/ca-chambery-liste-des-experts-judiciaires-2025-formalites-dinscription"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2021-08/Annuaire%20des%20experts%20corrig%C3%A9%20le%2026.07.21.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2024-03/Annuaire%20experts%20-%20CA%20AIX%201%20mars%202024.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2020-02/Annuaire%202020%20des%20experts%20judiciaires.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-12/Annuaire%20Experts%20D%C3%A9cembre%202025.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-06/ANNUAIRE%20DES%20EXPERTS%202025%20V4.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/caen/les-experts-judiciaires"
+              }
+            ]
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Experts judiciaires | Cour d'appel d'Aix-en-Provence",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel d'Aix-en-Provence Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Experts judiciaires 27/02/2018 - mise à jour : 19/02/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer Les demandes d'inscription initiale, de réinscription ou d'extension sur la liste des experts judiciaires, au titre de l’année 2027, devront être formulées : Entre le 1er janvier 2026 et avant le 28 février 2026 à minuit sur le site Démarche Numérique (Liens ci-dessous mentionnés). En raison de la mise en place de la dématérialisation des candidatures via la plateforme Démarche numérique, les candidatures adressées au format papier ne pourront être prises en compte. Les candidatures doivent s’effectuer sur un des trois formulaires suivants (inscription, réinscription et extension). Elles seront examinées par l’assemblée générale de la cour d’appel qui se réunira au cours du mois de novembre 2026 et dont les décisions seront applicables à compter du 1er janvier 2027. Les candidats doivent utiliser le formulaire correspondant à leur situation et s’exposent en cas d’erreur dans leur demande à une décision d’irrecevabilité de l’assemblée générale de la cour d’appel. Inscription initiale (inscription pour une période probatoire de 3 ans) : https://www.demarches-simplifiees.fr/commencer/experts-inscription-initiale-ca-aix-en-provence Ce formulaire doit être saisi si vous n’avez jamais été inscrit sur la liste des experts de la cour d’appel d’Aix-en-Provence ou si vous n’êtes plus inscrit à la date du 1er janvier 2026. Il convient de vérifier pour les experts inscrits précédemment la continuité de leur inscription pour l’année en cours. Demande d’extension : https://www.demarches-simplifiees.fr/commencer/experts-extension-d-inscription-ca-aix-en-provence Ce formulaire ne doit être saisi que si vous êtes déjà inscrit sur la liste des experts de la cour d’appel d’Aix-en-Provence au 1er janvier 2026 et que vous souhaitez une extension sur une ou des spécialité(s) supplémentaire(s). Réinscription (pour une période de 5 ans) : https://www.demarches-simplifiees.fr/commencer/experts-reinscription-ca-aix-en-provence Ce formulaire ne doit être saisi que si vous êtes déjà inscrit sur la liste des experts de la cour d’appel d’Aix-en-Provence en 2026 et que votre mandat expire au 31/12/2026. Les experts judiciaires sont des professionnels habilités chargés de donner aux juges un avis technique sur des faits, afin d'apporter des éclaircissements sur une affaire. Ce sont des spécialistes de disciplines très variées telles que la médecine l'architecture, la gemmologie ou l'économie. Leurs avis ne s'imposent pas aux magistrats, qui ne sont pas liés par leurs appréciations. L'expert judiciaire est assermenté, il ne s'agit pas d'une profession mais d'une fonction confiée à des professionnels en activité au sommet de leur compétence. Il est inscrit sur une liste établie par la cour d'appel dans le ressort de laquelle il exerce son activité professionnelle principale. Compétence professionnelle de haut niveau, rigueur intellectuelle et morale sont indispensables à la fonction d'expert de justice. Ces qualités sont rigoureusement contrôlées par la cour d'appel pour chaque candidat. La moralité est déterminée par les renseignements fournis par le candidat complétés par une enquête administrative. Les compétences techniques sont vérifiées à travers la formation, les références, la réputation professionnelle et la notoriété des candidats. L'annuaire des experts 2025- mis ci-dessous, doit être ouvert avec Adobe Accrobat DC (Nous vous informons que des travaux de réactualisation sont actuellement en cours pour finaliser les dates de 1ère inscriptions de certaines fiches d’experts. Une nouvelle liste mise à jour sera prochainement diffusée ). Consulter la liste des rubriques - arrêté du 5.12.2022 Téléchargement 123.35 Ko Article 23 alinéa 1 du décret du 23 décembre 2004 relatif aux experts judiciaires L'expert fait connaître tous les ans avant le 1er mars au premier président de la cour d'appel et au procureur général près ladite cour ou, pour celui qui est inscrit sur la liste nationale, au premier président de la Cour de cassation et au procureur général près ladite cour, le nombre de rapports qu'il a déposés au cours de l'année précédente ainsi que, pour chacune des expertises en cours, la date de la décision qui l'a commis, la désignation de la juridiction qui a rendu cette décision et le délai imparti pour le dépôt du rapport. Dans les mêmes conditions, il porte à leur connaissance les formations suivies dans l'année écoulée en mentionnant les organismes qui les ont dispensées. Les experts en cours de période probatoire ou quinquennale doivent adresser leur rapport d’activité (voir fichier joint) avant le 1er mars à l’adresse structurelle suivante : experts.ca-aix-en-provence@justice.fr Textes applicables : Loi n° 71-498 du 29 juin 1971 relative aux experts judiciaires, modifiée par la loi n° 2004-130 du 11 février 2004 réformant le statut de certaines professions judiciaires ou juridiques, des experts judiciaires, des conseils en propriété industrielle et des experts en ventes aux enchères publiques Décret n° 2004-1463 du 23 décembre 2004 relatif aux experts judiciaires Décret n°2007-1119 du 19 juillet 2007 Loi n° 2010-1609 du 22 décembre 2010 Pièces jointes Annuaire des experts Téléchargement 3.79 Mo Compte rendu annuel d'activité Experts Téléchargement 46.28 Ko Dans l'article Liens pratiques Focus : l'expert judiciaire Articles associés Devenir expert judiciaire",
+            "pdfLinks": [
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-02/2-Arr%C3%AAt%C3%A9%20du%205%20d%C3%A9cembre%202022%20relatif%20%C3%A0%20la%20nomenclature%20pr%C3%A9vue%20%C3%A0%20l%27article%201er%20du%20d%C3%A9cret%20n%C2%B0%202004-1463%20du%2023%20d%C3%A9cembre%202004%20-%20L%C3%A9gifrance_0.pdf",
+                "text": "Consulter la liste des rubriques - arrêté du 5.12.2022\n        Téléchargement 123.35 Ko",
+                "relevanceHint": "possible-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-12/Annuaire%20Experts%20D%C3%A9cembre%202025.pdf",
+                "text": "Annuaire des experts\n        Téléchargement 3.79 Mo",
+                "relevanceHint": "likely-expert-list"
+              }
+            ],
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "durationMs": 4099,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "extractPdfDate",
+          "fullResult": {
+            "success": true,
+            "pdfText": "ANNUAIRE DES EXPERTS JUDICIAIRES INSCRITS AUPRÈS DE LA COUR D’APPEL D’AIX-EN-PROVENCE 2025 December 10, 2025 COUR D’APPEL D’AIX EN PROVENCE Service des professions règlementées Place de Verdun 13616 Aix-en-Provence Cedex 1 Tel. 04 42 33 81 62 Courriel : experts.ca-aix-en-provence@justice.fr Site internet : www.ca-aixenprovence.justice.fr 1 TABLE DES MATIÈRES Pages SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES . . . . . . . . . . . . . . . . . . . . . . 3 LISTE PAR SPÉCIALITÉ DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 581 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 602 2 SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . . . . . . . . . . 18 A-01 Agriculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 A-01.01 APPLICATIONS DE PRODUITS PHYTOPHARMACEUTIQUES, MATIERES FERTILISANTES ET SUPPORTS DE CULTURE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 A-01.02 FONCIER RURAL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19 A-01.03 CONSTRUCTIONS ET AMENAGEMENTS RURAUX . . . . . . . . . . . . . . . . . . . . . . 21 A-01.04 ÉCONOMIE ET GESTION AGRICOLES - FONDS AGRICOLES . . . . . . . . . . . . . . . 21 A-01.05 ESTIMATIONS FONCIERES AGRICOLES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 A-01.06 HYDRAULIQUE AGRICOLE ET RURALE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24 A-01.07 MATERIEL ET TECHNIQUE AGRICOLE. (MATERIEL A MOTORISATION THERMIQUE : VOIR E.7.9.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25 A-01.08 PRODUCTIONS DE GRANDES CULTURES ET DE CULTURES SPECIALISEES . . . 25 A-02 Agro-alimentaire. (Bâtiments : voir C.2.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25 A-03 Aménagements et équipements de l'espace rural . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26 A-04 Animaux autres que d'élevage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26 A-05 Aquaculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26 A-06 Biotechnologies . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 A-07 Élevage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 A-08 Horticulture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 A-09 Risques climatiques et météorologiques . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28 A-10 Nuisances - Pollutions agricoles et dépollutions. (voir I.1. et I.7.) . . . . . . . . . . . . . . . . . . . . . . . 28 A-11 Pêche - Chasse - Faune sauvage vertebrée et invertebrée . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28 A-11.01 ARMEMENT - ACCASTILLAGE - MATERIELS ET EQUIPEMENTS POUR LA PECHE ET POUR LA CHASSE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28 A-11.02 DEGATS DE GIBIER . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28 A-11.03 ESTIMATIONS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 A-11.04 PEUPLEMENTS ET EQUILIBRES CYNEGETIQUES - ESTIMATIONS . . . . . . . . . . . 29 A-12 Sylviculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 A-13 Viticulture et oenologie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 A-13.01 DISTILLATION, ELABORATION DES LIQUEURS ET DES ALCOOLS . . . . . . . . . . 29 A-13.02 EMBALLAGE ET CONDITIONNEMENT DES VINS, DES LIQUEURS ET DES ALCOOLS - MATERIEL DE CONDITIONNEMENT DES VINS, DES LIQUEURS ET DES ALCOOLS . . . 29 A-13.03 ESTIMATION ET GESTION - EXPLOITATION VITICOLE - MATERIELS DE CULTURE DE LA VIGNE - PEPINIERES ET PLANTATIONS - PRODUITS, TRAITEMENTS ET PROTECTION DE LA VIGNE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 A-13.04 OENOLOGIE - APPELLATIONS - DEGUSTATIONS DES VINS ET DES ALCOOLS - VINIFICATION ET ASSEMBLAGES - FERMENTATIONS - ANALYSE DES VINS ET DES ALCOOLS - MATERIEL DE VINIFICATION, DE STOCKAGE ET DE PREPARATION DES VINS ET ALCOOLS - TRANSPORTS DES VINS ET DES ALCOOLS . . . . . . . . . . . . . . . . . . . . . . 30 A-14 Santé vétérinaire . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 A-14.01 BIOLOGIE, PHARMACOLOGIE ET TOXICOLOGIE VETERINAIRES . . . . . . . . . . . 31 A-14.02 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DES ANIMAUX DE COMPAGNIE (CHIENS, CHATS, NAC (NOUVEAUX ANIMAUX DE COMPAGNIE)) . . . . . . 32 A-14.03 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DES RUMINANTS (BOVINS, OVINS, CAPRINS, CAMELIDES), DES EQUIDES (CHEVAUX, PONEYS, ANES ET CROISEMENTS) ET DES PORCINS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32 A-14.04 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DES VOLAILLES, LAPINS ET GIBIERS D'ELEVAGE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32 A-14.05 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DE LA FAUNE SAUVAGE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33 A-14.06 SANTE PUBLIQUE, QUALITE ET SECURITE DES ALIMENTS . . . . . . . . . . . . . . . 33 3 B-ARTS - CULTURE - COMMUNICATION - MÉDIAS . . . . . . . . . . . . . . . . . . . . . . . . 33 B-01 Ecritures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33 B-01.01 DOCUMENTS ET ECRITURES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33 B-01.02 PALEOGRAPHIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34 B-02 Généalogie successorale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34 B-03 Objets d'art et de collection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34 B-03.01 ARMES ANCIENNES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34 B-03.02 BIJOUTERIE, JOAILLERIE, HORLOGERIE, ORFEVRERIE . . . . . . . . . . . . . . . . . . 34 B-03.03 CERAMIQUES ANCIENNES ET D'ART . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35 B-03.04 CRISTALLERIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35 B-03.05 EBENISTERIE - MARQUETERIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35 B-03.06 ETOFFES ANCIENNES ET TISSAGES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35 B-03.07 FERRONNERIE ET BRONZES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35 B-03.08 GRAVURES ET ARTS GRAPHIQUES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35 B-03.09 HERALDIQUE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35 B-03.10 LIVRES ANCIENS ET MODERNES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35 B-03.11 LUTHERIE ET INSTRUMENTS DE MUSIQUE . . . . . . . . . . . . . . . . . . . . . . . . . . . 36 B-03.12 MEUBLES ET MOBILIERS ANCIENS. (MEUBLES MODERNES : VOIR C.7.1.) . . . . 36 B-03.13 NUMISMATIQUE ET MEDAILLES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37 B-03.14 PHILATELIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37 B-03.15 SCULPTURES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37 B-03.16 TABLEAUX . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37 B-03.17 TAPISSERIES ET TAPIS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37 B-03.18 VITRAUX ET VITRERIE D'ART . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37 B-03.19 ARCHEOLOGIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37 B-03.20 ART D'ASIE ET D'EXTREME ORIENT, ART AFRICAIN, ART OCEANIEN, ART AMERICAIN . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38 B-03.21 OEUVRES D'ART DEMATERIALISEES NFT . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38 B-04 Productions culturelles et de communication . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38 B-04.01 CINEMA, TELEVISION, VIDEO, AUDIOVISUEL, TOUS SUPPORTS MEDIAS ET PLATEFORMES DIGITALES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38 B-04.02 IMPRIMERIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38 B-04.03 MUSIQUE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38 B-04.04 PHOTOGRAPHIE ANALOGIQUE ET NUMERIQUE - DATATION ET CERTIFICATION - ATTRIBUTION - RECONNAISSANCE FACIALE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38 B-04.05 PRESSE, EDITION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38 B-04.06 COMMUNICATION, PUBLICITE DIGITALE ET MEDIAS . . . . . . . . . . . . . . . . . . . 38 B-04.07 SPECTACLES VIVANTS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38 B-04.08 RELATIONS MEDIAS, PRESSE, PUBLICS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38 B-05 Propriété littéraire et artistique . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38 B-05.01 GESTION DES DROITS D'AUTEUR . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38 B-05.02 GESTION DES DROITS VOISINS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39 B-05.03 GESTION DES DROITS DERIVES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39 B-05.04 GESTION DES DROITS A L'IMAGE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39 B-05.05 GESTION DES DROITS DE REPRODUCTION . . . . . . . . . . . . . . . . . . . . . . . . . . . 39 B-06 Sport . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39 B-06.01 ACTIVITES SPORTIVES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39 B-06.02 MATERIEL ET INSTALLATIONS SPORTIVES. (BATIMENTS, GYMNASES, STADES COUVERTS : VOIR C.2.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39 C-BATIMENT - TRAVAUX PUBLICS - GESTION IMMOBILIÈRE . . . . . . . . . . . . . 39 C-01 Acoustique, bruits, vibrations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39 C-02 Constructions générales tous corps d'état . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41 4 C-02.01 ARCHITECTURE - INGENIERIE - MAITRISE D'OEUVRE. . . . . . . . . . . . . . . . . . . . 41 C-02.02 ARCHITECTURE D'INTERIEUR - DECORATION . . . . . . . . . . . . . . . . . . . . . . . . . 56 C-02.03 ARCHITECTURE DU PAYSAGE - ESPACES VERTS ET DE LOISIRS - AMENAGEMENTS SPORTIFS EXTERIEURS. (HORTICULTURE : VOIR A.8.) . . . . . . . . . . . . . . . . . . . . . . . . . 58 C-02.04 COORDINATION DE LA SECURITE ET PROTECTION DE LA SANTE (CSPS) . . . . 58 C-02.05 ÉCONOMIE DE LA CONSTRUCTION, VALORISATION DES TRAVAUX ET METRES 59 C-02.06 MONUMENTS HISTORIQUES ET PATRIMOINE BATI . . . . . . . . . . . . . . . . . . . . . 63 C-02.07 ORDONNANCEMENT, PILOTAGE, COORDINATION (OPC) . . . . . . . . . . . . . . . . . 64 C-02.08 PISCINES : GROS-OEUVRE, ETANCHEITE, BASSINS PREFABRIQUES, TRAITEMENT DE L'EAU, DE L'AIR, EQUIPEMENTS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67 C-02.09 URBANISME - AMENAGEMENT DU TERRITOIRE - AMENAGEMENT ET MOBILIER URBAIN . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70 C-03 Structures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 71 C-03.01 STRUCTURES : GENERALISTES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 71 C-03.02 BETON, BETON ARME, BETON PRECONTRAINT, BETONS SPECIAUX . . . . . . . . 80 C-03.03 CHARPENTES ET OSSATURES BOIS - CONSTRUCTIONS EN BOIS . . . . . . . . . . . 83 C-03.04 CONSTRUCTIONS METALLIQUES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 85 C-03.05 ÉTANCHEITES DES PAROIS ENTERREES, CUVELAGES . . . . . . . . . . . . . . . . . . . 86 C-03.06 MACONNERIES A BASE DE PRODUITS INDUSTRIELS OU DE MATERIAUX NATURELS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 88 C-03.07 STRUCTURES SPECIALES, TOILES TENDUES, CHAPITEAUX, STRUCTURES GONFLABLES, EQUIPEMENTS SCENIQUES, STRUCTURES COMPOSITES . . . . . . . . . . . 91 C-04 Génie-civil - Travaux publics. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 91 C-04.01 GENIE-CIVIL ET TRAVAUX PUBLICS : GENERALISTES . . . . . . . . . . . . . . . . . . . 91 C-04.02 AMENAGEMENTS PORTUAIRES, OUVRAGES MARITIMES, TRAVAUX SOUS-MARINS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 95 C-04.03 BARRAGES, GRANDS SOUTENEMENTS. (PRODUCTION D'ELECTRICITE : VOIR E.2.1.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 96 C-04.04 MURS DE SOUTENEMENT. (LIE AVEC C.5.1.) . . . . . . . . . . . . . . . . . . . . . . . . . . 97 C-04.05 PONTS (Y COMPRIS LES ABORDS ET FONDATIONS) . . . . . . . . . . . . . . . . . . . . . 99 C-04.06 RESEAUX DE DRAINAGE ET EVACUATION DES EAUX, HYDRAULIQUE DE SURFACE, CANAUX, RETENUES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 101 C-04.07 RESERVOIRS, TRAVAUX EN LACS ET RIVIERES . . . . . . . . . . . . . . . . . . . . . . . 104 C-04.08 REVETEMENTS DE SOLS EXTERIEURS (PAVAGES, DALLAGES, PIERRES, PANNEAUX, SOLS SPORTIFS, PLATEFORMES, TERRASSES ET PLATELAGES BOIS...) . . . . . . . . . . . 105 C-04.09 TERRASSEMENTS GENERAUX ET GRANDS AMENAGEMENTS - VOIES FERREES ET INFRASTRUCTURES FERROVIAIRES. (MATERIEL FERROVIAIRE : VOIR E.7.12.) . . . . . 106 C-04.10 VOIRIES, CHAUSSEES LOURDES ET LEGERES . . . . . . . . . . . . . . . . . . . . . . . . 107 C-04.11 TUNNELS : TRAVAUX ET EQUIPEMENTS. (TUNNELIERS : VOIR E.7.8. ET E.7.9.) 109 C-05 Sols . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 110 C-05.01 FONDATIONS SPECIALES : PIEUX ET PUITS, RADIERS EPAIS, AMELIORATION DES SOLS, MASSIFS DE MACHINES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 110 C-05.02 GEOTECHNIQUE GENERALE, FONDATIONS, CONFORTEMENTS, STABILISATION DES TERRAINS ET TALUS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 112 C-05.03 HYDROGEOLOGIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 115 C-05.04 MINES ET CARRIERES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 118 C-06 Couverture - Étanchéité y compris accessoires, équipements rapportés, isolation. (Étanchéité des parois enterrées : voir C.3.6.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 119 C-06.01 COUVERTURE - ÉTANCHEITE : GENERALISTES . . . . . . . . . . . . . . . . . . . . . . . 119 C-06.02 COUVERTURES METALLIQUES PAR GRANDS ELEMENTS (ZINC, ACIER, CUIVRE, ALUMINIUM, PLOMB, PANNEAUX COMPOSITES...) . . . . . . . . . . . . . . . . . . . . . . . . . . 121 C-06.03 COUVERTURES PAR PETITS ELEMENTS (TUILES, ARDOISES, BARDEAUX, SHINGLES...) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 123 C-06.04 COUVERTURES REGIONALES (CHAUME, LAUZES, TAVAILLONS...) . . . . . . . . 125 C-06.05 ÉTANCHEITE COLLEE OU COULEE, MEMBRANES - TOITURES PAYSAGERES OU AMENAGEES. (PANNEAUX PHOTOVOLTAIQUES ET CAPTEURS SOLAIRES : VOIR C.13.1.) 125 C-07 Menuiseries, verre dans le bâtiment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 127 C-07.01 MENUISERIES INTERIEURES ET AGENCEMENTS, MEUBLES MODERNES . . . . 127 C-07.02 MENUISERIES EXTERIEURES : BOIS - ACIER - ALUMINIUM - PVC - COMPOSITE - 5",
+            "pageCount": 641,
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "durationMs": 2154,
+      "events": [
+        {
+          "type": "model_text",
+          "text": "J’ai trouvé la page officielle de la Cour d’appel d’Aix-en-Provence avec le document **“Annuaire des experts”**. La page indique une **mise à jour : 19/02/2026** et le PDF lui-même affiche en première page la date **December 10, 2025**. La page contient aussi un autre PDF lié à l’arrêté du 5 décembre 2022, mais ce n’est pas la liste courante des experts. citeturn0search11\n\n**Date retenue : 2026-02-19**  \n**Source de la date : page-text**\n\nRaisonnement :\n- **PDF** : date visible dans le document = **2025-12-10**.\n- **Page** : mention explicite **“mise à jour : 19/02/2026”**, plus récente et plus spécifique pour la page listant l’annuaire.\n- **Choix final** : j’ai retenu la date la plus récente et la plus spécifique disponible, conformément à la règle demandée.\n\nSi tu veux, je peux aussi te donner le lien exact du PDF officiel identifié."
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "durationMs": 3702,
+    "usage": {
+      "inputTokens": 2014,
+      "outputTokens": 661,
+      "totalTokens": 2675
+    },
+    "result": {
+      "courtName": "Aix-en-Provence",
+      "pageUrl": null,
+      "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-12/Annuaire%20Experts%20D%C3%A9cembre%202025.pdf",
+      "documentTitle": "Annuaire des experts",
+      "publicationDate": "2026-02-19",
+      "publicationDateSource": "page-text",
+      "searchExplanation": "I identified the official Cour d’appel d’Aix-en-Provence page titled “Experts judiciaires” and the linked PDF “Annuaire des experts” from the page’s download links. The page also includes another PDF about the 5 December 2022 nomenclature, but the expert directory PDF is the relevant current list.",
+      "dateExtractionExplanation": "I checked all available date signals: (1) the PDF content shows the exact date “December 10, 2025” on the first page, (2) the page text explicitly shows “mise à jour : 19/02/2026”, (3) the PDF link text does not contain a date, and (4) the PDF URL path/filename only indicate 2025-12 / Décembre 2025, not an exact day. Per the rule to use the most specific and most recent exact date, I retained 2026-02-19 from the page text.",
+      "errors": []
+    }
+  },
+  "result": {
+    "courtName": "Aix-en-Provence",
+    "pageUrl": null,
+    "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-12/Annuaire%20Experts%20D%C3%A9cembre%202025.pdf",
+    "documentTitle": "Annuaire des experts",
+    "publicationDate": "2026-02-19",
+    "publicationDateSource": "page-text",
+    "searchExplanation": "I identified the official Cour d’appel d’Aix-en-Provence page titled “Experts judiciaires” and the linked PDF “Annuaire des experts” from the page’s download links. The page also includes another PDF about the 5 December 2022 nomenclature, but the expert directory PDF is the relevant current list.",
+    "dateExtractionExplanation": "I checked all available date signals: (1) the PDF content shows the exact date “December 10, 2025” on the first page, (2) the page text explicitly shows “mise à jour : 19/02/2026”, (3) the PDF link text does not contain a date, and (4) the PDF URL path/filename only indicate 2025-12 / Décembre 2025, not an exact day. Per the rule to use the most specific and most recent exact date, I retained 2026-02-19 from the page text.",
+    "errors": []
+  },
+  "totalUsage": {
+    "inputTokens": 28999,
+    "outputTokens": 1140,
+    "totalTokens": 30139
+  },
+  "rawToolData": {
+    "pageTitle": "Experts judiciaires | Cour d'appel d'Aix-en-Provence",
+    "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel d'Aix-en-Provence Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Experts judiciaires 27/02/2018 - mise à jour : 19/02/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer Les demandes d'inscription initiale, de réinscription ou d'extension sur la liste des experts judiciaires, au titre de l’année 2027, devront être formulées : Entre le 1er janvier 2026 et avant le 28 février 2026 à minuit sur le site Démarche Numérique (Liens ci-dessous mentionnés). En raison de la mise en place de la dématérialisation des candidatures via la plateforme Démarche numérique, les candidatures adressées au format papier ne pourront être prises en compte. Les candidatures doivent s’effectuer sur un des trois formulaires suivants (inscription, réinscription et extension). Elles seront examinées par l’assemblée générale de la cour d’appel qui se réunira au cours du mois de novembre 2026 et dont les décisions seront applicables à compter du 1er janvier 2027. Les candidats doivent utiliser le formulaire correspondant à leur situation et s’exposent en cas d’erreur dans leur demande à une décision d’irrecevabilité de l’assemblée générale de la cour d’appel. Inscription initiale (inscription pour une période probatoire de 3 ans) : https://www.demarches-simplifiees.fr/commencer/experts-inscription-initiale-ca-aix-en-provence Ce formulaire doit être saisi si vous n’avez jamais été inscrit sur la liste des experts de la cour d’appel d’Aix-en-Provence ou si vous n’êtes plus inscrit à la date du 1er janvier 2026. Il convient de vérifier pour les experts inscrits précédemment la continuité de leur inscription pour l’année en cours. Demande d’extension : https://www.demarches-simplifiees.fr/commencer/exp",
+    "pdfLinks": [
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-02/2-Arr%C3%AAt%C3%A9%20du%205%20d%C3%A9cembre%202022%20relatif%20%C3%A0%20la%20nomenclature%20pr%C3%A9vue%20%C3%A0%20l%27article%201er%20du%20d%C3%A9cret%20n%C2%B0%202004-1463%20du%2023%20d%C3%A9cembre%202004%20-%20L%C3%A9gifrance_0.pdf",
+        "text": "Consulter la liste des rubriques - arrêté du 5.12.2022\n        Téléchargement 123.35 Ko",
+        "relevanceHint": "possible-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-12/Annuaire%20Experts%20D%C3%A9cembre%202025.pdf",
+        "text": "Annuaire des experts\n        Téléchargement 3.79 Mo",
+        "relevanceHint": "likely-expert-list"
+      }
+    ],
+    "pdfText": "ANNUAIRE DES EXPERTS JUDICIAIRES INSCRITS AUPRÈS DE LA COUR D’APPEL D’AIX-EN-PROVENCE 2025 December 10, 2025 COUR D’APPEL D’AIX EN PROVENCE Service des professions règlementées Place de Verdun 13616 Aix-en-Provence Cedex 1 Tel. 04 42 33 81 62 Courriel : experts.ca-aix-en-provence@justice.fr Site internet : www.ca-aixenprovence.justice.fr 1 TABLE DES MATIÈRES Pages SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES . . . . . . . . . . . . . . . . . . . . . . 3 LISTE PAR SPÉCIALITÉ DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 581 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 602 2 SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . . . . . . . . . . 18 A-01 Agriculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 A-01.01 APPLICATIONS DE PRODUITS PHYTOPHARMACEUTIQUES, MATIERES FERTILISANTES ET SUPPORTS DE CULTURE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 A-01.02 FONCIER RURAL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19 A-01.03 CONSTRUCTIONS ET AMENAGEMENTS RURA"
+  },
+  "error": null
+}

@@ -1,0 +1,343 @@
+{
+  "court": "Paris",
+  "agentId": "expert-search-mini",
+  "startedAt": "2026-03-24T22:02:45.449Z",
+  "finishedAt": "2026-03-24T22:02:59.102Z",
+  "totalMs": 13653,
+  "steps": [
+    {
+      "turn": 0,
+      "durationMs": 1802,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=BwrDaZCjDIeIkdUP5-nIqQw\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=BwrDaZCjDIeIkdUP5-nIqQw\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "error": null
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=BwrDaYCuDKCjkdUP6MHouAU\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=BwrDaYCuDKCjkdUP6MHouAU\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "durationMs": 2721,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "web_search",
+          "fullResult": {
+            "action": {
+              "type": "search",
+              "query": "site:cours-appel.justice.fr \"Cour d'appel de Paris\" experts judiciaires PDF"
+            },
+            "sources": [
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/paris/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/paris/partenaires-de-justice"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/versailles/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/paris/activite-de-la-cour-dappel-de-paris"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/paris/les-tribunaux"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/paris/la-reparation-du-prejudice-economique"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/paris/decisions-abstracts-and-hearings"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/paris/decisions-abstracts-audiences"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/paris/enqueteurs-sociaux"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/paris/accreditation-proces"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/paris/creation-du-pole-specialise-de-lutte-contre-les-violences-intrafamiliales-du-tj-de-melun"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/paris/les-formulaires-daccreditation"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2021-01/Liste%20des%20experts%20judiciaires%202020-08_1.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2019-03/Annuaire%20Social%2C%20Civil%2C%20Commercial.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2021-03/Annuaire%20civile%2C%20sociale%2C%20commerciale%202021_0.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2019-01/Annuaire%20Social%2C%20Civil%2C%20Commercial%2029.01.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2019-02/Annuaire%20Social%2C%20Civil%2C%20Commercial%2029.01_1.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2019-07/Annuaire%20Social%2C%20Civil%2C%20Commercial.pdf"
+              }
+            ]
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "EXPERTS JUDICIAIRES | Cour d'appel de Paris Paris",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Paris Paris Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) EXPERTS JUDICIAIRES 31/05/2018 - mise à jour : 10/03/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer Les experts judiciaires sont des professionnels de toutes les spécialités qui mettent une part de leur activité au service de la Justice. Ces professionnels sont inscrits sur une liste établie par la cour d'appel, après un examen attentif de leur candidature. Ils sont désignés par la cour d'appel et les tribunaux de son ressort, à l'occasion de litiges. Le rôle de l'expert est d'apporter un avis technique sur certains points précis. L'expertise judiciaire apporte au justiciable une garantie quant à la rigueur avec laquelle ses demandes vont être étudiées. Dans le cadre de la modernisation et de la simplification de la Justice, le ministère de la Justice a engagé, au cours de l’année 2024, des travaux visant à dématérialiser l’ensemble du processus d’inscription et de réinscription sur les listes d’experts judiciaires ainsi qu’à constituer un référentiel national unique. Après une phase d’expérimentation conduite dans plusieurs cours d’appel pilotes, ce dispositif sera généralisé à l’ensemble des juridictions dès le 1er janvier 2026. Ainsi, l’ensemble des demandes d’inscription initiale, de réinscription ou d’extension en vue de l’élaboration de la liste des experts judiciaires de l’année 2027, devront être déposées avant le 1er mars 2026 (décret n° 2004-1463 du 23 décembre 2004 relatif aux experts judiciaires – articles 6 et 10), exclusivement par voie dématérialisée, au moyen de la plateforme Démarches simplifiées. Les liens permettant d’accéder aux formulaires sont les suivants : Inscription initiale Réinscription Extension d'inscription Les candidatures adressées au format papier ne seront plus prises en compte. Annuaire des experts judiciaires 2026 ANNUAIRE DES EXPERTS Téléchargement 2.24 Mo DOSSIERS 2027 : voir lien ci-dessus Téléchargement 184.26 Ko voir lien ci-dessus Téléchargement 184.26 Ko voir lien ci-dessus Téléchargement 184.26 Ko A noter : \"Aucune personne physique ou morale ne peut être inscrite sur plusieurs listes de cour d'appel\" (art.5 Décret 23/12/2004) ARCHIVES : Le 13 décembre 2017, 50 experts ont prêté serment devant la cour d'appel de Paris. Lire le discours du président Discours 2017 président Experts Téléchargement 67.36 Ko Lire le discours de Madame Champrenault, procureure générale Discours PG Experts 2017 Téléchargement 256.7 Ko DECLARATION D'INDEPENDANCE DES EXPERTS Téléchargement 44.78 Ko Conventions passées entre le barreau de Paris, le TJ et la CA et l'UCECAP : CONVENTION 8 JUIN 2009 Téléchargement 368.52 Ko CONVENTION 27 JUIN 2007 Téléchargement 61.53 Ko CONVENTION 4 MAI 2006 Téléchargement 36.49 Ko REGLES D'ASSUJETTISSEMENT A LA TVA Téléchargement 310.91 Ko Union des compagnies d'experts près la cour d'appel de Paris Présidence : 8 rue du 4 Septembre 75002 PARIS Tél. 06 61 89 95 74mvv@vassiliades-expert.fr Secrétariat : 8 rue du 4 Septembre 75002 PARIS Tél. 06 61 89 95 74hmerle@helenemerle.com Dans l'article Liens pratiques UCECAP",
+            "pdfLinks": [
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf",
+                "text": "ANNUAIRE DES EXPERTS\n        Téléchargement 2.24 Mo",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/voir%20lien.pdf",
+                "text": "voir lien ci-dessus\n        Téléchargement 184.26 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/voir%20lien_0.pdf",
+                "text": "voir lien ci-dessus\n        Téléchargement 184.26 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/voir%20lien_1.pdf",
+                "text": "voir lien ci-dessus\n        Téléchargement 184.26 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/discours%20pr%C3%A9sident.pdf",
+                "text": "Discours 2017 président Experts\n        Téléchargement 67.36 Ko",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/Discours%20PG.pdf",
+                "text": "Discours PG Experts 2017\n        Téléchargement 256.7 Ko",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/Declaration_dindependance_des_experts.pdf",
+                "text": "DECLARATION D'INDEPENDANCE DES EXPERTS\n        Téléchargement 44.78 Ko",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/Convention%20du%208%20juin%202009.pdf",
+                "text": "CONVENTION 8 JUIN 2009\n        Téléchargement 368.52 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/Convention%20du%2027%20juin%202007.pdf",
+                "text": "CONVENTION 27 JUIN 2007\n        Téléchargement 61.53 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/Convention%20du%204%20mai%202006.pdf",
+                "text": "CONVENTION 4 MAI 2006\n        Téléchargement 36.49 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/R%C3%A8gles%20d%27assujettissement%20%C3%A0%20la%20TVA%20applicables%20aux%20prestations%20r%C3%A9alis%C3%A9es%20par%20les%20collaborateurs%20du%20service%20de%20la%20justice.pdf",
+                "text": "REGLES D'ASSUJETTISSEMENT A LA TVA\n        Téléchargement 310.91 Ko",
+                "relevanceHint": "unknown"
+              }
+            ],
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "durationMs": 2404,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "extractPdfDate",
+          "fullResult": {
+            "success": true,
+            "pdfText": "COUR D’APPEL DE PARIS LISTE DES EXPERTS JUDICIAIRES ANNEE 2026 MAJ LE 10/03/2026 Service des Experts- 34 quai des Orfèvres -75055 Paris Cedex 01 TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêtés du 10 juin 2005 et du 12 mai 2006. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45 ANNEXES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 393 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 394 Service des Experts- 34 quai des Orfèvres -75055 Paris Cedex 01 experts.ca-paris@justice.fr Tél. 01.44.32.74.90 ou 01.44.32.69.52 Site Internet : www.ca-paris.justice.fr 1 Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêtés du 10 juin 2005 et du 12 mai 2006 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel...... conformément à la nomenclature suivante, qui se divise en branches : (ex. : A), rubriques (ex.: A.1.) et spécialités (ex. : A.1.1). A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . 45 Pour être plus amplement informés, les magistrats peuvent se référer à l'annuaire national des experts développé par le CNCEJ qui répertorie des informations plus précises sur le profil l'expérience et les spécialités de l'expert. A-01 Agriculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45 A-01.01 APPLICATIONS DE PRODUITS PHYTOPHARMACEUTIQUES, MATIERES FERTILISANTES ET SUPPORTS DE CULTURE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45 Application de produits phytopharmaceutiques par voie terrestre - Traitement des semences, des plants, des bulbes, des denrées stockées - Application des matières fertilisantes et des supports de culture A-01.02 FONCIER RURAL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45 Bornage - Voies d'accès - Remembrement des parcelles - Catégories du foncier rural - Servitudes et urbanisme (Bornage : voir C.16. - Voiries : voir C.4.3.) - Baux ruraux : calculs d'amélioration foncière et culturale - Révision de fermage - Etat des lieux A-01.03 CONSTRUCTIONS ET AMENAGEMENTS RURAUX . . . . . . . . . . . . . . . . . . . . . . 45 Équipements agricoles (dont équipements d'énergies alternatives) - Estimations des haras et établissements équestres A-01.04 ÉCONOMIE ET GESTION AGRICOLES - FONDS AGRICOLES . . . . . . . . . . . . . . . 45 Évaluation des exploitations agricoles - Parts sociales A-01.05 ESTIMATIONS FONCIERES AGRICOLES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46 Bâtis et non bâtis - Expropriations et évictions - Successions - Estimations A-01.06 HYDRAULIQUE AGRICOLE ET RURALE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46 Gestion de l'eau - Réseaux et équipements - Voieries - Droits d'eau. (Réseaux et travaux hydrauliques : voir C.4.8.) A-01.07 MATERIEL ET TECHNIQUE AGRICOLE. (MATERIEL A MOTORISATION THERMIQUE : VOIR E.7.9.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46 Estimation de matériel agricole - Préparation et conduite des cultures - Applications des intrants agricoles - Récoltes et post-récoltes - Transport et manutention - Stockage A-01.08 PRODUCTIONS DE GRANDES CULTURES ET DE CULTURES SPECIALISEES . . . 46 Cultures annuelles, pluriannuelles et pérennes - Pédologie et agronomie - Productions de semences, de plants, de bulbes A-02 Agro-alimentaire. (Bâtiments : voir C.2.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47 Contrôles qualitatifs et analyses - Ingénierie, normes - Ouvrages et équipements (matériels et installations) - Produits alimentaires et leurs transformations - Emballages et conditionnements - Stockage et transport - Modes de conservation, traçabilité - Restauration collective - Tables gastronomiques - Gites ruraux A-03 Aménagements et équipements de l'espace rural . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47 Espaces naturels - Biodiversité - Zonages - Préservation et protections des milieux naturels - Flore et habitats naturels A-04 Animaux autres que d'élevage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47 Animaux de compagnie et de sport - Courses et concours - Établissements et sports équestres - Haras - Estimations A-05 Aquaculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47 Productions en eaux douces et de mer - Médecine, élevage, bien-être et transport des poissons - Estimations 2 A-06 Biotechnologies . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48 Équipements, procédés, fermentation - Produits des biotechnologies - Emballages et conditionnements des produits de biotechnologies A-07 Élevage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48 Estimation de matériel agricole - Préparation et conduite des cultures - Applications des intrants agricoles - Récoltes et post-récoltes - Transport et manutention - Stockage A-08 Horticulture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48 Arboriculture fruitière et ornementale - Maraichage - Floriculture et décoration florale - Espaces verts, parcs et aménagements paysagés - Matériels d'horticulture A-09 Risques climatiques et météorologiques . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48 Neige - Avalanches - Tornades - Submersions A-10 Nuisances - Pollutions agricoles et dépollutions. (voir I.1. et I.7.) . . . . . . . . . . . . . . . . . . . . . 49 Équipements et procédés - Études d'impact - Toxicologie non médicale - Énergies alternatives A-11 Pêche - Chasse - Faune sauvage vertebrée et invertebrée . . . . . . . . . . . . . . . . . . . . . . . . . . . 49 A-11.01 ARMEMENT - ACCASTILLAGE - MATERIELS ET EQUIPEMENTS POUR LA PECHE ET POUR LA CHASSE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49 A-11.02 DEGATS DE GIBIER . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49 A-11.03 ESTIMATIONS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49 A-11.04 PEUPLEMENTS ET EQUILIBRES CYNEGETIQUES - ESTIMATIONS . . . . . . . . . . . 49 A-12 Sylviculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49 Estimation et gestion - Semis, pépinières et plantations - Travaux et exploitations forestières - Sciage et produits forestiers - Restauration des terrains par plantations - Transports des vins et des alcools - État sanitaire A-13 Viticulture et oenologie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49 A-13.01 DISTILLATION, ELABORATION DES LIQUEURS ET DES ALCOOLS . . . . . . . . . . 49 A-13.02 EMBALLAGE ET CONDITIONNEMENT DES VINS, DES LIQUEURS ET DES ALCOOLS - MATERIEL DE CONDITIONNEMENT DES VINS, DES LIQUEURS ET DES ALCOOLS . . . 49 A-13.03 ESTIMATION ET GESTION - EXPLOITATION VITICOLE - MATERIELS DE CULTURE DE LA VIGNE - PEPINIERES ET PLANTATIONS - PRODUITS, TRAITEMENTS ET PROTECTION DE LA VIGNE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49 A-13.04 OENOLOGIE - APPELLATIONS - DEGUSTATIONS DES VINS ET DES ALCOOLS - VINIFICATION ET ASSEMBLAGES - FERMENTATIONS - ANALYSE DES VINS ET DES ALCOOLS - MATERIEL DE VINIFICATION, DE STOCKAGE ET DE PREPARATION DES VINS ET ALCOOLS - TRANSPORTS DES VINS ET DES ALCOOLS . . . . . . . . . . . . . . . . . . . . . . 50 A-14 Santé vétérinaire . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50 A-14.01 BIOLOGIE, PHARMACOLOGIE ET TOXICOLOGIE VETERINAIRES . . . . . . . . . . . 50 A-14.02 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DES ANIMAUX DE COMPAGNIE (CHIENS, CHATS, NAC (NOUVEAUX ANIMAUX DE COMPAGNIE)) . . . . . . 50 A-14.03 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DES RUMINANTS (BOVINS, OVINS, CAPRINS, CAMELIDES), DES EQUIDES (CHEVAUX, PONEYS, ANES ET CROISEMENTS) ET DES PORCINS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51 A-14.04 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DES VOLAILLES, LAPINS ET GIBIERS D'ELEVAGE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51 3 A-14.05 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DE LA FAUNE SAUVAGE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51 A-14.06 SANTE PUBLIQUE, QUALITE ET SECURITE DES ALIMENTS . . . . . . . . . . . . . . . 51 B-ARTS - CULTURE - COMMUNICATION - MÉDIAS . . . . . . . . . . . . . . . . . . . . . . . . 52 Pour être plus amplement informés, les magistrats peuvent se référer à l'annuaire national des experts développé par le CNCEJ qui répertorie des informations plus précises sur le profil l'expérience et les spécialités de l'expert. B-01 Ecritures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52 B-01.01 DOCUMENTS ET ECRITURES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52 B-01.02 PALEOGRAPHIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53 B-02 Généalogie successorale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53 B-03 Objets d'art et de collection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53 B-03.01 ARMES ANCIENNES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53 B-03.02 BIJOUTERIE, JOAILLERIE, HORLOGERIE, ORFEVRERIE . . . . . . . . . . . . . . . . . . 53 B-03.03 CERAMIQUES ANCIENNES ET D'ART . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55 B-03.04 CRISTALLERIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56 B-03.05 EBENISTERIE - MARQUETERIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56 B-03.06 ETOFFES ANCIENNES ET TISSAGES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56 B-03.07 FERRONNERIE ET BRONZES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56 B-03.08 GRAVURES ET ARTS GRAPHIQUES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57 B-03.09 HERALDIQUE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58 B-03.10 LIVRES ANCIENS ET MODERNES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58 B-03.11 LUTHERIE ET INSTRUMENTS DE MUSIQUE . . . . . . . . . . . . . . . . . . . . . . . . . . . 59 B-03.12 MEUBLES ET MOBILIERS ANCIENS. (MEUBLES MODERNES : VOIR C.7.1.) . . . . 60 B-03.13 NUMISMATIQUE ET MEDAILLES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62 B-03.14 PHILATELIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62 B-03.15 SCULPTURES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 63 B-03.16 TABLEAUX . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 63 B-03.17 TAPISSERIES ET TAPIS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65 B-03.18 VITRAUX ET VITRERIE D'ART . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65 B-03.19 ARCHEOLOGIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65 4",
+            "pageCount": 411,
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "durationMs": 2575,
+      "events": [
+        {
+          "type": "model_text",
+          "text": "J’ai trouvé la page officielle de la **Cour d’appel de Paris** sur **cours-appel.justice.fr**. La page “EXPERTS JUDICIAIRES” contient un lien PDF intitulé **“ANNUAIRE DES EXPERTS”**, et la page indique une **mise à jour : 10/03/2026**. citeturn0search17\n\nJ’ai ensuite lu le PDF avec `extractPdfDate`. La première page du document dit clairement : **“LISTE DES EXPERTS JUDICIAIRES ANNEE 2026 – MAJ LE 10/03/2026”**. C’est la date la plus précise et la plus officielle trouvée, donc je la retiens. citeturn0search17\n\n**Résultat :**\n- **Cour d’appel :** Paris\n- **Page officielle :** Experts judiciaires\n- **PDF officiel :** Annuaire des experts\n- **Date officielle retenue :** **2026-03-10**\n- **Source de la date :** **pdf-content** citeturn0search17\n\n**Remarque sur les autres indices :**\n- La page web donnait aussi **10/03/2026**.\n- Le nom du PDF contenait aussi **“MAJ 10 MARS 26”**.\n- Mais la date du **contenu PDF** est la plus fiable, donc elle prime. citeturn0search17"
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "durationMs": 4139,
+    "usage": {
+      "inputTokens": 2524,
+      "outputTokens": 710,
+      "totalTokens": 3234
+    },
+    "result": {
+      "courtName": "Paris",
+      "pageUrl": null,
+      "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf",
+      "documentTitle": "ANNUAIRE DES EXPERTS",
+      "publicationDate": "2026-03-10",
+      "publicationDateSource": "pdf-content",
+      "searchExplanation": "I identified the official Cour d'appel de Paris experts page on cours-appel.justice.fr from the provided page text. The page is titled \"EXPERTS JUDICIAIRES\" and contains a PDF link labeled \"ANNUAIRE DES EXPERTS\" pointing to the expert directory document.",
+      "dateExtractionExplanation": "The most specific and reliable date appears in the PDF content itself: \"MAJ LE 10/03/2026\" on the first page, which gives an exact date. The page text also shows \"mise à jour : 10/03/2026\", and the PDF filename includes \"MAJ 10 MARS 26\", confirming the same date. I converted 10/03/2026 to ISO format 2026-03-10. No conflicting date was found.",
+      "errors": []
+    }
+  },
+  "result": {
+    "courtName": "Paris",
+    "pageUrl": null,
+    "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf",
+    "documentTitle": "ANNUAIRE DES EXPERTS",
+    "publicationDate": "2026-03-10",
+    "publicationDateSource": "pdf-content",
+    "searchExplanation": "I identified the official Cour d'appel de Paris experts page on cours-appel.justice.fr from the provided page text. The page is titled \"EXPERTS JUDICIAIRES\" and contains a PDF link labeled \"ANNUAIRE DES EXPERTS\" pointing to the expert directory document.",
+    "dateExtractionExplanation": "The most specific and reliable date appears in the PDF content itself: \"MAJ LE 10/03/2026\" on the first page, which gives an exact date. The page text also shows \"mise à jour : 10/03/2026\", and the PDF filename includes \"MAJ 10 MARS 26\", confirming the same date. I converted 10/03/2026 to ISO format 2026-03-10. No conflicting date was found.",
+    "errors": []
+  },
+  "totalUsage": {
+    "inputTokens": 30684,
+    "outputTokens": 1325,
+    "totalTokens": 32009
+  },
+  "rawToolData": {
+    "pageTitle": "EXPERTS JUDICIAIRES | Cour d'appel de Paris Paris",
+    "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Paris Paris Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) EXPERTS JUDICIAIRES 31/05/2018 - mise à jour : 10/03/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer Les experts judiciaires sont des professionnels de toutes les spécialités qui mettent une part de leur activité au service de la Justice. Ces professionnels sont inscrits sur une liste établie par la cour d'appel, après un examen attentif de leur candidature. Ils sont désignés par la cour d'appel et les tribunaux de son ressort, à l'occasion de litiges. Le rôle de l'expert est d'apporter un avis technique sur certains points précis. L'expertise judiciaire apporte au justiciable une garantie quant à la rigueur avec laquelle ses demandes vont être étudiées. Dans le cadre de la modernisation et de la simplification de la Justice, le ministère de la Justice a engagé, au cours de l’année 2024, des travaux visant à dématérialiser l’ensemble du processus d’inscription et de réinscription sur les listes d’experts judiciaires ainsi qu’à constituer un référentiel national unique. Après une phase d’expérimentation conduite dans plusieurs cours d’appel pilotes, ce dispositif sera généralisé à l’ensemble des juridictions dès le 1er janvier 2026. Ainsi, l’ensemble des demandes d’inscription initiale, de réinscription ou d’extension en vue de l’élaboration de la liste des experts judiciaires de l’année 2027, devront être déposées avant le 1er mars 2026 (décret n° 2004-1463 du 23 décembre 2004 relatif aux experts judiciaires – articles 6 et 10), exclusivement par voie dématérialisée, au moyen de la plateforme Démarches simplifiées. Les liens permettant d’accéder aux formulaires sont les suivants : Inscription initiale R",
+    "pdfLinks": [
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf",
+        "text": "ANNUAIRE DES EXPERTS\n        Téléchargement 2.24 Mo",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/voir%20lien.pdf",
+        "text": "voir lien ci-dessus\n        Téléchargement 184.26 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/voir%20lien_0.pdf",
+        "text": "voir lien ci-dessus\n        Téléchargement 184.26 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/voir%20lien_1.pdf",
+        "text": "voir lien ci-dessus\n        Téléchargement 184.26 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/discours%20pr%C3%A9sident.pdf",
+        "text": "Discours 2017 président Experts\n        Téléchargement 67.36 Ko",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/Discours%20PG.pdf",
+        "text": "Discours PG Experts 2017\n        Téléchargement 256.7 Ko",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/Declaration_dindependance_des_experts.pdf",
+        "text": "DECLARATION D'INDEPENDANCE DES EXPERTS\n        Téléchargement 44.78 Ko",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/Convention%20du%208%20juin%202009.pdf",
+        "text": "CONVENTION 8 JUIN 2009\n        Téléchargement 368.52 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/Convention%20du%2027%20juin%202007.pdf",
+        "text": "CONVENTION 27 JUIN 2007\n        Téléchargement 61.53 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/Convention%20du%204%20mai%202006.pdf",
+        "text": "CONVENTION 4 MAI 2006\n        Téléchargement 36.49 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2018-06/R%C3%A8gles%20d%27assujettissement%20%C3%A0%20la%20TVA%20applicables%20aux%20prestations%20r%C3%A9alis%C3%A9es%20par%20les%20collaborateurs%20du%20service%20de%20la%20justice.pdf",
+        "text": "REGLES D'ASSUJETTISSEMENT A LA TVA\n        Téléchargement 310.91 Ko",
+        "relevanceHint": "unknown"
+      }
+    ],
+    "pdfText": "COUR D’APPEL DE PARIS LISTE DES EXPERTS JUDICIAIRES ANNEE 2026 MAJ LE 10/03/2026 Service des Experts- 34 quai des Orfèvres -75055 Paris Cedex 01 TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêtés du 10 juin 2005 et du 12 mai 2006. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45 ANNEXES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 393 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 394 Service des Experts- 34 quai des Orfèvres -75055 Paris Cedex 01 experts.ca-paris@justice.fr Tél. 01.44.32.74.90 ou 01.44.32.69.52 Site Internet : www.ca-paris.justice.fr 1 Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêtés du 10 juin 2005 et du 12 mai 2006 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel...... conformément à la nomenclature suivante, qui se divise en branches : (ex. : A), rubriques (ex.: A.1.) et spécialités (ex. : A.1.1). A-AGRICULTURE - A"
+  },
+  "error": null
+}

@@ -1,0 +1,313 @@
+{
+  "court": "Besançon",
+  "agentId": "expert-search-mini",
+  "startedAt": "2026-03-24T22:02:58.342Z",
+  "finishedAt": "2026-03-24T22:03:14.092Z",
+  "totalMs": 15750,
+  "steps": [
+    {
+      "turn": 0,
+      "durationMs": 1273,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=EwrDacH9It2tkdUPxdvUaQ\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=EwrDacH9It2tkdUPxdvUaQ\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "durationMs": 2094,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "web_search",
+          "fullResult": {
+            "action": {
+              "type": "search",
+              "query": "Cour d'appel de Besançon experts judiciaires PDF site:cours-appel.justice.fr"
+            },
+            "sources": [
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/nimes/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/amiens/les-experts-judiciaires-pres-la-cour-dappel-damiens"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/douai/les-experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/paris/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/media/17947"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/angers/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/besancon/"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/colmar/les-experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/amiens/informations-relatives-la-nouvelle-nomenclature"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/chambery/ca-chambery-liste-des-experts-judiciaires-2025-formalites-dinscription"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/amiens/comment-devenir-expert-judiciaire"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/reims/les-experts"
+              },
+              {
+                "type": "url",
+                "url": "https://www.ca-besancon.justice.fr/art_pix/1_listeexperts2015.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2024-03/2024_Liste_experts_CA_974.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2021-04/EXPERTS%202021-CA%20CHAMBERY-Liste%20alphab%C3%A9tique%20.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.ca-besancon.justice.fr/art_pix/LISTE%20EXPERTS%202013.20.03.2013.pdf"
+              }
+            ]
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Accueil | Cour d'appel de Besançon",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Besançon Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) A LA UNE Actualités Je voudrais Trouver un tribunal près de chez moi Accéder directement à des formulaires Demande de certificat de non appel Demande de casier judiciaire Demande d'aide juridictionnelle Demande de copie d'une décision de justice Justice.fr Des réponses à mes questions Je cherche un avocat Je cherche un notaire Je cherche un commissaire de justice Je suis victime : mes droits et démarches Je suis tiré au sort pour être juré d'assises Tribunal judiciaire de Besançon Informations pratiques Tribunal judiciaire de Besançon 1 rue mégevand 25000 Besançon France Lundi 8h15-12h / 13h15-17h Mardi 8h15-12h / 13h15-17h Mercredi 8h15-12h / 13h15-17h Jeudi 8h15-12h / 13h15-17h Vendredi 8h15-12h / 13h15-17h Samedi Fermé Dimanche Fermé Téléphone 03-81-65-13-00 Tribunal judiciaire de Lons-le-Saunier Informations pratiques Tribunal d'instance de Lons-le-Saunier 295 rue Georges Trouillot 39000 Lons-le-Saunier France Lundi 8h30-12h/13h30-17h Mardi 8h30-12h/13h30-17h Mercredi 8h30-12h/13h30-17h Jeudi 8h30-12h/13h30-17h Vendredi 8h30-12h/13h30-17h Samedi Fermé Dimanche Fermé Téléphone 03-84-35-13-00 Tribunal judiciaire de Lons-le-Saunier Informations pratiques Tribunal judiciaire de Lons-le-Saunier 11 rue Pasteur 39015 Lons-le-Saunier France Lundi 8h30-12h / 13h30-17h Mardi 8h30-12h / 13h30-17h Mercredi 8h30-12h / 13h30-17h Jeudi 8h30-12h / 13h30-17h Vendredi 8h30-12h / 13h30-17h Samedi Fermé Dimanche Fermé Téléphone 03-84-35-13-00 Tribunal judiciaire de Vesoul Informations pratiques place du palais de justice place du palais de Justice 70 000 Vesoul France Lundi 8h30-12h / 13h30-16h30 Mardi 8h30-12h / 13h30-16h30 Mercredi 8h30-12h / 13h30-16h30 Jeudi 8h30-12h / 13h30-16h30 Vendredi 8h30-12h / 13h30-16h30 Samedi Fermé Dimanche Fermé Téléphone 03-84-78-58-00 Cité judiciaire de Montbéliard Informations pratiques Cité judiciaire de Montbéliard Rue Wolfgang Amadeus MOZART 25 209 Montbéliard France Lundi 8h30-12h /13h30 - 16h30 Mardi 8h30-12h /13h30 - 16h30 Mercredi 8h30-12h /13h30 - 16h30 Jeudi 8h30-12h /13h30 - 16h30 Vendredi 8h30-12h /13h30 - 16h30 Samedi Fermé Dimanche Fermé Téléphone 03-81-90-70-00 Cour d'appel de Besançon Informations pratiques Cour d'appel de Besançon - Palais de Justice de Besançon 1 rue mégevand 25000 Besançon France Lundi 9h-12h/13h30-17h Mardi 9h-12h/13h30-17h Mercredi 9h-12h/13h30-17h Jeudi 9h-12h/13h30-17h Vendredi 9h-12h/13h30-17h Samedi Fermé Dimanche Fermé Téléphone 03-81-65-13-00 Tribunal judiciaire de Montbelliard Informations pratiques Tribunal judiciaire de Montbelliard Rue Wolfgang Amadeus Mozart 25 209 Montbelliard France Lundi 8h30-12h/13h30-17h Mardi 8h30-12h/13h30-17h Mercredi 8h30-12h/13h30-17h Jeudi 8h30-12h/13h30-17h Vendredi 8h30-12h/13h30-17h Samedi Fermé Dimanche Fermé Téléphone 03-81-90-70-00 Tribunal judiciaire de Vesoul Informations pratiques Tribunal judiciaire de Vesoul 4 place du Palais 70000 Vesoul France Lundi 8h30-12h / 13h30-16h30 Mardi 8h30-12h / 13h30-16h30 Mercredi 8h30-12h / 13h30-16h30 Jeudi 8h30-12h / 13h30-16h30 Vendredi 8h30-12h / 13h30-16h30 Samedi Fermé Dimanche Fermé Téléphone 03-84-78-58-00 Accéder aux autres sites des cours d'appel Choisir une cour d’appel Agen Cour d'appel d'Agen Aix-en-Provence Cour d'appel d'Aix-en-Provence Amiens Cour d'appel d'Amiens Angers Cour d'appel d'Angers Basse-Terre Cour d'appel de Basse-Terre Bastia Cour d'appel de Bastia Besançon Cour d'appel de Besançon Bordeaux Cour d'appel de Bordeaux Bourges Cour d'appel de Bourges Caen Cour d'appel de Caen Cayenne Chambéry Cour d'appel de Chambéry Colmar Cour d'appel de Colmar Dijon Cour d'appel de Dijon Douai Cour d'appel de Douai Fort-de-France Cour d'appel de Fort-de-France Grenoble Cour d'appel de Grenoble Limoges Cour d'appel de Limoges Lyon Cour d'appel de Lyon Metz Cour d'appel de Metz Montpellier Cour d'appel de Montpellier Nancy Cour d'appel de Nancy Nîmes Cour d'appel de Nîmes Nouméa Cour d'appel de Nouméa Orléans Cour d'appel d'Orléans Papeete Paris Cour d'appel de Paris Pau Cour d'appel de Pau Poitiers Cour d'appel de Poitiers Reims Cour d'appel de Reims Rennes Cour d'appel de Rennes Riom Cour d'appel de Riom Rouen Courd d'appel de Rouen Saint-Denis Cour d’appel de Saint-Denis Toulouse Cour d'appel de Toulouse Versailles Cour d'appel de Versailles Saint-Pierre Saint-Pierre-et-Miquelon",
+            "pdfLinks": [],
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "durationMs": 1229,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": false,
+            "title": null,
+            "pageText": "",
+            "pdfLinks": [],
+            "error": "Unable to connect. Is the computer able to access the url?"
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "durationMs": 2596,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "web_search",
+          "fullResult": {
+            "action": {
+              "type": "search",
+              "query": "site:ca-besancon.justice.fr \"experts judiciaires\" Besançon PDF"
+            },
+            "sources": [
+              {
+                "type": "url",
+                "url": "https://www.ca-besancon.justice.fr/art_pix/Dossier_candidature_personnes_physique_2025.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.ca-besancon.justice.fr/art_pix/Liste%20Experts%20BESANCON%202010%20V3.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.ca-besancon.justice.fr/art_pix/LISTE%20EXPERTS%202013.20.03.2013.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-03/2025%20ANNUAIRE%20EXPERTS.pdf"
+              }
+            ]
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "web_search",
+          "fullResult": {
+            "action": {
+              "type": "search",
+              "query": "site:ca-besancon.justice.fr/art_pix \"Liste des Experts Judiciaires\" Besançon 2025 pdf"
+            },
+            "sources": [
+              {
+                "type": "url",
+                "url": "https://www.ca-besancon.justice.fr/art_pix/Dossier_candidature_personnes_physique_2025.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.ca-besancon.justice.fr/art_pix/Liste%20Experts%20BESANCON%202010%20V3.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.ca-besancon.justice.fr/art_pix/LISTE%20EXPERTS%202013.20.03.2013.pdf"
+              }
+            ]
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": false,
+            "title": null,
+            "pageText": "",
+            "pdfLinks": [],
+            "error": "Was there a typo in the url or port?"
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "durationMs": 1225,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "extractPdfDate",
+          "fullResult": {
+            "success": false,
+            "pdfText": "",
+            "pageCount": 0,
+            "error": "Unable to connect. Is the computer able to access the url?"
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 5,
+      "durationMs": 2993,
+      "events": [
+        {
+          "type": "model_text",
+          "text": "J’ai trouvé la page officielle de la Cour d’appel de Besançon, mais je n’ai pas pu extraire le PDF avec l’outil fourni.\n\n### Ce que j’ai trouvé\n- Le résultat de recherche officiel pointe vers un PDF sur le site legacy de la cour d’appel de Besançon : `ca-besancon.justice.fr/art_pix/LISTE%20EXPERTS%202013.20.03.2013.pdf` citeturn0search15turn1search2\n- Le PDF semble être intitulé **“Liste des Experts Judiciaires — Année 2013 (Version au 20/03/2013)”** d’après l’extrait de recherche. citeturn1search2\n- La page d’accueil officielle `ca-besancon.justice.fr` a bien été accessible, mais je n’y ai pas trouvé de lien PDF ni d’indication de date dans le texte récupéré. \n\n### Erreurs rencontrées\n- `fetchPage` sur le PDF a échoué avec une erreur de connexion.\n- `extractPdfDate` sur le PDF a aussi échoué avec une erreur de connexion.\n\n### Date la plus probable\n- En l’état, la seule date exploitable visible dans les sources est **20/03/2013** dans le nom du fichier / l’extrait de recherche. "
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "durationMs": 4335,
+    "usage": {
+      "inputTokens": 1463,
+      "outputTokens": 649,
+      "totalTokens": 2112
+    },
+    "result": {
+      "courtName": "Besançon",
+      "pageUrl": null,
+      "documentUrl": "https://ca-besancon.justice.fr/art_pix/LISTE%20EXPERTS%202013.20.03.2013.pdf",
+      "documentTitle": "Liste des Experts Judiciaires — Année 2013 (Version au 20/03/2013)",
+      "publicationDate": "2013-03-20",
+      "publicationDateSource": "filename",
+      "searchExplanation": "La recherche officielle a mené à un PDF hébergé sur le site legacy de la Cour d'appel de Besançon. La page d’accueil officielle a été consultée, mais aucun lien vers la liste des experts n’y a été trouvé dans le texte fourni. Le document identifié est le PDF \"LISTE EXPERTS 2013.20.03.2013.pdf\".",
+      "dateExtractionExplanation": "Aucune date exploitable n’a été trouvée dans le texte de la page ni dans le contenu PDF (non disponible). La seule date précise visible est dans le nom du fichier PDF et dans l’extrait de recherche : 20/03/2013. J’ai donc retenu 2013-03-20 comme date de publication, depuis le filename.",
+      "errors": []
+    }
+  },
+  "result": {
+    "courtName": "Besançon",
+    "pageUrl": null,
+    "documentUrl": "https://ca-besancon.justice.fr/art_pix/LISTE%20EXPERTS%202013.20.03.2013.pdf",
+    "documentTitle": "Liste des Experts Judiciaires — Année 2013 (Version au 20/03/2013)",
+    "publicationDate": "2013-03-20",
+    "publicationDateSource": "filename",
+    "searchExplanation": "La recherche officielle a mené à un PDF hébergé sur le site legacy de la Cour d'appel de Besançon. La page d’accueil officielle a été consultée, mais aucun lien vers la liste des experts n’y a été trouvé dans le texte fourni. Le document identifié est le PDF \"LISTE EXPERTS 2013.20.03.2013.pdf\".",
+    "dateExtractionExplanation": "Aucune date exploitable n’a été trouvée dans le texte de la page ni dans le contenu PDF (non disponible). La seule date précise visible est dans le nom du fichier PDF et dans l’extrait de recherche : 20/03/2013. J’ai donc retenu 2013-03-20 comme date de publication, depuis le filename.",
+    "errors": []
+  },
+  "totalUsage": {
+    "inputTokens": 42262,
+    "outputTokens": 1425,
+    "totalTokens": 43687
+  },
+  "rawToolData": {
+    "pageTitle": "Accueil | Cour d'appel de Besançon",
+    "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Besançon Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) A LA UNE Actualités Je voudrais Trouver un tribunal près de chez moi Accéder directement à des formulaires Demande de certificat de non appel Demande de casier judiciaire Demande d'aide juridictionnelle Demande de copie d'une décision de justice Justice.fr Des réponses à mes questions Je cherche un avocat Je cherche un notaire Je cherche un commissaire de justice Je suis victime : mes droits et démarches Je suis tiré au sort pour être juré d'assises Tribunal judiciaire de Besançon Informations pratiques Tribunal judiciaire de Besançon 1 rue mégevand 25000 Besançon France Lundi 8h15-12h / 13h15-17h Mardi 8h15-12h / 13h15-17h Mercredi 8h15-12h / 13h15-17h Jeudi 8h15-12h / 13h15-17h Vendredi 8h15-12h / 13h15-17h Samedi Fermé Dimanche Fermé Téléphone 03-81-65-13-00 Tribunal judiciaire de Lons-le-Saunier Informations pratiques Tribunal d'instance de Lons-le-Saunier 295 rue Georges Trouillot 39000 Lons-le-Saunier France Lundi 8h30-12h/13h30-17h Mardi 8h30-12h/13h30-17h Mercredi 8h30-12h/13h30-17h Jeudi 8h30-12h/13h30-17h Vendredi 8h30-12h/13h30-17h Samedi Fermé Dimanche Fermé Téléphone 03-84-35-13-00 Tribunal judiciaire de Lons-le-Saunier Informations pratiques Tribunal judiciaire de Lons-le-Saunier 11 rue Pasteur 39015 Lons-le-Saunier France Lundi 8h30-12h / 13h30-17h Mardi 8h30-12h / 13h30-17h Mercredi 8h30-12h / 13h30-17h Jeudi 8h30-12h / 13h30-17h Vendredi 8h30-12h / 13h30-17h Samedi Fermé Dimanche Fermé Téléphone 03-84-35-13-00 Tribunal judiciaire de Vesoul Informations pratiques place du palais de justice place du palais de Justice 70 000 Vesoul France Lundi 8h30-12h / 13h30-16h30 Mardi 8h30-12h / 13h30-16h30 Mercredi 8h30-12h / 13h30-16h30 Jeudi 8h30-12h / 13h30-16h30 Vendredi 8h30-1",
+    "pdfLinks": [],
+    "pdfText": ""
+  },
+  "error": null
+}
