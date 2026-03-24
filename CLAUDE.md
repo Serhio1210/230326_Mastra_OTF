@@ -1,4 +1,41 @@
 
+## How We Build Features
+
+### Feature workflow
+1. **Discuss** — decide if the feature is needed and what approach to take
+2. **Research** — use context7/mastra-docs MCP to verify the cleanest way
+3. **Build** — implement the feature in its own folder/file
+4. **Test** — create both a manual test script and a bun test file
+5. **Commit** — commit with a clear message referencing the phase/feature
+6. **Document** — write a doc in `docs/archive/` if there's a decision or finding worth recording
+
+### File naming
+- **Tests**: `src/tests/NN-feature-name.ts` (manual) + `src/tests/NN-feature-name.test.ts` (bun test)
+  - Numbered sequentially: `01-`, `02-`, `03-`... so commit history is clear
+  - Both files kept at every commit as a record of work
+- **Tools**: `src/mastra/tools/toolname/index.ts` — each tool gets its own folder
+- **Docs archive**: `docs/archive/YYYYMMDD_HHMM_description.md` — decisions, research, findings
+- **Roadmap**: `docs/YYYYMMDD_HHMM_description.md` — top-level docs folder
+
+### Commits
+- Commit after each feature/phase is complete and tested
+- Commit message format: `Phase N: short description` or `description of change`
+- Always push after commit
+- Keep files from previous phases — don't delete old test scripts
+
+### Documentation
+- Every skipped feature gets a doc explaining why
+- Every non-obvious technical decision gets a doc (e.g., 2-step structured output)
+- Docs are timestamped in the filename, not the content driving the naming
+- Archive folder is for research/decisions; top-level docs for roadmaps/plans
+
+### Before adding a feature
+- Check if it's actually needed for our use case (vs the reference project's use case)
+- Research latest approach via context7 and mastra-docs MCP
+- Discuss trade-offs before building
+
+---
+
 Default to using Bun instead of Node.js.
 
 - Use `bun <file>` instead of `node <file>` or `ts-node <file>`
