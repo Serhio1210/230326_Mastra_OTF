@@ -1,39 +1,20 @@
 import { mastra } from "./mastra/index.ts";
+import { expertFinderResultSchema } from "./mastra/schemas/expert-finder.ts";
 
 const agent = mastra.getAgent("expert-search-agent");
+const court = process.argv[2] || "Paris";
 
-console.log("Searching for: Cours d'appel de Paris - Liste des experts judiciaires\n");
+console.log(`Searching for: Cour d'appel de ${court} — experts judiciaires\n`);
 
 const result = await agent.generate(
-  `Recherche la liste officielle des experts judiciaires de la Cour d'appel de Paris.
-
-  Je cherche le site officiel où on peut consulter cette liste.
-  Trouve le site web officiel, vérifie qu'il s'agit bien du site de la juridiction ou du ministère de la Justice,
-  et donne-moi l'URL exacte ainsi qu'une description de ce qu'on y trouve.`
+  `Trouve la liste officielle des experts judiciaires de la Cour d'appel de ${court}.
+Trouve le site web officiel, le lien vers le PDF de la liste, et la date de publication.`,
+  {
+    structuredOutput: {
+      schema: expertFinderResultSchema,
+    },
+  }
 );
 
-console.log(result.text);
-
-// Extract sources from tool results (Anthropic web search)
-const webSearchResults = result.steps?.flatMap(
-  (step: any) =>
-    step.toolResults?.filter(
-      (tr: any) => tr.toolName === "web_search"
-    ) ?? []
-) ?? [];
-
-if (webSearchResults.length > 0) {
-  const urls = new Set<string>();
-  for (const tr of webSearchResults) {
-    const sources = tr.result?.sources ?? tr.output?.sources ?? [];
-    for (const s of sources) {
-      if (s.url) urls.add(s.url);
-    }
-  }
-  if (urls.size > 0) {
-    console.log("\n--- Sources visited ---");
-    for (const url of urls) {
-      console.log(`- ${url}`);
-    }
-  }
-}
+const output = result.object;
+console.log(JSON.stringify(output, null, 2));
