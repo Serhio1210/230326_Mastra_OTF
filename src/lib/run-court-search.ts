@@ -3,6 +3,12 @@ import { generateText, Output } from "ai";
 import { mastra } from "../mastra/index.ts";
 import { expertFinderResultSchema, type ExpertFinderResult } from "../mastra/schemas/expert-finder.ts";
 
+export type TokenUsage = {
+  inputTokens: number;
+  outputTokens: number;
+  totalTokens: number;
+};
+
 export type CourtSearchResult = {
   court: string;
   success: boolean;
@@ -12,9 +18,18 @@ export type CourtSearchResult = {
     extractionMs: number;
     totalMs: number;
   };
+  usage: {
+    agent: TokenUsage;
+    extraction: TokenUsage;
+    total: TokenUsage;
+  };
   error: string | null;
   agentText: string;
 };
+
+function emptyUsage(): TokenUsage {
+  return { inputTokens: 0, outputTokens: 0, totalTokens: 0 };
+}
 
 export async function runCourtSearch(court: string): Promise<CourtSearchResult> {
   const totalStart = Date.now();
@@ -32,11 +47,17 @@ export async function runCourtSearch(court: string): Promise<CourtSearchResult> 
     const agentMs = Date.now() - agentStart;
     const agentText = agentResult.text;
 
+    const agentUsage: TokenUsage = {
+      inputTokens: agentResult.usage?.inputTokens ?? 0,
+      outputTokens: agentResult.usage?.outputTokens ?? 0,
+      totalTokens: agentResult.usage?.totalTokens ?? 0,
+    };
+
     // Step 2: Clean Sonnet 4.6 extraction with native structured output
     const extractionStart = Date.now();
     const agentSummary = agentText.slice(0, 3000);
 
-    const { output } = await generateText({
+    const extractionResult = await generateText({
       model: anthropic("claude-sonnet-4-6"),
       output: Output.object({
         schema: expertFinderResultSchema,
@@ -62,7 +83,14 @@ Date format: YYYY-MM-DD. Convert French dates (DD/MM/YYYY → YYYY-MM-DD).`,
     });
 
     const extractionMs = Date.now() - extractionStart;
-    const parsed = expertFinderResultSchema.parse(output);
+
+    const extractionUsage: TokenUsage = {
+      inputTokens: extractionResult.usage?.inputTokens ?? 0,
+      outputTokens: extractionResult.usage?.outputTokens ?? 0,
+      totalTokens: extractionResult.usage?.totalTokens ?? 0,
+    };
+
+    const parsed = expertFinderResultSchema.parse(extractionResult.output);
 
     return {
       court,
@@ -72,6 +100,15 @@ Date format: YYYY-MM-DD. Convert French dates (DD/MM/YYYY → YYYY-MM-DD).`,
         agentMs,
         extractionMs,
         totalMs: Date.now() - totalStart,
+      },
+      usage: {
+        agent: agentUsage,
+        extraction: extractionUsage,
+        total: {
+          inputTokens: agentUsage.inputTokens + extractionUsage.inputTokens,
+          outputTokens: agentUsage.outputTokens + extractionUsage.outputTokens,
+          totalTokens: agentUsage.totalTokens + extractionUsage.totalTokens,
+        },
       },
       error: null,
       agentText: agentText.slice(0, 500),
@@ -85,6 +122,11 @@ Date format: YYYY-MM-DD. Convert French dates (DD/MM/YYYY → YYYY-MM-DD).`,
         agentMs: 0,
         extractionMs: 0,
         totalMs: Date.now() - totalStart,
+      },
+      usage: {
+        agent: emptyUsage(),
+        extraction: emptyUsage(),
+        total: emptyUsage(),
       },
       error: error instanceof Error ? error.message : "Unknown error",
       agentText: "",
