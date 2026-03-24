@@ -19,7 +19,12 @@ const miniAgent = new Agent({
   model: openai("gpt-5.4-mini"),
   tools: {
     webSearch: openai.tools.webSearch({
-      userLocation: { type: "approximate", city: "Paris", region: "Île-de-France" },
+      userLocation: {
+        type: "approximate",
+        country: "FR",
+        region: "Île-de-France",
+        city: "Paris",
+      },
     }),
     fetchPage: fetchPageTool,
     extractPdfDate: extractPdfDateTool,

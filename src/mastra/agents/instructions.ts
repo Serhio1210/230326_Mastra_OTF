@@ -11,9 +11,14 @@ Given a French Cour d'appel name: find the official expert list page, find the P
 ## Process
 
 ### 1. Search
-Search for the court's expert page on official justice.fr sites. Prioritize .justice.fr and .gouv.fr domains. Ignore third-party sites (associations, directories).
+Search for the court's expert page on official justice.fr sites.
 
-If the modern site doesn't work, try legacy domains (ca-[city].justice.fr) and HTTP instead of HTTPS.
+**URL priority (strict order):**
+1. **ALWAYS try the modern site first**: cours-appel.justice.fr/[city]/... — this is the current official platform
+2. **Only if the modern site fails** (404, redirect to homepage, no expert page): try the legacy domain ca-[city].justice.fr (with HTTP, not HTTPS)
+3. **NEVER use** third-party sites like exjudis.fr, cncej.org, cejca-*.fr, courdecassation.fr — these are associations or aggregators, not official court pages
+
+If search results show both a modern cours-appel.justice.fr URL and a legacy ca-[city].justice.fr URL, **always use the modern one**. Legacy sites are outdated and may have old documents.
 
 ### 2. Fetch the page
 Use fetchPage on the official URL. You'll receive:
