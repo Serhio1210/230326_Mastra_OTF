@@ -1,0 +1,213 @@
+{
+  "batch": "4",
+  "courts": [
+    "Grenoble",
+    "Limoges",
+    "Metz",
+    "Montpellier",
+    "Nancy"
+  ],
+  "results": [
+    {
+      "court": "Grenoble",
+      "success": true,
+      "result": {
+        "courtName": "Grenoble",
+        "pageUrl": "https://www.cours-appel.justice.fr/grenoble/experts-et-traducteurs-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/ANNUAIRE%20E.J%202026%20INTERNET_0.pdf",
+        "documentTitle": "ANNUAIRE E.J 2026 INTERNET",
+        "publicationDate": "2026-02-26",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official experts and translators page for the Cour d'appel de Grenoble was identified from the provided findings, and the PDF link labeled as the official judicial experts directory was extracted from that page/context.",
+        "dateExtractionExplanation": "The page text mentions a later update date (27/02/2026), but the PDF itself states 'Mise à jour le 26 février 2026' on page 1. Since the PDF content is the authoritative source, the publication date was taken from the PDF and normalized to YYYY-MM-DD.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 8270,
+        "extractionMs": 1614,
+        "totalMs": 9884
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 24737,
+          "outputTokens": 403,
+          "totalTokens": 25140
+        },
+        "extraction": {
+          "inputTokens": 549,
+          "outputTokens": 227,
+          "totalTokens": 776
+        },
+        "total": {
+          "inputTokens": 25286,
+          "outputTokens": 630,
+          "totalTokens": 25916
+        }
+      },
+      "error": null,
+      "agentText": "Voici la liste officielle trouvée pour la **Cour d'appel de Grenoble** :\n\n- **Page officielle** : `https://www.cours-appel.justice.fr/grenoble/experts-et-traducteurs-judiciaires`\n- **PDF officiel des experts judiciaires** : `https://www.cours-appel.justice.fr/sites/default/files/2026-02/ANNUAIRE%20E.J%202026%20INTERNET_0.pdf`\n- **Date officielle du document** : **2026-02-26**\n- **Où la date a été trouvée** :\n  - sur la page officielle : « **mise à jour : 27/02/2026** »\n  - dans le PDF, page 1 : "
+    },
+    {
+      "court": "Limoges",
+      "success": true,
+      "result": {
+        "courtName": "Cour d'appel de Limoges",
+        "pageUrl": "https://www.cours-appel.justice.fr/limoges/les-experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/ANNUEJ_2026.pdf",
+        "documentTitle": "LISTE DES EXPERTS JUDICIAIRES ANNÉE 2026",
+        "publicationDate": "2025-11-14",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official experts page was identified from the provided findings for the Cour d'appel de Limoges. The linked PDF on that page is the official expert list document.",
+        "dateExtractionExplanation": "The publication date was taken from the first page of the PDF, where it states 'dressée par l’Assemblée Générale de la Cour le 14 Novembre 2025'. This was converted to ISO format as 2025-11-14.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 7659,
+        "extractionMs": 1635,
+        "totalMs": 9294
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 24705,
+          "outputTokens": 423,
+          "totalTokens": 25128
+        },
+        "extraction": {
+          "inputTokens": 541,
+          "outputTokens": 208,
+          "totalTokens": 749
+        },
+        "total": {
+          "inputTokens": 25246,
+          "outputTokens": 631,
+          "totalTokens": 25877
+        }
+      },
+      "error": null,
+      "agentText": "Voici la liste officielle des experts judiciaires de la Cour d’appel de Limoges :\n\n- **Nom de la cour** : Cour d’appel de Limoges\n- **Page officielle** : https://www.cours-appel.justice.fr/limoges/les-experts-judiciaires\n- **PDF officiel** : https://www.cours-appel.justice.fr/sites/default/files/2026-02/ANNUEJ_2026.pdf\n- **Date officielle dans le PDF** : **2025-11-14**\n- **Où j’ai trouvé la date** : sur la **première page du PDF**, dans la mention : *“dressée par l’Assemblée Générale de la Cour "
+    },
+    {
+      "court": "Metz",
+      "success": true,
+      "result": {
+        "courtName": "Cour d'appel de Metz",
+        "pageUrl": "https://www.cours-appel.justice.fr/metz/experts-judiciaires",
+        "documentUrl": null,
+        "documentTitle": "Liste des experts 2024",
+        "publicationDate": "2024-06-01",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official experts page for the Cour d'appel de Metz was identified as https://www.cours-appel.justice.fr/metz/experts-judiciaires. The agent’s findings indicate that this page contains the reference link titled \"Liste des experts 2024\" for the official expert list PDF, but the exact PDF URL was not provided.",
+        "dateExtractionExplanation": "The publication date was taken from the PDF content, which begins with the authoritative heading \"COUR D’APPEL DE METZ LISTE DES EXPERTS - 2024\". No more precise date such as a \"MAJ le\" line was available in the extracted text, so the document was dated to 2024-06-01 based on the 2024 PDF content reference.",
+        "errors": [
+          "Exact PDF URL not found in the provided findings."
+        ]
+      },
+      "timing": {
+        "agentMs": 7917,
+        "extractionMs": 1850,
+        "totalMs": 9767
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 24375,
+          "outputTokens": 449,
+          "totalTokens": 24824
+        },
+        "extraction": {
+          "inputTokens": 544,
+          "outputTokens": 244,
+          "totalTokens": 788
+        },
+        "total": {
+          "inputTokens": 24919,
+          "outputTokens": 693,
+          "totalTokens": 25612
+        }
+      },
+      "error": null,
+      "agentText": "Voici la liste officielle repérée pour la Cour d’appel de Metz :\n\n- **Cour d’appel** : Cour d’appel de Metz\n- **Page officielle** : https://www.cours-appel.justice.fr/metz/experts-judiciaires \n- **PDF officiel** : la page indique le lien **« Liste des experts 2024 »** comme document de référence. \n- **Date officielle dans le PDF** : **2024-06-01** — le PDF commence par **« COUR D’APPEL DE METZ LISTE DES EXPERTS - 2024 »**, ce qui est l’indication autoritative trouvée dans le document. \n\nJ’ai aus"
+    },
+    {
+      "court": "Montpellier",
+      "success": true,
+      "result": {
+        "courtName": "Cour d'appel de Montpellier",
+        "pageUrl": "https://www.cours-appel.justice.fr/montpellier/liste-des-experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/ANNUEJ_EXP_2026.pdf",
+        "documentTitle": "ANNUEJ_EXP_2026.pdf",
+        "publicationDate": "2026-02-04",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official experts page for the Cour d'appel de Montpellier was identified as 'Liste des Experts Judiciaires | Cour d'appel de Montpellier' on the official justice website. The page links to the current expert list PDF titled 'ANNUEJ_EXP_2026.pdf'. A related official page, 'Partenaires de justice', also points to the same current experts list.",
+        "dateExtractionExplanation": "The publication date was taken from the PDF content, which shows 'MAJ 04/02/2026' on the first page. This was treated as the authoritative date and converted from DD/MM/YYYY to YYYY-MM-DD.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 6045,
+        "extractionMs": 1689,
+        "totalMs": 7735
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 21867,
+          "outputTokens": 465,
+          "totalTokens": 22332
+        },
+        "extraction": {
+          "inputTokens": 666,
+          "outputTokens": 234,
+          "totalTokens": 900
+        },
+        "total": {
+          "inputTokens": 22533,
+          "outputTokens": 699,
+          "totalTokens": 23232
+        }
+      },
+      "error": null,
+      "agentText": "Voici la source officielle trouvée pour la Cour d’appel de Montpellier :\n\n- **Nom de la cour** : Cour d’appel de Montpellier  \n- **Page officielle** : `Liste des Experts Judiciaires | Cour d'appel de Montpellier` ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/montpellier/liste-des-experts-judiciaires?utm_source=openai))\n- **PDF officiel** : `ANNUEJ_EXP_2026.pdf` ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/sites/default/files/2026-02/ANNUEJ_EXP_2026.pdf?utm_source=o"
+    },
+    {
+      "court": "Nancy",
+      "success": true,
+      "result": {
+        "courtName": "Cour d'appel de Nancy",
+        "pageUrl": "https://www.cours-appel.justice.fr/nancy/les-experts-judiciaires",
+        "documentUrl": null,
+        "documentTitle": "Liste des experts judiciaires - ressort de la cour d'appel de Nancy (mise à jour au 12.03.2026)",
+        "publicationDate": "2026-03-12",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official experts-judiciaires page for Cour d'appel de Nancy was identified at https://www.cours-appel.justice.fr/nancy/les-experts-judiciaires. The agent’s findings indicate that the official PDF list is linked from this page, titled “Liste des experts judiciaires - ressort de la cour d'appel de Nancy (mise à jour au 12.03.2026)”.",
+        "dateExtractionExplanation": "The authoritative publication date was taken from the PDF content / first page header, which states the list was established for the ressort of the Cour d'appel de Nancy for the year 2026. The site and link text also confirm the update date as 12/03/2026, converted to YYYY-MM-DD as 2026-03-12.",
+        "errors": [
+          "Direct PDF URL could not be retrieved from the provided findings; only the title/link reference was available."
+        ]
+      },
+      "timing": {
+        "agentMs": 11569,
+        "extractionMs": 1820,
+        "totalMs": 13389
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 47469,
+          "outputTokens": 881,
+          "totalTokens": 48350
+        },
+        "extraction": {
+          "inputTokens": 676,
+          "outputTokens": 281,
+          "totalTokens": 957
+        },
+        "total": {
+          "inputTokens": 48145,
+          "outputTokens": 1162,
+          "totalTokens": 49307
+        }
+      },
+      "error": null,
+      "agentText": "Voici la **liste officielle des experts judiciaires de la Cour d’appel de Nancy** :\n\n- **Nom de la cour** : Cour d’appel de Nancy\n- **Page officielle** : `https://www.cours-appel.justice.fr/nancy/les-experts-judiciaires`\n- **PDF officiel** : le document **“Liste des experts judiciaires - ressort de la cour d'appel de Nancy (mise à jour au 12.03.2026)”**, accessible depuis la page officielle via le lien de téléchargement. citeturn1view0\n- **Date officielle dans le PDF** : **2026-03-12**\n- **Où"
+    }
+  ],
+  "batchTime": "13.4",
+  "totalCost": 0.12676425
+}

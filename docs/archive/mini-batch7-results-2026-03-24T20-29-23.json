@@ -1,0 +1,259 @@
+{
+  "batch": "7",
+  "courts": [
+    "Basse-Terre",
+    "Cayenne",
+    "Fort-de-France",
+    "Nouméa",
+    "Papeete",
+    "Saint-Denis"
+  ],
+  "results": [
+    {
+      "court": "Basse-Terre",
+      "success": true,
+      "result": {
+        "courtName": "Basse-Terre",
+        "pageUrl": "https://www.cours-appel.justice.fr/basse-terre/experts-judiciaires-2026",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/LISTE%20DES%20EXPERTS%20JUDICIAIRES%20CABT%202026.pdf",
+        "documentTitle": "LISTE DES EXPERTS JUDICIAIRES CABT 2026",
+        "publicationDate": "2025-12-11",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "Found the official Cour d’appel de Basse-Terre experts page and its linked PDF from the provided findings.",
+        "dateExtractionExplanation": "The page shows a later update date ('mise à jour : 02/03/2026'), but the authoritative date comes from the PDF content: the first page states the list was drawn up by the Cour d’appel de Basse-Terre in general assembly on 11 December 2025, which converts to 2025-12-11.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 8879,
+        "extractionMs": 1682,
+        "totalMs": 10561
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 25081,
+          "outputTokens": 605,
+          "totalTokens": 25686
+        },
+        "extraction": {
+          "inputTokens": 606,
+          "outputTokens": 237,
+          "totalTokens": 843
+        },
+        "total": {
+          "inputTokens": 25687,
+          "outputTokens": 842,
+          "totalTokens": 26529
+        }
+      },
+      "error": null,
+      "agentText": "Voici la liste officielle trouvée pour la **Cour d’appel de Basse-Terre** :\n\n- **Page officielle** : https://www.cours-appel.justice.fr/basse-terre/experts-judiciaires-2026\n- **PDF officiel** : https://www.cours-appel.justice.fr/sites/default/files/2026-03/LISTE%20DES%20EXPERTS%20JUDICIAIRES%20CABT%202026.pdf\n- **Date officielle de publication / arrêté de la liste** : **2025-12-11**\n- **Où la date a été trouvée** :\n  - sur la **page web** : mention **“mise à jour : 02/03/2026”**\n  - dans le **PD"
+    },
+    {
+      "court": "Cayenne",
+      "success": true,
+      "result": {
+        "courtName": "Cayenne",
+        "pageUrl": null,
+        "documentUrl": "https://www.courdecassation.fr/files/files/Experts/2022_11_23_Liste_experts_ca_cayenne.pdf",
+        "documentTitle": "LISTE DES EXPERTS JUDICIAIRES",
+        "publicationDate": "2022-11-23",
+        "publicationDateSource": "filename",
+        "searchExplanation": "The findings indicate that a web search did not resolve a justice.fr page, but did identify an official PDF hosted on courdecassation.fr titled 'LISTE DES EXPERTS JUDICIAIRES' for the Cour d’appel de Cayenne.",
+        "dateExtractionExplanation": "The only date available from the provided findings is embedded in the PDF filename (2022_11_23_Liste_experts_ca_cayenne.pdf), which converts to 2022-11-23. The agent reported that direct PDF content extraction failed because the PDF was considered invalid by the available tool, so no separate page-text or pdf-content date could be confirmed from the document body.",
+        "errors": [
+          "Could not resolve a justice.fr page for the Court of Appeal of Cayenne.",
+          "PDF content date could not be verified because extractPdfDate reported an invalid PDF structure.",
+          "fetchPage did not return an exploitable page."
+        ]
+      },
+      "timing": {
+        "agentMs": 10283,
+        "extractionMs": 2035,
+        "totalMs": 12318
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 28510,
+          "outputTokens": 589,
+          "totalTokens": 29099
+        },
+        "extraction": {
+          "inputTokens": 632,
+          "outputTokens": 270,
+          "totalTokens": 902
+        },
+        "total": {
+          "inputTokens": 29142,
+          "outputTokens": 859,
+          "totalTokens": 30001
+        }
+      },
+      "error": null,
+      "agentText": "J’ai trouvé la liste officielle la plus récente que j’ai pu identifier pour la Cour d’appel de Cayenne, mais je n’ai pas pu l’ouvrir correctement avec les outils fournis.\n\n- **Cour d’appel** : Cayenne\n- **Page source trouvée** : non résolue via `justice.fr` ; la recherche a remonté un PDF hébergé sur `courdecassation.fr` intitulé **“LISTE DES EXPERTS JUDICIAIRES”**. \n- **PDF** : `https://www.courdecassation.fr/files/files/Experts/2022_11_23_Liste_experts_ca_cayenne.pdf` \n- **Date officielle dans"
+    },
+    {
+      "court": "Fort-de-France",
+      "success": true,
+      "result": {
+        "courtName": "Cour d'appel de Fort-de-France",
+        "pageUrl": "https://www.cours-appel.justice.fr/fort-de-france/experts-judiciaires",
+        "documentUrl": null,
+        "documentTitle": "Liste des experts 2025",
+        "publicationDate": null,
+        "publicationDateSource": "not-found",
+        "searchExplanation": "The official experts page for the Cour d'appel de Fort-de-France was identified at https://www.cours-appel.justice.fr/fort-de-france/experts-judiciaires. The agent’s findings indicate that this page contains an attachment section with a PDF link titled \"Liste des experts 2025\".",
+        "dateExtractionExplanation": "The page shows a last update date of 15/01/2026, but that is only page metadata and not authoritative for the PDF. The PDF itself could not be retrieved or parsed with the available tools, so no authoritative publication date could be confirmed from the PDF content.",
+        "errors": [
+          "PDF link present on page but could not be retrieved/extracted for date verification."
+        ]
+      },
+      "timing": {
+        "agentMs": 7427,
+        "extractionMs": 1830,
+        "totalMs": 9257
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 24026,
+          "outputTokens": 695,
+          "totalTokens": 24721
+        },
+        "extraction": {
+          "inputTokens": 688,
+          "outputTokens": 220,
+          "totalTokens": 908
+        },
+        "total": {
+          "inputTokens": 24714,
+          "outputTokens": 915,
+          "totalTokens": 25629
+        }
+      },
+      "error": null,
+      "agentText": "Voici ce que j’ai trouvé pour la **Cour d’appel de Fort-de-France** :\n\n- **Page officielle :** *Experts judiciaires | Cour d'appel de Fort-de-France*  \n  URL : `https://www.cours-appel.justice.fr/fort-de-france/experts-judiciaires` \n- Sur cette page, la section **“Pièces jointes”** indique un document **“Liste des experts 2025”** à télécharger. \n- La page officielle affiche aussi une **mise à jour du 15/01/2026** en en-tête. \n\nEn revanche, je n’ai **pas pu récupérer le PDF via `fetchPage`/`extra"
+    },
+    {
+      "court": "Nouméa",
+      "success": true,
+      "result": {
+        "courtName": "Nouméa",
+        "pageUrl": "https://www.cours-appel.justice.fr/noumea/experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/20260317%20Liste%20des%20experts%202026.pdf",
+        "documentTitle": "Liste des experts 2026",
+        "publicationDate": "2026-03-17",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official Cour d'appel de Nouméa experts page was identified from the provided findings at https://www.cours-appel.justice.fr/noumea/experts-judiciaires. The official PDF link was taken directly from the same findings: https://www.cours-appel.justice.fr/sites/default/files/2026-03/20260317%20Liste%20des%20experts%202026.pdf.",
+        "dateExtractionExplanation": "The authoritative publication date was taken from the PDF content, as instructed. The PDF is the 2026 list of experts judiciaires, and the filename also contains 20260317, consistent with the PDF publication date. The page text mentioned a site update date of 17/03/2026, but the PDF content is the authoritative source, so the extracted date is 2026-03-17.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 8120,
+        "extractionMs": 2057,
+        "totalMs": 10177
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 25554,
+          "outputTokens": 420,
+          "totalTokens": 25974
+        },
+        "extraction": {
+          "inputTokens": 577,
+          "outputTokens": 287,
+          "totalTokens": 864
+        },
+        "total": {
+          "inputTokens": 26131,
+          "outputTokens": 707,
+          "totalTokens": 26838
+        }
+      },
+      "error": null,
+      "agentText": "Voici la liste officielle trouvée pour la **Cour d'appel de Nouméa** :\n\n- **Page officielle** : https://www.cours-appel.justice.fr/noumea/experts-judiciaires\n- **PDF officiel** : https://www.cours-appel.justice.fr/sites/default/files/2026-03/20260317%20Liste%20des%20experts%202026.pdf\n- **Date officielle dans le PDF** : **2026-03-17**\n- **Où j’ai trouvé la date** :\n  - sur la page, l’indiation est **« mise à jour : 17/03/2026 »** ;\n  - dans le PDF, la première page indique **« LISTE DES EXPERTS "
+    },
+    {
+      "court": "Papeete",
+      "success": true,
+      "result": {
+        "courtName": "Papeete",
+        "pageUrl": null,
+        "documentUrl": null,
+        "documentTitle": null,
+        "publicationDate": null,
+        "publicationDateSource": "not-found",
+        "searchExplanation": "The findings indicate the official Cour d'appel de Papeete site exists (ca-papeete.justice.fr) and that a Ministry of Justice page linked to it was located, but the specific experts judiciaires list page could not be reliably reached and no PDF URL could be extracted.",
+        "dateExtractionExplanation": "No PDF was accessible, so the authoritative publication date could not be read from PDF content. Therefore the date remains unavailable.",
+        "errors": [
+          "Could not reliably identify the experts judiciaires list page.",
+          "Could not extract a PDF URL for the expert list.",
+          "Could not access PDF content to determine the publication date."
+        ]
+      },
+      "timing": {
+        "agentMs": 10792,
+        "extractionMs": 1730,
+        "totalMs": 12522
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 38123,
+          "outputTokens": 636,
+          "totalTokens": 38759
+        },
+        "extraction": {
+          "inputTokens": 512,
+          "outputTokens": 167,
+          "totalTokens": 679
+        },
+        "total": {
+          "inputTokens": 38635,
+          "outputTokens": 803,
+          "totalTokens": 39438
+        }
+      },
+      "error": null,
+      "agentText": "Je n’ai pas pu confirmer proprement la liste officielle pour la Cour d’appel de Papeete avec les sources accessibles ici.\n\nCe que j’ai pu vérifier :\n- le site officiel de la cour existe sous `ca-papeete.justice.fr` ; j’ai trouvé une page officielle du ministère de la Justice liée à la Cour d’appel de Papeete. \n- en revanche, je n’ai pas réussi à atteindre de façon fiable la page contenant la liste des experts judiciaires ni à extraire un PDF exploitable pour lire la date officielle dans le docum"
+    },
+    {
+      "court": "Saint-Denis",
+      "success": true,
+      "result": {
+        "courtName": "Cour d'appel de Saint-Denis",
+        "pageUrl": "https://www.cours-appel.justice.fr/saint-denis/experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-01/2025_Liste_experts_CA_974.pdf",
+        "documentTitle": "2025_Liste_experts_CA_974.pdf",
+        "publicationDate": "2025-01-01",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official experts judiciaires page for the Cour d'appel de Saint-Denis was identified from the provided findings at https://www.cours-appel.justice.fr/saint-denis/experts-judiciaires. The PDF link was found on that page and corresponds to 2025_Liste_experts_CA_974.pdf.",
+        "dateExtractionExplanation": "The authoritative date was taken from the PDF content itself. The first page states 'LISTES DRESSÉES POUR L’ANNÉE 2025', which indicates the publication year 2025. Converted to ISO format as 2025-01-01.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 8898,
+        "extractionMs": 1653,
+        "totalMs": 10551
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 29256,
+          "outputTokens": 439,
+          "totalTokens": 29695
+        },
+        "extraction": {
+          "inputTokens": 613,
+          "outputTokens": 241,
+          "totalTokens": 854
+        },
+        "total": {
+          "inputTokens": 29869,
+          "outputTokens": 680,
+          "totalTokens": 30549
+        }
+      },
+      "error": null,
+      "agentText": "Voici la liste officielle trouvée pour la **Cour d'appel de Saint-Denis** :\n\n- **Page officielle** : https://www.cours-appel.justice.fr/saint-denis/experts-judiciaires citeturn1view0\n- **PDF officiel** : `2025_Liste_experts_CA_974.pdf` (lien trouvé sur la page officielle) citeturn1view0turn0search16\n- **Date de publication officielle dans le PDF** : **2025-01-01**  \n  - Justification : le PDF indique en première page **“LISTES DRESSÉES POUR L’ANNÉE 2025”**, ce qui est la date/année autori"
+    }
+  ],
+  "batchTime": "19.8",
+  "totalCost": 0.15226050000000002
+}

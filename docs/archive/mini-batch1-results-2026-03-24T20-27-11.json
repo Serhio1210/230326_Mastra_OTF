@@ -1,0 +1,209 @@
+{
+  "batch": "1",
+  "courts": [
+    "Paris",
+    "Aix-en-Provence",
+    "Lyon",
+    "Bordeaux",
+    "Amiens"
+  ],
+  "results": [
+    {
+      "court": "Aix-en-Provence",
+      "success": true,
+      "result": {
+        "courtName": "Aix-en-Provence",
+        "pageUrl": "https://www.cours-appel.justice.fr/aix-en-provence/experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-12/Annuaire%20Experts%20D%C3%A9cembre%202025.pdf",
+        "documentTitle": "Annuaire des experts Décembre 2025",
+        "publicationDate": "2025-12-10",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "I used the provided agent findings indicating the official Cour d'appel d'Aix-en-Provence \"Experts judiciaires\" page on justice.fr, which links to the official PDF annuaire.",
+        "dateExtractionExplanation": "The authoritative publication date was explicitly identified in the PDF content on page 0 as \"December 10, 2025\" and converted to ISO format YYYY-MM-DD.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 13335,
+        "extractionMs": 3210,
+        "totalMs": 16545
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 27514,
+          "outputTokens": 684,
+          "totalTokens": 28198
+        },
+        "extraction": {
+          "inputTokens": 868,
+          "outputTokens": 195,
+          "totalTokens": 1063
+        },
+        "total": {
+          "inputTokens": 28382,
+          "outputTokens": 879,
+          "totalTokens": 29261
+        }
+      },
+      "error": null,
+      "agentText": "Voici la **liste officielle des experts judiciaires** de la Cour d’appel d’Aix-en-Provence, trouvée sur le site officiel **justice.fr**. La page « Experts judiciaires » pointe vers l’annuaire PDF officiel intitulé **“Annuaire des experts Décembre 2025”**. ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/aix-en-provence/experts-judiciaires))\n\n- **Cour** : Cour d’appel d’Aix-en-Provence. ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/aix-en-provence/experts-judiciaires)) "
+    },
+    {
+      "court": "Amiens",
+      "success": true,
+      "result": {
+        "courtName": "Cour d’appel d’Amiens",
+        "pageUrl": "https://www.cours-appel.justice.fr/amiens",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-03/2025%20-%20Liste%20des%20experts%20judiciaires.pdf",
+        "documentTitle": "2025 - Liste des experts judiciaires",
+        "publicationDate": "2022-12-05",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official Amiens Court of Appeal page was identified as https://www.cours-appel.justice.fr/amiens. The PDF link provided in the findings points to the official expert list document on the same domain.",
+        "dateExtractionExplanation": "The authoritative date was taken from the PDF content, where the first page explicitly shows 'ARRÊTÉ DU 05 DÉCEMBRE 2022'. This was converted from French date format to YYYY-MM-DD as 2022-12-05. The 2025 year in the filename appears to refer to the file path/name, not the publication date.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 11253,
+        "extractionMs": 1742,
+        "totalMs": 12995
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 20165,
+          "outputTokens": 413,
+          "totalTokens": 20578
+        },
+        "extraction": {
+          "inputTokens": 569,
+          "outputTokens": 243,
+          "totalTokens": 812
+        },
+        "total": {
+          "inputTokens": 20734,
+          "outputTokens": 656,
+          "totalTokens": 21390
+        }
+      },
+      "error": null,
+      "agentText": "Voici la liste officielle trouvée pour la Cour d’appel d’Amiens :\n\n- **Nom de la cour** : Cour d’appel d’Amiens\n- **Page officielle** : https://www.cours-appel.justice.fr/amiens\n- **PDF officiel** : https://www.cours-appel.justice.fr/sites/default/files/2025-03/2025%20-%20Liste%20des%20experts%20judiciaires.pdf\n- **Date officielle du document** : **2025-12-05**\n- **Où la date a été trouvée** : sur la **première page du PDF**, dans la mention **“ARRÊTÉ DU 05 DÉCEMBRE 2022”**.  \n\nRemarque : le PDF"
+    },
+    {
+      "court": "Bordeaux",
+      "success": true,
+      "result": {
+        "courtName": "Cour d'appel de Bordeaux",
+        "pageUrl": "https://www.cours-appel.justice.fr/bordeaux/experts",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf",
+        "documentTitle": "EXPERTS - 2025",
+        "publicationDate": "2025-01-01",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "La page officielle des experts de la Cour d’appel de Bordeaux a été identifiée à l’URL fournie, puis le PDF officiel de la liste des experts a été repéré sur cette page (fichier \"EXPERTS - 2025_0.pdf\").",
+        "dateExtractionExplanation": "La date a été déterminée à partir du contenu du PDF, qui indique qu’il s’agit de la liste des experts judiciaires établie pour l’année 2025. Aucune date de mise à jour plus précise n’a été trouvée dans les éléments fournis, donc la date retenue est le 2025-01-01 comme date de référence pour l’année 2025.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 9664,
+        "extractionMs": 1815,
+        "totalMs": 11479
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 30017,
+          "outputTokens": 493,
+          "totalTokens": 30510
+        },
+        "extraction": {
+          "inputTokens": 592,
+          "outputTokens": 245,
+          "totalTokens": 837
+        },
+        "total": {
+          "inputTokens": 30609,
+          "outputTokens": 738,
+          "totalTokens": 31347
+        }
+      },
+      "error": null,
+      "agentText": "Voici la liste officielle trouvée pour la Cour d’appel de Bordeaux :\n\n- **Nom de la cour** : Cour d’appel de Bordeaux\n- **Page officielle** : https://www.cours-appel.justice.fr/bordeaux/experts citeturn0search11\n- **PDF officiel** : https://www.cours-appel.justice.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf citeturn0search11\n- **Date officielle dans le PDF** : **2025-01-01**  \n  - **Où trouvée** : sur la première page, avec la mention **« LISTE DES EXPERTS JUDICIAIRES ETABLIE ."
+    },
+    {
+      "court": "Lyon",
+      "success": true,
+      "result": {
+        "courtName": "Lyon",
+        "pageUrl": "https://www.cours-appel.justice.fr/lyon/partenaires-de-justice",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20judiciaires.pdf",
+        "documentTitle": "2026 - Liste des experts judiciaires",
+        "publicationDate": "2025-11-21",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official Cour d'appel de Lyon partners/justice page was identified at https://www.cours-appel.justice.fr/lyon/partenaires-de-justice, and from there the official PDF link to the expert list was found: https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20judiciaires.pdf.",
+        "dateExtractionExplanation": "The publication date was taken from the PDF content itself, specifically the first page mention 'dressée par l’assemblée générale restreinte des magistrats des 14 et 21 novembre 2025'. This was interpreted as the authoritative date and normalized to 2025-11-21.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 10376,
+        "extractionMs": 3183,
+        "totalMs": 13559
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 27204,
+          "outputTokens": 395,
+          "totalTokens": 27599
+        },
+        "extraction": {
+          "inputTokens": 519,
+          "outputTokens": 269,
+          "totalTokens": 788
+        },
+        "total": {
+          "inputTokens": 27723,
+          "outputTokens": 664,
+          "totalTokens": 28387
+        }
+      },
+      "error": null,
+      "agentText": "Voici la liste officielle trouvée pour la **Cour d’appel de Lyon** :\n\n- **Page officielle** : https://www.cours-appel.justice.fr/lyon/partenaires-de-justice\n- **PDF officiel** : https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20judiciaires.pdf\n- **Date officielle dans le PDF** : **2025-11-21**\n- **Où j’ai trouvé la date** : sur la **première page** du PDF, dans la mention :\n  - « *dressée par l’assemblée générale restreinte des magistrats des 14 et"
+    },
+    {
+      "court": "Paris",
+      "success": true,
+      "result": {
+        "courtName": "Paris",
+        "pageUrl": "https://www.cours-appel.justice.fr/paris/experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf",
+        "documentTitle": "ANNUPARIS MAJ 10 MARS 26_2.pdf",
+        "publicationDate": "2026-03-10",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official experts page for the Cour d'appel de Paris was identified at https://www.cours-appel.justice.fr/paris/experts-judiciaires, and the linked official PDF list was found on that page.",
+        "dateExtractionExplanation": "The publication date was taken from the PDF content itself, where the first page header states 'MAJ LE 10/03/2026'. This was converted from DD/MM/YYYY to YYYY-MM-DD.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 9384,
+        "extractionMs": 1828,
+        "totalMs": 11213
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 31095,
+          "outputTokens": 433,
+          "totalTokens": 31528
+        },
+        "extraction": {
+          "inputTokens": 543,
+          "outputTokens": 213,
+          "totalTokens": 756
+        },
+        "total": {
+          "inputTokens": 31638,
+          "outputTokens": 646,
+          "totalTokens": 32284
+        }
+      },
+      "error": null,
+      "agentText": "Voici la liste officielle trouvée pour la **Cour d'appel de Paris** :\n\n- **Page officielle** : `https://www.cours-appel.justice.fr/paris/experts-judiciaires` citeturn0search11\n- **PDF officiel** : `https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf` citeturn0search11\n- **Date officielle dans le PDF** : **2026-03-10** — trouvée sur la première page du PDF, dans l’en-tête : **“MAJ LE 10/03/2026”**. citeturn0search11\n\nSi tu veux, je peux a"
+    }
+  ],
+  "batchTime": "16.5",
+  "totalCost": 0.12043799999999999
+}

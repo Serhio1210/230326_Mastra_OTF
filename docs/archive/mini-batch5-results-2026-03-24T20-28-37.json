@@ -1,0 +1,213 @@
+{
+  "batch": "5",
+  "courts": [
+    "Nîmes",
+    "Orléans",
+    "Pau",
+    "Poitiers",
+    "Reims"
+  ],
+  "results": [
+    {
+      "court": "Nîmes",
+      "success": true,
+      "result": {
+        "courtName": "Cour d'appel de Nîmes",
+        "pageUrl": "https://www.cours-appel.justice.fr/nimes/experts-judiciaires",
+        "documentUrl": null,
+        "documentTitle": "Liste des experts 2025",
+        "publicationDate": "2025-06-02",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official experts page for the Cour d'appel de Nîmes was identified from the provided findings at https://www.cours-appel.justice.fr/nimes/experts-judiciaires. The expert list PDF is referenced there as the attachment titled 'Liste des experts 2025'.",
+        "dateExtractionExplanation": "The authoritative publication date was taken from the PDF content itself, where the first page states 'Mise à jour le 2 juin 2025'. This was normalized to YYYY-MM-DD as 2025-06-02.",
+        "errors": [
+          "Direct PDF URL was not provided in the findings, so documentUrl is null."
+        ]
+      },
+      "timing": {
+        "agentMs": 9830,
+        "extractionMs": 1899,
+        "totalMs": 11729
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 25978,
+          "outputTokens": 486,
+          "totalTokens": 26464
+        },
+        "extraction": {
+          "inputTokens": 555,
+          "outputTokens": 207,
+          "totalTokens": 762
+        },
+        "total": {
+          "inputTokens": 26533,
+          "outputTokens": 693,
+          "totalTokens": 27226
+        }
+      },
+      "error": null,
+      "agentText": "Voici la liste officielle trouvée pour la **Cour d’appel de Nîmes** :\n\n- **Nom de la cour** : Cour d’appel de Nîmes\n- **Page officielle** : https://www.cours-appel.justice.fr/nimes/experts-judiciaires \n- **PDF officiel** : la pièce jointe **“Liste des experts 2025”** liée depuis cette page. \n- **Date officielle dans le PDF** : **2025-06-02**\n- **Où la date a été trouvée** : sur la **première page du PDF**, dans la mention **“Mise à jour le 2 juin 2025”**. \n\nJ’ai aussi vérifié la page officielle "
+    },
+    {
+      "court": "Orléans",
+      "success": true,
+      "result": {
+        "courtName": "Orléans",
+        "pageUrl": "https://www.cours-appel.justice.fr/orleans/experts-judiciaires",
+        "documentUrl": null,
+        "documentTitle": "Liste des experts judiciaires 2025",
+        "publicationDate": "2025-01-01",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official experts-judiciaires page for the Cour d'appel d'Orléans was identified from the provided findings: https://www.cours-appel.justice.fr/orleans/experts-judiciaires. The page reportedly contains a PDF link labeled 'Téléchargement 837.55 Ko' corresponding to 'Liste des experts judiciaires 2025'.",
+        "dateExtractionExplanation": "The authoritative date came from the PDF content itself. The first page states 'LISTE DES EXPERTS JUDICIAIRES ÉTABLIE POUR LE RESSORT DE LA COUR D’APPEL D’ORLÉANS POUR L’ANNÉE 2025', which indicates the document year is 2025. Using the required YYYY-MM-DD format, the publication date was normalized to 2025-01-01.",
+        "errors": [
+          "Direct PDF URL was not provided in the findings, so documentUrl could not be confirmed."
+        ]
+      },
+      "timing": {
+        "agentMs": 6392,
+        "extractionMs": 1755,
+        "totalMs": 8147
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 26032,
+          "outputTokens": 510,
+          "totalTokens": 26542
+        },
+        "extraction": {
+          "inputTokens": 577,
+          "outputTokens": 267,
+          "totalTokens": 844
+        },
+        "total": {
+          "inputTokens": 26609,
+          "outputTokens": 777,
+          "totalTokens": 27386
+        }
+      },
+      "error": null,
+      "agentText": "Voici la liste officielle des experts judiciaires de la Cour d’appel d’Orléans :\n\n- **Page officielle** : https://www.cours-appel.justice.fr/orleans/experts-judiciaires citeturn1view0\n- **PDF officiel repéré sur la page** : “Liste des experts judiciaires 2025” (lien “Téléchargement 837.55 Ko”). citeturn1view0\n- **Date officielle dans le PDF** : **2025-01-01** — le PDF indique sur sa première page : “LISTE DES EXPERTS JUDICIAIRES ÉTABLIE POUR LE RESSORT DE LA COUR D’APPEL D’ORLÉANS POUR L’A"
+    },
+    {
+      "court": "Pau",
+      "success": true,
+      "result": {
+        "courtName": "Cour d'appel de Pau",
+        "pageUrl": "https://www.cours-appel.justice.fr/pau/les-experts",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Liste%20des%20experts%202026.pdf",
+        "documentTitle": "Liste actualisée des experts de l'année 2026 (MAJ : janvier 2026)",
+        "publicationDate": "2026-01-01",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official experts page for the Cour d'appel de Pau was identified as https://www.cours-appel.justice.fr/pau/les-experts. The page references the official PDF titled 'Liste actualisée des experts de l'année 2026 (MAJ : janvier 2026)', corresponding to the PDF URL provided in the findings.",
+        "dateExtractionExplanation": "The authoritative date came from the PDF content itself. The PDF is the 2026 expert list for the Cour d'appel de Pau, and the page text indicates it is the updated list for January 2026. Since no explicit day/month publication date was provided, the publication date was normalized to the first day of the year/month context as 2026-01-01 based on the provided findings.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 14858,
+        "extractionMs": 2345,
+        "totalMs": 17203
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 25263,
+          "outputTokens": 531,
+          "totalTokens": 25794
+        },
+        "extraction": {
+          "inputTokens": 599,
+          "outputTokens": 273,
+          "totalTokens": 872
+        },
+        "total": {
+          "inputTokens": 25862,
+          "outputTokens": 804,
+          "totalTokens": 26666
+        }
+      },
+      "error": null,
+      "agentText": "Voici la liste officielle trouvée pour la Cour d’appel de Pau :\n\n- **Nom de la cour** : Cour d’appel de Pau\n- **Page officielle** : https://www.cours-appel.justice.fr/pau/les-experts\n- **PDF officiel** : https://www.cours-appel.justice.fr/sites/default/files/2026-02/Liste%20des%20experts%202026.pdf\n- **Date officielle du document** : **2026-01-01**  \n- **Où j’ai trouvé la date** : dans le PDF lui-même, sur la **première page**, où le texte extrait commence par **“COUR D’APPEL DE PAU LISTE DES EX"
+    },
+    {
+      "court": "Poitiers",
+      "success": true,
+      "result": {
+        "courtName": "Poitiers",
+        "pageUrl": "https://www.cours-appel.justice.fr/poitiers/experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/liste%20des%20experts%202026.pdf",
+        "documentTitle": "Liste des experts judiciaires établie pour le ressort de la cour d’appel de Poitiers pour l’année 2026",
+        "publicationDate": "2026-01-01",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official Cour d’appel de Poitiers experts page was identified directly from the provided findings, along with the linked PDF listing the judicial experts.",
+        "dateExtractionExplanation": "The authoritative date was taken from the PDF content. The first page states that the list is established for the ressort of the Cour d’appel de Poitiers for the year 2026. Since no more precise day/month publication date was provided in the PDF excerpt, the date was normalized to the first day of that year: 2026-01-01.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 10396,
+        "extractionMs": 1786,
+        "totalMs": 12182
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 29716,
+          "outputTokens": 500,
+          "totalTokens": 30216
+        },
+        "extraction": {
+          "inputTokens": 617,
+          "outputTokens": 229,
+          "totalTokens": 846
+        },
+        "total": {
+          "inputTokens": 30333,
+          "outputTokens": 729,
+          "totalTokens": 31062
+        }
+      },
+      "error": null,
+      "agentText": "Voici la source officielle trouvée pour la Cour d’appel de Poitiers :\n\n- **Cour** : Cour d’appel de Poitiers\n- **Page officielle** : `https://www.cours-appel.justice.fr/poitiers/experts-judiciaires`\n- **PDF officiel** : `https://www.cours-appel.justice.fr/sites/default/files/2026-03/liste%20des%20experts%202026.pdf`\n- **Date officielle dans le PDF** : **2026-01-01** *(année 2026 indiquée sur la page de garde ; le PDF ne donne pas de date complète de type “MAJ le …” dans l’extrait initial, mais p"
+    },
+    {
+      "court": "Reims",
+      "success": true,
+      "result": {
+        "courtName": "Cour d'appel de Reims",
+        "pageUrl": "https://www.cours-appel.justice.fr/reims/les-experts",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-07/Liste%20des%20experts%202025.pdf",
+        "documentTitle": "Liste des experts 2025",
+        "publicationDate": "2024-11-04",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official experts page for the Cour d'appel de Reims was identified at https://www.cours-appel.justice.fr/reims/les-experts, and from that page the official PDF link was found: https://www.cours-appel.justice.fr/sites/default/files/2025-07/Liste%20des%20experts%202025.pdf.",
+        "dateExtractionExplanation": "The publication date was taken from the PDF content, on the first page, where it states that the list was drawn up by the general assembly of magistrates of the Reims Court of Appeal held on 4 November 2024 ('réunie le 4 novembre 2024'). This is the authoritative source, so the date was normalized to 2024-11-04.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 12181,
+        "extractionMs": 1943,
+        "totalMs": 14124
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 29978,
+          "outputTokens": 503,
+          "totalTokens": 30481
+        },
+        "extraction": {
+          "inputTokens": 519,
+          "outputTokens": 262,
+          "totalTokens": 781
+        },
+        "total": {
+          "inputTokens": 30497,
+          "outputTokens": 765,
+          "totalTokens": 31262
+        }
+      },
+      "error": null,
+      "agentText": "Voici la liste officielle trouvée pour la Cour d’appel de Reims :\n\n- **Nom de la cour** : Cour d’appel de Reims\n- **Page officielle** : https://www.cours-appel.justice.fr/reims/les-experts\n- **PDF officiel** : https://www.cours-appel.justice.fr/sites/default/files/2025-07/Liste%20des%20experts%202025.pdf\n- **Date officielle du document** : **2024-11-04**\n- **Où la date a été trouvée** : dans le PDF, sur la première page : *“dressée par l’assemblée générale des magistrats du siège de la cour d’ap"
+    }
+  ],
+  "batchTime": "17.2",
+  "totalCost": 0.12183150000000001
+}

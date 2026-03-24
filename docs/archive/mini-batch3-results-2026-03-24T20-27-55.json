@@ -1,0 +1,211 @@
+{
+  "batch": "3",
+  "courts": [
+    "Agen",
+    "Bourges",
+    "Caen",
+    "Dijon",
+    "Douai"
+  ],
+  "results": [
+    {
+      "court": "Agen",
+      "success": true,
+      "result": {
+        "courtName": "Agen",
+        "pageUrl": "https://www.cours-appel.justice.fr/agen/les-experts-judiciaires",
+        "documentUrl": null,
+        "documentTitle": "Liste des experts 2025",
+        "publicationDate": "2024-11-15",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official experts page was identified as \"Les experts judiciaires | COUR D'APPEL D'AGEN\". The agent’s findings mention an official PDF titled \"Liste des experts 2025\" on cours-appel.justice.fr, but no exact PDF URL was provided in the findings, so the documentUrl is set to null.",
+        "dateExtractionExplanation": "The authoritative date was taken from the PDF content itself, where it states \"dressée par l’Assemblée Générale de la Cour le 15 novembre 2024\" on the first page/header. This was converted to ISO format as 2024-11-15.",
+        "errors": [
+          "Exact PDF URL not provided in the agent findings; documentUrl set to null."
+        ]
+      },
+      "timing": {
+        "agentMs": 9165,
+        "extractionMs": 1885,
+        "totalMs": 11050
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 25011,
+          "outputTokens": 420,
+          "totalTokens": 25431
+        },
+        "extraction": {
+          "inputTokens": 551,
+          "outputTokens": 220,
+          "totalTokens": 771
+        },
+        "total": {
+          "inputTokens": 25562,
+          "outputTokens": 640,
+          "totalTokens": 26202
+        }
+      },
+      "error": null,
+      "agentText": "Voici la liste officielle trouvée pour la **Cour d’appel d’Agen** :\n\n- **Page officielle** : **Les experts judiciaires | COUR D'APPEL D'AGEN** citeturn0search17\n- **PDF officiel** : **Liste des experts 2025** (sur `cours-appel.justice.fr`) citeturn0search17\n- **Date officielle dans le PDF** : **2024-11-15** — indiquée dans le PDF par la mention **« dressée par l’Assemblée Générale de la Cour le 15 novembre 2024 »**. C’est la date authoritative trouvée dans le document. citeturn0search17"
+    },
+    {
+      "court": "Bourges",
+      "success": true,
+      "result": {
+        "courtName": "Bourges",
+        "pageUrl": "https://www.cours-appel.justice.fr/bourges/les-experts",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUAIRE%20EXPERTS%20%202026%20-%20VERSION%205.pdf",
+        "documentTitle": "ANNUAIRE EXPERTS 2026 - VERSION 5",
+        "publicationDate": "2026-03-17",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official experts page for the Cour d'appel de Bourges was identified at https://www.cours-appel.justice.fr/bourges/les-experts, and it links to the official PDF annual expert directory hosted on the same court domain.",
+        "dateExtractionExplanation": "The publication date was taken from the first page of the PDF, where the text 'Mise à jour faite le 17/03/2026' appears. This was converted from DD/MM/YYYY to YYYY-MM-DD as required, resulting in 2026-03-17.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 10472,
+        "extractionMs": 1840,
+        "totalMs": 12312
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 29856,
+          "outputTokens": 372,
+          "totalTokens": 30228
+        },
+        "extraction": {
+          "inputTokens": 509,
+          "outputTokens": 233,
+          "totalTokens": 742
+        },
+        "total": {
+          "inputTokens": 30365,
+          "outputTokens": 605,
+          "totalTokens": 30970
+        }
+      },
+      "error": null,
+      "agentText": "J’ai trouvé la liste officielle des experts judiciaires de la Cour d’appel de Bourges.\n\n- **Cour d’appel** : Bourges\n- **Page officielle** : https://www.cours-appel.justice.fr/bourges/les-experts\n- **PDF officiel** : https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUAIRE%20EXPERTS%20%202026%20-%20VERSION%205.pdf\n- **Date officielle dans le PDF** : **2026-03-17**\n- **Où la date a été trouvée** : première page du PDF, ligne indiquant **“Mise à jour faite le 17/03/2026”**\n\nLa page "
+    },
+    {
+      "court": "Caen",
+      "success": true,
+      "result": {
+        "courtName": "Caen",
+        "pageUrl": "https://www.cours-appel.justice.fr/caen/les-experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/liste%20experts%20judiciaires%202026%20m%C3%A0j2.pdf",
+        "documentTitle": "liste experts judiciaires 2026 màj2",
+        "publicationDate": "2026-02-26",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official experts judiciaires page for the Cour d'appel de Caen was identified from the provided findings at the given justice.fr URL, and the linked official PDF was taken directly from the same findings.",
+        "dateExtractionExplanation": "The authoritative date was explicitly stated as being inside the PDF on the first page, where it appears as 'mise à jour le 26 février 2026'. This was converted to ISO format as 2026-02-26 and used instead of the page update date.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 7913,
+        "extractionMs": 1841,
+        "totalMs": 9754
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 35126,
+          "outputTokens": 506,
+          "totalTokens": 35632
+        },
+        "extraction": {
+          "inputTokens": 513,
+          "outputTokens": 221,
+          "totalTokens": 734
+        },
+        "total": {
+          "inputTokens": 35639,
+          "outputTokens": 727,
+          "totalTokens": 36366
+        }
+      },
+      "error": null,
+      "agentText": "Voici la liste officielle des experts judiciaires de la Cour d’appel de Caen.\n\n- **Page officielle** : `https://www.cours-appel.justice.fr/caen/les-experts-judiciaires` \n- **PDF officiel** : `https://www.cours-appel.justice.fr/sites/default/files/2026-02/liste%20experts%20judiciaires%202026%20m%C3%A0j2.pdf` \n- **Date officielle dans le PDF** : **2026-02-26**. Elle apparaît sur la première page sous la forme **“mise à jour le 26 février 2026”**. \n\nNote : la page web indique aussi une mise à jour "
+    },
+    {
+      "court": "Dijon",
+      "success": true,
+      "result": {
+        "courtName": "Dijon",
+        "pageUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/annuaire_experts_judiciaires_v26012026.pdf",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/annuaire_experts_judiciaires_v26012026.pdf",
+        "documentTitle": "Liste des experts judiciaires année 2026",
+        "publicationDate": "2025-11-12",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "I used the provided official finding for the Cour d'appel de Dijon, which points to the justice.fr-hosted PDF for the expert list. The same PDF URL serves as both the page/document source in the findings.",
+        "dateExtractionExplanation": "The authoritative date was taken from the first page of the PDF, where it states 'dressée par l’Assemblée Générale de la Cour le 12 novembre 2025'. This was converted to YYYY-MM-DD as 2025-11-12.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 7958,
+        "extractionMs": 1592,
+        "totalMs": 9550
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 24499,
+          "outputTokens": 485,
+          "totalTokens": 24984
+        },
+        "extraction": {
+          "inputTokens": 503,
+          "outputTokens": 222,
+          "totalTokens": 725
+        },
+        "total": {
+          "inputTokens": 25002,
+          "outputTokens": 707,
+          "totalTokens": 25709
+        }
+      },
+      "error": null,
+      "agentText": "Voici la source officielle que j’ai trouvée pour la **Cour d’appel de Dijon** :\n\n- **Page / PDF officiel** : `https://www.cours-appel.justice.fr/sites/default/files/2026-02/annuaire_experts_judiciaires_v26012026.pdf`\n- **Date officielle dans le PDF** : **2025-11-12**\n- **Où la date a été trouvée** : sur la **première page du PDF**, dans la mention : *“dressée par l’Assemblée Générale de la Cour le 12 novembre 2025”*.\n\nJ’ai bien utilisé une recherche sur le site `justice.fr`, puis l’extraction PD"
+    },
+    {
+      "court": "Douai",
+      "success": true,
+      "result": {
+        "courtName": "Cour d'appel de Douai",
+        "pageUrl": "https://www.cours-appel.justice.fr/douai/les-experts-judiciaires",
+        "documentUrl": null,
+        "documentTitle": "Liste des experts 2026",
+        "publicationDate": "2026-01-01",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official experts page for the Cour d'appel de Douai was identified from the provided findings: https://www.cours-appel.justice.fr/douai/les-experts-judiciaires. The linked expert list document is titled 'Liste des experts 2026'. The exact PDF URL was not provided in the findings, so it is recorded as null.",
+        "dateExtractionExplanation": "The authoritative date was taken from the PDF content. The extracted text from the first page indicates the document is the 'Liste des experts judiciaires ... pour l'année 2026'. No more specific publication date such as 'MAJ le' or 'Liste arrêtée au' was visible in the excerpt, so the publication date was normalized to 2026-01-01.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 9190,
+        "extractionMs": 1926,
+        "totalMs": 11116
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 26603,
+          "outputTokens": 722,
+          "totalTokens": 27325
+        },
+        "extraction": {
+          "inputTokens": 686,
+          "outputTokens": 235,
+          "totalTokens": 921
+        },
+        "total": {
+          "inputTokens": 27289,
+          "outputTokens": 957,
+          "totalTokens": 28246
+        }
+      },
+      "error": null,
+      "agentText": "Voici la liste officielle trouvée pour la **Cour d’appel de Douai** :\n\n- **Page officielle** : \n- **PDF de la liste des experts 2026** : le lien visible sur la page est **“Liste des experts 2026”**. \n- **Date officielle dans le PDF** : **2026-01-01**  \n  - J’ai utilisé `extractPdfDate` sur le PDF, et le début du document indique : **“LISTE DES EXPERTS JUDICIAIRES ÉTABLIE … POUR L’ANNÉE 2026”**.  \n  - En revanche, dans les premières pages extraites, je n’ai pas vu de mention explicite du type **“"
+    }
+  ],
+  "batchTime": "12.3",
+  "totalCost": 0.12425475000000001
+}
