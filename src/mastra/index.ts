@@ -3,6 +3,7 @@ import { Observability, DefaultExporter } from "@mastra/observability";
 import { LibSQLStore } from "@mastra/libsql";
 import { expertSearchAgent } from "./agents/expert-search.ts";
 import { expertSearchMiniAgent } from "./agents/expert-search-mini.ts";
+import { expertSearchHaikuAgent } from "./agents/expert-search-haiku.ts";
 
 const storage = new LibSQLStore({
   id: "mastra-storage",
@@ -25,6 +26,7 @@ export const mastra = new Mastra({
   agents: {
     "expert-search-agent": expertSearchAgent,
     "expert-search-mini": expertSearchMiniAgent,
+    "expert-search-haiku": expertSearchHaikuAgent,
   },
   storage,
   observability,
