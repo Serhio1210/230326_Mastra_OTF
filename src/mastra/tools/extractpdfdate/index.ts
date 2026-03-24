@@ -4,7 +4,7 @@ import { z } from "zod";
 export const extractPdfDateTool = createTool({
   id: "extract-pdf-date",
   description:
-    "Downloads a PDF and extracts text from the first 3 pages. Returns raw text for YOU to analyze and find the official publication date. Look for 'arrêtée au', 'MAJ', 'mise à jour', dates near headers. This is the AUTHORITATIVE source — the date inside the PDF is the official legal date.",
+    "Downloads a PDF and extracts text from the first 5 pages. Returns raw text for YOU to analyze and find the official publication date. The date inside the PDF is the AUTHORITATIVE legal date. Look for 'arrêtée au', 'MAJ', 'mise à jour', dates near headers.",
   inputSchema: z.object({
     url: z.string().describe("The URL of the PDF document to analyze"),
   }),
@@ -12,7 +12,7 @@ export const extractPdfDateTool = createTool({
     success: z.boolean(),
     pdfText: z
       .string()
-      .describe("Extracted text from first 3 pages of the PDF for the agent to analyze for dates"),
+      .describe("Extracted text from first 5 pages of the PDF"),
     pageCount: z.number().describe("Total number of pages in the PDF"),
     error: z.string().nullable(),
   }),
@@ -50,8 +50,8 @@ export const extractPdfDateTool = createTool({
       const pdf = await getDocumentProxy(uint8Array);
       const pageCount = pdf.numPages;
 
-      // Extract text from first 3 pages (dates are usually at the start)
-      const pagesToExtract = Math.min(3, pageCount);
+      // Extract text from first 5 pages (dates are at the start)
+      const pagesToExtract = Math.min(5, pageCount);
       let pdfText = "";
 
       for (let i = 1; i <= pagesToExtract; i++) {
@@ -63,7 +63,6 @@ export const extractPdfDateTool = createTool({
         pdfText += pageText + "\n\n";
       }
 
-      // Clean up excessive whitespace
       pdfText = pdfText.replace(/\s+/g, " ").trim();
 
       return { success: true, pdfText, pageCount, error: null };
@@ -75,5 +74,16 @@ export const extractPdfDateTool = createTool({
         error: error instanceof Error ? error.message : "Unknown error extracting PDF text",
       };
     }
+  },
+  // Compact output for the model — only the first 500 chars where dates live
+  toModelOutput: (output) => {
+    if (!output.success) {
+      return { type: "text" as const, value: `Error extracting PDF: ${output.error}` };
+    }
+
+    return {
+      type: "text" as const,
+      value: `PDF (${output.pageCount} pages). First page text:\n${output.pdfText.slice(0, 500)}`,
+    };
   },
 });

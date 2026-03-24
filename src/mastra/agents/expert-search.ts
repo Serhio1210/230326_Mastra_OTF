@@ -1,5 +1,6 @@
 import { anthropic } from "@ai-sdk/anthropic";
 import { Agent } from "@mastra/core/agent";
+import { TokenLimiter } from "@mastra/core/processors";
 import { expertFinderResultSchema } from "../schemas/expert-finder.ts";
 import { fetchPageTool } from "../tools/fetchpage/index.ts";
 import { extractPdfDateTool } from "../tools/extractpdfdate/index.ts";
@@ -28,8 +29,8 @@ IGNORE third-party sites like exjudis.fr, cncej.org — these are NOT official c
 
 ### Step 2: Fetch the Page
 Use the **fetchPage** tool on the .justice.fr URL. This returns:
-- All PDF links with their anchor text and relevance hints
-- Full page text (for context)
+- Expert-list PDFs with their anchor text and relevance hints
+- Date hints found on the page
 
 ### Step 3: Pick the Right PDF
 From the fetchPage results, pick the expert directory PDF:
@@ -83,6 +84,7 @@ export const expertSearchAgent = new Agent({
     fetchPage: fetchPageTool,
     extractPdfDate: extractPdfDateTool,
   },
+  inputProcessors: [new TokenLimiter(100000)],
 });
 
 export { expertFinderResultSchema };

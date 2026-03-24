@@ -5,7 +5,7 @@ import * as cheerio from "cheerio";
 export const fetchPageTool = createTool({
   id: "fetch-page",
   description:
-    "Fetches a webpage and extracts all PDF links with their text. Returns the FULL PAGE TEXT in pageText field — analyze this text to find publication dates (look for 'MAJ', 'mise à jour', dates near PDF links, etc.). French dates use DD/MM/YYYY format.",
+    "Fetches a webpage and extracts all PDF links with their text. Returns PDF links with relevance hints and date-related text found on the page. Use this to find expert directory PDFs on court websites.",
   inputSchema: z.object({
     url: z.string().describe("The URL of the webpage to fetch and analyze"),
   }),
@@ -14,7 +14,7 @@ export const fetchPageTool = createTool({
     title: z.string().nullable(),
     pageText: z
       .string()
-      .describe("Full text content of the page for the agent to analyze for publication dates"),
+      .describe("Full text content of the page"),
     pdfLinks: z.array(
       z.object({
         url: z.string(),
@@ -60,7 +60,6 @@ export const fetchPageTool = createTool({
         const href = $(el).attr("href");
         if (!href) return;
 
-        // Resolve relative URLs
         let fullUrl: string;
         try {
           fullUrl = new URL(href, url).toString();
@@ -68,11 +67,9 @@ export const fetchPageTool = createTool({
           fullUrl = href;
         }
 
-        // Get link text and surrounding context
         const linkText = $(el).text().trim();
         const parentText = $(el).parent().text().trim().slice(0, 300);
 
-        // Extract filename from URL
         let filename: string;
         try {
           filename = decodeURIComponent(fullUrl.split("/").pop() || "");
@@ -80,7 +77,6 @@ export const fetchPageTool = createTool({
           filename = fullUrl.split("/").pop() || "";
         }
 
-        // Determine relevance for expert lists
         const lowerUrl = fullUrl.toLowerCase();
         const lowerText = (linkText + " " + parentText + " " + filename).toLowerCase();
         let relevanceHint = "unknown";
@@ -120,5 +116,27 @@ export const fetchPageTool = createTool({
         error: error instanceof Error ? error.message : "Unknown error fetching page",
       };
     }
+  },
+  // Compact output for the model — all PDFs with URLs but drop the raw pageText
+  toModelOutput: (output) => {
+    if (!output.success) {
+      return { type: "text" as const, value: `Error fetching page: ${output.error}` };
+    }
+
+    // Extract date hints from page text (keep this, drop the raw text)
+    const datePatterns = output.pageText.match(
+      /(?:mise à jour|MAJ|actualis[ée])[^.]{0,50}?\d{1,2}[/.-]\d{1,2}[/.-]\d{2,4}/gi
+    );
+
+    const lines = [
+      `Title: ${output.title}`,
+      `PDF links (${output.pdfLinks.length}):`,
+      ...output.pdfLinks.map((p) => `  - [${p.relevanceHint}] "${p.text}" → ${p.url}`),
+      datePatterns?.length
+        ? `Date hints from page: ${datePatterns.join("; ")}`
+        : "No date patterns found in page text",
+    ];
+
+    return { type: "text" as const, value: lines.join("\n") };
   },
 });
