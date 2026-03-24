@@ -51,6 +51,28 @@ export async function runCourtSearchMini(court: string, effort: MiniEffort = "no
       totalTokens: agentResult.usage?.totalTokens ?? 0,
     };
 
+    // Collect raw tool results from agent steps (data is in payload.result)
+    let pageText = "";
+    let pageTitle = "";
+    let pdfLinks: Array<{ url: string; text: string; relevanceHint: string }> = [];
+    let pdfText = "";
+
+    for (const step of agentResult.steps || []) {
+      for (const tr of step.toolResults || []) {
+        const p = (tr as any).payload;
+        if (!p) continue;
+        if (p.toolName === "fetchPage" && p.result?.success) {
+          pageText = p.result.pageText || "";
+          pageTitle = p.result.title || "";
+          pdfLinks = p.result.pdfLinks || [];
+        }
+        if (p.toolName === "extractPdfDate" && p.result?.success) {
+          pdfText = p.result.pdfText || "";
+        }
+      }
+    }
+
+    // Build extraction prompt with ALL raw signals
     const extractionStart = Date.now();
 
     const extractResult = await generateText({
@@ -59,16 +81,34 @@ export async function runCourtSearchMini(court: string, effort: MiniEffort = "no
       providerOptions: {
         openai: { reasoningEffort: "medium" },
       },
-      prompt: `Extract structured data from these French court expert search findings.
+      prompt: `You are analyzing date signals from a French court expert directory search.
 
 ## Court: ${court}
 
-## Agent's findings:
-${agentResult.text.slice(0, 3000)}
+## Agent summary:
+${agentResult.text.slice(0, 2000)}
 
-Pick the most specific and most recent date available from any source.
-An exact date from page text or filename overrides a year-only mention from the PDF.
-Date format: YYYY-MM-DD. Convert French dates (DD/MM/YYYY → YYYY-MM-DD).`,
+## Page title:
+${pageTitle || "not available"}
+
+## Page text (first 2000 chars):
+${pageText.slice(0, 2000) || "not available"}
+
+## PDF links found on the page:
+${pdfLinks.length > 0 ? pdfLinks.map(p => `- [${p.relevanceHint}] "${p.text}" → ${p.url}`).join("\n") : "none"}
+
+## PDF content (first 1500 chars):
+${pdfText.slice(0, 1500) || "not available"}
+
+Determine the publication date. Check ALL sources:
+1. Exact date in PDF text (e.g. "MAJ LE 10/03/2026", "assemblée du 18 novembre 2025")
+2. Exact date in page text (e.g. "mise à jour : 24/02/2026")
+3. Date in PDF link anchor text
+4. Date in the PDF URL path (e.g. "/2025-07/" means July 2025, "/2026-03/" means March 2026)
+5. Year only as last resort
+
+Use the most specific and most recent date. A year-only date must not override an exact date.
+Date format: YYYY-MM-DD.`,
     });
 
     const extractionMs = Date.now() - extractionStart;
