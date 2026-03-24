@@ -1,0 +1,212 @@
+{
+  "model": "gpt-5.4",
+  "results": [
+    {
+      "court": "Amiens",
+      "success": true,
+      "result": {
+        "courtName": "Amiens",
+        "pageUrl": "https://www.justice.fr",
+        "documentUrl": null,
+        "documentTitle": "2026 - Liste des experts judiciaires - ok.pdf",
+        "publicationDate": "2026-01-01",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official expert list for the Cour d'appel d'Amiens was identified on the justice.fr website. The agent's findings indicate an official page on justice.fr and a linked PDF titled \"2026 - Liste des experts judiciaires - ok.pdf\" corresponding to the Amiens court expert list.",
+        "dateExtractionExplanation": "No explicit publication or update date was found in the extracted PDF text (no visible \"MAJ le\", \"mise à jour\", or \"liste arrêtée au\" in the first pages). The only authoritative date visible in the PDF content was the statement on page 1: \"LISTE DES EXPERTS JUDICIAIRES ÉTABLIE POUR LE RESSORT DE LA COUR D’APPEL D’AMIENS POUR L’ANNÉE 2026\". Therefore, the date was normalized to 2026-01-01 as a proxy based on the year of validity, using pdf-content as the source.",
+        "errors": [
+          "Official page URL was not provided explicitly in the findings beyond justice.fr, so only the site domain could be recorded.",
+          "Official PDF URL was not provided explicitly in the findings, so documentUrl could not be populated.",
+          "The PDF did not provide an explicit full publication/update date; only the year 2026 was identifiable from the PDF content."
+        ]
+      },
+      "timing": {
+        "agentMs": 21747,
+        "extractionMs": 4880,
+        "totalMs": 26627
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 25532,
+          "outputTokens": 610,
+          "totalTokens": 26142
+        },
+        "extraction": {
+          "inputTokens": 729,
+          "outputTokens": 329,
+          "totalTokens": 1058
+        },
+        "total": {
+          "inputTokens": 26261,
+          "outputTokens": 939,
+          "totalTokens": 27200
+        }
+      },
+      "error": null,
+      "agentText": "Voici la **liste officielle des experts judiciaires de la Cour d’appel d’Amiens** :\n\n- **Cour d’appel** : Amiens  \n- **Page officielle** : citeturn0search16  \n- **PDF officiel** : `2026 - Liste des experts judiciaires - ok.pdf` (site justice.fr)  \n- **Date officielle trouvée dans le PDF** : **2026-01-01** *(date déduite du titre “pour l’année 2026” ; aucune mention visible de type “MAJ le…”, “mise à jour…”, ou “liste arrêtée au…” dans l’extraction des 5 premières pages)*  \n- **Où la date a ét"
+    },
+    {
+      "court": "Angers",
+      "success": true,
+      "result": {
+        "courtName": "Angers",
+        "pageUrl": "https://www.cours-appel.justice.fr/angers/experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/LISTE%20EXPERTS%202026.pdf",
+        "documentTitle": "Liste des experts 2026",
+        "publicationDate": "2025-11-18",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official Cour d'appel d’Angers page titled \"Experts judiciaires\" was identified at the court’s justice.fr website, and from that page the linked official PDF \"Liste des experts 2026\" was found.",
+        "dateExtractionExplanation": "The publication date was taken from the PDF content, which is the authoritative source. The first page contains the text: \"Assemblée générale des magistrats du siège de la cour d’appel du 18 novembre 2025\", which was converted to 2025-11-18. A page update date of 20/03/2026 was noted on the webpage but not used because the PDF’s internal date is more authoritative.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 18287,
+        "extractionMs": 3993,
+        "totalMs": 22280
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 39839,
+          "outputTokens": 718,
+          "totalTokens": 40557
+        },
+        "extraction": {
+          "inputTokens": 680,
+          "outputTokens": 239,
+          "totalTokens": 919
+        },
+        "total": {
+          "inputTokens": 40519,
+          "outputTokens": 957,
+          "totalTokens": 41476
+        }
+      },
+      "error": null,
+      "agentText": "Voici le résultat pour la **liste officielle des experts judiciaires de la Cour d’appel d’Angers** :\n\n- **Cour d’appel** : Angers  \n- **Page officielle** : Cour d'appel d’Angers, page **“Experts judiciaires”** \n- **URL de la page** : page officielle `cours-appel.justice.fr/angers/experts-judiciaires` (trouvée puis analysée avec `fetchPage`)\n- **PDF officiel** : **“Liste des experts 2026”** \n- **URL du PDF** : `https://www.cours-appel.justice.fr/sites/default/files/2026-03/LISTE%20EXPERTS%202026."
+    },
+    {
+      "court": "Besançon",
+      "success": true,
+      "result": {
+        "courtName": "Cour d'appel de Besançon",
+        "pageUrl": "https://www.justice.fr/annuaire/cour-dappel-de-besancon",
+        "documentUrl": "https://ca-besancon.justice.fr/sites/default/files/2023-11/annuaire%20experts%2023%20nov%202023.pdf",
+        "documentTitle": "annuaire experts 23 nov 2023.pdf",
+        "publicationDate": null,
+        "publicationDateSource": "not-found",
+        "searchExplanation": "The findings indicate the official expert list PDF for the Cour d'appel de Besançon was identified on the official ca-besancon.justice.fr domain, while the justice.fr court page served as the official entry page. The justice.fr page was accessible but did not expose the PDF link through the available extraction tool. The fallback court subdomain was identified manually from the findings, and the PDF URL was reported as the official document.",
+        "dateExtractionExplanation": "No authoritative publication date could be confirmed because the required source of truth is the date stated inside the PDF, and the PDF content could not be opened/read by the extraction tool. Although the filename 'annuaire experts 23 nov 2023.pdf' suggests 2023-11-23, that is only a filename hint and not the authoritative internal PDF date. Therefore the publication date must be left null.",
+        "errors": [
+          "No PDF link was extracted automatically from the justice.fr page.",
+          "The fallback ca-besancon.justice.fr page was not accessible via fetchPage.",
+          "The PDF URL could not be opened by the PDF date extraction tool, so no internal date could be verified."
+        ]
+      },
+      "timing": {
+        "agentMs": 23388,
+        "extractionMs": 6082,
+        "totalMs": 29470
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 50545,
+          "outputTokens": 813,
+          "totalTokens": 51358
+        },
+        "extraction": {
+          "inputTokens": 715,
+          "outputTokens": 334,
+          "totalTokens": 1049
+        },
+        "total": {
+          "inputTokens": 51260,
+          "outputTokens": 1147,
+          "totalTokens": 52407
+        }
+      },
+      "error": null,
+      "agentText": "J’ai trouvé le PDF officiel de la **liste des experts judiciaires de la Cour d’appel de Besançon**, mais les outils demandés n’ont pas réussi à extraire sa date interne automatiquement.\n\n**Résultat trouvé :**\n- **Cour** : Cour d’appel de Besançon\n- **Page officielle** : Accueil de la cour d’appel de Besançon sur justice.fr. \n- **PDF officiel identifié** : `annuaire experts 23 nov 2023.pdf` sur le domaine officiel **ca-besancon.justice.fr**. \n\n**Constat sur les outils :**\n- `fetchPage` sur la pag"
+    },
+    {
+      "court": "Bordeaux",
+      "success": true,
+      "result": {
+        "courtName": "Cour d'appel de Bordeaux",
+        "pageUrl": "https://www.cours-appel.justice.fr/bordeaux/experts",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf",
+        "documentTitle": null,
+        "publicationDate": null,
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The official experts page for the Cour d'appel de Bordeaux was identified at https://www.cours-appel.justice.fr/bordeaux/experts, and from there the official PDF list was found at https://www.cours-appel.justice.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf.",
+        "dateExtractionExplanation": "The authoritative date source is the PDF content. The extracted text from the first pages of the PDF contains the mention « LISTE DES EXPERTS JUDICIAIRES ETABLIE … POUR L’ANNEE 2025 », which confirms the official year 2025. However, no explicit full date (day/month/year), such as a publication, update, or arrêté date, was visible in the extracted PDF text, so a YYYY-MM-DD date cannot be determined with certainty.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 16036,
+        "extractionMs": 4195,
+        "totalMs": 20231
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 19745,
+          "outputTokens": 521,
+          "totalTokens": 20266
+        },
+        "extraction": {
+          "inputTokens": 728,
+          "outputTokens": 268,
+          "totalTokens": 996
+        },
+        "total": {
+          "inputTokens": 20473,
+          "outputTokens": 789,
+          "totalTokens": 21262
+        }
+      },
+      "error": null,
+      "agentText": "J’ai trouvé la page officielle et le PDF officiel de la **Cour d’appel de Bordeaux**.\n\n- **Cour** : Cour d’appel de Bordeaux  \n- **Page officielle** : `https://www.cours-appel.justice.fr/bordeaux/experts`  \n- **PDF officiel** : `https://www.cours-appel.justice.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf`  \n- **Date officielle trouvée dans le PDF** : **2025** (pas de date jour/mois visible dans les premières pages extraites)\n- **Où la date a été trouvée** : sur la **première page du P"
+    },
+    {
+      "court": "Lyon",
+      "success": true,
+      "result": {
+        "courtName": "Cour d'appel de Lyon",
+        "pageUrl": "https://www.cours-appel.justice.fr/lyon/les-experts",
+        "documentUrl": null,
+        "documentTitle": "2026 - Liste des experts judiciaires",
+        "publicationDate": "2025-11-21",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "La page officielle identifiée est la page « Les experts » de la Cour d'appel de Lyon sur le site justice.fr. Le document officiel repéré depuis cette page est le PDF intitulé « 2026 - Liste des experts judiciaires » / « Liste des experts judiciaires ».",
+        "dateExtractionExplanation": "La date a été déterminée à partir du contenu du PDF, indiqué comme source autoritative. En première page figure la mention « LISTE DES EXPERTS POUR 2026 dressée par l’assemblée générale restreinte des magistrats des 14 et 21 novembre 2025 ». La date retenue est la plus récente et correspond à l'arrêt de la liste : 2025-11-21.",
+        "errors": [
+          "L'URL exacte du PDF n'est pas fournie dans les éléments transmis, donc documentUrl ne peut pas être renseignée avec certitude."
+        ]
+      },
+      "timing": {
+        "agentMs": 14416,
+        "extractionMs": 4057,
+        "totalMs": 18473
+      },
+      "usage": {
+        "agent": {
+          "inputTokens": 20314,
+          "outputTokens": 481,
+          "totalTokens": 20795
+        },
+        "extraction": {
+          "inputTokens": 677,
+          "outputTokens": 256,
+          "totalTokens": 933
+        },
+        "total": {
+          "inputTokens": 20991,
+          "outputTokens": 737,
+          "totalTokens": 21728
+        }
+      },
+      "error": null,
+      "agentText": "Voici le résultat pour la **liste officielle des experts judiciaires de la Cour d’appel de Lyon** :\n\n- **Cour d’appel** : Lyon  \n- **Page officielle** : Cour d'appel de Lyon, page **« Les experts »** — citeturn0search17\n- **PDF officiel** : **« 2026 - Liste des experts judiciaires »**  \n  (trouvé via `fetchPage` sur la page officielle .justice.fr)\n- **URL du PDF** : document intitulé **« Liste des experts judiciaires »** sur le site officiel de la Cour d’appel de Lyon\n- **Date officielle trou"
+    }
+  ],
+  "batchTime": "29.5",
+  "totalCost": 0.467295
+}
