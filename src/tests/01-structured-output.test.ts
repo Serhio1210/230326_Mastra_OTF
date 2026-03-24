@@ -1,6 +1,6 @@
 import { test, expect } from "bun:test";
-import { mastra } from "./mastra/index.ts";
-import { expertFinderResultSchema } from "./mastra/schemas/expert-finder.ts";
+import { mastra } from "../mastra/index.ts";
+import { expertFinderResultSchema } from "../mastra/schemas/expert-finder.ts";
 
 test("Paris — returns structured output with correct official URL", async () => {
   const agent = mastra.getAgent("expert-search-agent");

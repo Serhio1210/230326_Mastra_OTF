@@ -1,5 +1,5 @@
-import { mastra } from "./mastra/index.ts";
-import { expertFinderResultSchema } from "./mastra/schemas/expert-finder.ts";
+import { mastra } from "../mastra/index.ts";
+import { expertFinderResultSchema } from "../mastra/schemas/expert-finder.ts";
 
 const agent = mastra.getAgent("expert-search-agent");
 const court = process.argv[2] || "Paris";
