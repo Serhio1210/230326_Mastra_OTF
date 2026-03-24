@@ -1,0 +1,136 @@
+{
+  "batch": "5",
+  "courts": [
+    "Basse-Terre",
+    "Cayenne",
+    "Fort-de-France",
+    "Nouméa",
+    "Papeete",
+    "Saint-Denis"
+  ],
+  "results": [
+    {
+      "court": "Basse-Terre",
+      "success": true,
+      "result": {
+        "courtName": "Basse-Terre (Cour d'appel de Basse-Terre)",
+        "pageUrl": "https://www.cours-appel.justice.fr/basse-terre/experts-judiciaires-2026",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/LISTE%20DES%20EXPERTS%20JUDICIAIRES%20CABT%202026.pdf",
+        "documentTitle": "Liste des experts judiciaires 2026 — Téléchargement 628.55 Ko",
+        "publicationDate": "2025-12-11",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "La page officielle a été trouvée sur cours-appel.justice.fr/basse-terre/experts-judiciaires-2026 et contient un lien vers le PDF de la liste des experts judiciaires 2026.",
+        "dateExtractionExplanation": "La date officielle est extraite du contenu du PDF : l'assemblée générale des magistrats du siège s'est réunie le 11 décembre 2025 pour arrêter la liste.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 43293,
+        "extractionMs": 4642,
+        "totalMs": 47936
+      },
+      "error": null,
+      "agentText": "La page officielle 2026 est identifiée. Je vais maintenant récupérer la page et extraire le PDF en parallèle.Toutes les informations sont réunies. Voici la synthèse complète et structurée :\n\n---\n\n## ✅ Résultats — Liste officielle des experts judiciaires de la Cour d'appel de Basse-Terre\n\n---\n\n### 📋 Étape 1 — Recherche de la page officielle\n\nLa recherche a identifié la page officielle la plus récente sur le site **cours-appel.justice.fr** (domaine .justice.fr officiel) :\n\n> 🔗 **Page officielle "
+    },
+    {
+      "court": "Cayenne",
+      "success": false,
+      "result": null,
+      "timing": {
+        "agentMs": 0,
+        "extractionMs": 0,
+        "totalMs": 85600
+      },
+      "error": "This request would exceed your organization's rate limit of 2,000,000 input tokens per minute (org: 336815f2-1aac-4488-bab0-b4de51cb424c, model: claude-sonnet-4-6). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://claude.com/contact-sales to discuss your options for a rate limit increase.",
+      "agentText": ""
+    },
+    {
+      "court": "Fort-de-France",
+      "success": true,
+      "result": {
+        "courtName": "Fort-de-France (Cour d'appel de Fort-de-France)",
+        "pageUrl": "https://www.cours-appel.justice.fr/fort-de-france/experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/Liste%20des%20experts%20judiciaires%20-%20ann%C3%A9e%202024.pdf",
+        "documentTitle": "Liste des experts 2025 — Téléchargement 728.37 Ko",
+        "publicationDate": "2024-11-12",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "Page officielle trouvée sur cours-appel.justice.fr/fort-de-france/experts-judiciaires, un seul PDF identifié sur la page comme liste d'experts judiciaires.",
+        "dateExtractionExplanation": "Le PDF contient la mention 'dressée par l'Assemblée Générale de la Cour le 12 novembre 2024', soit le 2024-11-12.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 46299,
+        "extractionMs": 4822,
+        "totalMs": 51121
+      },
+      "error": null,
+      "agentText": "Je vais rechercher la liste officielle des experts judiciaires de la Cour d'appel de Fort-de-France. Commençons par une recherche web.Excellent ! J'ai trouvé la page officielle et un PDF récent. Je vais maintenant récupérer la page et extraire les données du PDF en parallèle.J'ai toutes les informations nécessaires. Voici le résultat complet et structuré :\n\n---\n\n## ✅ Résultats — Liste officielle des experts judiciaires de la Cour d'appel de Fort-de-France\n\n---\n\n### 📋 Étape 1 — Page officielle t"
+    },
+    {
+      "court": "Nouméa",
+      "success": true,
+      "result": {
+        "courtName": "Nouméa (Cour d'appel de Nouméa)",
+        "pageUrl": "https://www.cours-appel.justice.fr/noumea/experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/20260317%20Liste%20des%20experts%202026.pdf",
+        "documentTitle": "LISTE DES EXPERTS JUDICIAIRES 2026",
+        "publicationDate": "2026-03-17",
+        "publicationDateSource": "page-text",
+        "searchExplanation": "La page officielle des experts judiciaires de la Cour d'appel de Nouméa a été trouvée sur le site du ministère de la Justice à l'adresse https://www.cours-appel.justice.fr/noumea/experts-judiciaires. Le PDF de la liste 2026 y est disponible.",
+        "dateExtractionExplanation": "La date 17/03/2026 est indiquée dans la mention de mise à jour de la page web ('mise à jour : 17/03/2026') et confirmée par le nom du fichier '20260317 Liste des experts 2026.pdf'. Le contenu du PDF ne mentionne pas explicitement la date en toutes lettres dans la première page.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 56808,
+        "extractionMs": 5273,
+        "totalMs": 62081
+      },
+      "error": null,
+      "agentText": "Parfait ! La page officielle est trouvée. Je lance simultanément le **fetchPage** sur la page de la Cour d'appel de Nouméa et je note déjà le PDF de 2021 repéré dans les résultats.Excellent ! La page indique une **mise à jour le 17/03/2026** et contient un PDF intitulé **\"LISTE DES EXPERTS JUDICIAIRES 2026\"** daté du 17 mars 2026 dans son nom de fichier. Je lance maintenant `extractPdfDate` sur ce PDF pour confirmer la date officielle.Le PDF confirme qu'il s'agit bien de la liste pour l'année 20"
+    },
+    {
+      "court": "Papeete",
+      "success": true,
+      "result": {
+        "courtName": "Papeete (Cour d'appel de Papeete)",
+        "pageUrl": "http://www.ca-papeete.justice.fr/index.php?rubrique=73&ssrubrique=91",
+        "documentUrl": "http://www.ca-papeete.justice.fr/art_pix/1_LISTE_2025.pdf",
+        "documentTitle": "LISTE DES EXPERTS JUDICIAIRES 2025",
+        "publicationDate": "2025-03-31",
+        "publicationDateSource": "page-text",
+        "searchExplanation": "Le site officiel ca-papeete.justice.fr liste les éditions annuelles. Le PDF 2025 a été trouvé directement via l'URL 1_LISTE_2025.pdf.",
+        "dateExtractionExplanation": "Le PDF indique 'POUR L'ANNÉE 2025' mais sans date précise. La date du 31 mars 2025 provient du texte de la page principale du site listant les dates de publication.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 65916,
+        "extractionMs": 4851,
+        "totalMs": 70767
+      },
+      "error": null,
+      "agentText": "Excellent ! Le site officiel est `ca-papeete.justice.fr`. Je vois déjà un PDF très prometteur : `1_LISTE_2024.pdf`. Je vais simultanément récupérer la page officielle ET extraire la date du PDF le plus récent.La page officielle n'a pas retourné de liens PDF directement (probablement un site legacy avec JavaScript). Mais j'ai déjà le PDF 2024 en main. Cependant, la recherche a mentionné une date du **31 mars 2025** sur la page principale — ce qui suggère qu'il pourrait y avoir une liste 2025 plus"
+    },
+    {
+      "court": "Saint-Denis",
+      "success": true,
+      "result": {
+        "courtName": "Cour d'appel de Saint-Denis",
+        "pageUrl": "https://www.cours-appel.justice.fr/saint-denis/experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-05/2025_Liste_experts_CA_974.pdf",
+        "documentTitle": "Liste des experts judiciaires et enquêteurs sociaux 2025 (La Réunion)",
+        "publicationDate": "2024-11-27",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "Page officielle trouvée sur le site du Ministère de la Justice à https://www.cours-appel.justice.fr/saint-denis/experts-judiciaires, avec deux PDF listés dont le plus récent est la liste 2025 (La Réunion).",
+        "dateExtractionExplanation": "Le PDF mentionne que la liste a été dressée lors de l'Assemblée Générale du 27 novembre 2024, ce qui constitue la date officielle d'arrêté de la liste.",
+        "errors": []
+      },
+      "timing": {
+        "agentMs": 46868,
+        "extractionMs": 4956,
+        "totalMs": 51824
+      },
+      "error": null,
+      "agentText": "Je vais rechercher la liste officielle des experts judiciaires de la Cour d'appel de Saint-Denis. Commençons par une recherche web.Excellent ! J'ai trouvé la page officielle et un PDF très prometteur. Je vais maintenant récupérer la page et extraire les données du PDF en parallèle.J'ai toutes les informations nécessaires. Le PDF confirme les données. Voici le résultat complet et structuré :\n\n---\n\n## ✅ Résultats — Liste officielle des experts judiciaires de la Cour d'appel de Saint-Denis\n\n### 🔍 "
+    }
+  ],
+  "batchTime": "99.8"
+}
