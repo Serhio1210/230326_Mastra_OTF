@@ -1,5 +1,5 @@
 import { Mastra } from "@mastra/core";
-import { Observability, ConsoleExporter, DefaultExporter } from "@mastra/observability";
+import { Observability, DefaultExporter } from "@mastra/observability";
 import { LibSQLStore } from "@mastra/libsql";
 import { expertSearchAgent } from "./agents/expert-search.ts";
 import { expertSearchMiniAgent } from "./agents/expert-search-mini.ts";
@@ -15,7 +15,6 @@ const observability = new Observability({
       serviceName: "expert-search",
       sampling: { type: "always" },
       exporters: [
-        new ConsoleExporter(),
         new DefaultExporter({ strategy: "realtime" }),
       ],
     },
