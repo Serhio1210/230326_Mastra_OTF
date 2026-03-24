@@ -1,0 +1,362 @@
+[
+  {
+    "court": "Paris",
+    "datesMatch": true,
+    "mini": {
+      "date": "2026-03-10",
+      "source": "pdf-content",
+      "pageUrl": null,
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf",
+      "turns": 3,
+      "totalMs": 9806,
+      "tokens": {
+        "inputTokens": 20443,
+        "outputTokens": 936,
+        "totalTokens": 21379
+      },
+      "cost": 0.0057452250000000005,
+      "error": null,
+      "dateExplanation": "La date exacte la plus spécifique apparaît dans le contenu du PDF : \"LISTE DES EXPERTS JUDICIAIRES ANNEE 2026 MAJ LE 10/03/2026\", ce qui donne 2026-03-10. La page contient aussi \"mise à jour : 10/03/2026\" et l’URL du PDF comporte le chemin \"/2026-03/\", ce qui confirme mars 2026. Comme une date exacte est disponible, elle est retenue plutôt qu’une simple année."
+    },
+    "full": {
+      "date": "2026-03-10",
+      "source": "pdf-content",
+      "pageUrl": null,
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf",
+      "turns": 3,
+      "totalMs": 31974,
+      "tokens": {
+        "inputTokens": 25760,
+        "outputTokens": 1935,
+        "totalTokens": 27695
+      },
+      "cost": 0.04124,
+      "error": null,
+      "dateExplanation": "All available date signals were checked. The PDF text contains the exact date 'ANNEE 2026 MAJ LE 10/03/2026', which provides a precise publication/update date. The page text also shows 'mise à jour : 10/03/2026', confirming the same exact date. The PDF URL path '/2026-03/' indicates March 2026, and the filename 'ANNUPARIS MAJ 10 MARS 26_2.pdf' also supports 2026-03-10. Because the PDF content gives the most specific exact date and is corroborated by the page and URL, the publication date is set to 2026-03-10."
+    }
+  },
+  {
+    "court": "Lyon",
+    "datesMatch": false,
+    "mini": {
+      "date": "2026-02-13",
+      "source": "pdf-content",
+      "pageUrl": "https://www.cours-appel.justice.fr/lyon/les-experts",
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20judiciaires.pdf",
+      "turns": 4,
+      "totalMs": 13250,
+      "tokens": {
+        "inputTokens": 31572,
+        "outputTokens": 1374,
+        "totalTokens": 32946
+      },
+      "cost": 0.0085509,
+      "error": null,
+      "dateExplanation": "The strongest date signal is in the PDF content itself: the first page states \"Mise à jour le 13 février 2026\". This is an exact date and is more specific and more recent than the assembly dates mentioned in the PDF body (14 and 21 November 2025). The URL path also indicates /2026-03/, but that is only a month-level signal and does not override the exact PDF-content date."
+    },
+    "full": {
+      "date": null,
+      "source": "not-found",
+      "pageUrl": null,
+      "pdfUrl": null,
+      "turns": 1,
+      "totalMs": 11609,
+      "tokens": {
+        "inputTokens": 6045,
+        "outputTokens": 606,
+        "totalTokens": 6651
+      },
+      "cost": 0.010893,
+      "error": null,
+      "dateExplanation": "Aucune date n’a pu être déterminée, car aucune des sources à vérifier n’était disponible : pas de texte de page, pas de texte d’ancre de lien PDF, pas d’URL de PDF, et pas de contenu PDF. Il est donc impossible d’extraire une date exacte, un mois/année depuis une URL, ou même une année seule."
+    }
+  },
+  {
+    "court": "Angers",
+    "datesMatch": false,
+    "mini": {
+      "date": null,
+      "source": "not-found",
+      "pageUrl": null,
+      "pdfUrl": null,
+      "turns": 3,
+      "totalMs": 7823,
+      "tokens": {
+        "inputTokens": 17391,
+        "outputTokens": 713,
+        "totalTokens": 18104
+      },
+      "cost": 0.004512825,
+      "error": null,
+      "dateExplanation": "Aucune date exploitable n’a été trouvée dans les sources disponibles. Il n’y avait pas de texte de page officiel, pas de lien PDF identifié, pas de contenu PDF accessible, et donc aucune date dans le texte de page, le texte du lien, l’URL du PDF, ou le contenu du PDF. Impossible également d’utiliser une année seule sans source officielle."
+    },
+    "full": {
+      "date": "2026-03-20",
+      "source": "page-text",
+      "pageUrl": "https://www.cours-appel.justice.fr/angers/experts-judiciaires",
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/LISTE%20EXPERTS%202026.pdf",
+      "turns": 3,
+      "totalMs": 30084,
+      "tokens": {
+        "inputTokens": 24690,
+        "outputTokens": 1832,
+        "totalTokens": 26522
+      },
+      "cost": 0.039346,
+      "error": null,
+      "dateExplanation": "All date signals were checked. The page text contains an exact update date: \"mise à jour : 20/03/2026\", which gives 2026-03-20. The PDF text contains another exact date: \"Assemblée générale ... du 18 novembre 2025\", giving 2025-11-18, but this is older. The PDF URL path `/2026-03/` gives only month precision (2026-03), and the link text \"Liste des experts 2026\" gives only the year 2026. Per the rule to use the most specific and most recent date, the selected publication date is the page update date 2026-03-20 from the page text."
+    }
+  },
+  {
+    "court": "Besançon",
+    "datesMatch": false,
+    "mini": {
+      "date": "2026-02-24",
+      "source": "page-text",
+      "pageUrl": null,
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Annuaire%20experts%202026.pdf",
+      "turns": 4,
+      "totalMs": 10938,
+      "tokens": {
+        "inputTokens": 24289,
+        "outputTokens": 1061,
+        "totalTokens": 25350
+      },
+      "cost": 0.006596175,
+      "error": null,
+      "dateExplanation": "An exact update date appears in the page text: 'mise à jour : 24/02/2026', which is the most specific source. The PDF itself only indicates the year 2026, and the PDF URL path '/2026-02/' only gives month/year, so neither overrides the exact page date."
+    },
+    "full": {
+      "date": "2025-05-19",
+      "source": "page-text",
+      "pageUrl": "https://www.ca-besancon.justice.fr/",
+      "pdfUrl": null,
+      "turns": 5,
+      "totalMs": 77853,
+      "tokens": {
+        "inputTokens": 81464,
+        "outputTokens": 4436,
+        "totalTokens": 85900
+      },
+      "cost": 0.116952,
+      "error": null,
+      "dateExplanation": "The most specific confirmed date is the news/publication date shown in page text for the official item « Annuaire des experts 2025 modifié et mis à jour en mai 2025 »: 19 mai 2025, normalized as 2025-05-19. No PDF text could be extracted because the PDF access failed, no usable PDF anchor text date was available, and no PDF URL date could be reliably confirmed. Therefore the exact page-text date is retained."
+    }
+  },
+  {
+    "court": "Bordeaux",
+    "datesMatch": false,
+    "mini": {
+      "date": "2025-01-01",
+      "source": "pdf-content",
+      "pageUrl": null,
+      "pdfUrl": null,
+      "turns": 3,
+      "totalMs": 14353,
+      "tokens": {
+        "inputTokens": 36862,
+        "outputTokens": 1473,
+        "totalTokens": 38335
+      },
+      "cost": 0.00939315,
+      "error": null,
+      "dateExplanation": "Aucune date de publication exacte n’apparaît dans les sources fournies. Le PDF indique seulement qu’il s’agit de la liste établie pour l’année 2025, ce qui fournit une année seule. J’ai donc normalisé cette information en 2025-01-01. La mention “Arrêté du 5 décembre 2022” correspond à la base réglementaire de la liste, pas à sa date de publication."
+    },
+    "full": {
+      "date": "2025-07-01",
+      "source": "filename",
+      "pageUrl": "https://www.cours-appel.justice.fr/bordeaux/experts",
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-07/EXPERTS%20-%202025_0.pdf",
+      "turns": 3,
+      "totalMs": 37795,
+      "tokens": {
+        "inputTokens": 25047,
+        "outputTokens": 2139,
+        "totalTokens": 27186
+      },
+      "cost": 0.042159,
+      "error": null,
+      "dateExplanation": "I checked all available date signals. The PDF text states only that it is the list \"pour l'année 2025\", which gives only a year. The page text does not show any explicit publication/update date. The link text also gives only the year (2025). The PDF URL path contains \"/2025-07/\", which is a more precise month-level signal than the year-only mentions, so the retained normalized date is 2025-07-01. Exact dates visible in the PDF excerpt such as \"23 décembre 2004\" and \"5 décembre 2022\" refer to cited legal texts/nomenclature, not to the publication date of this directory."
+    }
+  },
+  {
+    "court": "Amiens",
+    "datesMatch": false,
+    "mini": {
+      "date": "2025-03-01",
+      "source": "filename",
+      "pageUrl": "https://www.cours-appel.justice.fr/amiens",
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-03/2025%20-%20Liste%20des%20experts%20judiciaires.pdf",
+      "turns": 4,
+      "totalMs": 15333,
+      "tokens": {
+        "inputTokens": 23675,
+        "outputTokens": 1694,
+        "totalTokens": 25369
+      },
+      "cost": 0.009398625,
+      "error": null,
+      "dateExplanation": "No exact publication or update date was found in the page text, the link anchor text, or the PDF content. The PDF URL path contains '/2025-03/' and the filename begins with '2025', indicating March 2025 and the year 2025. Using the most specific available signal, the date was normalized to 2025-03-01. The 'Arrêté du 05 décembre 2022' mentioned in the PDF is part of the document content and does not indicate the publication date of the list."
+    },
+    "full": {
+      "date": "2026-02-01",
+      "source": "page-text",
+      "pageUrl": "https://www.cours-appel.justice.fr/amiens/les-experts-judiciaires-pres-la-cour-dappel-damiens",
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/2026%20-%20Liste%20des%20experts%20judiciaires%20-ok.pdf",
+      "turns": 3,
+      "totalMs": 38583,
+      "tokens": {
+        "inputTokens": 26561,
+        "outputTokens": 2289,
+        "totalTokens": 28850
+      },
+      "cost": 0.044873,
+      "error": null,
+      "dateExplanation": "Aucune date exacte (jour/mois/année) n'a été trouvée dans le texte extrait du PDF ; celui-ci indique seulement « POUR L’ANNÉE 2026 ». Sur la page, juste sous le lien du PDF, figure la mention « (MAJ 02/2026) », qui fournit une date plus précise au format mois/année. L'URL du PDF, hébergé dans un dossier « /2026-02/ », confirme ce signal. La date a donc été normalisée au premier jour du mois : 2026-02-01."
+    }
+  },
+  {
+    "court": "Aix-en-Provence",
+    "datesMatch": false,
+    "mini": {
+      "date": "2025-12-10",
+      "source": "pdf-content",
+      "pageUrl": null,
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-12/Annuaire%20Experts%20D%C3%A9cembre%202025.pdf",
+      "turns": 4,
+      "totalMs": 13845,
+      "tokens": {
+        "inputTokens": 29298,
+        "outputTokens": 1275,
+        "totalTokens": 30573
+      },
+      "cost": 0.00793485,
+      "error": null,
+      "dateExplanation": "The exact date found in the PDF content is \"December 10, 2025\", which converts to 2025-12-10. The page text shows a later page update date (19/02/2026), but that is only the webpage update timestamp, not the publication date of the directory. The PDF URL path includes /2025-12/, which supports December 2025, but the exact date in the PDF content is more specific and therefore takes precedence."
+    },
+    "full": {
+      "date": "2026-02-19",
+      "source": "page-text",
+      "pageUrl": null,
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2025-12/Annuaire%20Experts%20D%C3%A9cembre%202025.pdf",
+      "turns": 3,
+      "totalMs": 34538,
+      "tokens": {
+        "inputTokens": 25160,
+        "outputTokens": 2034,
+        "totalTokens": 27194
+      },
+      "cost": 0.041432,
+      "error": null,
+      "dateExplanation": "All available date signals were checked. The PDF content contains an exact date: '2025 December 10, 2025' => 2025-12-10. The page text contains an exact update date: 'mise à jour : 19/02/2026' => 2026-02-19. The PDF link text gives only 'Décembre 2025' (month precision), and the PDF URL path '/2025-12/' also indicates December 2025 (month precision). Per the instruction to use the most specific and most recent date across all sources, the retained date is 2026-02-19 from the page text."
+    }
+  },
+  {
+    "court": "Rennes",
+    "datesMatch": true,
+    "mini": {
+      "date": "2026-03-04",
+      "source": "pdf-content",
+      "pageUrl": null,
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/Liste%20EXPERTS%20JUDICIAIRES%20Mise%20%C3%A0%20jour%2004%2003%202026.pdf",
+      "turns": 4,
+      "totalMs": 10936,
+      "tokens": {
+        "inputTokens": 29697,
+        "outputTokens": 834,
+        "totalTokens": 30531
+      },
+      "cost": 0.005980274999999999,
+      "error": null,
+      "dateExplanation": "The most specific date appears in the PDF content on the first page: 'mise à jour au 4 mars 2026'. This exact date matches the page text update '04/03/2026' and the filename/date in the PDF URL path, so the publication date is 2026-03-04. Source recorded as pdf-content because the PDF itself confirms the exact date."
+    },
+    "full": {
+      "date": "2026-03-04",
+      "source": "pdf-content",
+      "pageUrl": "https://www.cours-appel.justice.fr/rennes/experts-enqueteurs-sociaux-interpretes-et-traducteurs",
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/Liste%20EXPERTS%20JUDICIAIRES%20Mise%20%C3%A0%20jour%2004%2003%202026.pdf",
+      "turns": 3,
+      "totalMs": 36075,
+      "tokens": {
+        "inputTokens": 33738,
+        "outputTokens": 1948,
+        "totalTokens": 35686
+      },
+      "cost": 0.049322,
+      "error": null,
+      "dateExplanation": "All date signals were checked. The PDF content contains the exact wording “COUR D’APPEL DE RENNES – LISTE DES EXPERTS JUDICIAIRES – ANNEE 2026 (mise à jour au 4 mars 2026)”, which gives an exact date: 2026-03-04. The page text also shows “mise à jour : 04/03/2026”, confirming the same exact date. The PDF link text only provides the year 2026, and the PDF URL path (/2026-03/) only indicates March 2026, both less specific than the exact date in the PDF text. Therefore the most specific valid date retained is 2026-03-04 from the PDF content."
+    }
+  },
+  {
+    "court": "Cayenne",
+    "datesMatch": false,
+    "mini": {
+      "date": null,
+      "source": "not-found",
+      "pageUrl": null,
+      "pdfUrl": null,
+      "turns": 3,
+      "totalMs": 6934,
+      "tokens": {
+        "inputTokens": 17078,
+        "outputTokens": 672,
+        "totalTokens": 17750
+      },
+      "cost": 0.004304850000000001,
+      "error": null,
+      "dateExplanation": "No exact date was available in PDF text, page text, anchor text, or PDF URL path. Since no document URL or accessible PDF content was found, there was no date evidence to extract. A year-only fallback was also unavailable, so the publication date remains not found."
+    },
+    "full": {
+      "date": "2022-11-23",
+      "source": "filename",
+      "pageUrl": null,
+      "pdfUrl": "https://www.courdecassation.fr/files/files/Experts/2022_11_23_Liste_experts_ca_cayenne.pdf",
+      "turns": 5,
+      "totalMs": 90028,
+      "tokens": {
+        "inputTokens": 83304,
+        "outputTokens": 5112,
+        "totalTokens": 88416
+      },
+      "cost": 0.1242,
+      "error": null,
+      "dateExplanation": "Toutes les sources disponibles ont été examinées. Le texte indexé du PDF contient « Pour l’année judiciaire 2022 » (année seule) et « réunie le 15 novembre 2021 » (date exacte), mais cette dernière correspond à la date de réunion/assemblée mentionnée dans le document, pas nécessairement à sa publication. Le nom du fichier PDF contient une date exacte et plus récente : « 2022_11_23_Liste_experts_ca_cayenne.pdf », soit 2022-11-23. En appliquant la consigne d'utiliser la date la plus spécifique et la plus récente, la date retenue est donc 2022-11-23, extraite du filename."
+    }
+  },
+  {
+    "court": "Grenoble",
+    "datesMatch": false,
+    "mini": {
+      "date": "2026-01-02",
+      "source": "page-text",
+      "pageUrl": null,
+      "pdfUrl": "https://www.cncej.org/uploads/document/file/3/712_REGLES_DEONTOLOGIE_092017.pdf",
+      "turns": 3,
+      "totalMs": 7738,
+      "tokens": {
+        "inputTokens": 17526,
+        "outputTokens": 791,
+        "totalTokens": 18317
+      },
+      "cost": 0.00487395,
+      "error": null,
+      "dateExplanation": "The page text contains an explicit update date: \"27/01/2022 - mise à jour : 02/01/2026\". This is the most specific available date signal, so the publication date was taken from the page text and normalized to YYYY-MM-DD as 2026-01-02. The linked PDF could not be used because its extraction failed with HTTP 404, and no date was available from PDF text, link text, or URL path."
+    },
+    "full": {
+      "date": "2026-02-27",
+      "source": "page-text",
+      "pageUrl": "https://www.cours-appel.justice.fr/grenoble/experts-et-traducteurs-judiciaires",
+      "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/ANNUAIRE%20E.J%202026%20INTERNET_0.pdf",
+      "turns": 3,
+      "totalMs": 34627,
+      "tokens": {
+        "inputTokens": 28750,
+        "outputTokens": 2114,
+        "totalTokens": 30864
+      },
+      "cost": 0.045662,
+      "error": null,
+      "dateExplanation": "All available date signals were checked. The PDF content gives an exact date: \"Mise à jour le 26 février 2026\". The PDF link text also gives an exact date: \"màj le 26/02/2026\". The PDF URL path contains only a month signal: \"/2026-02/\". The page text shows an exact and more recent date: \"mise à jour : 27/02/2026\". Following the rule to use the most specific and most recent date, the retained publication date is 2026-02-27 from the page text. The year-only mention \"pour l'année 2026\" in the PDF was not used because exact dates are available."
+    }
+  }
+]

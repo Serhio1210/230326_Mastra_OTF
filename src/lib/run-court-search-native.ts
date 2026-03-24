@@ -283,7 +283,9 @@ const functionHandlers: Record<string, (args: any) => Promise<any>> = {
 export type NativeEffort = "none" | "low" | "medium" | "high";
 
 export type NativeOptions = {
+  model?: string;
   effort?: NativeEffort;
+  extractionEffort?: NativeEffort;
   allowedDomains?: string[];
 };
 
@@ -291,7 +293,7 @@ export async function runCourtSearchNative(
   court: string,
   options: NativeOptions = {}
 ): Promise<AgentTrace> {
-  const { effort = "none", allowedDomains } = options;
+  const { model = "gpt-5.4-mini", effort = "none", extractionEffort = "medium", allowedDomains } = options;
   const totalStart = Date.now();
   const startedAt = new Date().toISOString();
 
@@ -319,7 +321,7 @@ export async function runCourtSearchNative(
       const turnEvents: AgentStep["events"] = [];
 
       const response = await client.responses.create({
-        model: "gpt-5.4-mini",
+        model,
         input: currentInput,
         tools: buildTools(allowedDomains),
         ...(effort !== "none" ? { reasoning: { effort } } : {}),
@@ -480,10 +482,10 @@ Use the most specific and most recent date. A year-only date must not override a
 Date format: YYYY-MM-DD.`;
 
     const extractResult = await client.responses.parse({
-      model: "gpt-5.4-mini",
+      model,
       input: [{ role: "user", content: extractionPrompt }],
       text: { format: zodTextFormat(expertFinderResultSchema, "expert_finder_result") },
-      reasoning: { effort: "medium" as const },
+      reasoning: { effort: extractionEffort as any },
     });
 
     const extractionMs = Date.now() - extractionStart;
@@ -503,7 +505,7 @@ Date format: YYYY-MM-DD.`;
 
     return {
       court,
-      model: "gpt-5.4-mini",
+      model,
       effort,
       startedAt,
       finishedAt: new Date().toISOString(),
@@ -530,7 +532,7 @@ Date format: YYYY-MM-DD.`;
   } catch (error) {
     return {
       court,
-      model: "gpt-5.4-mini",
+      model,
       effort,
       startedAt,
       finishedAt: new Date().toISOString(),
