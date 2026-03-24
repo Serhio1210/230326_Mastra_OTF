@@ -103,14 +103,14 @@ export type RawToolData = {
 
 const tools: OpenAI.Responses.Tool[] = [
   {
-    type: "web_search_preview",
+    type: "web_search",
     user_location: {
       type: "approximate",
       country: "FR",
       region: "Île-de-France",
       city: "Paris",
     },
-  } as any,
+  },
   {
     type: "function" as const,
     name: "fetchPage",
