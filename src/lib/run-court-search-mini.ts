@@ -5,6 +5,7 @@ import { TokenLimiter } from "@mastra/core/processors";
 import { expertFinderResultSchema, type ExpertFinderResult } from "../mastra/schemas/expert-finder.ts";
 import { fetchPageTool } from "../mastra/tools/fetchpage/index.ts";
 import { extractPdfDateTool } from "../mastra/tools/extractpdfdate/index.ts";
+import { EXPERT_SEARCH_INSTRUCTIONS } from "../mastra/agents/instructions.ts";
 import type { CourtSearchResult, TokenUsage } from "./run-court-search.ts";
 
 function emptyUsage(): TokenUsage {
@@ -14,18 +15,7 @@ function emptyUsage(): TokenUsage {
 const miniAgent = new Agent({
   id: "expert-search-mini",
   name: "Expert Search (GPT-5.4 Mini)",
-  instructions: `You are an expert at finding official French court "experts judiciaires" directory pages, PDF documents, and their publication dates.
-
-Given a French Cour d'appel name:
-1. Web search for "[city] cour d'appel experts judiciaires liste site:justice.fr"
-2. Prioritize .justice.fr URLs. IGNORE exjudis.fr, cncej.org.
-3. Use fetchPage on the .justice.fr URL to get PDF links.
-4. Pick the most recent expert directory PDF (tagged "likely-expert-list").
-5. Use extractPdfDate to read the PDF. The date inside is the AUTHORITATIVE source.
-6. Look for: "MAJ LE 10/03/2026", "Liste arrêtée au...", "Mise à jour..."
-7. Return: court name, page URL, PDF URL, publication date (YYYY-MM-DD), and where you found the date.
-
-Legacy fallback: if cours-appel.justice.fr/[city] fails, try ca-[city].justice.fr (HTTP not HTTPS).`,
+  instructions: EXPERT_SEARCH_INSTRUCTIONS,
   model: openai("gpt-5.4-mini"),
   tools: {
     webSearch: openai.tools.webSearch({
