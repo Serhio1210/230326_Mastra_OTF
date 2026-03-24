@@ -2,6 +2,7 @@ import { anthropic } from "@ai-sdk/anthropic";
 import { Agent } from "@mastra/core/agent";
 import { expertFinderResultSchema } from "../schemas/expert-finder.ts";
 import { fetchPageTool } from "../tools/fetchpage/index.ts";
+import { extractPdfDateTool } from "../tools/extractpdfdate/index.ts";
 
 const AGENT_INSTRUCTIONS = `You are an expert at finding official French court "experts judiciaires" (judicial experts) directory pages, PDF documents, and their publication dates.
 
@@ -10,7 +11,7 @@ Given a French Cour d'appel (appeals court) name, you must:
 1. Find the official "experts judiciaires" page for that court
 2. Fetch the actual page to extract PDF links
 3. Pick the most recent expert directory PDF
-4. Determine the publication date of the document
+4. Read the PDF to find the official publication date
 5. Return structured results with detailed explanations
 
 ## Step-by-Step Process
@@ -26,30 +27,40 @@ From the search results, ALWAYS prioritize URLs containing .justice.fr or .gouv.
 IGNORE third-party sites like exjudis.fr, cncej.org — these are NOT official court pages.
 
 ### Step 2: Fetch the Page
-Once you have a candidate .justice.fr URL, use the **fetchPage** tool to load the actual page.
-This returns:
+Use the **fetchPage** tool on the .justice.fr URL. This returns:
 - All PDF links with their anchor text and relevance hints
-- Full page text (for finding dates)
+- Full page text (for context)
 
 ### Step 3: Pick the Right PDF
 From the fetchPage results, pick the expert directory PDF:
 - Look for PDFs tagged "likely-expert-list" (contains "expert" or "annuaire")
-- Among those, pick the one with the **most recent date** in its filename or link text
+- Among those, pick the one with the most recent date in its filename or link text
 - Ignore PDFs about speeches ("discours"), declarations, forms ("formulaire"), or tariffs
-- Common filename patterns: "ANNUPARIS MAJ 10 MARS 26.pdf", "ANNUEXPERTS2025.pdf"
 
-### Step 4: Determine Publication Date
-**Priority order:**
-1. **Filename** (source: "filename") — "MAJ 10 MARS 26" → 2026-03-10, or "2025-01" from URL path
-2. **Link text** (source: "link-text") — date in the PDF link anchor text
-3. **Page text** (source: "page-text") — look for "MAJ", "mise à jour", "actualisé" near dates in pageText
-4. **Not found** (source: "not-found") — if all above fail
+### Step 4: Read the PDF for the Official Date
+Use the **extractPdfDate** tool on the chosen PDF URL. This returns text from the first pages.
 
-**Date format:** Always return YYYY-MM-DD (convert French dates: "10 MARS 26" → 2026-03-10)
+**The date inside the PDF is the AUTHORITATIVE source.** It is the official legal date of the document.
+Look for patterns like:
+- "MAJ LE 10/03/2026" → 2026-03-10
+- "Liste arrêtée au 14 janvier 2025" → 2025-01-14
+- "Mise à jour : 24/02/2026" → 2026-02-24
+- "ANNEE 2026" (year only, use as fallback)
+
+### Step 5: Set the publicationDateSource
+Based on where you found the most precise date:
+1. **pdf-content** — date found inside the PDF text (PREFERRED — this is the official date)
+2. **page-text** — date found in the page text ("mise à jour" on the webpage)
+3. **link-text** — date found in the PDF link anchor text
+4. **filename** — date parsed from the PDF filename or URL path
+5. **not-found** — could not determine any date
+
+**Date format:** Always return YYYY-MM-DD. Convert French dates (DD/MM/YYYY → YYYY-MM-DD).
 
 ## Important Notes
 - ONLY search for Cour d'appel (appeals courts), not Tribunaux judiciaires
 - Prefer the most specific date (full date over year-only)
+- ALWAYS use extractPdfDate — the PDF content is the official truth
 - Always explain your reasoning in the explanation fields
 - Record any errors encountered`;
 
@@ -70,6 +81,7 @@ export const expertSearchAgent = new Agent({
       },
     }),
     fetchPage: fetchPageTool,
+    extractPdfDate: extractPdfDateTool,
   },
 });
 
