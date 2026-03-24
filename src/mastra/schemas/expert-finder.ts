@@ -6,9 +6,6 @@ export const expertFinderResultSchema = z.object({
     .string()
     .nullable()
     .describe("The experts judiciaires page URL, or null if not found"),
-  pageVerified: z
-    .boolean()
-    .describe("Whether the page URL was verified accessible (HTTP 200)"),
   documentUrl: z
     .string()
     .nullable()
@@ -17,9 +14,6 @@ export const expertFinderResultSchema = z.object({
     .string()
     .nullable()
     .describe("The title/text of the PDF link"),
-  documentVerified: z
-    .boolean()
-    .describe("Whether the PDF URL was verified accessible (HTTP 200)"),
   publicationDate: z
     .string()
     .nullable()

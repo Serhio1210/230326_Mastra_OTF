@@ -39,9 +39,6 @@ Look for PDF links on the experts page. Common patterns:
 
 **Date format:** Always return YYYY-MM-DD (convert French dates)
 
-### Step 4: URL Verification
-For now, set pageVerified and documentVerified to false (verification tools will be added later).
-
 ## Important Notes
 - ONLY search for Cour d'appel (appeals courts), not Tribunaux judiciaires
 - Prefer the most specific date (full date over year-only)
