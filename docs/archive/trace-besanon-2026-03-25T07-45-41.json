@@ -1,0 +1,154 @@
+{
+  "court": "Besançon",
+  "agentId": "expert-search-mini",
+  "startedAt": "2026-03-25T07:45:27.280Z",
+  "finishedAt": "2026-03-25T07:45:41.383Z",
+  "totalMs": 14103,
+  "steps": [
+    {
+      "turn": 0,
+      "durationMs": 2126,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": false,
+            "title": null,
+            "pageText": "",
+            "pdfLinks": [],
+            "error": "Unable to connect. Is the computer able to access the url?"
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "durationMs": 1829,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Experts judiciaires | Cour d'appel de Besançon",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Besançon Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Experts judiciaires 26/02/2019 - mise à jour : 24/02/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer Les experts judiciaires sont des professionnels de toutes les spécialités qui mettent une part de leur activité au service de la Justice. Ces professionnels sont inscrits sur une liste établie par la cour d'appel, après un examen attentif de leur candidature. Ils sont désignés par la cour d'appel et les tribunaux de son ressort, à l'occasion de litiges. Le rôle de l'expert est d'apporter un avis technique sur certains points précis. L'expertise judiciaire apporte au justiciable une garantie quant à la rigueur avec laquelle ses demandes vont être étudiées. Etant les seuls à pouvoir éclairer les magistrats sur une question d’ordre technique, les experts ont un rôle déterminant au sein du système judiciaire. En matière civile, l’expertise ne peut être ordonnée que dans le cas où des constatations ou une consultation établies par un technicien ne suffisent pas à éclairer le juge. Elle constitue dès lors l’un des moyens d’administration judiciaire de la preuve. Les expertises psychiatriques ont un rôle essentiel dans de nombreux contentieux, notamment en ce qui concerne la mise en œuvre d’une mesure de protection judiciaire, la contestation d’un testament, ou encore les litiges relatifs à l’exercice de l’autorité parentale ou au droit de visite. En matière pénale, toute juridiction d’instruction ou de jugement peut, à la demande du ministère public, d’office, ou à la demande des parties, ordonner une expertise. Celle-ci apparaît comme un outil indispensable pour évaluer la responsabilité pénale, déterminer l’altération ou l’abolition du discernement, ou encore proposer des mesures adaptées aux personnes mises en cause souffrant de pathologies psychiatriques. Ces missions, déterminantes pour l’issue des litiges, requièrent un vivier de professionnels disponibles. Vous trouverez ci-après les liens renvoyant vers les formulaires dématérialisés Démarche Numérique : Inscription initiale : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-inscription-initiale-campagne- Réinscription : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-reinscription-campagne-nationa Extension : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-extension-d-inscription-campag Dans l'article Liens pratiques L'expert judiciaire Annuaire des experts - 2026 Téléchargement (1.05 Mo) Conseil national des compagnies d’experts de justice Compagnie des experts judiciaire de la cour d'appel de Besançon Arrêté du 5 décembre 2022 relatif à la nomenclature prévue à l'article 1er du décret n° 2004-1463 du 23 décembre 2004 Articles associés Candidature d’expert judiciaire agréé par la cour d’appel",
+            "pdfLinks": [
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Annuaire%20experts%202026.pdf",
+                "text": "Annuaire des experts - 2026\n                                                    Téléchargement (1.05 Mo)",
+                "relevanceHint": "likely-expert-list"
+              }
+            ],
+            "error": null
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": false,
+            "title": null,
+            "pageText": "",
+            "pdfLinks": [],
+            "error": "Unable to connect. Is the computer able to access the url?"
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "durationMs": 1700,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "extractPdfDate",
+          "fullResult": {
+            "success": true,
+            "pdfText": "COUR D’APPEL DE BESANÇON LISTE DES EXPERTS POUR 2026 1 TABLE DES MATIÈRES Pages SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES . . . . . . . . . . . . . . . . . . . . . . 3 LISTE ALPHABETIQUE DES EXPERTS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 LISTE ALPHABÉTIQUE DES EXPERTS EN PERIODE PROBATOIRE . . . . . . . . . . . . . . . . . . . . . . . . . . . 26 LISTE DES EXPERTS PAR RUBRIQUE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 139 2 SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . . . 31 Pour être plus amplement informés, les magistrats peuvent se référer à l'annuaire national des experts développé par le CNCEJ qui répertorie des informations plus précises sur le profil l'expérience et les spécialités de l'expert. A-01 Agriculture . . . . . . . . . . . . . . . . . . 31 A-01.01 APPLICATIONS DE PRODUITS P H Y T O P H A R M A C E U T I Q U E S , MATIERES FERTILISANTES ET SUPPORTS DE CULTURE . . . . . . . 31 Application de produits phytopharmaceutiques par voie terrestre - Traitement des semences, des plants, des bulbes, des denrées stockées - Application des matières fertilisantes et des supports de culture A-01.02 FONCIER RURAL . . . . . . 31 Bornage - Voies d'accès - Remembrement des parcelles - Catégories du foncier rural - Servitudes et urbanisme (Bornage : voir C.16. - Voiries : voir C.4.3.) - Baux ruraux : calculs d'amélioration foncière et culturale - Révision de fermage - Etat des lieux A-01.03 C O N S T R U C T I O N S E T AMENAGEMENTS RURAUX . . . . 32 Équipements agricoles (dont équipements d'énergies alternatives) - Estimations des haras et établissements équestres A-01.04 ÉCONOMIE ET GESTION AGRICOLES - FONDS AGRICOLES 32 Évaluation des exploitations agricoles - Parts sociales A-01.05 ESTIMATIONS FONCIERES AGRICOLES . . . . . . . . . . . . . . . . 32 Bâtis et non bâtis - Expropriations et évictions - Successions - Estimations A-01.06 HYDRAULIQUE AGRICOLE ET RURALE . . . . . . . . . . . . . . . . . . . 33 Gestion de l'eau - Réseaux et équipements - Voieries - Droits d'eau. (Réseaux et travaux hydrauliques : voir C.4.8.) A-01.07 MATERIEL ET TECHNIQUE A G R I C O L E . ( M A T E R I E L A MOTORISATION THERMIQUE : VOIR E.7.9.) . . . . . . . . . . . . . . . . . . . . . 33 Estimation de matériel agricole - Préparation et conduite des cultures - Applications des intrants agricoles - Récoltes et post-récoltes - Transport et manutention - Stockage A-01.08 PRODUCTIONS DE GRANDES CULTURES ET DE CULTURES SPECIALISEES . . . . . . . . . . . . . . 33 Cultures annuelles, pluriannuelles et pérennes - Pédologie et agronomie - Productions de semences, de plants, de bulbes A-02 Agro-alimentaire. (Bâtiments : voir C.2.) 34 Contrôles qualitatifs et analyses - Ingénierie, normes - Ouvrages et équipements (matériels et installations) - Produits alimentaires et leurs transformations - Emballages et conditionnements - Stockage et transport - Modes de conservation, traçabilité - Restauration collective - Tables gastronomiques - Gites ruraux A-03 Aménagements et équipements de l'espace rural . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34 Espaces naturels - Biodiversité - Zonages - Préservation et protections des milieux naturels - Flore et habitats naturels A-04 Animaux autres que d'élevage . . . . . . 34 Animaux de compagnie et de sport - Courses et concours - Établissements et sports équestres - Haras - Estimations A-05 Aquaculture . . . . . . . . . . . . . . . . . 34 Productions en eaux douces et de mer - Médecine, élevage, bien-être et transport des poissons - Estimations A-06 Biotechnologies . . . . . . . . . . . . . . . 34 Équipements, procédés, fermentation - Produits des biotechnologies - Emballages et conditionnements des produits de biotechnologies A-07 Élevage . . . . . . . . . . . . . . . . . . . . 34 Estimation de matériel agricole - Préparation et conduite des cultures - Applications des intrants agricoles - Récoltes et post-récoltes - Transport et manutention - Stockage A-08 Horticulture . . . . . . . . . . . . . . . . . 34 Arboriculture fruitière et ornementale - Maraichage - Floriculture et décoration florale - Espaces verts, parcs et aménagements paysagés - Matériels d'horticulture A-09 Risques climatiques et météorologiques 34 Neige - Avalanches - Tornades - Submersions A-10 Nuisances - Pollutions agricoles et dépollutions. (voir I.1. et I.7.) . . . . . . . . . . . . 34 Équipements et procédés - Études d'impact - Toxicologie non médicale - Énergies alternatives A-11 Pêche - Chasse - Faune sauvage vertebrée et invertebrée . . . . . . . . . . . . . . . . . . . . . . . . 35 A-11.01 ARMEMENT - ACCASTILLAGE - MATERIELS ET EQUIPEMENTS POUR LA PECHE ET POUR LA CHASSE . 35 A-11.02 DEGATS DE GIBIER . . . . 35 A-11.03 ESTIMATIONS . . . . . . . . 35 A-11.04 P E U P L E M E N T S E T EQUILIBRES CYNEGETIQUES - 3 ESTIMATIONS . . . . . . . . . . . . . . 35 A-12 Sylviculture . . . . . . . . . . . . . . . . . 35 Estimation et gestion - Semis, pépinières et plantations - Travaux et exploitations forestières - Sciage et produits forestiers - Restauration des terrains par plantations - Transports des vins et des alcools - État sanitaire A-13 Viticulture et oenologie . . . . . . . . . . 35 A-13.01 D I S T I L L A T I O N , ELABORATION DES LIQUEURS ET DES ALCOOLS . . . . . . . . . . . . . . 35 A-13.02 E M B A L L A G E E T CONDITIONNEMENT DES VINS, DES LIQUEURS ET DES ALCOOLS - MATERIEL DE CONDITIONNEMENT DES VINS, DES LIQUEURS ET DES ALCOOLS . . . . . . . . . . . . . . . . . . 35 A-13.03 ESTIMATION ET GESTION - E X P L O I T A T I O N V I T I C O L E - MATERIELS DE CULTURE DE LA V I G N E - P E P I N I E R E S E T P L A N T A T I O N S - P R O D U I T S , TRAITEMENTS ET PROTECTION DE LA VIGNE . . . . . . . . . . . . . . . . . . 35 A-13.04 OENOLOGIE - APPELLATIONS - DEGUSTATIONS DES VINS ET DES ALCOOLS - VINIFICATION ET ASSEMBLAGES - FERMENTATIONS - ANALYSE DES VINS ET DES ALCOOLS - MATERIEL DE VINIFICATION, DE STOCKAGE ET DE PREPARATION DES VINS ET ALCOOLS - TRANSPORTS DES VINS ET DES ALCOOLS . . . . 35 A-14 Santé vétérinaire . . . . . . . . . . . . . . 36 A-14.01 BIOLOGIE, PHARMACOLOGIE ET TOXICOLOGIE VETERINAIRES 36 A-14.02 MEDECINE, CHIRURGIE, E L E V A G E , B I E N - E T R E E T TRANSPORT DES ANIMAUX DE COMPAGNIE (CHIENS, CHATS, NAC ( N O U V E A U X A N I M A U X D E COMPAGNIE)) . . . . . . . . . . . . . . . 36 A-14.03 MEDECINE, CHIRURGIE, E L E V A G E , B I E N - E T R E E T TRANSPORT DES RUMINANTS ( B O V I N S , O V I N S , C A P R I N S , C A M E L I D E S ) , D E S E Q U I D E S (CHEVAUX, PONEYS, ANES ET CROISEMENTS) ET DES PORCINS 36 A-14.04 MEDECINE, CHIRURGIE, E L E V A G E , B I E N - E T R E E T TRANSPORT DES VOLAILLES, LAPINS ET GIBIERS D'ELEVAGE . . . . . . . 36 A-14.05 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DE LA FAUNE SAUVAGE . . . . . . 36 A-14.06 SANTE PUBLIQUE, QUALITE ET SECURITE DES ALIMENTS . . . 36 B - A R T S - C U L T U R E - COMMUNICATION - MÉDIAS . . . 36 Pour être plus amplement informés, les magistrats peuvent se référer à l'annuaire national des experts développé par le CNCEJ qui répertorie des informations plus précises sur le profil l'expérience et les spécialités de l'expert. B-01 Ecritures . . . . . . . . . . . . . . . . . . . . 36 B-01.01 DOCUMENTS ET ECRITURES 36 B-01.02 PALEOGRAPHIE . . . . . . . 36 B-02 Généalogie successorale . . . . . . . . . 36 B-03 Objets d'art et de collection . . . . . . . 36 B-03.01 ARMES ANCIENNES . . . . 36 B-03.02 BIJOUTERIE, JOAILLERIE, HORLOGERIE, ORFEVRERIE . . . . 36 B-03.03 CERAMIQUES ANCIENNES ET D'ART . . . . . . . . . . . . . . . . . . . . . 36 B-03.04 CRISTALLERIE . . . . . . . . 36 B-03.05 E B E N I S T E R I E - MARQUETERIE . . . . . . . . . . . . . . 36 B-03.06 ETOFFES ANCIENNES ET TISSAGES . . . . . . . . . . . . . . . . . . 37 B-03.07 FERRONNERIE ET BRONZES 37 B-03.08 G R A V U R E S E T A R T S GRAPHIQUES . . . . . . . . . . . . . . . 37 B-03.09 HERALDIQUE . . . . . . . . . 37 B-03.10 L I V R E S A N C I E N S E T MODERNES . . . . . . . . . . . . . . . . 37 B-03.11 LUTHERIE ET INSTRUMENTS DE MUSIQUE . . . . . . . . . . . . . . . 37 B-03.12 MEUBLES ET MOBILIERS ANCIENS. (MEUBLES MODERNES : VOIR C.7.1.) . . . . . . . . . . . . . . . . 37 4 B-03.13 N U M I S M A T I Q U E E T MEDAILLES . . . . . . . . . . . . . . . . 37 B-03.14 PHILATELIE . . . . . . . . . . 37 B-03.15 SCULPTURES . . . . . . . . . 37 B-03.16 TABLEAUX . . . . . . . . . . . 37 B-03.17 TAPISSERIES ET TAPIS . . 37 B-03.18 VITRAUX ET VITRERIE D'ART . . . . . . . . . . . . . . . . . . . . . . . . . . 37 B-03.19 ARCHEOLOGIE . . . . . . . . 37 B-03.20 ART D'ASIE ET D'EXTREME ORIENT, ART AFRICAIN, ART OCEANIEN, ART AMERICAIN . . . 37 B-03.21 O E U V R E S D ' A R T DEMATERIALISEES NFT . . . . . . . 37 B-04 Productions culturelles et de communication . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37 B-04.01 CINEMA, TELEVISION, VIDEO, AUDIOVISUEL, TOUS SUPPORTS M E D I A S E T P L A T E F O R M E S DIGITALES . . . . . . . . . . . . . . . . . 37 B-04.02 IMPRIMERIE . . . . . . . . . . 37 B-04.03 MUSIQUE . . . . . . . . . . . . 37 B-04.04 P H O T O G R A P H I E ANALOGIQUE ET NUMERIQUE - DATATION ET CERTIFICATION - ATTRIBUTION - RECONNAISSANCE FACIALE . . . . . . . . . . . . . . . . . . . 37 B-04.05 PRESSE, EDITION . . . . . . 37 B-04.06 C O M M U N I C A T I O N , PUBLICITE DIGITALE ET MEDIAS 37 B-04.07 SPECTACLES VIVANTS . . 37 B-04.08 RELATIONS MEDIAS, PRESSE, PUBLICS . . . . . . . . . . . . . . . . . . . 37 B-05 Propriété littéraire et artistique . . . . . 37 B-05.01 GESTION DES DROITS D'AUTEUR . . . . . . . . . . . . . . . . . 37 B-05.02 GESTION DES DROITS VOISINS . . . . . . . . . . . . . . . . . . . 37 B-05.03 GESTION DES DROITS DERIVES . . . . . . . . . . . . . . . . . . 37 B-05.04 GESTION DES DROITS A L'IMAGE . . . . . . . . . . . . . . . . . . . 37 B-05.05 GESTION DES DROITS DE REPRODUCTION . . . . . . . . . . . . . 38 B-06 Sport . . . . . . . . . . . . . . . . . . . . . . 38 B-06.01 ACTIVITES SPORTIVES . . 38 B-06.02 M A T E R I E L E T I N S T A L L A T I O N S S P O R T I V E S . (BATIMENTS, GYMNASES, STADES COUVERTS : VOIR C.2.) . . . . . . . . 38 C-BATIMENT - TRAVAUX PUBLICS - GESTION IMMOBILIÈRE . . . . . . . 38 Pour être plus amplement informés, les magistrats peuvent se référer à l'annuaire national des experts développé par le CNCEJ qui répertorie des informations plus précises sur le profil l'expérience et les spécialités de l'expert. C-01 Acoustique, bruits, vibrations . . . . . . 38 C-02 Constructions générales tous corps d'état 38 C-02.01 ARCHITECTURE - INGENIERIE - MAITRISE D'OEUVRE. . . . . . . . . 38 C-02.02 ARCHITECTURE D'INTERIEUR - DECORATION . . . . . . . . . . . . . . 39 C-02.03 ARCHITECTURE DU PAYSAGE - ESPACES VERTS ET DE LOISIRS - A M E N A G E M E N T S S P O R T I F S EXTERIEURS. (HORTICULTURE : VOIR A.8.) . . . . . . . . . . . . . . . . . . . . . . 40 C-02.04 COORDINATION DE LA SECURITE ET PROTECTION DE LA SANTE (CSPS) . . . . . . . . . . . . . . . 40 C-02.05 É C O N O M I E D E L A CONSTRUCTION, VALORISATION DES TRAVAUX ET METRES . . . . . . . . 40 C-02.06 MONUMENTS HISTORIQUES ET PATRIMOINE BATI . . . . . . . . 40 C-02.07 O R D O N N A N C E M E N T , PILOTAGE, COORDINATION (OPC) 40 C-02.08 PISCINES : GROS-OEUVRE, E T A N C H E I T E , B A S S I N S PREFABRIQUES, TRAITEMENT DE 5",
+            "pageCount": 137,
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "durationMs": 2461,
+      "events": [
+        {
+          "type": "model_text",
+          "text": "Liste officielle trouvée pour la **Cour d’appel de Besançon** : **“Annuaire des experts – 2026”**. Le lien officiel est sur **cours-appel.justice.fr**, et la page indique une **mise à jour le 24/02/2026**. citeturn0search0\n\nJ’ai aussi vérifié le PDF avec `extractPdfDate` : le document s’intitule **“LISTE DES EXPERTS POUR 2026”** sur la première page. En revanche, dans l’extrait des 5 premières pages, je n’ai pas vu de date plus précise que l’année **2026**. Donc la **date officielle la plus spécifique** disponible est celle de la page : **2026-02-24**. Source de date retenue : **page-text**. citeturn0search0turn0search1\n\n**Résultat**\n- **Cour d’appel** : Besançon\n- **Liste officielle** : Annuaire des experts – 2026\n- **Date officielle retenue** : **2026-02-24**\n- **Source** : **page-text** citeturn0search0turn0search1\n\n**Erreurs rencontrées**\n- Les pages tentées sur des URLs non officielles / inaccessibles ont renvoyé une erreur de connexion.\n"
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "durationMs": 5982,
+    "usage": {
+      "inputTokens": 1771,
+      "outputTokens": 732,
+      "totalTokens": 2503
+    },
+    "result": {
+      "courtName": "Besançon",
+      "pageUrl": null,
+      "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Annuaire%20experts%202026.pdf",
+      "documentTitle": "Annuaire des experts - 2026",
+      "publicationDate": "2026-02-24",
+      "publicationDateSource": "page-text",
+      "searchExplanation": "I found the official 'Experts judiciaires' page for the Cour d'appel de Besançon and the linked PDF 'Annuaire des experts - 2026' on cours-appel.justice.fr. The PDF confirms it is the 2026 expert list.",
+      "dateExtractionExplanation": "The page text contains an exact date: 'mise à jour : 24/02/2026', which is the most specific date available. The PDF text, link text, and PDF filename only indicate the year 2026 (or year-month in the URL path) and do not provide a more specific publication date, so the page-text date was selected.",
+      "errors": []
+    }
+  },
+  "result": {
+    "courtName": "Besançon",
+    "pageUrl": null,
+    "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Annuaire%20experts%202026.pdf",
+    "documentTitle": "Annuaire des experts - 2026",
+    "publicationDate": "2026-02-24",
+    "publicationDateSource": "page-text",
+    "searchExplanation": "I found the official 'Experts judiciaires' page for the Cour d'appel de Besançon and the linked PDF 'Annuaire des experts - 2026' on cours-appel.justice.fr. The PDF confirms it is the 2026 expert list.",
+    "dateExtractionExplanation": "The page text contains an exact date: 'mise à jour : 24/02/2026', which is the most specific date available. The PDF text, link text, and PDF filename only indicate the year 2026 (or year-month in the URL path) and do not provide a more specific publication date, so the page-text date was selected.",
+    "errors": []
+  },
+  "totalUsage": {
+    "inputTokens": 23997,
+    "outputTokens": 1202,
+    "totalTokens": 25199
+  },
+  "rawToolData": {
+    "pageTitle": "Experts judiciaires | Cour d'appel de Besançon",
+    "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Besançon Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Experts judiciaires 26/02/2019 - mise à jour : 24/02/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer Les experts judiciaires sont des professionnels de toutes les spécialités qui mettent une part de leur activité au service de la Justice. Ces professionnels sont inscrits sur une liste établie par la cour d'appel, après un examen attentif de leur candidature. Ils sont désignés par la cour d'appel et les tribunaux de son ressort, à l'occasion de litiges. Le rôle de l'expert est d'apporter un avis technique sur certains points précis. L'expertise judiciaire apporte au justiciable une garantie quant à la rigueur avec laquelle ses demandes vont être étudiées. Etant les seuls à pouvoir éclairer les magistrats sur une question d’ordre technique, les experts ont un rôle déterminant au sein du système judiciaire. En matière civile, l’expertise ne peut être ordonnée que dans le cas où des constatations ou une consultation établies par un technicien ne suffisent pas à éclairer le juge. Elle constitue dès lors l’un des moyens d’administration judiciaire de la preuve. Les expertises psychiatriques ont un rôle essentiel dans de nombreux contentieux, notamment en ce qui concerne la mise en œuvre d’une mesure de protection judiciaire, la contestation d’un testament, ou encore les litiges relatifs à l’exercice de l’autorité parentale ou au droit de visite. En matière pénale, toute juridiction d’instruction ou de jugement peut, à la demande du ministère public, d’office, ou à la demande des parties, ordonner une expertise. Celle-ci apparaît comme un outil indispensable pour évaluer la responsabilité pénale, déterminer l’alt",
+    "pdfLinks": [
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Annuaire%20experts%202026.pdf",
+        "text": "Annuaire des experts - 2026\n                                                    Téléchargement (1.05 Mo)",
+        "relevanceHint": "likely-expert-list"
+      }
+    ],
+    "pdfText": "COUR D’APPEL DE BESANÇON LISTE DES EXPERTS POUR 2026 1 TABLE DES MATIÈRES Pages SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES . . . . . . . . . . . . . . . . . . . . . . 3 LISTE ALPHABETIQUE DES EXPERTS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 LISTE ALPHABÉTIQUE DES EXPERTS EN PERIODE PROBATOIRE . . . . . . . . . . . . . . . . . . . . . . . . . . . 26 LISTE DES EXPERTS PAR RUBRIQUE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 139 2 SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . . . 31 Pour être plus amplement informés, les magistrats peuvent se référer à l'annuaire national des experts développé par le CNCEJ qui répertorie des informations plus précises sur le profil l'expérience et les spécialités de l'expert. A-01 Agriculture . . . . . . . . . . . . . . . . . . 31 A-01.01 APPLICATIONS DE PRODUITS P H Y T O P H A R M A C E U T I Q U E S , MATIERES FERTILISANTES ET SUPPORTS DE CULTURE . . . . . . . 31 Application de produits phytopharmaceutiques par voie terrestre - Traitement des semences, des plants, des bulbes, des denrées stockées - Application des matières fertilisantes et des supports de cultur"
+  },
+  "error": null
+}

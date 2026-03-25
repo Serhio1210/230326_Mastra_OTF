@@ -5,6 +5,16 @@ import { fetchPageTool } from "../tools/fetchpage/index.ts";
 import { extractPdfDateTool } from "../tools/extractpdfdate/index.ts";
 import { EXPERT_SEARCH_INSTRUCTIONS } from "./instructions.ts";
 
+const ALLOWED_DOMAINS = [
+  "cours-appel.justice.fr",
+  "courdecassation.fr",
+  "ca-papeete.justice.fr",
+  "ca-besancon.justice.fr",
+  "ca-noumea.justice.fr",
+  "ca-cayenne.justice.fr",
+  "ca-bastia.justice.fr",
+];
+
 export const expertSearchMiniAgent = new Agent({
   id: "expert-search-mini",
   name: "Expert Search (GPT-5.4 Mini)",
@@ -12,11 +22,15 @@ export const expertSearchMiniAgent = new Agent({
   model: openai("gpt-5.4-mini"),
   tools: {
     webSearch: openai.tools.webSearch({
+      searchContextSize: "medium",
       userLocation: {
         type: "approximate",
         country: "FR",
         region: "Île-de-France",
         city: "Paris",
+      },
+      filters: {
+        allowedDomains: ALLOWED_DOMAINS,
       },
     }),
     fetchPage: fetchPageTool,

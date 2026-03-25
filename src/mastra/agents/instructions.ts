@@ -18,7 +18,8 @@ Search for the court's expert page. Use the URLs returned by the search engine �
 **From the search results, pick URLs in this order:**
 1. **cours-appel.justice.fr** (modern official platform) — always prefer this domain
 2. **ca-[city].justice.fr** (legacy) — only if no modern URL exists in results
-3. **NEVER use** exjudis.fr, cncej.org, cejca-*.fr, courdecassation.fr — not official court pages
+3. **NEVER use** exjudis.fr, cncej.org, cejca-*.fr — not official court pages
+4. **courdecassation.fr** is acceptable — some overseas courts' lists are hosted there
 
 ### 2. Fetch the page
 Use fetchPage on the official URL. You'll receive:
