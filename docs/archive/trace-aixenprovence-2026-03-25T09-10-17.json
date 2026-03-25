@@ -1,0 +1,106 @@
+{
+  "court": "Aix-en-Provence",
+  "agentId": "expert-search-mini",
+  "startedAt": "2026-03-25T09:09:50.680Z",
+  "finishedAt": "2026-03-25T09:10:02.335Z",
+  "totalMs": 11655,
+  "steps": [
+    {
+      "turn": 0,
+      "durationMs": 2345,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Accueil | Cour d'appel d'Aix-en-Provence",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel d'Aix-en-Provence Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) L'essentiel La Nuit du Droit au Palais Verdun Pour voir le droit sous un nouveau jour Journées européennes du Patrimoine La cour d'appel ouvre ses portes au public Présence du Réseau judiciaire européen en matière civile et commerciale à la cour d’appel d’Aix en Provence Je voudrais Trouver un tribunal près de chez moi Obtenir une copie de son casier judiciaire Faire appel d'un jugement civil ou pénal Demander la rectification de mon acte d'état civil Demander une apostille Rechercher un autre formulaire Des réponses à des questions Je cherche une salle d'audience Je souhaite un avocat, comment faire ? Je vais être juré d'assises, à quoi cela correspond-il ? Je suis victime d'une infraction, puis-je être aidé(e) ? Où puis-je obtenir la copie d'un jugement ? Actualité du lieu 23 septembre 2025 La Nuit du Droit au Palais Verdun Pour voir le droit sous un nouveau jour Le jeudi 2 octobre prochain, dès 18h30 et jusqu’à 22h45, la cour d’appel d’Aix-en-Provence ouvre ses portes dans le cadre de l’édition 2025 de la Nuit du Droit. La Nuit du Droit au Palais Verdun 12 septembre 2025 Journées européennes du Patrimoine La cour d'appel ouvre ses portes au public À l’occasion des Journées européennes du Patrimoine, la cour d’appel d’Aix-en-Provence vous ouvre ses portes l Journées européennes du Patrimoine 11 juillet 2019 Colloque « La protection de l'environnement en mer Méditerranée » Colloque organisé le 4 et 5 juillet 2019 à Toulon Colloque « La protection de l'environnement en mer Méditerranée » Mardi 23 septembre 2025La Nuit du Droit au Palais VerdunPour voir le droit sous un nouveau jour Vendredi 12 septembre 2025Journées européennes du PatrimoineLa cour d'appel ouvre ses portes au public Jeudi 13 juin 2024La Nuit du droit 2024La cour d’appel d’Aix-en-Provence vous propose le 3 octobre 2024, de 18h30 à 22h45, au Palais Verdun, de célébrer le droit le temps d'une nuit! Mardi 04 juin 2024Journées européennes du Patrimoine 2024Samedi 21 septembre 2024 de 10h à 17h, sur les thèmes \"Patrimoines des itinéraires, des réseaux et des connexions\" et \"Patrimoine maritime\" Vendredi 17 juin 2022Colloque sur l'office du juge Lire les dernières actualités TGI Toulon Informations pratiques Tribunal de Grande Instance de Toulon place Gabriel Péri 83000 Toulon France TGI Tarascon Informations pratiques Tribunal de Grande Instance de Tarascon 28 allée du Gl Jennings Kilmaine 13150 Tarascon France TGI Nice Informations pratiques Tribunal de Grande Instance de Nice 3 Place du Palais de Justice 06300 Nice France TGI Marseille Informations pratiques Tribunal de Grande Instance de Marseille 6 rue Joseph Autran 13006 Marseille France TGI Grasse Informations pratiques Tribunal de Grande Instance de Grasse 37 avenue Pierre Semard 06130 Grasse France TGI Draguignan Informations pratiques Tribunal de Grande Instance de Draguignan 11 rue Pierre Clément 83000 Draguignan France TGI Digne-les-Bains Informations pratiques Tribunal de Grande Instance de Digne-les-Bains 6 place des Récollets 04000 Digne-les-Bains France TGI Aix-en-Provence Informations pratiques Tribunal de Grande Instance d'Aix-en-Provence 40 boulevard Carnot 13100 Aix-en-Provence France Cour d'appel d'Aix en Provence Informations pratiques 20 place de Verdun 13616 Aix-en-Provence Cedex 1 France Lundi 8:00 - 17:00 Mardi 8:00 - 17:00 Mercredi 8:00 - 17:00 Jeudi 8:00 - 17:00 Vendredi 8:00 - 17:00 Samedi Fermé Téléphone 04 42 33 80 00 Accéder aux autres sites des cours d'appel Choisir une cour d’appel Agen Cour d'appel d'Agen Aix-en-Provence Cour d'appel d'Aix-en-Provence Amiens Cour d'appel d'Amiens Angers Cour d'appel d'Angers Basse-Terre Cour d'appel de Basse-Terre Bastia Cour d'appel de Bastia Besançon Cour d'appel de Besançon Bordeaux Cour d'appel de Bordeaux Bourges Cour d'appel de Bourges Caen Cour d'appel de Caen Cayenne Chambéry Cour d'appel de Chambéry Colmar Cour d'appel de Colmar Dijon Cour d'appel de Dijon Douai Cour d'appel de Douai Fort-de-France Cour d'appel de Fort-de-France Grenoble Cour d'appel de Grenoble Limoges Cour d'appel de Limoges Lyon Cour d'appel de Lyon Metz Cour d'appel de Metz Montpellier Cour d'appel de Montpellier Nancy Cour d'appel de Nancy Nîmes Cour d'appel de Nîmes Nouméa Cour d'appel de Nouméa Orléans Cour d'appel d'Orléans Papeete Paris Cour d'appel de Paris Pau Cour d'appel de Pau Poitiers Cour d'appel de Poitiers Reims Cour d'appel de Reims Rennes Cour d'appel de Rennes Riom Cour d'appel de Riom Rouen Courd d'appel de Rouen Saint-Denis Cour d’appel de Saint-Denis Toulouse Cour d'appel de Toulouse Versailles Cour d'appel de Versailles Saint-Pierre Saint-Pierre-et-Miquelon",
+            "pdfLinks": [],
+            "error": null
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "extractPdfDate",
+          "fullResult": {
+            "success": false,
+            "pdfText": "",
+            "pageCount": 0,
+            "error": "Not a PDF: content-type is text/html; charset=UTF-8"
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "durationMs": 2041,
+      "events": [
+        {
+          "type": "model_text",
+          "text": "Je n’ai pas encore pu identifier la **liste officielle des experts judiciaires** ni sa **date de mise à jour**.\n\nCe qui s’est passé :\n- J’ai interrogé la page d’accueil de la Cour d’appel d’Aix-en-Provence.\n- `fetchPage` sur cette URL n’a trouvé **aucun lien PDF** sur la page d’accueil.\n- `extractPdfDate` a échoué, car l’URL fournie pointait vers une **page HTML**, pas vers un PDF.\n\nRésultat actuel :\n- **Page consultée** : accueil de la Cour d’appel d’Aix-en-Provence\n- **PDF officiel** : non trouvé\n- **Date officielle du PDF** : non trouvée\n- **Erreurs rencontrées** :\n  - `No date patterns found in page text`\n  - `Not a PDF: content-type is text/html; charset=UTF-8`\n\nPour continuer correctement, il faut d’abord identifier la **page officielle dédiée aux experts judiciaires** sur le site de la cour, puis ouvrir le **PDF** associé.  \nSi vous voulez, je peux poursuivre la recherche en visant directement la page officielle correspondante."
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "durationMs": 7268,
+    "usage": {
+      "inputTokens": 1133,
+      "outputTokens": 956,
+      "totalTokens": 2089
+    },
+    "result": {
+      "courtName": "Aix-en-Provence",
+      "pageUrl": null,
+      "documentUrl": null,
+      "documentTitle": null,
+      "publicationDate": null,
+      "publicationDateSource": "not-found",
+      "searchExplanation": "I checked the Cour d'appel d'Aix-en-Provence homepage provided in the agent summary. No dedicated 'experts judiciaires' page was identified in the supplied material, and no PDF link to an expert list was found on that page.",
+      "dateExtractionExplanation": "No publication date could be reliably assigned to an expert directory because no official experts-judiciaires page or PDF was found. Although the homepage text contains several news-item dates (for example, 2025-09-23 and 2025-09-12), these relate to news articles and not to an expert list, so they were not used. The PDF-specific checks also failed because the referenced URL was HTML, not a PDF.",
+      "errors": [
+        "No expert-directory page found in the provided material",
+        "No PDF link found on the page",
+        "Not a PDF: content-type is text/html; charset=UTF-8"
+      ]
+    }
+  },
+  "result": {
+    "courtName": "Aix-en-Provence",
+    "pageUrl": null,
+    "documentUrl": null,
+    "documentTitle": null,
+    "publicationDate": null,
+    "publicationDateSource": "not-found",
+    "searchExplanation": "I checked the Cour d'appel d'Aix-en-Provence homepage provided in the agent summary. No dedicated 'experts judiciaires' page was identified in the supplied material, and no PDF link to an expert list was found on that page.",
+    "dateExtractionExplanation": "No publication date could be reliably assigned to an expert directory because no official experts-judiciaires page or PDF was found. Although the homepage text contains several news-item dates (for example, 2025-09-23 and 2025-09-12), these relate to news articles and not to an expert list, so they were not used. The PDF-specific checks also failed because the referenced URL was HTML, not a PDF.",
+    "errors": [
+      "No expert-directory page found in the provided material",
+      "No PDF link found on the page",
+      "Not a PDF: content-type is text/html; charset=UTF-8"
+    ]
+  },
+  "totalUsage": {
+    "inputTokens": 11966,
+    "outputTokens": 1277,
+    "totalTokens": 13243
+  },
+  "rawToolData": {
+    "pageTitle": "Accueil | Cour d'appel d'Aix-en-Provence",
+    "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel d'Aix-en-Provence Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) L'essentiel La Nuit du Droit au Palais Verdun Pour voir le droit sous un nouveau jour Journées européennes du Patrimoine La cour d'appel ouvre ses portes au public Présence du Réseau judiciaire européen en matière civile et commerciale à la cour d’appel d’Aix en Provence Je voudrais Trouver un tribunal près de chez moi Obtenir une copie de son casier judiciaire Faire appel d'un jugement civil ou pénal Demander la rectification de mon acte d'état civil Demander une apostille Rechercher un autre formulaire Des réponses à des questions Je cherche une salle d'audience Je souhaite un avocat, comment faire ? Je vais être juré d'assises, à quoi cela correspond-il ? Je suis victime d'une infraction, puis-je être aidé(e) ? Où puis-je obtenir la copie d'un jugement ? Actualité du lieu 23 septembre 2025 La Nuit du Droit au Palais Verdun Pour voir le droit sous un nouveau jour Le jeudi 2 octobre prochain, dès 18h30 et jusqu’à 22h45, la cour d’appel d’Aix-en-Provence ouvre ses portes dans le cadre de l’édition 2025 de la Nuit du Droit. La Nuit du Droit au Palais Verdun 12 septembre 2025 Journées européennes du Patrimoine La cour d'appel ouvre ses portes au public À l’occasion des Journées européennes du Patrimoine, la cour d’appel d’Aix-en-Provence vous ouvre ses portes l Journées européennes du Patrimoine 11 juillet 2019 Colloque « La protection de l'environnement en mer Méditerranée » Colloque organisé le 4 et 5 juillet 2019 à Toulon Colloque « La protection de l'environnement en mer Méditerranée » Mardi 23 septembre 2025La Nuit du Droit au Palais VerdunPour voir le droit sous un nouveau jour Vendredi 12 septembre 2025Journées européennes du PatrimoineLa cour d'appel ouvre ses portes au pu",
+    "pdfLinks": [],
+    "pdfText": ""
+  },
+  "error": null
+}

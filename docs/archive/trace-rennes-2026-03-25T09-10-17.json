@@ -1,0 +1,243 @@
+{
+  "court": "Rennes",
+  "agentId": "expert-search-mini",
+  "startedAt": "2026-03-25T09:09:56.810Z",
+  "finishedAt": "2026-03-25T09:10:09.993Z",
+  "totalMs": 13183,
+  "steps": [
+    {
+      "turn": 0,
+      "durationMs": 1060,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Accueil | Cour d'appel de Rennes",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Rennes Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) #Info#Actus Apostilles Délivrance des apostilles par les Notaires de France à compter du 1er mai 2025 Aide aux victimes de violences conjugales Les porteurs de paroles Brest : un nouveau Mercredi de l'environnement Je voudrais Trouver un tribunal près de chez moi Obtenir un formulaire Demande d'aide juridictionnelle Demande de certificat de non appel Justice.fr Obtenir des réponses à mes questions Foire aux questions Je souhaite porter plainte Puis-je bénéficier de l'aide juridictionnelle ? Je souhaite connaître le montant de la pension alimentaire dont je suis redevable Tribunal de commerce de Brest Informations pratiques 150 rue Ernest Hemingway 29219 Brest France Lundi 9h–12h/14h–16h30 Mardi 9h–12h/14h–16h30 Mercredi 9h–12h/14h–16h30 Jeudi 9h–12h/14h–16h30 Vendredi 9h–12h/14h–16h30 Samedi fermé Dimanche fermé Téléphone 02 98 43 31 31 Tribunal d'instance de Saint-Brieuc Informations pratiques 6 bis allée Marie Le Vaillant 22035 Saint-Brieuc France Lundi 8h30 à 12h et de 13h30 à 16h30 Mardi 8h30 à 12h et de 13h30 à 16h30 Mercredi 8h30 à 12h et de 13h30 à 16h30 Jeudi 8h30 à 12h et de 13h30 à 16h30 Vendredi 8h30 à 12h et de 13h30 à 16h30 Samedi fermé Dimanche fermé Téléphone 02.96.62.64.20 Conseil de prud'hommes de Lorient Informations pratiques 10 rue Georges Collier 56100 Lorient France Lundi de 8h30 à 12h15 et de 13h30 à 17h Mardi de 8h30 à 12h15 et de 13h30 à 17h Mercredi de 8h30 à 12h et de 13h30 à 17h Jeudi de 8h30 à 12h15 et de 13h30 à 17h Vendredi de 8h30 à 12h15 et de 13h30 à 16h Samedi fermé Dimanche fermé Téléphone 02.97.64.33.38 La cour d'appel de Rennes Informations pratiques Place du parlement de Bretagne 35000 Rennes France Lundi de 8h45 à 12h et de 13h45 à 17h Mardi de 8h45 à 12h et de 13h45 à 17h Mercredi de 8h45 à 12h et de 13h45 à 17h Jeudi de 8h45 à 12h et de 13h45 à 17h Vendredi de 8h45 à 12h et de 13h45 à 17h Samedi fermé Dimanche fermé Téléphone 02.23.20.43.00 Cour d'appel de Rennes Informations pratiques Place du parlement de Bretagne 35000 Rennes France Lundi 8:45-12:00 / 13:45-17:00 Mardi 8:45-12:00 / 13:45-17:00 Mercredi 8:45-12:00 / 13:45-17:00 Jeudi 8:45-12:00 / 13:45-17:00 Vendredi 8:45-12:00 / 13:45-17:00 Samedi Fermé Dimanche Fermé Téléphone 02 23 20 43 00 Accéder aux autres sites des cours d'appel Choisir une cour d’appel Agen Cour d'appel d'Agen Aix-en-Provence Cour d'appel d'Aix-en-Provence Amiens Cour d'appel d'Amiens Angers Cour d'appel d'Angers Basse-Terre Cour d'appel de Basse-Terre Bastia Cour d'appel de Bastia Besançon Cour d'appel de Besançon Bordeaux Cour d'appel de Bordeaux Bourges Cour d'appel de Bourges Caen Cour d'appel de Caen Cayenne Chambéry Cour d'appel de Chambéry Colmar Cour d'appel de Colmar Dijon Cour d'appel de Dijon Douai Cour d'appel de Douai Fort-de-France Cour d'appel de Fort-de-France Grenoble Cour d'appel de Grenoble Limoges Cour d'appel de Limoges Lyon Cour d'appel de Lyon Metz Cour d'appel de Metz Montpellier Cour d'appel de Montpellier Nancy Cour d'appel de Nancy Nîmes Cour d'appel de Nîmes Nouméa Cour d'appel de Nouméa Orléans Cour d'appel d'Orléans Papeete Paris Cour d'appel de Paris Pau Cour d'appel de Pau Poitiers Cour d'appel de Poitiers Reims Cour d'appel de Reims Rennes Cour d'appel de Rennes Riom Cour d'appel de Riom Rouen Courd d'appel de Rouen Saint-Denis Cour d’appel de Saint-Denis Toulouse Cour d'appel de Toulouse Versailles Cour d'appel de Versailles Saint-Pierre Saint-Pierre-et-Miquelon",
+            "pdfLinks": [],
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "durationMs": 2445,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "web_search",
+          "fullResult": {
+            "action": {
+              "type": "search",
+              "query": "site:cours-appel.justice.fr Rennes experts judiciaires Cour d'appel de Rennes pdf"
+            },
+            "sources": [
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/rennes/experts-enqueteurs-sociaux-interpretes-et-traducteurs"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2019-03/Liste%20analytique%20experts%20judiciaires%20CA%20Rennes%2002.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-01/Liste%20Experts%20judiciaires%202025.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/rennes/carte-judiciaire-du-ressort-de-la-cour-dappel-de-rennes"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/rennes/les-tribunaux"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2021-11/Liste%20des%20experts%20judiciaires%20CA%20Rennes%202021%20Nov%202021%20publi%C3%A9e.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/intranet.justice.gouv.fr/site/ca-agen/Liste%20des%20experts2025"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/paris/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2021-10/Liste%20des%20experts%20judiciaires%20CA%20Rennes%202021%20Oct%202021%20publi%C3%A9e.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/rennes"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/rennes/la-cour-dappel-de-rennes"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/rennes/presentation-de-la-cour-dappel-de-rennes"
+              }
+            ]
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Experts, enquêteurs sociaux, interprètes et traducteurs | Cour d'appel de Rennes",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Rennes Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Experts, enquêteurs sociaux, interprètes et traducteurs 19/07/2018 - mise à jour : 04/03/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer Les experts judiciaires sont des professionnels spécialement habilités, chargés de donner aux juges un avis technique sur des faits afin d’apporter des éclaircissements sur une affaire. Ce sont des spécialistes de disciplines très variées (médecine, architecture, gemmologie, économie et finance, etc.). Leurs avis ne s'imposent pas aux juges qui restent libres de leur appréciation. Président de la compagnie des experts judiciaires près la cour d'appel de Rennes et de son ressort Jean-Loïc Moullec Site internet Listes des experts judiciaires et des enquêteurs sociaux ci-après. A compter du 1er janvier 2026, les candidatures (première inscription, extension, demande de réinscription) des experts judiciaires seront dématérialisées et devront être déposées sur la plateforme Démarches Numériques. Les liens permettant d'accéder aux formulaires de candidature : Experts judiciaires - Inscription initiale - Campagne nationale 2026 · demarche.numerique.gouv.fr Experts Judiciaires - Réinscription - Campagne nationale 2026 · demarche.numerique.gouv.fr Experts Judiciaires - Extension d'inscription - Campagne nationale 2026 · demarche.numerique.gouv.fr Pièces jointes Accéder à l'arrêté du 5 décembre 2022 relatif à la nomenclature des experts judiciaires Téléchargement 246.54 Ko DEMANDE D'INSCRIPTION ENQUETEURS SOCIAUX année 2027 Téléchargement 150.87 Ko Liste experts judiciaires 2026 Téléchargement 3.34 Mo Liste enquêteurs sociaux 2026 Téléchargement 231.26 Ko Liste experts honoraires 2026 Téléchargement 336.25 Ko Dans l'article Liens pratiques En savoir plus sur les experts judiciaires",
+            "pdfLinks": [
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-07/Arret%C3%A9%20du%205%2012%202022%20relatif%20%C3%A0%20la%20nouvelle%20nomenclature%20des%20Experts%20-%20joe_20221208_0284_0019.pdf",
+                "text": "Accéder à l'arrêté du 5 décembre 2022 relatif à la nomenclature des experts judiciaires\n        Téléchargement 246.54 Ko",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-10/DEMANDE%20D%27INSCRIPTION%20ENQUETEURS%20SOCIAUX%202027.pdf",
+                "text": "DEMANDE D'INSCRIPTION ENQUETEURS SOCIAUX année 2027\n        Téléchargement 150.87 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/Liste%20EXPERTS%20JUDICIAIRES%20Mise%20%C3%A0%20jour%2004%2003%202026.pdf",
+                "text": "Liste experts judiciaires 2026\n        Téléchargement 3.34 Mo",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/Liste%20ENQU%C3%8ATEURS%20SOCIAUX%202026%20Mise%20%C3%A0%20jour%2016%2001%202026.pdf",
+                "text": "Liste enquêteurs sociaux 2026\n        Téléchargement 231.26 Ko",
+                "relevanceHint": "possible-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/Liste%20EXPERTS%20HONORAIRES%202026.pdf",
+                "text": "Liste experts honoraires 2026\n        Téléchargement 336.25 Ko",
+                "relevanceHint": "likely-expert-list"
+              }
+            ],
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "durationMs": 3699,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "extractPdfDate",
+          "fullResult": {
+            "success": true,
+            "pdfText": "COUR D’APPEL DE RENNES LISTE DES EXPERTS JUDICIAIRES ANNEE 2026 (mise à jour au 4 mars 2026 ) Service des Experts Place du Parlement de Bretagne - CS 66423 - 35064 RENNES CEDEX experts.ca-rennes@justice.fr TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêté du 5 décembre 2022. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30 Service des Experts 1 Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêté du 5 décembre 2022 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel...... conformément à la nomenclature suivante, qui se divise en branches : (ex. : A), rubriques (ex.: A.1.) et spécialités (ex. : A.1.1). A - A G R I C U L T U R E - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . . . . . . . . 30 Pour être plus amplement informés, les magistrats peuvent se référer à l'annuaire national des experts développé par le CNCEJ qui répertorie des informations plus précises sur le profil l'expérience et les spécialités de l'expert. A-01 Agriculture . . . . . . . . . . . . . . . . . . 30 A-01.01 APPLICATIONS DE PRODUITS P H Y T O P H A R M A C E U T I Q U E S , MATIERES FERTILISANTES ET SUPPORTS DE CULTURE . . . . . . . 30 Application de produits phytopharmaceutiques par voie terrestre - Traitement des semences, des plants, des bulbes, des denrées stockées - Application des matières fertilisantes et des supports de culture A-01.02 FONCIER RURAL . . . . . . 30 Bornage - Voies d'accès - Remembrement des parcelles - Catégories du foncier rural - Servitudes et urbanisme (Bornage : voir C.16. - Voiries : voir C.4.3.) - Baux ruraux : calculs d'amélioration foncière et culturale - Révision de fermage - Etat des lieux A-01.03 C O N S T R U C T I O N S E T AMENAGEMENTS RURAUX . . . . 31 Équipements agricoles (dont équipements d'énergies alternatives) - Estimations des haras et établissements équestres A-01.04 ÉCONOMIE ET GESTION AGRICOLES - FONDS AGRICOLES 32 Évaluation des exploitations agricoles - Parts sociales A-01.05 ESTIMATIONS FONCIERES AGRICOLES . . . . . . . . . . . . . . . . 33 Bâtis et non bâtis - Expropriations et évictions - Successions - Estimations A-01.06 HYDRAULIQUE AGRICOLE ET RURALE . . . . . . . . . . . . . . . . . . . 35 Gestion de l'eau - Réseaux et équipements - Voieries - Droits d'eau. (Réseaux et travaux hydrauliques : voir C.4.8.) A-01.07 MATERIEL ET TECHNIQUE A G R I C O L E . ( M A T E R I E L A MOTORISATION THERMIQUE : VOIR E.7.9.) . . . . . . . . . . . . . . . . . . . . . 36 Estimation de matériel agricole - Préparation et conduite des cultures - Applications des intrants agricoles - Récoltes et post-récoltes - Transport et manutention - Stockage A-01.08 PRODUCTIONS DE GRANDES CULTURES ET DE CULTURES SPECIALISEES . . . . . . . . . . . . . . 36 Cultures annuelles, pluriannuelles et pérennes - Pédologie et agronomie - Productions de semences, de plants, de bulbes A-02 Agro-alimentaire. (Bâtiments : voir C.2.) 37 Contrôles qualitatifs et analyses - Ingénierie, normes - Ouvrages et équipements (matériels et installations) - Produits alimentaires et leurs transformations - Emballages et conditionnements - Stockage et transport - Modes de conservation, traçabilité - Restauration collective - Tables gastronomiques - Gites ruraux A-03 Aménagements et équipements de l'espace rural . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37 Espaces naturels - Biodiversité - Zonages - Préservation et protections des milieux naturels - Flore et habitats naturels A-04 Animaux autres que d'élevage . . . . . . 38 Animaux de compagnie et de sport - Courses et concours - Établissements et sports équestres - Haras - Estimations A-05 Aquaculture . . . . . . . . . . . . . . . . . 39 Productions en eaux douces et de mer - Médecine, élevage, bien-être et transport des poissons - Estimations A-06 Biotechnologies . . . . . . . . . . . . . . . 39 Équipements, procédés, fermentation - Produits des biotechnologies - Emballages et conditionnements des produits de biotechnologies A-07 Élevage . . . . . . . . . . . . . . . . . . . . 40 Estimation de matériel agricole - Préparation et conduite des cultures - Applications des intrants agricoles - Récoltes et post-récoltes - Transport et manutention - Stockage A-08 Horticulture . . . . . . . . . . . . . . . . . 41 Arboriculture fruitière et ornementale - Maraichage - Floriculture et décoration florale - Espaces verts, parcs et aménagements paysagés - Matériels d'horticulture A-09 Risques climatiques et météorologiques 41 Neige - Avalanches - Tornades - Submersions A-10 Nuisances - Pollutions agricoles et dépollutions. (voir I.1. et I.7.) . . . . . . . . . . . . 41 Équipements et procédés - Études d'impact - Toxicologie non 2 médicale - Énergies alternatives A-11 Pêche - Chasse - Faune sauvage vertebrée et invertebrée . . . . . . . . . . . . . . . . . . . . . . . . 42 A-11.01 ARMEMENT - ACCASTILLAGE - MATERIELS ET EQUIPEMENTS POUR LA PECHE ET POUR LA CHASSE . 42 A-11.02 DEGATS DE GIBIER . . . . 43 A-11.03 ESTIMATIONS . . . . . . . . 43 A-11.04 P E U P L E M E N T S E T EQUILIBRES CYNEGETIQUES - ESTIMATIONS . . . . . . . . . . . . . . 43 A-12 Sylviculture . . . . . . . . . . . . . . . . . 43 Estimation et gestion - Semis, pépinières et plantations - Travaux et exploitations forestières - Sciage et produits forestiers - Restauration des terrains par plantations - Transports des vins et des alcools - État sanitaire A-13 Viticulture et oenologie . . . . . . . . . . 43 A-13.01 DISTILLATION, ELABORATION DES LIQUEURS ET DES ALCOOLS 44 A-13.02 E M B A L L A G E E T CONDITIONNEMENT DES VINS, DES LIQUEURS ET DES ALCOOLS - MATERIEL DE CONDITIONNEMENT DES VINS, DES LIQUEURS ET DES ALCOOLS . . . . . . . . . . . . . . . . . . 44 A-13.03 ESTIMATION ET GESTION - E X P L O I T A T I O N V I T I C O L E - MATERIELS DE CULTURE DE LA V I G N E - P E P I N I E R E S E T P L A N T A T I O N S - P R O D U I T S , TRAITEMENTS ET PROTECTION DE LA VIGNE . . . . . . . . . . . . . . . . . . 44 A-13.04 OENOLOGIE - APPELLATIONS - DEGUSTATIONS DES VINS ET DES ALCOOLS - VINIFICATION ET ASSEMBLAGES - FERMENTATIONS - ANALYSE DES VINS ET DES ALCOOLS - MATERIEL DE VINIFICATION, DE STOCKAGE ET DE PREPARATION DES VINS ET ALCOOLS - TRANSPORTS DES VINS ET DES ALCOOLS . . . . 44 A-14 Santé vétérinaire . . . . . . . . . . . . . . 44 A-14.01 BIOLOGIE, PHARMACOLOGIE ET TOXICOLOGIE VETERINAIRES 44 A-14.02 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DES ANIMAUX DE COMPAGNIE (CHIENS, CHATS, NAC (NOUVEAUX ANIMAUX DE COMPAGNIE)) . . . 45 A-14.03 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DES RUMINANTS (BOVINS, OVINS, CAPRINS, CAMELIDES), DES EQUIDES (CHEVAUX, PONEYS, ANES ET CROISEMENTS) ET DES PORCINS 46 A-14.04 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DES VOLAILLES, LAPINS ET GIBIERS D'ELEVAGE . . . . . . . . . . . . . . . . 47 A-14.05 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DE LA FAUNE SAUVAGE . . . . . . 48 A-14.06 SANTE PUBLIQUE, QUALITE ET SECURITE DES ALIMENTS . . . 48 B - A R T S - C U L T U R E - COMMUNICATION - MÉDIAS . . . 49 Pour être plus amplement informés, les magistrats peuvent se référer à l'annuaire national des experts développé par le CNCEJ qui répertorie des informations plus précises sur le profil l'expérience et les spécialités de l'expert. B-01 Ecritures . . . . . . . . . . . . . . . . . . . . 49 B-01.01 DOCUMENTS ET ECRITURES 49 B-01.02 PALEOGRAPHIE . . . . . . . 50 B-02 Généalogie successorale . . . . . . . . . 50 B-03 Objets d'art et de collection . . . . . . . 50 B-03.01 ARMES ANCIENNES . . . . 50 B-03.02 BIJOUTERIE, JOAILLERIE, HORLOGERIE, ORFEVRERIE . . . . 51 B-03.03 CERAMIQUES ANCIENNES ET D'ART . . . . . . . . . . . . . . . . . . . . . 51 B-03.04 CRISTALLERIE . . . . . . . . 51 B-03.05 EBENISTERIE - MARQUETERIE . . . . . . . . . . . . . . . . . . . . . . . . . . 51 B-03.06 ETOFFES ANCIENNES ET TISSAGES . . . . . . . . . . . . . . . . . . 51 B-03.07 FERRONNERIE ET BRONZES 51 B-03.08 G R A V U R E S E T A R T S GRAPHIQUES . . . . . . . . . . . . . . . 52 3 B-03.09 HERALDIQUE . . . . . . . . . 52 B-03.10 L I V R E S A N C I E N S E T MODERNES . . . . . . . . . . . . . . . . 52 B-03.11 LUTHERIE ET INSTRUMENTS DE MUSIQUE . . . . . . . . . . . . . . . 52 B-03.12 MEUBLES ET MOBILIERS ANCIENS. (MEUBLES MODERNES : VOIR C.7.1.) . . . . . . . . . . . . . . . . 52 B-03.13 N U M I S M A T I Q U E E T MEDAILLES . . . . . . . . . . . . . . . . 52 B-03.14 PHILATELIE . . . . . . . . . . 52 B-03.15 SCULPTURES . . . . . . . . . 52 B-03.16 TABLEAUX . . . . . . . . . . . 52 B-03.17 TAPISSERIES ET TAPIS . . 52 B-03.18 VITRAUX ET VITRERIE D'ART . . . . . . . . . . . . . . . . . . . . . . . . . . 52 B-03.19 ARCHEOLOGIE . . . . . . . . 52 B-03.20 ART D'ASIE ET D'EXTREME ORIENT, ART AFRICAIN, ART OCEANIEN, ART AMERICAIN . . . 53 B-03.21 O E U V R E S D ' A R T DEMATERIALISEES NFT . . . . . . . 53 B-04 Productions culturelles et de communication . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53 B-04.01 CINEMA, TELEVISION, VIDEO, AUDIOVISUEL, TOUS SUPPORTS M E D I A S E T P L A T E F O R M E S DIGITALES . . . . . . . . . . . . . . . . . 53 B-04.02 IMPRIMERIE . . . . . . . . . . 53 B-04.03 MUSIQUE . . . . . . . . . . . . 53 B-04.04 P H O T O G R A P H I E ANALOGIQUE ET NUMERIQUE - DATATION ET CERTIFICATION - ATTRIBUTION - RECONNAISSANCE FACIALE . . . . . . . . . . . . . . . . . . . 53 B-04.05 PRESSE, EDITION . . . . . . 53 B-04.06 COMMUNICATION, PUBLICITE DIGITALE ET MEDIAS . . . . . . . . 53 B-04.07 SPECTACLES VIVANTS . . 53 B-04.08 RELATIONS MEDIAS, PRESSE, PUBLICS . . . . . . . . . . . . . . . . . . . 53 B-05 Propriété littéraire et artistique . . . . . 53 B-05.01 GESTION DES DROIT S D'AUTEUR . . . . . . . . . . . . . . . . . 53 B-05.02 GESTION DES DROITS VOISINS . . . . . . . . . . . . . . . . . . . 53 B-05.03 GEST ION DES DROITS DERIVES . . . . . . . . . . . . . . . . . . 53 B-05.04 GESTION DES DROITS A L'IMAGE . . . . . . . . . . . . . . . . . . . 53 B-05.05 GESTION DES DROITS DE REPRODUCTION . . . . . . . . . . . . . 54 B-06 Sport . . . . . . . . . . . . . . . . . . . . . . 54 B-06.01 ACTIVITES SPORTIVES . . 54 B-06.02 M A T E R I E L E T I N S T A L L A T I O N S S P O R T I V E S . (BATIMENTS, GYMNASES, STADES COUVERTS : VOIR C.2.) . . . . . . . . 54 C-BATIMENT - TRAVAUX PUBLICS - GESTION IMMOBILIÈRE . . . . . . . 54 Pour être plus amplement informés, les magistrats peuvent se référer à l'annuaire national des experts développé par le CNCEJ qui répertorie des informations plus précises sur le profil l'expérience et les spécialités de l'expert. C-01 Acoustique, bruits, vibrations . . . . . . 54 C-02 Constructions générales tous corps d'état 55 C-02.01 ARCHITECTURE - INGENIERIE - MAITRISE D'OEUVRE. . . . . . . . . 56 C-02.02 ARCHITECTURE D'INTERIEUR - DECORATION . . . . . . . . . . . . . . 63 C-02.03 ARCHITECTURE DU PAYSAGE - ESPACES VERTS ET DE LOISIRS - A M E N A G E M E N T S S P O R T I F S EXTERIEURS. (HORTICULTURE : VOIR A.8.) . . . . . . . . . . . . . . . . . . . . . . 64 C-02.04 COORDINATION DE LA SECURITE ET PROTECTION DE LA SANTE (CSPS) . . . . . . . . . . . . . . . 64 C-02.05 É C O N O M I E D E L A CONSTRUCTION, VALORISATION DES 4",
+            "pageCount": 423,
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "durationMs": 2289,
+      "events": [
+        {
+          "type": "model_text",
+          "text": "J’ai trouvé la page officielle de la Cour d’appel de Rennes et le PDF de la **liste des experts judiciaires 2026**. La page indique clairement **« mise à jour : 04/03/2026 »** et le PDF confirme **« mise à jour au 4 mars 2026 »**. La date la plus précise et la plus officielle est donc **2026-03-04**. citeturn0search7\n\n**Résultat**\n- **Cour d’appel** : Rennes\n- **Page officielle** : Experts, enquêteurs sociaux, interprètes et traducteurs\n- **PDF retenu** : *Liste experts judiciaires 2026*  \n- **Date officielle retenue** : **2026-03-04**\n- **Source de la date** : **pdf-content** (confirmée aussi par le texte de la page) citeturn0search7\n\n**Remarque**\n- J’ai ignoré les autres PDF de la page car ils concernent les enquêteurs sociaux, les experts honoraires ou l’arrêté de nomenclature, et non la liste des experts judiciaires en exercice. citeturn0search7"
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "durationMs": 3688,
+    "usage": {
+      "inputTokens": 2130,
+      "outputTokens": 526,
+      "totalTokens": 2656
+    },
+    "result": {
+      "courtName": "Rennes",
+      "pageUrl": null,
+      "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/Liste%20EXPERTS%20JUDICIAIRES%20Mise%20%C3%A0%20jour%2004%2003%202026.pdf",
+      "documentTitle": "Liste experts judiciaires 2026\nTéléchargement 3.34 Mo",
+      "publicationDate": "2026-03-04",
+      "publicationDateSource": "pdf-content",
+      "searchExplanation": "I used the official Cour d'appel de Rennes page titled \"Experts, enquêteurs sociaux, interprètes et traducteurs\". Among the attached PDFs, I selected the one explicitly labeled \"Liste experts judiciaires 2026\", since it is the expert directory for the court. The corresponding PDF URL also contains the date hint \"04 03 2026\" in its filename.",
+      "dateExtractionExplanation": "The most specific date appears directly in the PDF content: \"mise à jour au 4 mars 2026\". The page text also confirms \"mise à jour : 04/03/2026\". The PDF URL path and link text support the same 2026 date, but the exact publication/update date is taken from the PDF content and normalized to 2026-03-04.",
+      "errors": []
+    }
+  },
+  "result": {
+    "courtName": "Rennes",
+    "pageUrl": null,
+    "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/Liste%20EXPERTS%20JUDICIAIRES%20Mise%20%C3%A0%20jour%2004%2003%202026.pdf",
+    "documentTitle": "Liste experts judiciaires 2026\nTéléchargement 3.34 Mo",
+    "publicationDate": "2026-03-04",
+    "publicationDateSource": "pdf-content",
+    "searchExplanation": "I used the official Cour d'appel de Rennes page titled \"Experts, enquêteurs sociaux, interprètes et traducteurs\". Among the attached PDFs, I selected the one explicitly labeled \"Liste experts judiciaires 2026\", since it is the expert directory for the court. The corresponding PDF URL also contains the date hint \"04 03 2026\" in its filename.",
+    "dateExtractionExplanation": "The most specific date appears directly in the PDF content: \"mise à jour au 4 mars 2026\". The page text also confirms \"mise à jour : 04/03/2026\". The PDF URL path and link text support the same 2026 date, but the exact publication/update date is taken from the PDF content and normalized to 2026-03-04.",
+    "errors": []
+  },
+  "totalUsage": {
+    "inputTokens": 29946,
+    "outputTokens": 1039,
+    "totalTokens": 30985
+  },
+  "rawToolData": {
+    "pageTitle": "Experts, enquêteurs sociaux, interprètes et traducteurs | Cour d'appel de Rennes",
+    "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Rennes Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Experts, enquêteurs sociaux, interprètes et traducteurs 19/07/2018 - mise à jour : 04/03/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer Les experts judiciaires sont des professionnels spécialement habilités, chargés de donner aux juges un avis technique sur des faits afin d’apporter des éclaircissements sur une affaire. Ce sont des spécialistes de disciplines très variées (médecine, architecture, gemmologie, économie et finance, etc.). Leurs avis ne s'imposent pas aux juges qui restent libres de leur appréciation. Président de la compagnie des experts judiciaires près la cour d'appel de Rennes et de son ressort Jean-Loïc Moullec Site internet Listes des experts judiciaires et des enquêteurs sociaux ci-après. A compter du 1er janvier 2026, les candidatures (première inscription, extension, demande de réinscription) des experts judiciaires seront dématérialisées et devront être déposées sur la plateforme Démarches Numériques. Les liens permettant d'accéder aux formulaires de candidature : Experts judiciaires - Inscription initiale - Campagne nationale 2026 · demarche.numerique.gouv.fr Experts Judiciaires - Réinscription - Campagne nationale 2026 · demarche.numerique.gouv.fr Experts Judiciaires - Extension d'inscription - Campagne nationale 2026 · demarche.numerique.gouv.fr Pièces jointes Accéder à l'arrêté du 5 décembre 2022 relatif à la nomenclature des experts judiciaires Téléchargement 246.54 Ko DEMANDE D'INSCRIPTION ENQUETEURS SOCIAUX année 2027 Téléchargement 150.87 Ko Liste experts judiciaires 2026 Téléchargement 3.34 Mo Liste enquêteurs sociaux 2026 Téléchargement 231.26 Ko Liste experts honoraires 202",
+    "pdfLinks": [
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-07/Arret%C3%A9%20du%205%2012%202022%20relatif%20%C3%A0%20la%20nouvelle%20nomenclature%20des%20Experts%20-%20joe_20221208_0284_0019.pdf",
+        "text": "Accéder à l'arrêté du 5 décembre 2022 relatif à la nomenclature des experts judiciaires\n        Téléchargement 246.54 Ko",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2025-10/DEMANDE%20D%27INSCRIPTION%20ENQUETEURS%20SOCIAUX%202027.pdf",
+        "text": "DEMANDE D'INSCRIPTION ENQUETEURS SOCIAUX année 2027\n        Téléchargement 150.87 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/Liste%20EXPERTS%20JUDICIAIRES%20Mise%20%C3%A0%20jour%2004%2003%202026.pdf",
+        "text": "Liste experts judiciaires 2026\n        Téléchargement 3.34 Mo",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/Liste%20ENQU%C3%8ATEURS%20SOCIAUX%202026%20Mise%20%C3%A0%20jour%2016%2001%202026.pdf",
+        "text": "Liste enquêteurs sociaux 2026\n        Téléchargement 231.26 Ko",
+        "relevanceHint": "possible-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/Liste%20EXPERTS%20HONORAIRES%202026.pdf",
+        "text": "Liste experts honoraires 2026\n        Téléchargement 336.25 Ko",
+        "relevanceHint": "likely-expert-list"
+      }
+    ],
+    "pdfText": "COUR D’APPEL DE RENNES LISTE DES EXPERTS JUDICIAIRES ANNEE 2026 (mise à jour au 4 mars 2026 ) Service des Experts Place du Parlement de Bretagne - CS 66423 - 35064 RENNES CEDEX experts.ca-rennes@justice.fr TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêté du 5 décembre 2022. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30 Service des Experts 1 Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêté du 5 décembre 2022 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel...... conformément à la nomenclature suivante, qui se divise en branches : (ex. : A), rubriques (ex.: A.1.) et spécialités (ex. : A.1.1). A - A G R I C U L T U R E - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . . . . . . . . 30 Pour être plus amplement informés, les magistrats peuvent se référer à l'annuaire national des experts développé par le CNCEJ qui répertorie des informations plus précises sur le profil l'expérience et les spécialités de l'expert. A-01 Agriculture . . . . . . . . . . . . . . . . . . 30 A-01.01 APPLICATIONS DE PR"
+  },
+  "error": null
+}

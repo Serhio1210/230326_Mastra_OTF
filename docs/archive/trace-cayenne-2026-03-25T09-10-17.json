@@ -1,0 +1,183 @@
+{
+  "court": "Cayenne",
+  "agentId": "expert-search-mini",
+  "startedAt": "2026-03-25T09:09:58.169Z",
+  "finishedAt": "2026-03-25T09:10:12.579Z",
+  "totalMs": 14410,
+  "steps": [
+    {
+      "turn": 0,
+      "durationMs": 2072,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": false,
+            "title": null,
+            "pageText": "",
+            "pdfLinks": [],
+            "error": "HTTP 404: Not Found"
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": false,
+            "title": null,
+            "pageText": "",
+            "pdfLinks": [],
+            "error": "Unable to connect. Is the computer able to access the url?"
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "durationMs": 2742,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "web_search",
+          "fullResult": {
+            "action": {
+              "type": "search",
+              "query": "site:cours-appel.justice.fr Cour d'appel de Cayenne experts judiciaires"
+            },
+            "sources": [
+              {
+                "type": "url",
+                "url": "https://www.courdecassation.fr/files/files/Experts/20200427_Liste_experts_ca_cayenne.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/riom/les-experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/dijon/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/chambery/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/nimes/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/bastia/linscription-des-experts-judiciaires-et-enqueteurs-sociaux"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/dijon/liste-des-experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/intranet.justice.gouv.fr/site/ca-agen/Liste%20des%20experts2025"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/paris/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/colmar/les-experts-judiciaires"
+              }
+            ]
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "extractPdfDate",
+          "fullResult": {
+            "success": false,
+            "pdfText": "",
+            "pageCount": 0,
+            "error": "Invalid PDF structure."
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "durationMs": 2343,
+      "events": [
+        {
+          "type": "model_text",
+          "text": "Je n’ai pas pu terminer proprement la vérification pour **la Cour d’appel de Cayenne**.\n\nCe que j’ai trouvé :\n- La page officielle semble exister sur le portail des cours d’appel, avec une section **“Les experts judiciaires”** et une pièce jointe intitulée **“Liste des experts judiciaires 2025”**. Le résultat de recherche indique aussi une **mise à jour au 29/12/2025** pour une page analogue, ce qui suggère que la liste est maintenue à jour, mais ce n’est pas encore la preuve de la date du PDF de Cayenne. \n- J’ai tenté d’ouvrir la page et d’extraire la date du PDF, mais les tentatives ont échoué : une URL PDF supposée a renvoyé **404 / structure PDF invalide**.\n\nProchaine étape utile :\n1. récupérer la vraie page officielle de Cayenne,\n2. identifier le bon lien PDF “Liste des experts judiciaires 2025”,\n3. lancer `extractPdfDate` sur ce PDF pour obtenir la **date officielle exacte** au format `YYYY-MM-DD`.\n\nSi tu veux, je peux refaire une tentative plus ciblée pour retrouver le lien PDF "
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "durationMs": 7247,
+    "usage": {
+      "inputTokens": 667,
+      "outputTokens": 1184,
+      "totalTokens": 1851
+    },
+    "result": {
+      "courtName": "Cayenne",
+      "pageUrl": null,
+      "documentUrl": null,
+      "documentTitle": "Liste des experts judiciaires 2025",
+      "publicationDate": "2025-01-01",
+      "publicationDateSource": "link-text",
+      "searchExplanation": "The official Cour d'appel de Cayenne experts directory page could not be verified directly from the provided materials. The agent summary indicates a page on the cour d'appel portal with a section titled 'Les experts judiciaires' and an attachment named 'Liste des experts judiciaires 2025', but the actual page URL and PDF URL were not recoverable.",
+      "dateExtractionExplanation": "No exact publication date was found in PDF text, page text, PDF link anchor text beyond the year 2025 in the title, or in a PDF URL path. As a last-resort year-only fallback, I used the year from the document title and represented it as 2025-01-01.",
+      "errors": [
+        "Could not verify the official Cayenne page URL.",
+        "Could not retrieve a valid PDF URL; attempted PDF access resulted in 404 / invalid PDF structure."
+      ]
+    }
+  },
+  "result": {
+    "courtName": "Cayenne",
+    "pageUrl": null,
+    "documentUrl": null,
+    "documentTitle": "Liste des experts judiciaires 2025",
+    "publicationDate": "2025-01-01",
+    "publicationDateSource": "link-text",
+    "searchExplanation": "The official Cour d'appel de Cayenne experts directory page could not be verified directly from the provided materials. The agent summary indicates a page on the cour d'appel portal with a section titled 'Les experts judiciaires' and an attachment named 'Liste des experts judiciaires 2025', but the actual page URL and PDF URL were not recoverable.",
+    "dateExtractionExplanation": "No exact publication date was found in PDF text, page text, PDF link anchor text beyond the year 2025 in the title, or in a PDF URL path. As a last-resort year-only fallback, I used the year from the document title and represented it as 2025-01-01.",
+    "errors": [
+      "Could not verify the official Cayenne page URL.",
+      "Could not retrieve a valid PDF URL; attempted PDF access resulted in 404 / invalid PDF structure."
+    ]
+  },
+  "totalUsage": {
+    "inputTokens": 21526,
+    "outputTokens": 1666,
+    "totalTokens": 23192
+  },
+  "rawToolData": {
+    "pageTitle": "",
+    "pageText": "",
+    "pdfLinks": [],
+    "pdfText": ""
+  },
+  "error": null
+}

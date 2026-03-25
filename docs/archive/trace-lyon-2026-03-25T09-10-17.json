@@ -1,0 +1,275 @@
+{
+  "court": "Lyon",
+  "agentId": "expert-search-mini",
+  "startedAt": "2026-03-25T09:09:27.309Z",
+  "finishedAt": "2026-03-25T09:09:44.316Z",
+  "totalMs": 17007,
+  "steps": [
+    {
+      "turn": 0,
+      "durationMs": 2426,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=SabDafrQKbepkdUPp6XQqAQ\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=SabDafrQKbepkdUPp6XQqAQ\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "error": null
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Google Search",
+            "pageText": "<style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=SabDae6qKZzNkdUPpMqGsAw\" http-equiv=\"refresh\"><div style=\"display:block\">Cliquez <a href=\"/httpservice/retry/enablejs?sei=SabDae6qKZzNkdUPpMqGsAw\">ici</a> si, d'ici quelques secondes, vous n'avez pas été redirigé.</div>If you're having trouble accessing Google Search, please click here, or send feedback.",
+            "pdfLinks": [],
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "durationMs": 2239,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "web_search",
+          "fullResult": {
+            "action": {
+              "type": "search",
+              "query": "site:cours-appel.justice.fr Cour d'appel de Lyon experts judiciaires PDF"
+            },
+            "sources": [
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/2026%20-%20Liste%20des%20experts%20judiciaires.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/lyon/les-experts"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-04/Experts%20judiciaires%20-%20avril%202023_0.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2021-07/2021-%20LISTE%20DES%20EXPERTS%20JUDICIAIRES.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2022-11/2022%20-%20Liste%20des%20experts%20judiciaires.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2021-12/2021-%20LISTE%20DES%20EXPERTS%20JUDICIAIRES.pdf"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/intranet.justice.gouv.fr/site/ca-agen/Liste%20des%20experts2025"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/nimes/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/paris/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/fort-de-france/experts-judiciaires"
+              },
+              {
+                "type": "url",
+                "url": "https://www.cours-appel.justice.fr/limoges/les-experts-judiciaires"
+              }
+            ]
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Les experts | Cour d'appel de LYON",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de LYON Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Les experts Depuis le 2 janvier 2026, les dossiers de candidatures sur la liste des experts judiciaires sont entièrement dématérialisés et la procédure d'inscription s'effectue depuis la plateforme \"Démarches Numériques\". Les liens vers les formulaires de candidatures (inscription, réinscription, extensions) sont ci-dessous : Inscription initiale : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-inscription-initiale-campagne- Réinscription : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-reinscription-campagne-nationa Extension : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-extension-d-inscription-campag La notification des décisions concernant les candidatures sera effectuée dans le courant du mois de décembre suivant le dépôt de la demande. -> Référentiel des Partenaires de la Justice : Livret RPJ Téléchargement 1.07 Mo Lorsqu'ils ordonnent des expertises, les tribunaux choisissent les experts sur la liste établie par la cour d'appel. La cour d’appel procède chaque année à la révision de la liste des experts assermentés. Elle inscrit de nouveaux experts et procède à la radiation de ceux qui n’exercent plus. Si vous désirez faire acte de candidature, vous devez adresser votre demande à partir du mois de novembre et avant le 1er mars de chaque année (soit au plus tard le 28 ou 29 février). Votre attention est attirée sur la nouvelle condition pour les candidats de justifier d’une formation à l’expertise pour pouvoir être inscrits sur une liste d’experts judiciaires (définie par le décret n° 2023-468 du 16 juin 2023) Chaque année et avant le 1er mars, les experts judiciaires doivent déposer leur rapport d'activité de l'année précédente ainsi qu'un état des formations suivies durant cette année (cf. imprimé du rapport). L'arrêté du 5 décembre 2022 a modifié la nomenclature applicable à la liste des experts judiciaires (voir formulaire de candidature). Cette nouvelle nomenclature est applicable depuis le 1er janvier 2024 (voir arrêté ci-dessous) Arrêté 5 décembre 2022 Téléchargement 290.75 Ko Liste établie pour l'année 2026 (mise à jour janvier 2026) : Liste des experts judiciaires Téléchargement 1.84 Mo Liste des experts honoraires Téléchargement 496.96 Ko Annexe : Attestation de fin de mission Téléchargement 1.82 Mo En savoir plus rapport annuel d'activité interprètes- traducteurs Téléchargement 537.87 Ko Rapport annuel d'activité Téléchargement 10.12 Ko Liens pratiques Expert judiciaire Qu'est-ce qu'un expert judiciaire?",
+            "pdfLinks": [
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/Livret%20RPJ%20expert_internet%20CA%20.pdf",
+                "text": "Livret RPJ\n        Téléchargement 1.07 Mo",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-01/Arr%C3%AAt%C3%A9%20du%205%20d%C3%A9cembre%202022%20relatif%20%C3%A0%20la%20...-1463%20du%2023%20d%C3%A9cembre%202004%20-%20L%C3%A9gifrance.pdf",
+                "text": "Arrêté 5 décembre 2022\n        Téléchargement 290.75 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20judiciaires.pdf",
+                "text": "Liste des experts judiciaires\n        Téléchargement 1.84 Mo",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20honoraires.pdf",
+                "text": "Liste des experts honoraires\n        Téléchargement 496.96 Ko",
+                "relevanceHint": "likely-expert-list"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2024-12/Annexe1-AFM.pdf",
+                "text": "Attestation de fin de mission\n        Téléchargement 1.82 Mo",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2022-02/rapport%20annuel%20activit%C3%A9%20interpr%C3%A8tes-traducteurs.pdf",
+                "text": "rapport annuel d'activité interprètes- traducteurs\n        Téléchargement 537.87 Ko",
+                "relevanceHint": "unknown"
+              },
+              {
+                "url": "https://www.cours-appel.justice.fr/sites/default/files/2019-04/rapport%20annuel%20activit%C3%A9.pdf",
+                "text": "Rapport annuel d'activité\n        Téléchargement 10.12 Ko",
+                "relevanceHint": "unknown"
+              }
+            ],
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "durationMs": 3407,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "extractPdfDate",
+          "fullResult": {
+            "success": true,
+            "pdfText": "COUR D’APPEL DE LYON LISTE DES EXPERTS POUR 2026 dressée par l’assemblée générale restreinte des magistrats des 14 et 21 novembre 2025 Conformément à l’article R312-43 du code de l’organisation judiciaire à la loi du 29 juin 1970 et celle du 11 février 2004 au décret du 23 décembre 2004 et à l’arrêté du 05 décembre 2022 Les années mentionnées en marge à gauche précisent, pour la première, l’année d’inscription initiale de l’expert, pour la seconde, l’année de sa dernière réinscription quinquennale (ou l’année d’inscription initiale pour les experts en période probatoire). Mise à jour le 13 février 2026 1 TABLE DES MATIÈRES Pages SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES . . . . . . . . . . . . . . . . . . . . . . 3 LISTE PAR SPÉCIALITÉ DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 343 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 350 2 SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . . . . . . . . . . 14 A-01 Agriculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 A-01.01 APPLICATIONS DE PRODUITS PHYTOPHARMACEUTIQUES, MATIERES FERTILISANTES ET SUPPORTS DE CULTURE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 A-01.02 FONCIER RURAL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 A-01.03 CONSTRUCTIONS ET AMENAGEMENTS RURAUX . . . . . . . . . . . . . . . . . . . . . . 16 A-01.04 ÉCONOMIE ET GESTION AGRICOLES - FONDS AGRICOLES . . . . . . . . . . . . . . . 16 A-01.05 ESTIMATIONS FONCIERES AGRICOLES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17 A-01.06 HYDRAULIQUE AGRICOLE ET RURALE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19 A-01.07 MATERIEL ET TECHNIQUE AGRICOLE. (MATERIEL A MOTORISATION THERMIQUE : VOIR E.7.9.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20 A-01.08 PRODUCTIONS DE GRANDES CULTURES ET DE CULTURES SPECIALISEES . . . 20 A-02 Agro-alimentaire. (Bâtiments : voir C.2.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21 A-03 Aménagements et équipements de l'espace rural . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21 A-08 Horticulture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 A-10 Nuisances - Pollutions agricoles et dépollutions. (voir I.1. et I.7.) . . . . . . . . . . . . . . . . . . . . . . . 22 A-11.04 PEUPLEMENTS ET EQUILIBRES CYNEGETIQUES - ESTIMATIONS . . . . . . . . . . . 22 A-12 Sylviculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 A-13 Viticulture et oenologie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23 A-13.02 EMBALLAGE ET CONDITIONNEMENT DES VINS, DES LIQUEURS ET DES ALCOOLS - MATERIEL DE CONDITIONNEMENT DES VINS, DES LIQUEURS ET DES ALCOOLS . . . 23 A-13.03 ESTIMATION ET GESTION - EXPLOITATION VITICOLE - MATERIELS DE CULTURE DE LA VIGNE - PEPINIERES ET PLANTATIONS - PRODUITS, TRAITEMENTS ET PROTECTION DE LA VIGNE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23 A-13.04 OENOLOGIE - APPELLATIONS - DEGUSTATIONS DES VINS ET DES ALCOOLS - VINIFICATION ET ASSEMBLAGES - FERMENTATIONS - ANALYSE DES VINS ET DES ALCOOLS - MATERIEL DE VINIFICATION, DE STOCKAGE ET DE PREPARATION DES VINS ET ALCOOLS - TRANSPORTS DES VINS ET DES ALCOOLS . . . . . . . . . . . . . . . . . . . . . . 24 A-14 Santé vétérinaire . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24 A-14.01 BIOLOGIE, PHARMACOLOGIE ET TOXICOLOGIE VETERINAIRES . . . . . . . . . . . 24 A-14.02 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DES ANIMAUX DE COMPAGNIE (CHIENS, CHATS, NAC (NOUVEAUX ANIMAUX DE COMPAGNIE)) . . . . . . 24 A-14.03 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DES RUMINANTS (BOVINS, OVINS, CAPRINS, CAMELIDES), DES EQUIDES (CHEVAUX, PONEYS, ANES ET CROISEMENTS) ET DES PORCINS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25 A-14.04 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DES VOLAILLES, LAPINS ET GIBIERS D'ELEVAGE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26 A-14.05 MEDECINE, CHIRURGIE, ELEVAGE, BIEN-ETRE ET TRANSPORT DE LA FAUNE SAUVAGE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26 B-ARTS - CULTURE - COMMUNICATION - MÉDIAS . . . . . . . . . . . . . . . . . . . . . . . . 27 B-01 Ecritures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 B-01.01 DOCUMENTS ET ECRITURES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 B-01.02 PALEOGRAPHIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 B-02 Généalogie successorale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 B-03 Objets d'art et de collection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 B-03.01 ARMES ANCIENNES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 B-03.02 BIJOUTERIE, JOAILLERIE, HORLOGERIE, ORFEVRERIE . . . . . . . . . . . . . . . . . . 27 3 C-BATIMENT - TRAVAUX PUBLICS - GESTION IMMOBILIÈRE . . . . . . . . . . . . . 29 C-01 Acoustique, bruits, vibrations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 C-02 Constructions générales tous corps d'état . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 C-02.01 ARCHITECTURE - INGENIERIE - MAITRISE D'OEUVRE. . . . . . . . . . . . . . . . . . . . 29 C-02.02 ARCHITECTURE D'INTERIEUR - DECORATION . . . . . . . . . . . . . . . . . . . . . . . . . 36 C-02.03 ARCHITECTURE DU PAYSAGE - ESPACES VERTS ET DE LOISIRS - AMENAGEMENTS SPORTIFS EXTERIEURS. (HORTICULTURE : VOIR A.8.) . . . . . . . . . . . . . . . . . . . . . . . . . 39 C-02.04 COORDINATION DE LA SECURITE ET PROTECTION DE LA SANTE (CSPS) . . . . 40 C-02.05 ÉCONOMIE DE LA CONSTRUCTION, VALORISATION DES TRAVAUX ET METRES 40 C-02.06 MONUMENTS HISTORIQUES ET PATRIMOINE BATI . . . . . . . . . . . . . . . . . . . . . 43 C-02.07 ORDONNANCEMENT, PILOTAGE, COORDINATION (OPC) . . . . . . . . . . . . . . . . . 43 C-02.08 PISCINES : GROS-OEUVRE, ETANCHEITE, BASSINS PREFABRIQUES, TRAITEMENT DE L'EAU, DE L'AIR, EQUIPEMENTS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46 C-02.09 URBANISME - AMENAGEMENT DU TERRITOIRE - AMENAGEMENT ET MOBILIER URBAIN . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47 C-03 Structures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48 C-03.01 STRUCTURES : GENERALISTES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48 C-03.02 BETON, BETON ARME, BETON PRECONTRAINT, BETONS SPECIAUX . . . . . . . . 50 C-03.03 CHARPENTES ET OSSATURES BOIS - CONSTRUCTIONS EN BOIS . . . . . . . . . . . 52 C-03.04 CONSTRUCTIONS METALLIQUES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53 C-03.05 ÉTANCHEITES DES PAROIS ENTERREES, CUVELAGES . . . . . . . . . . . . . . . . . . . 54 C-03.06 MACONNERIES A BASE DE PRODUITS INDUSTRIELS OU DE MATERIAUX NATURELS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55 C-03.07 STRUCTURES SPECIALES, TOILES TENDUES, CHAPITEAUX, STRUCTURES GONFLABLES, EQUIPEMENTS SCENIQUES, STRUCTURES COMPOSITES . . . . . . . . . . . 56 C-04 Génie-civil - Travaux publics. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56 C-04.01 GENIE-CIVIL ET TRAVAUX PUBLICS : GENERALISTES . . . . . . . . . . . . . . . . . . . 56 C-04.02 AMENAGEMENTS PORTUAIRES, OUVRAGES MARITIMES, TRAVAUX SOUS-MARINS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58 C-04.03 BARRAGES, GRANDS SOUTENEMENTS. (PRODUCTION D'ELECTRICITE : VOIR E.2.1.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58 C-04.04 MURS DE SOUTENEMENT. (LIE AVEC C.5.1.) . . . . . . . . . . . . . . . . . . . . . . . . . . 59 C-04.05 PONTS (Y COMPRIS LES ABORDS ET FONDATIONS) . . . . . . . . . . . . . . . . . . . . . 60 C-04.06 RESEAUX DE DRAINAGE ET EVACUATION DES EAUX, HYDRAULIQUE DE SURFACE, CANAUX, RETENUES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61 C-04.07 RESERVOIRS, TRAVAUX EN LACS ET RIVIERES . . . . . . . . . . . . . . . . . . . . . . . . 62 C-04.08 REVETEMENTS DE SOLS EXTERIEURS (PAVAGES, DALLAGES, PIERRES, PANNEAUX, SOLS SPORTIFS, PLATEFORMES, TERRASSES ET PLATELAGES BOIS...) . . . . . . . . . . . . 63 C-04.09 TERRASSEMENTS GENERAUX ET GRANDS AMENAGEMENTS - VOIES FERREES ET INFRASTRUCTURES FERROVIAIRES. (MATERIEL FERROVIAIRE : VOIR E.7.12.) . . . . . . 64 C-04.10 VOIRIES, CHAUSSEES LOURDES ET LEGERES . . . . . . . . . . . . . . . . . . . . . . . . . 64 C-04.11 TUNNELS : TRAVAUX ET EQUIPEMENTS. (TUNNELIERS : VOIR E.7.8. ET E.7.9.) 66 C-05 Sols . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66 C-05.01 FONDATIONS SPECIALES : PIEUX ET PUITS, RADIERS EPAIS, AMELIORATION DES SOLS, MASSIFS DE MACHINES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66 C-05.02 GEOTECHNIQUE GENERALE, FONDATIONS, CONFORTEMENTS, STABILISATION DES TERRAINS ET TALUS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67 C-05.03 HYDROGEOLOGIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 68 C-05.04 MINES ET CARRIERES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 69 C-06 Couverture - Étanchéité y compris accessoires, équipements rapportés, isolation. (Étanchéité des parois enterrées : voir C.3.6.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70 C-06.01 COUVERTURE - ÉTANCHEITE : GENERALISTES . . . . . . . . . . . . . . . . . . . . . . . . 70 C-06.02 COUVERTURES METALLIQUES PAR GRANDS ELEMENTS (ZINC, ACIER, CUIVRE, ALUMINIUM, PLOMB, PANNEAUX COMPOSITES...) . . . . . . . . . . . . . . . . . . . . . . . . . . . 72 C-06.03 COUVERTURES PAR PETITS ELEMENTS (TUILES, ARDOISES, BARDEAUX, SHINGLES...) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 73 C-06.04 COUVERTURES REGIONALES (CHAUME, LAUZES, TAVAILLONS...) . . . . . . . . . 75 C-06.05 ÉTANCHEITE COLLEE OU COULEE, MEMBRANES - TOITURES PAYSAGERES OU 4 AMENAGEES. (PANNEAUX PHOTOVOLTAIQUES ET CAPTEURS SOLAIRES : VOIR C.13.1.) 75 C-07 Menuiseries, verre dans le bâtiment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76 C-07.01 MENUISERIES INTERIEURES ET AGENCEMENTS, MEUBLES MODERNES . . . . . 76 C-07.02 MENUISERIES EXTERIEURES : BOIS - ACIER - ALUMINIUM - PVC - COMPOSITE - FERRONERIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77 C-07.03 MIROITERIE, VITRERIE, ELEMENTS FIXES OU MOBILES, DECORATIFS. (VITRAUX : VOIR B.3.20.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 78 C-07.04 MURS RIDEAUX ET ENVELOPPES VITREES DU BATIMENT . . . . . . . . . . . . . . . 79 C-08 Revêtements et finitions extérieurs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79 C-08.01 BARDAGES, VETURES, BOIS METAL ET COMPOSITES . . . . . . . . . . . . . . . . . . . 79 C-08.02 ENDUITS, RAVALEMENTS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 80 C-08.03 ISOLATION THERMIQUE PAR L'EXTERIEUR (ITE) . . . . . . . . . . . . . . . . . . . . . . . 81 C-08.05 PEINTURES EXTERIEURES, DECORS. (REVETEMENTS DE SOL EXETRIEURS : VOIR C.4.4.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 81 C-09 Revêtements et finitions intérieurs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 82 C-09.01 REVETEMENTS ET FINITIONS INTERIEURS : GENERALISTES . . . . . . . . . . . . . . 82 C-09.02 PEINTURES INTERIEURES, VERNIS, DECORS . . . . . . . . . . . . . . . . . . . . . . . . . . 83 C-09.03 CARRELAGES MURAUX, MARBRERIE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 83 C-09.06 PARQUETS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 84 C-09.08 REVETEMENTS DE SOL COULES, RESINE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 84 C-09.09 REVETEMENTS DE SOL SOUPLES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 85 C-09.10 REVETEMENTS DE SOLS DURS SCELLES, COLLES, COULES . . . . . . . . . . . . . . . 85 C-10 Plomberie - Sanitaire . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 85 C-10.01 PLOMBERIE, SANITAIRE : GENERALISTES . . . . . . . . . . . . . . . . . . . . . . . . . . . . 85 C-10.02 ASSAINISSEMENT AUTONOME. (STATIONS D'EPURATION : VOIR E.3.5.) . . . . . 87 C-10.03 DISTRIBUTION DE GAZ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 88 C-10.04 PLOMBERIE, ROBINETTERIE, APPAREILS SANITAIRES . . . . . . . . . . . . . . . . . . 89 C-10.05 RECUPERATION DES EAUX DE PLUIE, STOCKAGE ET TRAITEMENT. (POUR LA PARTIE PUBLIQUE : VOIR C.15.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 90 C-10.06 RESEAUX D'EAU POTABLE, EAUX USEES, EAUX VANNES, EAUX PLUVIALES . 91 C-11 Polluants du bâtiment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 93 C-11.01 AMIANTE EN BATIMENT ET INDUSTRIE OU TRANSPORTS . . . . . . . . . . . . . . . . 93 C-11.02 PARASITES DU BOIS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 94 C-11.03 PLOMB EN BATIMENT ET INDUSTRIE OU TRANSPORTS . . . . . . . . . . . . . . . . . 94 C-11.04 AUTRES PARASITES ET POLLUANTS (VIVANTS, VEGETAUX, CHIMIQUES) . . . 95 C-12 Electricité . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 95 C-12.01 ANTENNES ET RESEAUX DE DONNEES : INSTALLATIONS ET TRAVAUX . . . . . 95 C-12.02 AUTOMATISMES DU BATIMENT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 96 C-12.03 COURANTS FORTS - COURANTS FAIBLES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 97 C-12.04 DOMOTIQUE DU BATIMENT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 99 C-13 Thermique - Chauffage - Climatisation - Froid - Isolation . . . . . . . . . . . . . . . . . . . . . . . . . . . . 100 C-13.01 GENIE THERMIQUE : CHAUFFAGE TOUTES ENERGIES, STATIONS ET RESEAUX DE CHAUFFAGE, CAPTEURS SOLAIRES - EAU CHAUDE SANITAIRE (ECS) -FOURS, FUMISTERIE, VENTILATION, USINE ET PROCESS D'INCINERATION - THERMIQUE INDUSTRIELLE . 100 C-13.02 GENIE CLIMATIQUE : POMPES A CHALEUR, CLIMATISATION, TRAITEMENT DE L'AIR, SALLES BLANCHES, VMC, ECONOMIES ET RECUPERATION D'ENERGIE . . . . . . 102 C-13.03 GENIE FRIGORIFIQUE : PRODUCTION ET DISTRIBUTION DE FROID ET TRANSPORT FRIGORIFIQUE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 104 C-13.04 GEOTHERMIE ET RESEAUX URBAINS ASSOCIES . . . . . . . . . . . . . . . . . . . . . . 105 C-13.05 ISOLATION THERMIQUE DES BATIMENTS ET DE LEURS EQUIPEMENTS . . . . 106 C-14 Ascenseurs et matériels mécaniques et de chantier . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 108 C-14.01 ASCENSEURS ET MONTE-CHARGES, DEFINITIFS OU DE CHANTIER . . . . . . . . 108 C-14.02 ESCALIERS ROULANTS, TAPIS ROULANTS, TRANSPORTS DE MATERIAUX DE CHANTIER (TAPIS, POMPES) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 108 C-14.03 ÉCHAFAUDAGES (GRUES ET ENGINS DE CHANTIER : VOIR E.7.7. ET E.7.8.) . . 108 C-15 Réseaux publics et privés . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 109 C-15.01 EAU POTABLE ET INDUSTRIELLE (INCENDIE, LAVAGE, PROCESS...). (PRODUCTION D'EAU : VOIR E.2.9.) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 109 5",
+            "pageCount": 355,
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "durationMs": 2519,
+      "events": [
+        {
+          "type": "model_text",
+          "text": "J’ai trouvé la page officielle de la **Cour d’appel de Lyon** contenant la liste des experts judiciaires, puis j’ai vérifié le PDF associé. La page officielle est **“Les experts | Cour d’appel de LYON”** sur `cours-appel.justice.fr`, avec un lien intitulé **“Liste des experts judiciaires”** vers le PDF de la liste. citeturn0search5\n\n**Date officielle retenue : 2025-11-21**.  \nPourquoi : dans le PDF, la première page indique que la **“Liste des experts pour 2026”** a été **dressée par l’assemblée générale restreinte des magistrats des 14 et 21 novembre 2025**. C’est la date la plus spécifique et la plus officielle trouvée dans le document, donc je retiens **le 21 novembre 2025** comme date de publication/adoption la plus récente. citeturn0search5\n\n### Résultat\n- **Cour d’appel** : Lyon\n- **Page officielle** : Les experts\n- **PDF officiel** : Liste des experts judiciaires\n- **publicationDate** : **2025-11-21**\n- **publicationDateSource** : **pdf-content**\n\n### Remarques\n- La page w"
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "durationMs": 6412,
+    "usage": {
+      "inputTokens": 2280,
+      "outputTokens": 1131,
+      "totalTokens": 3411
+    },
+    "result": {
+      "courtName": "Lyon",
+      "pageUrl": null,
+      "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20judiciaires.pdf",
+      "documentTitle": "Liste des experts judiciaires",
+      "publicationDate": "2026-02-13",
+      "publicationDateSource": "pdf-content",
+      "searchExplanation": "J’ai identifié la page officielle de la Cour d’appel de Lyon intitulée « Les experts | Cour d'appel de LYON » sur le site cours-appel.justice.fr. Cette page contient un lien PDF intitulé « Liste des experts judiciaires », pointant vers le document officiel de la liste des experts.",
+      "dateExtractionExplanation": "Le PDF contient plusieurs signaux de date : « dressée par l’assemblée générale restreinte des magistrats des 14 et 21 novembre 2025 », « Mise à jour le 13 février 2026 », la page web indique aussi « Depuis le 2 janvier 2026 », et l’URL du PDF est dans un répertoire /2026-03/. Conformément à la consigne, j’ai retenu la date exacte la plus récente trouvée dans le contenu du PDF : 2026-02-13. Les autres dates sont soit antérieures, soit non pertinentes pour la publication elle-même.",
+      "errors": []
+    }
+  },
+  "result": {
+    "courtName": "Lyon",
+    "pageUrl": null,
+    "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20judiciaires.pdf",
+    "documentTitle": "Liste des experts judiciaires",
+    "publicationDate": "2026-02-13",
+    "publicationDateSource": "pdf-content",
+    "searchExplanation": "J’ai identifié la page officielle de la Cour d’appel de Lyon intitulée « Les experts | Cour d'appel de LYON » sur le site cours-appel.justice.fr. Cette page contient un lien PDF intitulé « Liste des experts judiciaires », pointant vers le document officiel de la liste des experts.",
+    "dateExtractionExplanation": "Le PDF contient plusieurs signaux de date : « dressée par l’assemblée générale restreinte des magistrats des 14 et 21 novembre 2025 », « Mise à jour le 13 février 2026 », la page web indique aussi « Depuis le 2 janvier 2026 », et l’URL du PDF est dans un répertoire /2026-03/. Conformément à la consigne, j’ai retenu la date exacte la plus récente trouvée dans le contenu du PDF : 2026-02-13. Les autres dates sont soit antérieures, soit non pertinentes pour la publication elle-même.",
+    "errors": []
+  },
+  "totalUsage": {
+    "inputTokens": 29907,
+    "outputTokens": 1754,
+    "totalTokens": 31661
+  },
+  "rawToolData": {
+    "pageTitle": "Les experts | Cour d'appel de LYON",
+    "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de LYON Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) Les experts Depuis le 2 janvier 2026, les dossiers de candidatures sur la liste des experts judiciaires sont entièrement dématérialisés et la procédure d'inscription s'effectue depuis la plateforme \"Démarches Numériques\". Les liens vers les formulaires de candidatures (inscription, réinscription, extensions) sont ci-dessous : Inscription initiale : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-inscription-initiale-campagne- Réinscription : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-reinscription-campagne-nationa Extension : https://demarche.numerique.gouv.fr/commencer/experts-judiciaires-extension-d-inscription-campag La notification des décisions concernant les candidatures sera effectuée dans le courant du mois de décembre suivant le dépôt de la demande. -> Référentiel des Partenaires de la Justice : Livret RPJ Téléchargement 1.07 Mo Lorsqu'ils ordonnent des expertises, les tribunaux choisissent les experts sur la liste établie par la cour d'appel. La cour d’appel procède chaque année à la révision de la liste des experts assermentés. Elle inscrit de nouveaux experts et procède à la radiation de ceux qui n’exercent plus. Si vous désirez faire acte de candidature, vous devez adresser votre demande à partir du mois de novembre et avant le 1er mars de chaque année (soit au plus tard le 28 ou 29 février). Votre attention est attirée sur la nouvelle condition pour les candidats de justifier d’une formation à l’expertise pour pouvoir être inscrits sur une liste d’experts judiciaires (définie par le décret n° 2023-468 du 16 juin 2023) Chaque année et avant le 1er mars, les experts judiciaires doivent déposer leur rapport d'activité de l'année précédente",
+    "pdfLinks": [
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/Livret%20RPJ%20expert_internet%20CA%20.pdf",
+        "text": "Livret RPJ\n        Téléchargement 1.07 Mo",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2023-01/Arr%C3%AAt%C3%A9%20du%205%20d%C3%A9cembre%202022%20relatif%20%C3%A0%20la%20...-1463%20du%2023%20d%C3%A9cembre%202004%20-%20L%C3%A9gifrance.pdf",
+        "text": "Arrêté 5 décembre 2022\n        Téléchargement 290.75 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20judiciaires.pdf",
+        "text": "Liste des experts judiciaires\n        Téléchargement 1.84 Mo",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/2026%20-%20Liste%20des%20experts%20honoraires.pdf",
+        "text": "Liste des experts honoraires\n        Téléchargement 496.96 Ko",
+        "relevanceHint": "likely-expert-list"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2024-12/Annexe1-AFM.pdf",
+        "text": "Attestation de fin de mission\n        Téléchargement 1.82 Mo",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2022-02/rapport%20annuel%20activit%C3%A9%20interpr%C3%A8tes-traducteurs.pdf",
+        "text": "rapport annuel d'activité interprètes- traducteurs\n        Téléchargement 537.87 Ko",
+        "relevanceHint": "unknown"
+      },
+      {
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2019-04/rapport%20annuel%20activit%C3%A9.pdf",
+        "text": "Rapport annuel d'activité\n        Téléchargement 10.12 Ko",
+        "relevanceHint": "unknown"
+      }
+    ],
+    "pdfText": "COUR D’APPEL DE LYON LISTE DES EXPERTS POUR 2026 dressée par l’assemblée générale restreinte des magistrats des 14 et 21 novembre 2025 Conformément à l’article R312-43 du code de l’organisation judiciaire à la loi du 29 juin 1970 et celle du 11 février 2004 au décret du 23 décembre 2004 et à l’arrêté du 05 décembre 2022 Les années mentionnées en marge à gauche précisent, pour la première, l’année d’inscription initiale de l’expert, pour la seconde, l’année de sa dernière réinscription quinquennale (ou l’année d’inscription initiale pour les experts en période probatoire). Mise à jour le 13 février 2026 1 TABLE DES MATIÈRES Pages SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES . . . . . . . . . . . . . . . . . . . . . . 3 LISTE PAR SPÉCIALITÉ DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 343 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 350 2 SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . . . . . . . . . . 14 A-01 Agriculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 A-01.01 APPLICATIONS DE PRODUITS PHYTOPHARMACEUTIQUES, MATIERES FERTILISA"
+  },
+  "error": null
+}

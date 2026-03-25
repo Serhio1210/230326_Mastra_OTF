@@ -1,0 +1,107 @@
+{
+  "court": "Besançon",
+  "agentId": "expert-search-mini",
+  "startedAt": "2026-03-25T09:09:44.316Z",
+  "finishedAt": "2026-03-25T09:09:50.680Z",
+  "totalMs": 6364,
+  "steps": [
+    {
+      "turn": 0,
+      "durationMs": 1322,
+      "events": [
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_call",
+          "toolName": "provider-tool"
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": null,
+            "pageText": "This website requires JS enabled and cookies",
+            "pdfLinks": [],
+            "error": null
+          },
+          "durationMs": 0
+        },
+        {
+          "type": "tool_result",
+          "toolName": "fetchPage",
+          "fullResult": {
+            "success": true,
+            "title": "Accueil | Cour d'appel de Besançon",
+            "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Besançon Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) A LA UNE Actualités Je voudrais Trouver un tribunal près de chez moi Accéder directement à des formulaires Demande de certificat de non appel Demande de casier judiciaire Demande d'aide juridictionnelle Demande de copie d'une décision de justice Justice.fr Des réponses à mes questions Je cherche un avocat Je cherche un notaire Je cherche un commissaire de justice Je suis victime : mes droits et démarches Je suis tiré au sort pour être juré d'assises Tribunal judiciaire de Besançon Informations pratiques Tribunal judiciaire de Besançon 1 rue mégevand 25000 Besançon France Lundi 8h15-12h / 13h15-17h Mardi 8h15-12h / 13h15-17h Mercredi 8h15-12h / 13h15-17h Jeudi 8h15-12h / 13h15-17h Vendredi 8h15-12h / 13h15-17h Samedi Fermé Dimanche Fermé Téléphone 03-81-65-13-00 Tribunal judiciaire de Lons-le-Saunier Informations pratiques Tribunal d'instance de Lons-le-Saunier 295 rue Georges Trouillot 39000 Lons-le-Saunier France Lundi 8h30-12h/13h30-17h Mardi 8h30-12h/13h30-17h Mercredi 8h30-12h/13h30-17h Jeudi 8h30-12h/13h30-17h Vendredi 8h30-12h/13h30-17h Samedi Fermé Dimanche Fermé Téléphone 03-84-35-13-00 Tribunal judiciaire de Lons-le-Saunier Informations pratiques Tribunal judiciaire de Lons-le-Saunier 11 rue Pasteur 39015 Lons-le-Saunier France Lundi 8h30-12h / 13h30-17h Mardi 8h30-12h / 13h30-17h Mercredi 8h30-12h / 13h30-17h Jeudi 8h30-12h / 13h30-17h Vendredi 8h30-12h / 13h30-17h Samedi Fermé Dimanche Fermé Téléphone 03-84-35-13-00 Tribunal judiciaire de Vesoul Informations pratiques place du palais de justice place du palais de Justice 70 000 Vesoul France Lundi 8h30-12h / 13h30-16h30 Mardi 8h30-12h / 13h30-16h30 Mercredi 8h30-12h / 13h30-16h30 Jeudi 8h30-12h / 13h30-16h30 Vendredi 8h30-12h / 13h30-16h30 Samedi Fermé Dimanche Fermé Téléphone 03-84-78-58-00 Cité judiciaire de Montbéliard Informations pratiques Cité judiciaire de Montbéliard Rue Wolfgang Amadeus MOZART 25 209 Montbéliard France Lundi 8h30-12h /13h30 - 16h30 Mardi 8h30-12h /13h30 - 16h30 Mercredi 8h30-12h /13h30 - 16h30 Jeudi 8h30-12h /13h30 - 16h30 Vendredi 8h30-12h /13h30 - 16h30 Samedi Fermé Dimanche Fermé Téléphone 03-81-90-70-00 Cour d'appel de Besançon Informations pratiques Cour d'appel de Besançon - Palais de Justice de Besançon 1 rue mégevand 25000 Besançon France Lundi 9h-12h/13h30-17h Mardi 9h-12h/13h30-17h Mercredi 9h-12h/13h30-17h Jeudi 9h-12h/13h30-17h Vendredi 9h-12h/13h30-17h Samedi Fermé Dimanche Fermé Téléphone 03-81-65-13-00 Tribunal judiciaire de Montbelliard Informations pratiques Tribunal judiciaire de Montbelliard Rue Wolfgang Amadeus Mozart 25 209 Montbelliard France Lundi 8h30-12h/13h30-17h Mardi 8h30-12h/13h30-17h Mercredi 8h30-12h/13h30-17h Jeudi 8h30-12h/13h30-17h Vendredi 8h30-12h/13h30-17h Samedi Fermé Dimanche Fermé Téléphone 03-81-90-70-00 Tribunal judiciaire de Vesoul Informations pratiques Tribunal judiciaire de Vesoul 4 place du Palais 70000 Vesoul France Lundi 8h30-12h / 13h30-16h30 Mardi 8h30-12h / 13h30-16h30 Mercredi 8h30-12h / 13h30-16h30 Jeudi 8h30-12h / 13h30-16h30 Vendredi 8h30-12h / 13h30-16h30 Samedi Fermé Dimanche Fermé Téléphone 03-84-78-58-00 Accéder aux autres sites des cours d'appel Choisir une cour d’appel Agen Cour d'appel d'Agen Aix-en-Provence Cour d'appel d'Aix-en-Provence Amiens Cour d'appel d'Amiens Angers Cour d'appel d'Angers Basse-Terre Cour d'appel de Basse-Terre Bastia Cour d'appel de Bastia Besançon Cour d'appel de Besançon Bordeaux Cour d'appel de Bordeaux Bourges Cour d'appel de Bourges Caen Cour d'appel de Caen Cayenne Chambéry Cour d'appel de Chambéry Colmar Cour d'appel de Colmar Dijon Cour d'appel de Dijon Douai Cour d'appel de Douai Fort-de-France Cour d'appel de Fort-de-France Grenoble Cour d'appel de Grenoble Limoges Cour d'appel de Limoges Lyon Cour d'appel de Lyon Metz Cour d'appel de Metz Montpellier Cour d'appel de Montpellier Nancy Cour d'appel de Nancy Nîmes Cour d'appel de Nîmes Nouméa Cour d'appel de Nouméa Orléans Cour d'appel d'Orléans Papeete Paris Cour d'appel de Paris Pau Cour d'appel de Pau Poitiers Cour d'appel de Poitiers Reims Cour d'appel de Reims Rennes Cour d'appel de Rennes Riom Cour d'appel de Riom Rouen Courd d'appel de Rouen Saint-Denis Cour d’appel de Saint-Denis Toulouse Cour d'appel de Toulouse Versailles Cour d'appel de Versailles Saint-Pierre Saint-Pierre-et-Miquelon",
+            "pdfLinks": [],
+            "error": null
+          },
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "durationMs": 2082,
+      "events": [
+        {
+          "type": "model_text",
+          "text": "J’ai trouvé la page officielle de la **Cour d’appel de Besançon** sur le domaine autorisé `cours-appel.justice.fr`, mais la page renvoyée par `fetchPage` ne contient **aucun lien PDF visible** et **aucun indice de date** pour la liste des experts judiciaires. Comme je n’ai pas pu identifier le PDF officiel à partir de cette page, je ne peux pas encore appeler `extractPdfDate` sur le bon document.\n\n**État des recherches :**\n- Page officielle trouvée : `cours-appel.justice.fr/besancon`\n- Résultat `fetchPage` : aucun PDF détecté, aucune date trouvée\n- Erreur rencontrée : le lien vers la liste des experts judiciaires n’est pas exposé dans le HTML récupéré\n\nSi tu veux, je peux continuer en explorant d’autres pages officielles de la Cour d’appel de Besançon pour retrouver le PDF exact de la liste des experts judiciaires."
+        }
+      ]
+    }
+  ],
+  "extraction": {
+    "durationMs": 2958,
+    "usage": {
+      "inputTokens": 1293,
+      "outputTokens": 398,
+      "totalTokens": 1691
+    },
+    "result": {
+      "courtName": "Besançon",
+      "pageUrl": "https://cours-appel.justice.fr/besancon",
+      "documentUrl": null,
+      "documentTitle": null,
+      "publicationDate": null,
+      "publicationDateSource": "not-found",
+      "searchExplanation": "I found the official Cour d'appel de Besançon page on the authorized domain cours-appel.justice.fr, but the retrieved HTML/page text did not expose any visible PDF link for the experts judiciaires directory.",
+      "dateExtractionExplanation": "No exact publication date was found in the page text, no PDF link text was available, and no PDF URL could be identified to inspect its filename or content. Because there was no date signal in any of the available sources, the publication date could not be determined.",
+      "errors": [
+        "No expert list PDF link exposed in the fetched page HTML",
+        "No publication date found in page text",
+        "No PDF available to inspect for date signals"
+      ]
+    }
+  },
+  "result": {
+    "courtName": "Besançon",
+    "pageUrl": "https://cours-appel.justice.fr/besancon",
+    "documentUrl": null,
+    "documentTitle": null,
+    "publicationDate": null,
+    "publicationDateSource": "not-found",
+    "searchExplanation": "I found the official Cour d'appel de Besançon page on the authorized domain cours-appel.justice.fr, but the retrieved HTML/page text did not expose any visible PDF link for the experts judiciaires directory.",
+    "dateExtractionExplanation": "No exact publication date was found in the page text, no PDF link text was available, and no PDF URL could be identified to inspect its filename or content. Because there was no date signal in any of the available sources, the publication date could not be determined.",
+    "errors": [
+      "No expert list PDF link exposed in the fetched page HTML",
+      "No publication date found in page text",
+      "No PDF available to inspect for date signals"
+    ]
+  },
+  "totalUsage": {
+    "inputTokens": 12111,
+    "outputTokens": 674,
+    "totalTokens": 12785
+  },
+  "rawToolData": {
+    "pageTitle": "Accueil | Cour d'appel de Besançon",
+    "pageText": "Rechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Besançon Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) A LA UNE Actualités Je voudrais Trouver un tribunal près de chez moi Accéder directement à des formulaires Demande de certificat de non appel Demande de casier judiciaire Demande d'aide juridictionnelle Demande de copie d'une décision de justice Justice.fr Des réponses à mes questions Je cherche un avocat Je cherche un notaire Je cherche un commissaire de justice Je suis victime : mes droits et démarches Je suis tiré au sort pour être juré d'assises Tribunal judiciaire de Besançon Informations pratiques Tribunal judiciaire de Besançon 1 rue mégevand 25000 Besançon France Lundi 8h15-12h / 13h15-17h Mardi 8h15-12h / 13h15-17h Mercredi 8h15-12h / 13h15-17h Jeudi 8h15-12h / 13h15-17h Vendredi 8h15-12h / 13h15-17h Samedi Fermé Dimanche Fermé Téléphone 03-81-65-13-00 Tribunal judiciaire de Lons-le-Saunier Informations pratiques Tribunal d'instance de Lons-le-Saunier 295 rue Georges Trouillot 39000 Lons-le-Saunier France Lundi 8h30-12h/13h30-17h Mardi 8h30-12h/13h30-17h Mercredi 8h30-12h/13h30-17h Jeudi 8h30-12h/13h30-17h Vendredi 8h30-12h/13h30-17h Samedi Fermé Dimanche Fermé Téléphone 03-84-35-13-00 Tribunal judiciaire de Lons-le-Saunier Informations pratiques Tribunal judiciaire de Lons-le-Saunier 11 rue Pasteur 39015 Lons-le-Saunier France Lundi 8h30-12h / 13h30-17h Mardi 8h30-12h / 13h30-17h Mercredi 8h30-12h / 13h30-17h Jeudi 8h30-12h / 13h30-17h Vendredi 8h30-12h / 13h30-17h Samedi Fermé Dimanche Fermé Téléphone 03-84-35-13-00 Tribunal judiciaire de Vesoul Informations pratiques place du palais de justice place du palais de Justice 70 000 Vesoul France Lundi 8h30-12h / 13h30-16h30 Mardi 8h30-12h / 13h30-16h30 Mercredi 8h30-12h / 13h30-16h30 Jeudi 8h30-12h / 13h30-16h30 Vendredi 8h30-1",
+    "pdfLinks": [],
+    "pdfText": ""
+  },
+  "error": null
+}

@@ -1,0 +1,152 @@
+[
+  {
+    "court": "Aix-en-Provence",
+    "date": null,
+    "source": "not-found",
+    "turns": 2,
+    "timeMs": 11655,
+    "tokens": {
+      "inputTokens": 11966,
+      "outputTokens": 1277,
+      "totalTokens": 13243
+    },
+    "cost": 0.014721,
+    "error": null,
+    "groundTruth": "2025-12-10"
+  },
+  {
+    "court": "Amiens",
+    "date": "2022-12-05",
+    "source": "pdf-content",
+    "turns": 3,
+    "timeMs": 10703,
+    "tokens": {
+      "inputTokens": 18070,
+      "outputTokens": 1063,
+      "totalTokens": 19133
+    },
+    "cost": 0.018335999999999998,
+    "error": null,
+    "groundTruth": "~2026-02"
+  },
+  {
+    "court": "Angers",
+    "date": "2026-03-20",
+    "source": "page-text",
+    "turns": 4,
+    "timeMs": 17024,
+    "tokens": {
+      "inputTokens": 33837,
+      "outputTokens": 1474,
+      "totalTokens": 35311
+    },
+    "cost": 0.03201075,
+    "error": null,
+    "groundTruth": "2026-03-20"
+  },
+  {
+    "court": "Besançon",
+    "date": null,
+    "source": "not-found",
+    "turns": 2,
+    "timeMs": 6364,
+    "tokens": {
+      "inputTokens": 12111,
+      "outputTokens": 674,
+      "totalTokens": 12785
+    },
+    "cost": 0.012116250000000002,
+    "error": null,
+    "groundTruth": "~2026-02-24"
+  },
+  {
+    "court": "Bordeaux",
+    "date": "2025-07-01",
+    "source": "filename",
+    "turns": 4,
+    "timeMs": 13836,
+    "tokens": {
+      "inputTokens": 29121,
+      "outputTokens": 1347,
+      "totalTokens": 30468
+    },
+    "cost": 0.02790225,
+    "error": null,
+    "groundTruth": "~2025-07"
+  },
+  {
+    "court": "Cayenne",
+    "date": "2025-01-01",
+    "source": "link-text",
+    "turns": 3,
+    "timeMs": 14410,
+    "tokens": {
+      "inputTokens": 21526,
+      "outputTokens": 1666,
+      "totalTokens": 23192
+    },
+    "cost": 0.0236415,
+    "error": null,
+    "groundTruth": "2022-11-23"
+  },
+  {
+    "court": "Grenoble",
+    "date": "2026-02-26",
+    "source": "pdf-content",
+    "turns": 4,
+    "timeMs": 14973,
+    "tokens": {
+      "inputTokens": 29517,
+      "outputTokens": 1311,
+      "totalTokens": 30828
+    },
+    "cost": 0.02803725,
+    "error": null,
+    "groundTruth": "2026-02-26"
+  },
+  {
+    "court": "Lyon",
+    "date": "2026-02-13",
+    "source": "pdf-content",
+    "turns": 4,
+    "timeMs": 17007,
+    "tokens": {
+      "inputTokens": 29907,
+      "outputTokens": 1754,
+      "totalTokens": 31661
+    },
+    "cost": 0.030323249999999996,
+    "error": null,
+    "groundTruth": "2025-11-21"
+  },
+  {
+    "court": "Paris",
+    "date": "2026-01-01",
+    "source": "pdf-content",
+    "turns": 3,
+    "timeMs": 18798,
+    "tokens": {
+      "inputTokens": 23060,
+      "outputTokens": 1706,
+      "totalTokens": 24766
+    },
+    "cost": 0.024972,
+    "error": null,
+    "groundTruth": "2026-03-10"
+  },
+  {
+    "court": "Rennes",
+    "date": "2026-03-04",
+    "source": "pdf-content",
+    "turns": 4,
+    "timeMs": 13183,
+    "tokens": {
+      "inputTokens": 29946,
+      "outputTokens": 1039,
+      "totalTokens": 30985
+    },
+    "cost": 0.027135,
+    "error": null,
+    "groundTruth": "2026-03-04"
+  }
+]
