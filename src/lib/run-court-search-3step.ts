@@ -258,6 +258,8 @@ async function stepCollect(
   // Fetch the page with cheerio (if we have a page URL)
   let pageTitle = "";
   let pageText = "";
+  let pdfLinks: Array<{ url: string; text: string; relevanceHint: string }> = [];
+
   if (discover.pageUrl) {
     try {
       const resp = await fetch(discover.pageUrl, {
@@ -267,6 +269,46 @@ async function stepCollect(
         const html = await resp.text();
         const $ = cheerio.load(html);
         pageTitle = $("title").text().trim() || $("h1").first().text().trim() || "";
+
+        // Extract all PDF links from the page
+        $('a[href*=".pdf"]').each((_, el) => {
+          const href = $(el).attr("href");
+          if (!href) return;
+
+          let fullUrl: string;
+          try { fullUrl = new URL(href, discover.pageUrl!).toString(); } catch { fullUrl = href; }
+
+          const linkText = $(el).text().trim();
+          const parentText = $(el).parent().text().trim().slice(0, 300);
+
+          let fname: string;
+          try { fname = decodeURIComponent(fullUrl.split("/").pop() || ""); } catch { fname = fullUrl.split("/").pop() || ""; }
+
+          const lowerUrl = fullUrl.toLowerCase();
+          const lowerText = (linkText + " " + parentText + " " + fname).toLowerCase();
+          let relevanceHint = "unknown";
+
+          if (lowerUrl.includes("expert") || lowerText.includes("expert") || lowerUrl.includes("annuaire") || lowerText.includes("annuaire")) {
+            relevanceHint = "likely-expert-list";
+          } else if (lowerUrl.includes("liste") || lowerText.includes("liste")) {
+            relevanceHint = "possible-expert-list";
+          } else if (lowerUrl.includes("tarif") || lowerUrl.includes("formulaire") || lowerText.includes("tarif") || lowerText.includes("formulaire")) {
+            relevanceHint = "not-expert-list";
+          }
+
+          pdfLinks.push({
+            url: fullUrl,
+            text: linkText || parentText.slice(0, 100) || fname || "No text",
+            relevanceHint,
+          });
+
+          // Extract date signals from link text
+          const linkDate = extractFrenchDate(linkText + " " + parentText);
+          if (linkDate) {
+            allDateSignals.push({ source: "link-text", raw: linkText || parentText.slice(0, 100), extracted: linkDate });
+          }
+        });
+
         $("script, style, nav, footer").remove();
         pageText = $("body").text().replace(/\s+/g, " ").trim().slice(0, 10000);
 
@@ -280,12 +322,33 @@ async function stepCollect(
     }
   }
 
-  // Extract PDF text (if we have a PDF URL)
+  // Pick the best PDF: prefer the most recent expert-list PDF from the page
+  // DISCOVER may have found an older PDF — the page has the real list
+  let bestPdfUrl = discover.pdfUrl || "";
+
+  const expertPdfs = pdfLinks.filter((p) => p.relevanceHint === "likely-expert-list");
+  if (expertPdfs.length > 0) {
+    // Pick the one with the most recent URL path date, or the first one
+    let bestDate = "";
+    for (const pdf of expertPdfs) {
+      const pathDate = extractUrlPathDate(pdf.url);
+      if (pathDate?.extracted && pathDate.extracted > bestDate) {
+        bestDate = pathDate.extracted;
+        bestPdfUrl = pdf.url;
+      }
+    }
+    // If no path date found, just use the first expert PDF
+    if (!bestDate && expertPdfs.length > 0) {
+      bestPdfUrl = expertPdfs[0].url;
+    }
+  }
+
+  // Extract PDF text using the best PDF URL
   let pdfText = "";
   let pdfPageCount = 0;
-  if (discover.pdfUrl) {
+  if (bestPdfUrl) {
     try {
-      const resp = await fetch(discover.pdfUrl, {
+      const resp = await fetch(bestPdfUrl, {
         headers: { "User-Agent": "Mozilla/5.0 (compatible; ExpertFinderBot/1.0)" },
       });
       if (resp.ok) {
@@ -311,8 +374,8 @@ async function stepCollect(
     }
   }
 
-  // Extract URL path date
-  const pdfUrl = discover.pdfUrl || "";
+  // Extract URL path date from the best PDF URL
+  const pdfUrl = bestPdfUrl;
   const urlPathDate = extractUrlPathDate(pdfUrl);
   if (urlPathDate) {
     allDateSignals.push({ source: "url-path", raw: urlPathDate.raw, extracted: urlPathDate.extracted });
@@ -341,6 +404,8 @@ async function stepCollect(
     errors,
   };
 
+  const pdfOverridden = bestPdfUrl !== discover.pdfUrl;
+
   return {
     result,
     trace: {
@@ -352,6 +417,11 @@ async function stepCollect(
         pageTitle,
         filename,
         pdfPageCount,
+        pdfOverridden,
+        discoverPdfUrl: discover.pdfUrl,
+        bestPdfUrl: pdfOverridden ? bestPdfUrl : undefined,
+        pdfLinksOnPage: pdfLinks.length,
+        expertPdfs: pdfLinks.filter((p) => p.relevanceHint === "likely-expert-list").map((p) => p.url),
         signalCount: allDateSignals.length,
         signals: allDateSignals,
         errors,

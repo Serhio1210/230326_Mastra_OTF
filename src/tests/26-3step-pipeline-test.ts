@@ -58,6 +58,16 @@ for (const step of trace.steps) {
   if (step.name === "COLLECT") {
     const out = step.output as any;
     console.log(`\n  Page title: ${out.pageTitle}`);
+    console.log(`  PDF links on page: ${out.pdfLinksOnPage}`);
+    if (out.expertPdfs?.length) {
+      console.log(`  Expert PDFs found: ${out.expertPdfs.length}`);
+      for (const url of out.expertPdfs) console.log(`    → ${url}`);
+    }
+    if (out.pdfOverridden) {
+      console.log(`  ⚠ PDF OVERRIDDEN by COLLECT:`);
+      console.log(`    DISCOVER found: ${out.discoverPdfUrl}`);
+      console.log(`    COLLECT picked: ${out.bestPdfUrl}`);
+    }
     console.log(`  Filename: ${out.filename}`);
     console.log(`  PDF pages: ${out.pdfPageCount}`);
     console.log(`  Date signals found: ${out.signalCount}`);
