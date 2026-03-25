@@ -1,0 +1,294 @@
+{
+  "court": "Besançon",
+  "startedAt": "2026-03-25T10:14:46.394Z",
+  "finishedAt": "2026-03-25T10:15:11.972Z",
+  "totalMs": 25578,
+  "success": true,
+  "result": {
+    "courtName": "Besançon",
+    "pageUrl": "https://www.cours-appel.justice.fr/besancon/experts-judiciaires",
+    "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Annuaire%20experts%202026.pdf",
+    "documentTitle": "Annuaire des experts - 2026",
+    "publicationDate": "2026-02-24",
+    "publicationDateSource": "page-text",
+    "searchExplanation": "The experts judiciaires page for the Cour d'appel de Besançon was identified directly from the provided page URL. The corresponding expert directory PDF was identified from the provided PDF URL and title, matching the page topic and the 2026 expert directory.",
+    "dateExtractionExplanation": "The page-text signal provides an exact publication/update date: 'mise à jour : 24/02/2026' → 2026-02-24. The only other date signal is the URL-path '/2026-02/', which resolves only to a month-level date (2026-02-01) and is less specific. Per the rules, the most specific exact date from page-text takes precedence.",
+    "errors": []
+  },
+  "steps": [
+    {
+      "name": "DISCOVER",
+      "startedAt": "2026-03-25T10:14:46.394Z",
+      "durationMs": 22063,
+      "input": {
+        "court": "Besançon"
+      },
+      "output": {
+        "found": true,
+        "pageUrl": "https://www.cours-appel.justice.fr/besancon/experts-judiciaires",
+        "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Annuaire%20experts%202026.pdf",
+        "pdfTitle": "Annuaire des experts - 2026",
+        "searchExplanation": "I found the official Cour d'appel de Besançon homepage on cours-appel.justice.fr, where the navigation menu includes a link labeled \"Experts judiciaires\". Opening that page revealed the official experts page and its attachment link to the 2026 expert directory PDF.",
+        "errors": []
+      },
+      "usage": {
+        "inputTokens": 36760,
+        "outputTokens": 2569
+      },
+      "debug": {
+        "outputItemTypes": [
+          "reasoning",
+          "web_search_call",
+          "reasoning",
+          "web_search_call",
+          "reasoning",
+          "web_search_call",
+          "reasoning",
+          "web_search_call",
+          "reasoning",
+          "web_search_call",
+          "reasoning",
+          "web_search_call",
+          "reasoning",
+          "web_search_call",
+          "reasoning",
+          "web_search_call",
+          "reasoning",
+          "web_search_call",
+          "reasoning",
+          "web_search_call",
+          "reasoning",
+          "web_search_call",
+          "reasoning",
+          "web_search_call",
+          "reasoning",
+          "web_search_call",
+          "reasoning",
+          "web_search_call",
+          "reasoning",
+          "web_search_call",
+          "reasoning",
+          "message"
+        ],
+        "searchActions": [
+          {
+            "id": "ws_043fe02aa7c458550069c3b59725a48193a950b43e6d7cf61c",
+            "action": {
+              "type": "search",
+              "queries": [
+                "site:ca-besancon.justice.fr experts judiciaires Besançon PDF",
+                "site:cours-appel.justice.fr Besançon experts judiciaires PDF",
+                "site:ca-besancon.justice.fr annuaire experts judiciaires Besançon"
+              ],
+              "query": "site:ca-besancon.justice.fr experts judiciaires Besançon PDF"
+            }
+          },
+          {
+            "id": "ws_043fe02aa7c458550069c3b598167481939206fee7b9aee335",
+            "action": {
+              "type": "search",
+              "queries": [
+                "site:ca-besancon.justice.fr \"experts judiciaires\" \"Besançon\"",
+                "site:ca-besancon.justice.fr \"Annuaire des experts\" Besançon",
+                "site:ca-besancon.justice.fr experts judiciaires pdf ca-besancon"
+              ],
+              "query": "site:ca-besancon.justice.fr \"experts judiciaires\" \"Besançon\""
+            }
+          },
+          {
+            "id": "ws_043fe02aa7c458550069c3b599096881938637c9317a661d50",
+            "action": {
+              "type": "open_page"
+            }
+          },
+          {
+            "id": "ws_043fe02aa7c458550069c3b599830881939de7c52de5512b9d",
+            "action": {
+              "type": "search",
+              "queries": [
+                "site:ca-besancon.justice.fr \"Annuaire des experts 2025\" Besançon",
+                "site:ca-besancon.justice.fr \"Annuaire des experts 2025 modifié et mis à jour en mai 2025\"",
+                "site:ca-besancon.justice.fr \"experts 2025\" \"Besançon\""
+              ],
+              "query": "site:ca-besancon.justice.fr \"Annuaire des experts 2025\" Besançon"
+            }
+          },
+          {
+            "id": "ws_043fe02aa7c458550069c3b59a7c488193b65e7f3a6c77c57e",
+            "action": {
+              "type": "search",
+              "queries": [
+                "\"Annuaire des experts 2025 modifié et mis à jour en mai 2025\" \"ca-besancon.justice.fr\"",
+                "\"Annuaire des experts 2025\" \"ca-besancon.justice.fr\" \"mai 2025\"",
+                "site:ca-besancon.justice.fr/index.php \"Annuaire des experts 2025\""
+              ],
+              "query": "\"Annuaire des experts 2025 modifié et mis à jour en mai 2025\" \"ca-besancon.justice.fr\""
+            }
+          },
+          {
+            "id": "ws_043fe02aa7c458550069c3b59ce21c8193a4db437c44af36d6",
+            "action": {
+              "type": "open_page"
+            }
+          },
+          {
+            "id": "ws_043fe02aa7c458550069c3b59e626c8193bf70669054b5cab0",
+            "action": {
+              "type": "search",
+              "queries": [
+                "site:ca-besancon.justice.fr/index.php?article= \"Annuaire des experts 2025\"",
+                "site:ca-besancon.justice.fr/index.php?article= \"experts 2025\" \"Besançon\"",
+                "site:ca-besancon.justice.fr/index.php?article= \"liste experts\" Besançon"
+              ],
+              "query": "site:ca-besancon.justice.fr/index.php?article= \"Annuaire des experts 2025\""
+            }
+          },
+          {
+            "id": "ws_043fe02aa7c458550069c3b59f9c2081938bf4f25a98883ee5",
+            "action": {
+              "type": "find_in_page",
+              "pattern": "Annuaire des experts 2025"
+            }
+          },
+          {
+            "id": "ws_043fe02aa7c458550069c3b5a0f0388193b293d5393274046f",
+            "action": {
+              "type": "search",
+              "queries": [
+                "site:ca-besancon.justice.fr \"experts judiciaires\" \"index.php?article=\"",
+                "site:ca-besancon.justice.fr \"annuaire experts\" \"index.php?article=\"",
+                "site:ca-besancon.justice.fr \"Cour d'Appel de Besançon\" \"Liste des Experts Judiciaires\""
+              ],
+              "query": "site:ca-besancon.justice.fr \"experts judiciaires\" \"index.php?article=\""
+            }
+          },
+          {
+            "id": "ws_043fe02aa7c458550069c3b5a1eab8819390814f991335854f",
+            "action": {
+              "type": "search",
+              "queries": [
+                "\"annuaire experts 2025\" \"ca-besancon.justice.fr/art_pix\"",
+                "\"Annuaire des experts 2025\" \"art_pix\" Besançon",
+                "\"annuaire des experts 2025\" \"Besançon\" pdf"
+              ],
+              "query": "\"annuaire experts 2025\" \"ca-besancon.justice.fr/art_pix\""
+            }
+          },
+          {
+            "id": "ws_043fe02aa7c458550069c3b5a411a48193830e8fd3c571c2a4",
+            "action": {
+              "type": "search",
+              "queries": [
+                "site:cours-appel.justice.fr/besancon experts judiciaires Besançon",
+                "site:cours-appel.justice.fr/besancon \"experts judiciaires\"",
+                "site:cours-appel.justice.fr \"Cour d'appel de Besançon\" experts"
+              ],
+              "query": "site:cours-appel.justice.fr/besancon experts judiciaires Besançon"
+            }
+          },
+          {
+            "id": "ws_043fe02aa7c458550069c3b5a53c98819395bafb4253cf2beb",
+            "action": {
+              "type": "search",
+              "queries": [
+                "site:cours-appel.justice.fr/besancon \"Annuaire des experts\"",
+                "site:cours-appel.justice.fr/besancon \"Liste des experts\" \"Besançon\"",
+                "site:cours-appel.justice.fr/besancon \"experts judiciaires\" \"annuaire\""
+              ],
+              "query": "site:cours-appel.justice.fr/besancon \"Annuaire des experts\""
+            }
+          },
+          {
+            "id": "ws_043fe02aa7c458550069c3b5a66e008193bb11395c7eabf17e",
+            "action": {
+              "type": "open_page",
+              "url": "https://www.cours-appel.justice.fr/besancon"
+            }
+          },
+          {
+            "id": "ws_043fe02aa7c458550069c3b5a6ef8c8193ab76040c7597ccf2",
+            "action": {
+              "type": "open_page",
+              "url": "https://www.cours-appel.justice.fr/besancon/experts-judiciaires"
+            }
+          },
+          {
+            "id": "ws_043fe02aa7c458550069c3b5a78a1c8193bd2ec3bf6e413cfd",
+            "action": {
+              "type": "open_page",
+              "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Annuaire%20experts%202026.pdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "COLLECT",
+      "startedAt": "2026-03-25T10:15:08.458Z",
+      "durationMs": 629,
+      "input": {
+        "pageUrl": "https://www.cours-appel.justice.fr/besancon/experts-judiciaires",
+        "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Annuaire%20experts%202026.pdf"
+      },
+      "output": {
+        "pageTitle": "Experts judiciaires | Cour d'appel de Besançon",
+        "filename": "Annuaire experts 2026.pdf",
+        "pdfPageCount": 137,
+        "signalCount": 2,
+        "signals": [
+          {
+            "source": "page-text",
+            "raw": "mise à jour : 24/02/2026",
+            "extracted": "2026-02-24"
+          },
+          {
+            "source": "url-path",
+            "raw": "/2026-02/",
+            "extracted": "2026-02-01"
+          }
+        ],
+        "errors": []
+      }
+    },
+    {
+      "name": "DECIDE",
+      "startedAt": "2026-03-25T10:15:09.088Z",
+      "durationMs": 2884,
+      "input": {
+        "court": "Besançon",
+        "signalCount": 2,
+        "signals": [
+          {
+            "source": "page-text",
+            "raw": "mise à jour : 24/02/2026",
+            "extracted": "2026-02-24"
+          },
+          {
+            "source": "url-path",
+            "raw": "/2026-02/",
+            "extracted": "2026-02-01"
+          }
+        ]
+      },
+      "output": {
+        "courtName": "Besançon",
+        "pageUrl": "https://www.cours-appel.justice.fr/besancon/experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-02/Annuaire%20experts%202026.pdf",
+        "documentTitle": "Annuaire des experts - 2026",
+        "publicationDate": "2026-02-24",
+        "publicationDateSource": "page-text",
+        "searchExplanation": "The experts judiciaires page for the Cour d'appel de Besançon was identified directly from the provided page URL. The corresponding expert directory PDF was identified from the provided PDF URL and title, matching the page topic and the 2026 expert directory.",
+        "dateExtractionExplanation": "The page-text signal provides an exact publication/update date: 'mise à jour : 24/02/2026' → 2026-02-24. The only other date signal is the URL-path '/2026-02/', which resolves only to a month-level date (2026-02-01) and is less specific. Per the rules, the most specific exact date from page-text takes precedence.",
+        "errors": []
+      },
+      "usage": {
+        "inputTokens": 1061,
+        "outputTokens": 297
+      },
+      "debug": {
+        "prompt": "You are deciding the publication date for a French court expert directory.\n\n## Court: Besançon\n\n## Discovery\n- Page: https://www.cours-appel.justice.fr/besancon/experts-judiciaires\n- PDF: https://www.cours-appel.justice.fr/sites/default/files/2026-02/Annuaire%20experts%202026.pdf\n- PDF title: Annuaire des experts - 2026\n\n## Date signals found (all sources, pre-parsed)\n1. [page-text] \"mise à jour : 24/02/2026\" → 2026-02-24\n2. [url-path] \"/2026-02/\" → 2026-02-01\n\n## Rules\n- Pick the most specific and most recent date\n- A year-only date must never override an exact date from any other source\n- If multiple exact dates exist, prefer pdf-content > page-text > link-text > filename > url-path\n- Date format: YYYY-MM-DD\n\n## Raw PDF text (first 1500 chars, for context)\nCOUR D’APPEL DE BESANÇON LISTE DES EXPERTS POUR 2026 1 TABLE DES MATIÈRES Pages SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES . . . . . . . . . . . . . . . . . . . . . . 3 LISTE ALPHABETIQUE DES EXPERTS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 LISTE ALPHABÉTIQUE DES EXPERTS EN PERIODE PROBATOIRE . . . . . . . . . . . . . . . . . . . . . . . . . . . 26 LISTE DES EXPERTS PAR RUBRIQUE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 139 2 SOMMAIRE ANALYTIQUE DES RUBRIQUES AVEC LEURS SPECIALITES A-AGRICULTURE - AGRO-ALIMENTAIRE - ANIMAUX - FORÊTS . . . . . . . . . . . . . . . . . . . 31 Pour être plus amplement informés, les magistrats peuvent se référer à l'annuaire national des experts développé par le CNCEJ qui répertorie des informations plus précises sur le profil l'expérience et les spécialités de l'expert. A-01 Agriculture . . . . . . . . . . . . . . . . . . 31 A-01.01 APPLICATIONS DE PRODUITS P H Y T O P H A R M A C E U T I Q U E S , MATIERES FERTILISANTES ET SUPPORTS DE CULTURE . . . . . . . 31 Application de produits phytopharmaceutiques par voie terrestre - Traitement des semences, des plants, des bulbes, des denrées stockées - Application des matières fertilisantes et des supports de cultur\n\nPick the best date and explain your reasoning."
+      }
+    }
+  ],
+  "error": null
+}
