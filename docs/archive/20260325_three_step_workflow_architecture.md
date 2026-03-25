@@ -182,3 +182,59 @@ The 3-step architecture leverages a capability we discovered during this workstr
 - All of this happens inside a single `web_search_call`
 
 Custom tools (cheerio, unpdf) are still used in COLLECT for deterministic parsing, but DISCOVER no longer needs them.
+
+---
+
+## Architecture discussion: chain vs agent
+
+### What we built
+
+The 3-step pipeline is a **chain**, not an agent. Three sequential calls with deterministic code in between:
+
+```
+DISCOVER (1 LLM call) → COLLECT (0 LLM calls) → DECIDE (1 LLM call)
+```
+
+The only agentic behavior is inside DISCOVER — OpenAI's `web_search` with `open_page` lets the model search and follow links autonomously. But from our code's perspective, it's one API call. We don't control or observe the loop inside it.
+
+### Trade-offs of the current chain approach
+
+**Advantages:**
+- Predictable: same steps every time, no unexpected loops
+- Debuggable: each step has typed input/output, clear checkpoints
+- Cheap: 2 LLM calls per court, deterministic COLLECT is free
+- Fast: no round-trips between API calls for tool execution
+
+**Limitations:**
+- If DISCOVER returns the wrong page, the pipeline can't recover
+- COLLECT partially compensates (picks best PDF independently) but can't fix a wrong page URL
+- No backtracking — the chain runs to completion even with bad data
+
+### How we could make DISCOVER agentic (future option)
+
+Replace the single `responses.parse()` call with a manual agent loop using `responses.create()`:
+
+```
+Agentic DISCOVER:
+  responses.create({ tools: [web_search, fetchPage], ... })
+  → Model calls web_search → gets results
+  → Model calls fetchPage(url) → we execute, send compact result back
+  → Model sees "no expert PDFs" → calls fetchPage(different_url)
+  → Model sees PDFs → we break the loop
+```
+
+**What this would gain:**
+- Full trace visibility — every URL the model tries, every tool call and result
+- Recovery from bad pages — model can try different URLs if the first one has no expert PDFs
+- `fetchPage` returns PDF links with relevance hints — better than `open_page`'s black box
+- COLLECT and DECIDE stay unchanged
+
+**What this would cost:**
+- Back to managing a loop (more code)
+- Multiple API round-trips instead of one (slower)
+- Lose the simplicity of a single call
+- May lose `open_page` capability (untested: can `web_search` with `open_page` coexist with custom function tools in the same call?)
+
+### Decision: stick with the chain for now
+
+The chain works well — Paris and Besançon both succeed. COLLECT's PDF override handles the case where DISCOVER picks the wrong PDF. The main risk (DISCOVER returning the wrong page entirely) hasn't been observed in testing. If it becomes a problem, making DISCOVER agentic is a straightforward refactor that doesn't affect COLLECT or DECIDE.
