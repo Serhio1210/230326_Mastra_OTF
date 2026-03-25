@@ -64,6 +64,16 @@ The current agent runs all 5 instruction steps however it wants — no enforceme
 
 ---
 
+## Bug fix: COLLECT overrides DISCOVER's PDF selection
+
+**Problem**: DISCOVER uses `open_page` inside `web_search` to find the PDF. But `open_page` is a black box — the model grabs whatever PDF it finds first from search results. In testing, Paris DISCOVER returned `ANNUPARIS 2026.pdf` from `/2026-01/` (January) instead of `ANNUPARIS MAJ 10 MARS 26_2.pdf` from `/2026-03/` (March — the latest). The pipeline still got the right date because page text had it, but `documentUrl` pointed to an older PDF.
+
+**Fix**: COLLECT now independently scrapes the page with cheerio, extracts ALL PDF links, classifies them by relevance (expert-list vs unrelated), and picks the one with the most recent URL path date. If COLLECT finds a newer PDF than DISCOVER returned, it overrides it. The trace shows `⚠ PDF OVERRIDDEN` with both URLs when this happens.
+
+**Why this is the right layer**: DISCOVER's job is to find the page — it doesn't need to be perfect about which PDF. COLLECT's job is deterministic data collection — it sees all the PDFs on the page and can compare them mechanically. This separation means DISCOVER can be fast and approximate, while COLLECT is thorough and precise.
+
+---
+
 ## Implementation (Native OpenAI SDK)
 
 File: `src/lib/run-court-search-3step.ts`
