@@ -1,0 +1,238 @@
+{
+  "court": "Paris",
+  "startedAt": "2026-03-25T10:13:44.279Z",
+  "finishedAt": "2026-03-25T10:13:58.437Z",
+  "totalMs": 14158,
+  "success": true,
+  "result": {
+    "courtName": "Paris",
+    "pageUrl": "https://www.cours-appel.justice.fr/paris/experts-judiciaires",
+    "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf",
+    "documentTitle": "ANNUAIRE DES EXPERTS",
+    "publicationDate": "2026-03-10",
+    "publicationDateSource": "pdf-content",
+    "searchExplanation": "The experts judiciaires page for the Cour d'appel de Paris was identified directly from the provided page URL. The linked PDF was the expert directory document titled \"ANNUAIRE DES EXPERTS\" at the provided PDF URL.",
+    "dateExtractionExplanation": "The most specific and recent exact date found is \"MAJ LE 10/03/2026\" in the PDF content, which corresponds to 2026-03-10. A matching page-text signal also exists (\"mise à jour : 10/03/2026\"), but per the rules pdf-content takes precedence over page-text. Older dates in the PDF (2004-12-23, 2005-06-10, 2006-05-12) are historical references and do not override the document's update/publication date. The filename and URL path also suggest March 2026, but they are lower priority than the PDF content.",
+    "errors": []
+  },
+  "steps": [
+    {
+      "name": "DISCOVER",
+      "startedAt": "2026-03-25T10:13:44.279Z",
+      "durationMs": 10047,
+      "input": {
+        "court": "Paris"
+      },
+      "output": {
+        "found": true,
+        "pageUrl": "https://www.cours-appel.justice.fr/paris/experts-judiciaires",
+        "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf",
+        "pdfTitle": "ANNUAIRE DES EXPERTS",
+        "searchExplanation": "Found on the official Cour d'appel de Paris experts judiciaires page on cours-appel.justice.fr; the page lists an 'Annuaire des experts judiciaires 2026' download link, which resolves to the PDF for the Paris expert list. ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/paris/experts-judiciaires?utm_source=openai))",
+        "errors": []
+      },
+      "usage": {
+        "inputTokens": 16645,
+        "outputTokens": 970
+      },
+      "debug": {
+        "outputItemTypes": [
+          "reasoning",
+          "web_search_call",
+          "reasoning",
+          "web_search_call",
+          "reasoning",
+          "web_search_call",
+          "reasoning",
+          "message"
+        ],
+        "searchActions": [
+          {
+            "id": "ws_0b02db7a94e810540069c3b559f5ec81908f0d73277cf5808f",
+            "action": {
+              "type": "search",
+              "queries": [
+                "site:cours-appel.justice.fr Cour d'appel de Paris experts judiciaires PDF",
+                "site:cours-appel.justice.fr Paris experts judiciaires cour d'appel pdf",
+                "site:cours-appel.justice.fr experts judiciaires Paris liste pdf"
+              ],
+              "query": "site:cours-appel.justice.fr Cour d'appel de Paris experts judiciaires PDF"
+            }
+          },
+          {
+            "id": "ws_0b02db7a94e810540069c3b55cf3d481908a12504b813af140",
+            "action": {
+              "type": "open_page",
+              "url": "https://www.cours-appel.justice.fr/paris/experts-judiciaires"
+            }
+          },
+          {
+            "id": "ws_0b02db7a94e810540069c3b55d7a4c8190a26321f63dbf4816",
+            "action": {
+              "type": "open_page",
+              "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "COLLECT",
+      "startedAt": "2026-03-25T10:13:54.327Z",
+      "durationMs": 1645,
+      "input": {
+        "pageUrl": "https://www.cours-appel.justice.fr/paris/experts-judiciaires",
+        "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf"
+      },
+      "output": {
+        "pageTitle": "EXPERTS JUDICIAIRES | Cour d'appel de Paris Paris",
+        "filename": "ANNUPARIS MAJ 10 MARS 26_2.pdf",
+        "pdfPageCount": 411,
+        "signalCount": 11,
+        "signals": [
+          {
+            "source": "page-text",
+            "raw": "mise à jour : 10/03/2026",
+            "extracted": "2026-03-10"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "MAJ LE 10/03/2026",
+            "extracted": "2026-03-10"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "23 décembre 2004",
+            "extracted": "2004-12-23"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "10 juin 2005",
+            "extracted": "2005-06-10"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "12 mai 2006",
+            "extracted": "2006-05-12"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "23 décembre 2004",
+            "extracted": "2004-12-23"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "10 juin 2005",
+            "extracted": "2005-06-10"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "12 mai 2006",
+            "extracted": "2006-05-12"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "23 décembre 2004",
+            "extracted": "2004-12-23"
+          },
+          {
+            "source": "url-path",
+            "raw": "/2026-03/",
+            "extracted": "2026-03-01"
+          },
+          {
+            "source": "filename",
+            "raw": "10 mars 26",
+            "extracted": "2026-03-10"
+          }
+        ],
+        "errors": []
+      }
+    },
+    {
+      "name": "DECIDE",
+      "startedAt": "2026-03-25T10:13:55.972Z",
+      "durationMs": 2465,
+      "input": {
+        "court": "Paris",
+        "signalCount": 11,
+        "signals": [
+          {
+            "source": "page-text",
+            "raw": "mise à jour : 10/03/2026",
+            "extracted": "2026-03-10"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "MAJ LE 10/03/2026",
+            "extracted": "2026-03-10"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "23 décembre 2004",
+            "extracted": "2004-12-23"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "10 juin 2005",
+            "extracted": "2005-06-10"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "12 mai 2006",
+            "extracted": "2006-05-12"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "23 décembre 2004",
+            "extracted": "2004-12-23"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "10 juin 2005",
+            "extracted": "2005-06-10"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "12 mai 2006",
+            "extracted": "2006-05-12"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "23 décembre 2004",
+            "extracted": "2004-12-23"
+          },
+          {
+            "source": "url-path",
+            "raw": "/2026-03/",
+            "extracted": "2026-03-01"
+          },
+          {
+            "source": "filename",
+            "raw": "10 mars 26",
+            "extracted": "2026-03-10"
+          }
+        ]
+      },
+      "output": {
+        "courtName": "Paris",
+        "pageUrl": "https://www.cours-appel.justice.fr/paris/experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf",
+        "documentTitle": "ANNUAIRE DES EXPERTS",
+        "publicationDate": "2026-03-10",
+        "publicationDateSource": "pdf-content",
+        "searchExplanation": "The experts judiciaires page for the Cour d'appel de Paris was identified directly from the provided page URL. The linked PDF was the expert directory document titled \"ANNUAIRE DES EXPERTS\" at the provided PDF URL.",
+        "dateExtractionExplanation": "The most specific and recent exact date found is \"MAJ LE 10/03/2026\" in the PDF content, which corresponds to 2026-03-10. A matching page-text signal also exists (\"mise à jour : 10/03/2026\"), but per the rules pdf-content takes precedence over page-text. Older dates in the PDF (2004-12-23, 2005-06-10, 2006-05-12) are historical references and do not override the document's update/publication date. The filename and URL path also suggest March 2026, but they are lower priority than the PDF content.",
+        "errors": []
+      },
+      "usage": {
+        "inputTokens": 1318,
+        "outputTokens": 346
+      },
+      "debug": {
+        "prompt": "You are deciding the publication date for a French court expert directory.\n\n## Court: Paris\n\n## Discovery\n- Page: https://www.cours-appel.justice.fr/paris/experts-judiciaires\n- PDF: https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf\n- PDF title: ANNUAIRE DES EXPERTS\n\n## Date signals found (all sources, pre-parsed)\n1. [page-text] \"mise à jour : 10/03/2026\" → 2026-03-10\n2. [pdf-content] \"MAJ LE 10/03/2026\" → 2026-03-10\n3. [pdf-content] \"23 décembre 2004\" → 2004-12-23\n4. [pdf-content] \"10 juin 2005\" → 2005-06-10\n5. [pdf-content] \"12 mai 2006\" → 2006-05-12\n6. [pdf-content] \"23 décembre 2004\" → 2004-12-23\n7. [pdf-content] \"10 juin 2005\" → 2005-06-10\n8. [pdf-content] \"12 mai 2006\" → 2006-05-12\n9. [pdf-content] \"23 décembre 2004\" → 2004-12-23\n10. [url-path] \"/2026-03/\" → 2026-03-01\n11. [filename] \"10 mars 26\" → 2026-03-10\n\n## Rules\n- Pick the most specific and most recent date\n- A year-only date must never override an exact date from any other source\n- If multiple exact dates exist, prefer pdf-content > page-text > link-text > filename > url-path\n- Date format: YYYY-MM-DD\n\n## Raw PDF text (first 1500 chars, for context)\nCOUR D’APPEL DE PARIS LISTE DES EXPERTS JUDICIAIRES ANNEE 2026 MAJ LE 10/03/2026 Service des Experts- 34 quai des Orfèvres -75055 Paris Cedex 01 TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêtés du 10 juin 2005 et du 12 mai 2006. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45 ANNEXES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 393 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 394 Service des Experts- 34 quai des Orfèvres -75055 Paris Cedex 01 experts.ca-paris@justice.fr Tél. 01.44.32.74.90 ou 01.44.32.69.52 Site Internet : www.ca-paris.justice.fr 1 Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêtés du 10 juin 2005 et du 12 mai 2006 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel...... conformément à la nomenclature suivante, qui se divise en branches : (ex. : A), rubriques (ex.: A.1.) et spécialités (ex. : A.1.1). A-AGRICULTURE - A\n\nPick the best date and explain your reasoning."
+      }
+    }
+  ],
+  "error": null
+}
