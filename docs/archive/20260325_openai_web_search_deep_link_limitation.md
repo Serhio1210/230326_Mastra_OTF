@@ -65,8 +65,62 @@ Since all modern court expert pages follow `cours-appel.justice.fr/[city]/expert
 2. Test `site:cours-appel.justice.fr` in the agent prompt for Besançon specifically
 3. Test per-court `user_location.city` — set to the actual court city instead of always Paris
 
+## Empirical proof: Besançon search comparison
+
+We ran three configurations for Besançon with `include: ['web_search_call.results']` to see exactly what the model searches for and what comes back.
+
+### The model's search queries (from `action.queries`)
+
+All three configs produce good queries — the model even tries path-level searches:
+
+```
+"site:cours-appel.justice.fr/besancon \"experts judiciaires\""
+"site:cours-appel.justice.fr Besançon experts judiciaires"
+"site:ca-besancon.justice.fr experts judiciaires Cour d'appel de Besançon"
+```
+
+The model asks for exactly the right thing. The problem is what comes back.
+
+### What URLs the search returns
+
+| Config | URLs found | Correct? |
+|---|---|---|
+| `medium` (default) | `cours-appel.justice.fr/besancon` (homepage) + `ca-besancon.justice.fr` | ✗ homepage, not subpage |
+| `high` | `cours-appel.justice.fr/besancon` (homepage) | ✗ same homepage |
+| `high` + `city: "Besançon"` | `ca-besancon.justice.fr/art_pix/LISTE EXPERTS 2013.pdf` | ✗ **worse** — found a 2013 PDF |
+
+The target URL `cours-appel.justice.fr/besancon/experts-judiciaires` never appears in any configuration. It is not in OpenAI's search index.
+
+### Comparison with Paris (control)
+
+For Paris, the same approach works perfectly:
+
+```
+Queries: ["site:cours-appel.justice.fr Cour d'appel de Paris experts judiciaires"]
+URL found: cours-appel.justice.fr/paris/experts-judiciaires ✓
+```
+
+Paris's experts subpage IS in the index. Besançon's is NOT. Same query pattern, same domain, different indexing.
+
+### Token usage comparison
+
+| Config | Input tokens |
+|---|---|
+| medium | 12,384 |
+| high | 12,397 |
+| high + local | 12,038 |
+
+`search_context_size` made virtually no difference in tokens or results. The community reports of "negligible observable effect" are confirmed.
+
+## The smoking gun
+
+The model formulates perfect search queries. It literally asks `site:cours-appel.justice.fr/besancon "experts judiciaires"`. But OpenAI's search index simply does not have that page. No parameter change can surface a page that isn't indexed.
+
 ## Conclusion
 
-There is **no hidden parameter or undocumented technique** that reliably forces the web search tool to discover deep/subpage URLs. This is a known limitation that OpenAI has not addressed. Our best mitigation is the combination of `allowed_domains` (prevents legacy/third-party spiraling) + strong retry instructions + accepting that some courts will be flaky depending on search index quality.
+There is **no hidden parameter or undocumented technique** that reliably forces the web search tool to discover deep/subpage URLs. This is a known limitation that OpenAI has not addressed. The problem is not our queries, not our parameters, not our instructions — it's the search index.
 
-The trace system we built is the right answer here — when Besançon fails, we can see exactly why (homepage vs deep link) and retry or flag it, rather than getting a wrong date with no explanation.
+Our best mitigations are:
+1. `allowed_domains` — prevents legacy/third-party spiraling when the deep link isn't found
+2. The trace system — when Besançon fails, we see exactly why (homepage vs deep link) and can retry or flag it
+3. Accept that some courts depend on search index quality and will be flaky until OpenAI indexes the subpage
