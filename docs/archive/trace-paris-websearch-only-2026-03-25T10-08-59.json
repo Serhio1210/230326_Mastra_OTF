@@ -1,0 +1,132 @@
+{
+  "court": "Paris",
+  "model": "gpt-5.4-mini",
+  "effort": "medium",
+  "timestamp": "2026-03-25T10:08:59.800Z",
+  "elapsedMs": 8877,
+  "usage": {
+    "input_tokens": 16397,
+    "input_tokens_details": {
+      "cached_tokens": 3584
+    },
+    "output_tokens": 1331,
+    "output_tokens_details": {
+      "reasoning_tokens": 979
+    },
+    "total_tokens": 17728
+  },
+  "outputItemCount": 8,
+  "outputItemTypes": [
+    "reasoning",
+    "web_search_call",
+    "reasoning",
+    "web_search_call",
+    "reasoning",
+    "web_search_call",
+    "reasoning",
+    "message"
+  ],
+  "items": [
+    {
+      "type": "reasoning",
+      "id": "rs_0968218557075b540069c3b4338e38819bb0b93389f1406f84"
+    },
+    {
+      "type": "web_search_call",
+      "id": "ws_0968218557075b540069c3b4340464819ba81982924dcc7323",
+      "status": "completed",
+      "action": {
+        "type": "search",
+        "queries": [
+          "site:cours-appel.justice.fr Cour d'appel de Paris experts judiciaires PDF",
+          "site:cours-appel.justice.fr Paris liste des experts judiciaires pdf"
+        ],
+        "query": "site:cours-appel.justice.fr Cour d'appel de Paris experts judiciaires PDF"
+      }
+    },
+    {
+      "type": "reasoning",
+      "id": "rs_0968218557075b540069c3b434d134819b972cc8e16437ef1d"
+    },
+    {
+      "type": "web_search_call",
+      "id": "ws_0968218557075b540069c3b434f0a4819b89f67ab63d7e964a",
+      "status": "completed",
+      "action": {
+        "type": "open_page",
+        "url": "https://www.cours-appel.justice.fr/paris/experts-judiciaires"
+      }
+    },
+    {
+      "type": "reasoning",
+      "id": "rs_0968218557075b540069c3b4355920819bb0e5b48fee5f38c3"
+    },
+    {
+      "type": "web_search_call",
+      "id": "ws_0968218557075b540069c3b4356acc819b9e0d80c085d8128b",
+      "status": "completed",
+      "action": {
+        "type": "open_page",
+        "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf"
+      }
+    },
+    {
+      "type": "reasoning",
+      "id": "rs_0968218557075b540069c3b435fd30819b8773e6e6df92b580"
+    },
+    {
+      "type": "message",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "Voici la liste officielle des experts judiciaires de la Cour d’appel de Paris, avec la date la plus précise trouvée :\n\n- **Page URL** : `https://www.cours-appel.justice.fr/paris/experts-judiciaires` ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/paris/experts-judiciaires))\n- **PDF URL** : `https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf` ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf))\n- **Date de publication / mise à jour** : **2026-03-10** ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/paris/experts-judiciaires))\n- **Où la date a été trouvée** :\n  - **page-text** : `mise à jour : 10/03/2026` sur la page de la Cour d’appel de Paris ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/paris/experts-judiciaires))\n  - **pdf-content** : `MAJ LE 10/03/2026` dans le PDF ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf))\n  - **filename** : `ANNUPARIS MAJ 10 MARS 26_2.pdf` corroborant la même date ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf))\n\nSi vous voulez, je peux aussi extraire le **nom exact du fichier PDF** et vous dire s’il s’agit d’une **mise à jour** plutôt que d’une première publication.",
+          "annotations": [
+            {
+              "type": "url_citation",
+              "end_index": 287,
+              "start_index": 199,
+              "title": "EXPERTS JUDICIAIRES | Cour d'appel de Paris Paris",
+              "url": "https://www.cours-appel.justice.fr/paris/experts-judiciaires"
+            },
+            {
+              "type": "url_citation",
+              "end_index": 537,
+              "start_index": 408,
+              "title": "",
+              "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf"
+            },
+            {
+              "type": "url_citation",
+              "end_index": 683,
+              "start_index": 595,
+              "title": "EXPERTS JUDICIAIRES | Cour d'appel de Paris Paris",
+              "url": "https://www.cours-appel.justice.fr/paris/experts-judiciaires"
+            },
+            {
+              "type": "url_citation",
+              "end_index": 892,
+              "start_index": 804,
+              "title": "EXPERTS JUDICIAIRES | Cour d'appel de Paris Paris",
+              "url": "https://www.cours-appel.justice.fr/paris/experts-judiciaires"
+            },
+            {
+              "type": "url_citation",
+              "end_index": 1076,
+              "start_index": 947,
+              "title": "",
+              "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf"
+            },
+            {
+              "type": "url_citation",
+              "end_index": 1283,
+              "start_index": 1154,
+              "title": "",
+              "url": "https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "outputText": "Voici la liste officielle des experts judiciaires de la Cour d’appel de Paris, avec la date la plus précise trouvée :\n\n- **Page URL** : `https://www.cours-appel.justice.fr/paris/experts-judiciaires` ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/paris/experts-judiciaires))\n- **PDF URL** : `https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf` ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf))\n- **Date de publication / mise à jour** : **2026-03-10** ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/paris/experts-judiciaires))\n- **Où la date a été trouvée** :\n  - **page-text** : `mise à jour : 10/03/2026` sur la page de la Cour d’appel de Paris ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/paris/experts-judiciaires))\n  - **pdf-content** : `MAJ LE 10/03/2026` dans le PDF ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf))\n  - **filename** : `ANNUPARIS MAJ 10 MARS 26_2.pdf` corroborant la même date ([cours-appel.justice.fr](https://www.cours-appel.justice.fr/sites/default/files/2026-03/ANNUPARIS%20MAJ%2010%20MARS%2026_2.pdf))\n\nSi vous voulez, je peux aussi extraire le **nom exact du fichier PDF** et vous dire s’il s’agit d’une **mise à jour** plutôt que d’une première publication."
+}
