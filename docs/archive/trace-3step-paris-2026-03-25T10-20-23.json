@@ -1,0 +1,200 @@
+{
+  "court": "Paris",
+  "startedAt": "2026-03-25T10:20:13.018Z",
+  "finishedAt": "2026-03-25T10:20:23.639Z",
+  "totalMs": 10621,
+  "success": true,
+  "result": {
+    "courtName": "Paris",
+    "pageUrl": "https://www.cours-appel.justice.fr/paris/experts-judiciaires",
+    "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/ANNUPARIS%202026.pdf",
+    "documentTitle": "COUR D’APPEL DE PARIS — LISTE DES EXPERTS JUDICIAIRES — ANNEE 2026",
+    "publicationDate": "2026-03-10",
+    "publicationDateSource": "page-text",
+    "searchExplanation": "I found the experts page on the Cour d'appel de Paris site and the linked PDF titled as the 2026 expert list. The page text contains an explicit update timestamp ('mise à jour : 10/03/2026').",
+    "dateExtractionExplanation": "The best date is the explicit page update date 10/03/2026, converted to YYYY-MM-DD as 2026-03-10. The PDF contains older legal reference dates (23 décembre 2004, 10 juin 2005, 12 mai 2006), which are not publication dates for this directory. I also noted a raw page date '31/05/2018', but it is older than the 2026 update and therefore not the chosen publication date. The URL path '/2026-01/' suggests January 2026 but is less specific than the exact page-text date.",
+    "errors": []
+  },
+  "steps": [
+    {
+      "name": "DISCOVER",
+      "startedAt": "2026-03-25T10:20:13.018Z",
+      "durationMs": 5107,
+      "input": {
+        "court": "Paris"
+      },
+      "output": {
+        "found": true,
+        "pageUrl": "https://www.cours-appel.justice.fr/paris/experts-judiciaires",
+        "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/ANNUPARIS%202026.pdf",
+        "pdfTitle": "COUR D’APPEL DE PARIS — LISTE DES EXPERTS JUDICIAIRES — ANNEE 2026",
+        "searchExplanation": "I searched the official cours-appel.justice.fr domain for \"Cour d'appel de Paris experts judiciaires\". The official page is the Paris court's experts judiciaires page, and the current PDF found is the 2026 experts list hosted on the same official domain.",
+        "errors": []
+      },
+      "usage": {
+        "inputTokens": 8492,
+        "outputTokens": 548
+      },
+      "debug": {
+        "outputItemTypes": [
+          "reasoning",
+          "web_search_call",
+          "reasoning",
+          "message"
+        ],
+        "searchActions": [
+          {
+            "id": "ws_03ff71afaf0d95f50069c3b6de22f4819989429e8ec8aba230",
+            "action": {
+              "type": "search",
+              "queries": [
+                "site:cours-appel.justice.fr Cour d'appel de Paris experts judiciaires PDF",
+                "site:cours-appel.justice.fr Paris experts judiciaires Cour d'appel PDF",
+                "site:cours-appel.justice.fr \"experts judiciaires\" \"Paris\""
+              ],
+              "query": "site:cours-appel.justice.fr Cour d'appel de Paris experts judiciaires PDF"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "COLLECT",
+      "startedAt": "2026-03-25T10:20:18.125Z",
+      "durationMs": 1465,
+      "input": {
+        "pageUrl": "https://www.cours-appel.justice.fr/paris/experts-judiciaires",
+        "pdfUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/ANNUPARIS%202026.pdf"
+      },
+      "output": {
+        "pageTitle": "EXPERTS JUDICIAIRES | Cour d'appel de Paris Paris",
+        "filename": "ANNUPARIS 2026.pdf",
+        "pdfPageCount": 414,
+        "signalCount": 9,
+        "signals": [
+          {
+            "source": "page-text",
+            "raw": "mise à jour : 10/03/2026",
+            "extracted": "2026-03-10"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "23 décembre 2004",
+            "extracted": "2004-12-23"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "10 juin 2005",
+            "extracted": "2005-06-10"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "12 mai 2006",
+            "extracted": "2006-05-12"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "23 décembre 2004",
+            "extracted": "2004-12-23"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "10 juin 2005",
+            "extracted": "2005-06-10"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "12 mai 2006",
+            "extracted": "2006-05-12"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "23 décembre 2004",
+            "extracted": "2004-12-23"
+          },
+          {
+            "source": "url-path",
+            "raw": "/2026-01/",
+            "extracted": "2026-01-01"
+          }
+        ],
+        "errors": []
+      }
+    },
+    {
+      "name": "DECIDE",
+      "startedAt": "2026-03-25T10:20:19.590Z",
+      "durationMs": 4049,
+      "input": {
+        "court": "Paris",
+        "signalCount": 9,
+        "signals": [
+          {
+            "source": "page-text",
+            "raw": "mise à jour : 10/03/2026",
+            "extracted": "2026-03-10"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "23 décembre 2004",
+            "extracted": "2004-12-23"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "10 juin 2005",
+            "extracted": "2005-06-10"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "12 mai 2006",
+            "extracted": "2006-05-12"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "23 décembre 2004",
+            "extracted": "2004-12-23"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "10 juin 2005",
+            "extracted": "2005-06-10"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "12 mai 2006",
+            "extracted": "2006-05-12"
+          },
+          {
+            "source": "pdf-content",
+            "raw": "23 décembre 2004",
+            "extracted": "2004-12-23"
+          },
+          {
+            "source": "url-path",
+            "raw": "/2026-01/",
+            "extracted": "2026-01-01"
+          }
+        ]
+      },
+      "output": {
+        "courtName": "Paris",
+        "pageUrl": "https://www.cours-appel.justice.fr/paris/experts-judiciaires",
+        "documentUrl": "https://www.cours-appel.justice.fr/sites/default/files/2026-01/ANNUPARIS%202026.pdf",
+        "documentTitle": "COUR D’APPEL DE PARIS — LISTE DES EXPERTS JUDICIAIRES — ANNEE 2026",
+        "publicationDate": "2026-03-10",
+        "publicationDateSource": "page-text",
+        "searchExplanation": "I found the experts page on the Cour d'appel de Paris site and the linked PDF titled as the 2026 expert list. The page text contains an explicit update timestamp ('mise à jour : 10/03/2026').",
+        "dateExtractionExplanation": "The best date is the explicit page update date 10/03/2026, converted to YYYY-MM-DD as 2026-03-10. The PDF contains older legal reference dates (23 décembre 2004, 10 juin 2005, 12 mai 2006), which are not publication dates for this directory. I also noted a raw page date '31/05/2018', but it is older than the 2026 update and therefore not the chosen publication date. The URL path '/2026-01/' suggests January 2026 but is less specific than the exact page-text date.",
+        "errors": []
+      },
+      "usage": {
+        "inputTokens": 1827,
+        "outputTokens": 477
+      },
+      "debug": {
+        "prompt": "You are deciding the publication date for a French court expert directory.\n\n## Court: Paris\n\n## Discovery\n- Page: https://www.cours-appel.justice.fr/paris/experts-judiciaires\n- PDF: https://www.cours-appel.justice.fr/sites/default/files/2026-01/ANNUPARIS%202026.pdf\n- PDF title: COUR D’APPEL DE PARIS — LISTE DES EXPERTS JUDICIAIRES — ANNEE 2026\n\n## Pre-parsed date signals (extracted by regex)\n1. [page-text] \"mise à jour : 10/03/2026\" → 2026-03-10\n2. [pdf-content] \"23 décembre 2004\" → 2004-12-23\n3. [pdf-content] \"10 juin 2005\" → 2005-06-10\n4. [pdf-content] \"12 mai 2006\" → 2006-05-12\n5. [pdf-content] \"23 décembre 2004\" → 2004-12-23\n6. [pdf-content] \"10 juin 2005\" → 2005-06-10\n7. [pdf-content] \"12 mai 2006\" → 2006-05-12\n8. [pdf-content] \"23 décembre 2004\" → 2004-12-23\n9. [url-path] \"/2026-01/\" → 2026-01-01\n\n## Rules\n- Pick the most specific and most recent date\n- A year-only date must never override an exact date from any other source\n- If multiple exact dates exist, prefer pdf-content > page-text > link-text > filename > url-path\n- Date format: YYYY-MM-DD\n- **Important**: The pre-parsed signals above may be incomplete. Check the raw texts below for any dates the parser missed — e.g. assembly dates (\"assemblée générale du...\"), decree dates (\"arrêté du...\"), or dates in unexpected formats.\n\n## Raw page text (first 2000 chars)\nRechercher Rechercher Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Cour d'appel de Paris Paris Suivez-nous sur facebook Suivez-nous sur twitter Suivez-nous sur linkedin Suivez-nous sur dailymotion Rechercher Rechercher Menu (ouvrir) EXPERTS JUDICIAIRES 31/05/2018 - mise à jour : 10/03/2026 Envoyer par email Tweeter cette page Partager sur facebook Agrandir la taille du texte Réduire la taille du texte Imprimer Les experts judiciaires sont des professionnels de toutes les spécialités qui mettent une part de leur activité au service de la Justice. Ces professionnels sont inscrits sur une liste établie par la cour d'appel, après un examen attentif de leur candidature. Ils sont désignés par la cour d'appel et les tribunaux de son ressort, à l'occasion de litiges. Le rôle de l'expert est d'apporter un avis technique sur certains points précis. L'expertise judiciaire apporte au justiciable une garantie quant à la rigueur avec laquelle ses demandes vont être étudiées. Dans le cadre de la modernisation et de la simplification de la Justice, le ministère de la Justice a engagé, au cours de l’année 2024, des travaux visant à dématérialiser l’ensemble du processus d’inscription et de réinscription sur les listes d’experts judiciaires ainsi qu’à constituer un référentiel national unique. Après une phase d’expérimentation conduite dans plusieurs cours d’appel pilotes, ce dispositif sera généralisé à l’ensemble des juridictions dès le 1er janvier 2026. Ainsi, l’ensemble des demandes d’inscription initiale, de réinscription ou d’extension en vue de l’élaboration de la liste des experts judiciaires de l’année 2027, devront être déposées avant le 1er mars 2026 (décret n° 2004-1463 du 23 décembre 2004 relatif aux experts judiciaires – articles 6 et 10), exclusivement par voie dématérialisée, au moyen de la plateforme Démarches simplifiées. Les liens permettant d’accéder aux formulaires sont les suivants : Inscription initiale R\n\n## Raw PDF text (first 1500 chars)\nCOUR D’APPEL DE PARIS LISTE DES EXPERTS JUDICIAIRES ANNEE 2026 Service des Experts- 34 quai des Orfèvres -75055 Paris Cedex 01 TABLE DES MATIÈRES Pages Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêtés du 10 juin 2005 et du 12 mai 2006. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 LISTE ALPHABÉTIQUE DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28 LISTE PAR SPÉCIALITÉS DES EXPERTS EN EXERCICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45 ANNEXES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 394 EXPERTS HONORAIRES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 395 Service des Experts- 34 quai des Orfèvres -75055 Paris Cedex 01 experts.ca-paris@justice.fr Tél. 01.44.32.74.90 ou 01.44.32.69.52 Site Internet : www.ca-paris.justice.fr 1 Nomenclature prévue à l’article 1 er du décret du 23 décembre 2004 Arrêtés du 10 juin 2005 et du 12 mai 2006 Article 1 - Les listes d’experts prévues à l’article 1 du décret du 23 décembre 2004 susvisé sont dressées par les cours d’appel...... conformément à la nomenclature suivante, qui se divise en branches : (ex. : A), rubriques (ex.: A.1.) et spécialités (ex. : A.1.1). A-AGRICULTURE - AGRO-ALIMENTAIRE - \n\nPick the best date. If you find a date in the raw text that wasn't in the pre-parsed signals, note it. Explain your reasoning."
+      }
+    }
+  ],
+  "error": null
+}

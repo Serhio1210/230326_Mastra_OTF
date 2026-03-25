@@ -384,7 +384,7 @@ async function stepDecide(
 - PDF: ${discover.pdfUrl || "not found"}
 - PDF title: ${discover.pdfTitle || "unknown"}
 
-## Date signals found (all sources, pre-parsed)
+## Pre-parsed date signals (extracted by regex)
 ${signalsList}
 
 ## Rules
@@ -392,11 +392,15 @@ ${signalsList}
 - A year-only date must never override an exact date from any other source
 - If multiple exact dates exist, prefer pdf-content > page-text > link-text > filename > url-path
 - Date format: YYYY-MM-DD
+- **Important**: The pre-parsed signals above may be incomplete. Check the raw texts below for any dates the parser missed — e.g. assembly dates ("assemblée générale du..."), decree dates ("arrêté du..."), or dates in unexpected formats.
 
-## Raw PDF text (first 1500 chars, for context)
+## Raw page text (first 2000 chars)
+${collect.pageText || "not available"}
+
+## Raw PDF text (first 1500 chars)
 ${collect.pdfText || "not available"}
 
-Pick the best date and explain your reasoning.`;
+Pick the best date. If you find a date in the raw text that wasn't in the pre-parsed signals, note it. Explain your reasoning.`;
 
   const response = await client.responses.parse({
     model: "gpt-5.4-mini",

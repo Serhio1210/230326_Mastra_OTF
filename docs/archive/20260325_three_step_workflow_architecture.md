@@ -60,6 +60,8 @@ The current agent runs all 5 instruction steps however it wants — no enforceme
 
 **Why LLM**: Some date signals are ambiguous — "assemblée du 18 novembre 2025" vs "mise à jour : 20/03/2026". The LLM understands French dates, knows which is more recent, and can explain its reasoning.
 
+**Regex + raw text fallback**: DECIDE receives both the pre-parsed signals from COLLECT (fast, deterministic) AND the raw page/PDF text. This is critical because regex won't catch every format — assembly dates buried in sentences, decree dates, or unexpected patterns. The LLM checks the raw text for anything the regex missed, so we get the best of both: deterministic parsing where it works + LLM judgment where it doesn't.
+
 ---
 
 ## Implementation (Native OpenAI SDK)
