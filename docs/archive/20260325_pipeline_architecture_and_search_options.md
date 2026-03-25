@@ -213,7 +213,9 @@ All three target the same problem: the `web_search` tool returns `cours-appel.ju
 
 **The catch**: Multiple developers report this parameter has "negligible observable effect." OpenAI hasn't responded to bug reports about it. It might do nothing.
 
-**Cost**: Zero — same API call, no extra tokens. Worth trying as a free experiment.
+**Cost**: Zero — same API call, no extra tokens.
+
+**TESTED**: We compared medium vs high for both Paris and Besançon. Result: identical URLs, identical token counts (12,384 vs 12,397), zero improvement. Community reports confirmed — this parameter has no observable effect. **Not worth adding.**
 
 **What changes in our pipeline**: Only the `buildTools()` function. The model gets the same tool, just with a different search depth hint. Everything else stays the same.
 
@@ -259,10 +261,12 @@ user_location: { country: "FR", region: "Bourgogne-Franche-Comté", city: "Besan
 
 ---
 
-## Recommendation
+## Recommendation (updated after testing)
 
-**Try Option 1 first** — it's a one-line change with zero risk. If `search_context_size: "high"` surfaces the deep link even 50% of the time, Besançon becomes reliable.
+**Option 1 (`search_context_size: "high"`) — ruled out.** Tested empirically, zero effect on results or tokens. Not worth adding.
 
-**Option 2 is fragile** — mixing search syntax into prompts is hacky and undocumented. Skip unless Option 1 fails.
+**Option 2 (`site:` in prompt) — ruled out.** The model already uses `site:` operators autonomously when `allowed_domains` is set (visible in `action.queries`). Adding it to the prompt is redundant.
 
-**Option 3 is the most principled** — it makes sense that a Besançon-located search would find Besançon court pages better. But it's the most work to implement and test.
+**Option 3 (per-court `user_location`) — ruled out.** Tested for Besançon: setting `city: "Besançon"` produced **worse** results (found a 2013 PDF on legacy site instead of the homepage).
+
+**None of the three options help.** The root cause is that OpenAI's search index does not have `cours-appel.justice.fr/besancon/experts-judiciaires` indexed. The model's search queries are perfect — the index is incomplete.
